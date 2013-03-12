@@ -33,7 +33,7 @@ syntax on
 "" enables filetype specific plugins
 filetype on
 filetype plugin on
-filetype plugin indent on
+filetype indent on
 
 
 "" BACKUP / SWAP FILES (HIDE THEM)
