@@ -1,5 +1,6 @@
-
 source $HOME/.vim/config-vam
+
+
 
 " CodeOverview
 " L9
@@ -13,6 +14,7 @@ source $HOME/.vim/config-vam
 " delimitMate
 " flake8
 " git-vim
+" fugitive
 " javaScriptLint
 " python%790
 " showmarks
@@ -29,21 +31,21 @@ source $HOME/.vim/config-vam
     "\ 'html5',
     "\ 'jQuery',
     "\ 'VOoM',
+    "\ 'Conque_Shell',
 
 call ActivateAddons([
     \ 'AutoComplPop',
     \ 'Buffergator',
     \ 'EasyGrep',
     \ 'FuzzyFinder',
+    \ 'fugitive',
     \ 'Powerline',
     \ 'Tagbar',
     \ 'TaskList',
     \ 'The_NERD_tree',
-    \ 'Conque_Shell',
     \ 'css_color@skammer',
     \ 'delimitMate',
     \ 'fontsize',
-    \ 'fugitive',
     \ 'lusty',
     \ 'molokai',
     \ 'pep83160',
@@ -54,6 +56,9 @@ call ActivateAddons([
     \ 'vimroom',
     \ 'html5',
     \ 'Syntastic',
+    \ 'vim-less',
+    \ 'vim-css3-syntax',
+    \ 'git-vim',
     \ ])
 
 
