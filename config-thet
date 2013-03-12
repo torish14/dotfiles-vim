@@ -36,6 +36,9 @@ set nolist "" nolist needed for linebreak
 set linebreak "" when wrapping, don't break words
 set colorcolumn=79
 
+"" How to stop autoindenting for specific file types
+"" http://vim.wikia.com/wiki/How_to_stop_auto_indenting
+
 "" bufstop for xml based files
 autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
@@ -55,6 +58,8 @@ nnoremap <leader><Up> <C-w>k
 nnoremap <leader><Down> <C-w>j
 nnoremap <leader><Left> <C-w>h
 nnoremap <leader><Right> <C-w>l
+
+set smartindent
 
 nmap <F5> :set nosmarttab<CR>
 "":setlocal si! si?<CR>
