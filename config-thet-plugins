@@ -26,6 +26,10 @@ source $HOME/.vim/config-vam
 " vimroom: http://projects.mikewest.org/vimroom/
 "            \ 'lint', 
 
+    "\ 'html5',
+    "\ 'jQuery',
+    "\ 'VOoM',
+
 call ActivateAddons([
     \ 'AutoComplPop',
     \ 'Buffergator',
@@ -40,8 +44,6 @@ call ActivateAddons([
     \ 'delimitMate',
     \ 'fontsize',
     \ 'fugitive',
-    \ 'html5',
-    \ 'jQuery',
     \ 'lusty',
     \ 'molokai',
     \ 'pep83160',
@@ -49,9 +51,9 @@ call ActivateAddons([
     \ 'scratch',
     \ 'snipmate',
     \ 'snipmate-snippets',
-    \ 'Syntastic',
     \ 'vimroom',
-    \ 'VOoM',
+    \ 'html5',
+    \ 'Syntastic',
     \ ])
 
 
