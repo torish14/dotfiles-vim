@@ -32,13 +32,15 @@ source $HOME/.vim/config-vam
     "\ 'jQuery',
     "\ 'VOoM',
     "\ 'Conque_Shell',
+    "\ 'Powerline',
+    "\ 'powerline',
 
 call ActivateAddons([
     \ 'AutoComplPop',
     \ 'Buffergator',
     \ 'EasyGrep',
     \ 'FuzzyFinder',
-    \ 'fugitive',
+    \ 'Syntastic',
     \ 'Powerline',
     \ 'Tagbar',
     \ 'TaskList',
@@ -46,6 +48,9 @@ call ActivateAddons([
     \ 'css_color@skammer',
     \ 'delimitMate',
     \ 'fontsize',
+    \ 'fugitive',
+    \ 'git-vim',
+    \ 'html5',
     \ 'lusty',
     \ 'molokai',
     \ 'pep83160',
@@ -53,12 +58,9 @@ call ActivateAddons([
     \ 'scratch',
     \ 'snipmate',
     \ 'snipmate-snippets',
-    \ 'vimroom',
-    \ 'html5',
-    \ 'Syntastic',
-    \ 'vim-less',
     \ 'vim-css3-syntax',
-    \ 'git-vim',
+    \ 'vim-less',
+    \ 'vimroom',
     \ ])
 
 
@@ -77,6 +79,8 @@ let g:buffergator_suppress_keymaps = 1
 
 "" Powerline
 let g:Powerline_symbols = 'fancy'
+
+"" powerline
 
 
 "" Tagbar
