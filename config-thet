@@ -48,7 +48,8 @@ autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidt
 autocmd BufRead,BufNewFile *.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 "" allow dot to enter command mode from normal mode
-noremap ; :
+"" noremap ; :
+
 "" allow ctrl-backspace to generate escape key sequence
 inoremap <C-BS> <Esc>
 command W execute "w"
@@ -88,6 +89,10 @@ noremap <leader>p :set list!<CR>
 unmap <silent> <leader>n
 map <silent> <leader>l :set number!<CR>  " shortcut to turn off line numbers¬
 
+
+"" remap ; to insert selection from visual mode
+"" http://stackoverflow.com/questions/4878980/vim-insert-selected-text-into-command-line
+vnoremap ; y:<C-r>"<C-b>
 
 "" wrap text
 nnoremap <leader>w gqip
@@ -234,7 +239,7 @@ nmap <leader>q :call Ranger()<cr>
 
 "function! Ranger2()
 "    let tmp = /tmp/chosen
-"    silent !ra %:h --choosefile=/tmp/chosen 
+"    silent !ra %:h --choosefile=/tmp/chosen
 "    if filereadable(tmp)
 "        let filetoedit = system('cat '.tmp)
 "        exec 'edit '.filetoedit
