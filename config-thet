@@ -26,7 +26,8 @@ if has('gui_running')
     highlight SpellBad term=underline gui=undercurl guisp=Red
     set fillchars+=vert:│ " Use a line-drawing char for pretty vertical splits.
     set guicursor+=a:blinkon0 " Disable all blinking
-    set guifont=Ubuntu\ Mono\ 12
+    ""set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+    set guifont=Ubuntu\ Mono\ 11
 endif
 
 set showmatch " indicate open/closing brackets
@@ -47,11 +48,8 @@ set foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
 autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
-"" allow dot to enter command mode from normal mode
-"" noremap ; :
-
 "" allow ctrl-backspace to generate escape key sequence
-inoremap <C-BS> <Esc>
+""inoremap <C-BS> <Esc>
 command W execute "w"
 command Wa execute "wa"
 
@@ -160,12 +158,26 @@ nmap <silent> <leader>0 <Plug>FontsizeDefault
 "" open bash in vertical split
 nnoremap <leader>c :lcd %:p:h<CR>:ConqueTermSplit bash<CR>
 
+
+"" allow semicolon to enter command mode from normal mode
+""noremap ; :
+
+"" paste selected text into command line
+"" http://stackoverflow.com/a/8750499/1130358
+vnoremap ; y:<C-r>"<C-b>
+
+noremap <leader>; <ESC>
+
 "" lusty
 nnoremap <leader>, :LustyJuggler<CR>
 nnoremap <leader>/ :LustyFilesystemExplorer<CR>
 nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
 "" buffergator
-nnoremap <leader>m :BuffergatorToggle<CR>
+noremap <leader>m :BuffergatorToggle<CR>
+noremap <leader>n :NERDTreeToggle<CR>
+
+
+
 
 "" Tagbar
 nnoremap tt :TagbarToggle<CR>
@@ -175,6 +187,9 @@ nnoremap ty :VoomToggle<CR>
 
 "" vimroom
 nnoremap tr :VimroomToggle<CR>
+
+
+
 
 
 "" Fuzzy Finder
@@ -188,10 +203,10 @@ nmap <F11> :TaskList<CR>
 
 "" NERDTree
 noremap <silent> <f9> :NERDTreeToggle<CR>
-map <leader>nm :NERDTree<CR>
-map <leader>nn :NERDTreeToggle<CR>
-map <leader>nf :NERDTreeFind<CR>
-map <leader>nx :NERDTreeClose<CR>
+""map <leader>nm :NERDTree<CR>
+""map <leader>nn :NERDTreeToggle<CR>
+""map <leader>nf :NERDTreeFind<CR>
+""map <leader>nx :NERDTreeClose<CR>
 
 
 
