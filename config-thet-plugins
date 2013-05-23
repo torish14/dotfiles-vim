@@ -34,6 +34,8 @@ source $HOME/.vim/config-vam
     "\ 'Conque_Shell',
     "\ 'Powerline',
     "\ 'powerline',
+    "\ 'pep83160',
+    "\ 'pyflakes2441',
 
 call ActivateAddons([
     \ 'AutoComplPop',
@@ -41,7 +43,6 @@ call ActivateAddons([
     \ 'EasyGrep',
     \ 'FuzzyFinder',
     \ 'Syntastic',
-    \ 'Powerline',
     \ 'Tagbar',
     \ 'TaskList',
     \ 'The_NERD_tree',
@@ -53,20 +54,28 @@ call ActivateAddons([
     \ 'html5',
     \ 'lusty',
     \ 'molokai',
-    \ 'pep83160',
-    \ 'pyflakes2441',
+    \ 'powerline',
     \ 'scratch',
     \ 'snipmate',
     \ 'snipmate-snippets',
     \ 'vim-css3-syntax',
     \ 'vim-less',
     \ 'vimroom',
+    \ 'vtreeexplorer',
     \ ])
 
 
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=0
 let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
+
+"" doesn't work with flake8 installed
+""let g:syntastic_python_checker = 'flake8'
+""let g:syntastic_python_checkers = ['flake8']
+""let g:syntastic_python_flake8_args = '--ignore=E701'
+""let g:syntastic_python_checker_args = '--ignore=E701'
+""let g:syntastic_python_checkers = ['pylint']
+""let g:syntastic_python_pylint_args = '--disable=C0321'
 
 "" buffergator
 let g:buffergator_viewport_split_policy = 'L'
@@ -75,12 +84,6 @@ let g:buffergator_display_regime = 'basename'
 let g:buffergator_split_size = 40
 let g:buffergator_autodismiss_on_select = 1
 let g:buffergator_suppress_keymaps = 1
-
-
-"" Powerline
-let g:Powerline_symbols = 'fancy'
-
-"" powerline
 
 
 "" Tagbar
@@ -150,9 +153,6 @@ let g:EasyGrepReplaceAllPerFile=0
 
 
 """" NERDTree
-noremap <silent> <f9> :NERDTreeToggle<CR>
-""noremap <silent> <f8> :NERDTreeFromBookmark<Space>
-""noremap <silent> <f7> :NERDTreeFind<CR>
 let g:NERDTreeIgnore=['\~$', '\.svn$', '\.git*$', '\.pyc$', '\.pyo$', '\.mo$']
 """ set the sort order to alphabetical
 let g:NERDTreeSortOrder=[]
