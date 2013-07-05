@@ -1,7 +1,5 @@
 source $HOME/.vim/config-vam
 
-
-
 " CodeOverview
 " L9
 " Markdown
@@ -26,7 +24,7 @@ source $HOME/.vim/config-vam
 " utl
 " vim-less
 " vimroom: http://projects.mikewest.org/vimroom/
-"            \ 'lint', 
+"            \ 'lint',
 
     "\ 'html5',
     "\ 'jQuery',
@@ -36,15 +34,21 @@ source $HOME/.vim/config-vam
     "\ 'powerline',
     "\ 'pep83160',
     "\ 'pyflakes2441',
+    "\ 'Syntastic',
+    "\ 'vtreeexplorer',
+    "\ 'snipmate',
+    "\ 'pyflakes2441',
+    "\ 'TaskList',
+    "\ 'vim-snipmate',
+    "\ 'scratch',
+    "\ 'lusty',
 
 call ActivateAddons([
     \ 'AutoComplPop',
     \ 'Buffergator',
     \ 'EasyGrep',
     \ 'FuzzyFinder',
-    \ 'Syntastic',
     \ 'Tagbar',
-    \ 'TaskList',
     \ 'The_NERD_tree',
     \ 'css_color@skammer',
     \ 'delimitMate',
@@ -52,16 +56,14 @@ call ActivateAddons([
     \ 'fugitive',
     \ 'git-vim',
     \ 'html5',
-    \ 'lusty',
+    \ 'LustyJuggler',
+    \ 'LustyExplorer',
     \ 'molokai',
     \ 'powerline',
-    \ 'scratch',
-    \ 'snipmate',
-    \ 'snipmate-snippets',
+    \ 'vim-flake8',
     \ 'vim-css3-syntax',
     \ 'vim-less',
     \ 'vimroom',
-    \ 'vtreeexplorer',
     \ ])
 
 
@@ -76,6 +78,8 @@ let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
 ""let g:syntastic_python_checker_args = '--ignore=E701'
 ""let g:syntastic_python_checkers = ['pylint']
 ""let g:syntastic_python_pylint_args = '--disable=C0321'
+
+autocmd BufWritePost *.py call Flake8()
 
 "" buffergator
 let g:buffergator_viewport_split_policy = 'L'
