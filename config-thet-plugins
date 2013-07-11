@@ -43,6 +43,9 @@ source $HOME/.vim/config-vam
     "\ 'scratch',
     "\ 'lusty',
 
+""let scm['minimap'] = {'type': 'git', 'url': 'git://github.com/tyru/minimap.vim.git'}
+    "\ 'minimap',
+
 call ActivateAddons([
     \ 'AutoComplPop',
     \ 'Buffergator',
@@ -60,10 +63,12 @@ call ActivateAddons([
     \ 'LustyExplorer',
     \ 'molokai',
     \ 'powerline',
-    \ 'vim-flake8',
     \ 'vim-css3-syntax',
     \ 'vim-less',
     \ 'vimroom',
+    \ 'vim-flake8',
+    \ 'vim-snipmate',
+    \ 'vim-snippets',
     \ ])
 
 
@@ -79,7 +84,7 @@ let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
 ""let g:syntastic_python_checkers = ['pylint']
 ""let g:syntastic_python_pylint_args = '--disable=C0321'
 
-autocmd BufWritePost *.py call Flake8()
+""autocmd BufWritePost *.py call Flake8()
 
 "" buffergator
 let g:buffergator_viewport_split_policy = 'L'
