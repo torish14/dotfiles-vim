@@ -50,6 +50,9 @@ set foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
 autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
+""treat ZCML as XML:
+autocmd BufRead,BufNewFile *.zcml set filetype=xml
+
 "" allow ctrl-backspace to generate escape key sequence
 ""inoremap <C-BS> <Esc>
 command W execute "w"
@@ -84,10 +87,15 @@ nmap <C-S-Left> zc
 
 " toggle list
 set nolist
-nunmap <leader>l
+unmap <leader>l
 noremap <leader>p :set list!<CR>
 unmap <silent> <leader>n
 map <silent> <leader>l :set number!<CR>  " shortcut to turn off line numbers¬
+
+
+"" syntastic next/prev Error
+nnoremap <leader>i :lprev<CR>
+nnoremap <leader>o :lnext<CR>
 
 
 "" remap ; to insert selection from visual mode
