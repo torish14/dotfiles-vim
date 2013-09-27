@@ -1,5 +1,7 @@
 source $HOME/.vim/config-vam
 
+"" https://github.com/koron/minimap-vim
+
 " CodeOverview
 " L9
 " Markdown
@@ -42,6 +44,8 @@ source $HOME/.vim/config-vam
     "\ 'vim-snipmate',
     "\ 'scratch',
     "\ 'lusty',
+    "\ 'Syntastic',
+    "\ 'vim-flake8',
 
 ""let scm['minimap'] = {'type': 'git', 'url': 'git://github.com/tyru/minimap.vim.git'}
     "\ 'minimap',
@@ -59,6 +63,7 @@ call ActivateAddons([
     \ 'fugitive',
     \ 'git-vim',
     \ 'html5',
+    \ 'Syntastic',
     \ 'LustyJuggler',
     \ 'LustyExplorer',
     \ 'molokai',
@@ -66,7 +71,6 @@ call ActivateAddons([
     \ 'vim-css3-syntax',
     \ 'vim-less',
     \ 'vimroom',
-    \ 'vim-flake8',
     \ 'vim-snipmate',
     \ 'vim-snippets',
     \ ])
@@ -75,6 +79,13 @@ call ActivateAddons([
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=0
 let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
+let g:syntastic_python_checkers=['pyflakes', 'pep8']
+let g:syntastic_javascript_checkers=['jslint']
+
+""let g:syntastic_python_checkers=['flake8', 'pylint']
+""let g:syntastic_python_checkers=['pylint']
+""let g:syntastic_python_checker_args='--ignore=E701 --disable=C0321'
+""let g:syntastic_python_checker_args='--disable=C0321'
 
 "" doesn't work with flake8 installed
 ""let g:syntastic_python_checker = 'flake8'
