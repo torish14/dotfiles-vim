@@ -68,6 +68,8 @@ call ActivateAddons([
     \ 'LustyExplorer',
     \ 'molokai',
     \ 'powerline',
+    \ 'unite',
+    \ 'unite-outline',
     \ 'vim-css3-syntax',
     \ 'vim-less',
     \ 'vimroom',
@@ -76,6 +78,7 @@ call ActivateAddons([
     \ ])
 
 
+"" Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=0
 let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
@@ -96,6 +99,12 @@ let g:syntastic_javascript_checkers=['jslint']
 ""let g:syntastic_python_pylint_args = '--disable=C0321'
 
 ""autocmd BufWritePost *.py call Flake8()
+
+
+"" unite
+let g:unite_enable_split_vertically=1
+""let g:unite_split_rule='right'
+
 
 "" buffergator
 let g:buffergator_viewport_split_policy = 'L'

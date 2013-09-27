@@ -191,6 +191,9 @@ noremap <leader>n :NERDTreeToggle<CR>
 
 "" Tagbar
 nnoremap tt :TagbarToggle<CR>
+"" unite-outline
+nnoremap ty :Unite outline<CR>
+
 
 "" Voom
 ""nnoremap ty :VoomToggle<CR>
