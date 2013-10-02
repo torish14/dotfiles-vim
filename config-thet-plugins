@@ -50,6 +50,11 @@ source $HOME/.vim/config-vam
 ""let scm['minimap'] = {'type': 'git', 'url': 'git://github.com/tyru/minimap.vim.git'}
     "\ 'minimap',
 
+""  \ 'powerline',
+""    \ 'vim-airline',
+""    \ 'tabline',
+""    \ 'vim-bufferline',
+
 call ActivateAddons([
     \ 'AutoComplPop',
     \ 'Buffergator',
@@ -67,7 +72,7 @@ call ActivateAddons([
     \ 'LustyJuggler',
     \ 'LustyExplorer',
     \ 'molokai',
-    \ 'powerline',
+    \ 'Solarized',
     \ 'unite',
     \ 'unite-outline',
     \ 'vim-css3-syntax',
@@ -75,8 +80,14 @@ call ActivateAddons([
     \ 'vimroom',
     \ 'vim-snipmate',
     \ 'vim-snippets',
+    \ 'vim-airline',
+    \ 'tabline',
     \ ])
 
+
+"" vim airline
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
 
 "" Syntastic
 let g:syntastic_check_on_open=1
