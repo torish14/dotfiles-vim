@@ -8,6 +8,8 @@ source $HOME/.vim/bclose.vim
 "source $HOME/.vim/minimap.vim
 source $HOME/.vim/config-thet-plugins
 
+""set background=dark
+""colorscheme solarized
 colorscheme molokai
 ""colorscheme peaksea
 ""colorscheme wombat
@@ -38,6 +40,7 @@ set nowrap
 set nolist "" nolist needed for linebreak
 set linebreak "" when wrapping, don't break words
 set colorcolumn=79
+set cursorline
 
 " fold paragraphs
 " http://vimdoc.sourceforge.net/htmldoc/fold.html
