@@ -8,9 +8,10 @@ source $HOME/.vim/bclose.vim
 "source $HOME/.vim/minimap.vim
 source $HOME/.vim/config-thet-plugins
 
-""set background=dark
-""colorscheme solarized
+set background=dark
+"set background=light
 colorscheme molokai
+""colorscheme solarized
 ""colorscheme peaksea
 ""colorscheme wombat
 
