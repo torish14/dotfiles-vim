@@ -55,7 +55,8 @@ autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidt
 autocmd BufRead,BufNewFile *.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 ""treat ZCML as XML:
-autocmd BufRead,BufNewFile *.zcml set filetype=xml
+""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
+autocmd BufRead,BufNewFile *.pt,*.xml,*.zcml set filetype=xml
 
 "" allow ctrl-backspace to generate escape key sequence
 ""inoremap <C-BS> <Esc>
