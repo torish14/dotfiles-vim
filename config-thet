@@ -35,6 +35,14 @@ if has('gui_running')
     set guifont=Ubuntu\ Mono\ 11
 endif
 
+" fugitive fix, could not rename swap file
+" http://stackoverflow.com/questions/2932399/error-using-the-gdiff-command-of-fugitive-vim-using-gvim-for-windows-and-msys-g
+if has("win32") || has("win64")
+   set directory=$TMP
+else
+   set directory=~/tmp
+end
+
 set showmatch " indicate open/closing brackets
 set ttyfast
 set nowrap
@@ -163,6 +171,12 @@ map <C-S-P> "+P
 "" set clipboard=unnamedplus
 
 """" PLUGINS
+
+" git gutter
+nnoremap <leader>gh :GitGutterToggle<CR>
+" Gitv, vim gitk
+nnoremap <leader>gg :Gitv<CR>
+
 
 "" fontsize
 nmap <silent> <leader>9 <Plug>FontsizeBegin

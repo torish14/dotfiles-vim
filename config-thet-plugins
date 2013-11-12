@@ -60,6 +60,10 @@ call ActivateAddons([
     \ 'Buffergator',
     \ 'EasyGrep',
     \ 'FuzzyFinder',
+    \ 'LustyExplorer',
+    \ 'LustyJuggler',
+    \ 'Solarized',
+    \ 'Syntastic',
     \ 'Tagbar',
     \ 'The_NERD_tree',
     \ 'css_color@skammer',
@@ -68,20 +72,18 @@ call ActivateAddons([
     \ 'fugitive',
     \ 'git-vim',
     \ 'html5',
-    \ 'Syntastic',
-    \ 'LustyJuggler',
-    \ 'LustyExplorer',
     \ 'molokai',
-    \ 'Solarized',
+    \ 'tabline',
     \ 'unite',
     \ 'unite-outline',
+    \ 'vim-airline',
     \ 'vim-css3-syntax',
     \ 'vim-less',
-    \ 'vimroom',
     \ 'vim-snipmate',
     \ 'vim-snippets',
-    \ 'vim-airline',
-    \ 'tabline',
+    \ 'vimroom',
+    \ 'vim-gitgutter',
+    \ 'gitv',
     \ ])
 
 
@@ -95,6 +97,7 @@ let g:syntastic_auto_jump=0
 let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
 let g:syntastic_python_checkers=['pyflakes', 'pep8']
 let g:syntastic_javascript_checkers=['jslint']
+let g:syntastic_ignore_files=['bin/', '.css']
 
 ""let g:syntastic_python_checkers=['flake8', 'pylint']
 ""let g:syntastic_python_checkers=['pylint']
