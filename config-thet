@@ -31,8 +31,9 @@ if has('gui_running')
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
-    ""set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
-    set guifont=Ubuntu\ Mono\ 11
+    set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+    ""set guifont=Ubuntu\ Mono\ 11
+    ""set guifont=Source\ Code\ Pro\ 10
 endif
 
 " fugitive fix, could not rename swap file
@@ -64,7 +65,8 @@ autocmd BufRead,BufNewFile *.js,*.css setlocal tabstop=4 shiftwidth=4 softtabsto
 
 ""treat ZCML as XML:
 ""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
-autocmd BufRead,BufNewFile *.pt,*.xml,*.zcml set filetype=xml
+""autocmd BufRead,BufNewFile *.pt set filetype=xml
+autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
 
 "" allow ctrl-backspace to generate escape key sequence
 ""inoremap <C-BS> <Esc>
@@ -79,6 +81,11 @@ nnoremap <leader><Up> <C-w>k
 nnoremap <leader><Down> <C-w>j
 nnoremap <leader><Left> <C-w>h
 nnoremap <leader><Right> <C-w>l
+
+nnoremap <C-w><Up> <C-w>k
+nnoremap <C-w><Down> <C-w>j
+nnoremap <C-w><Left> <C-w>h
+nnoremap <C-w><Right> <C-w>l
 
 set smartindent
 
@@ -330,6 +337,17 @@ endfunction
 "        echo 'imeplement me 2'
 "    endif
 "endfunction
+
+
+"" autocomplete behavior
+"" http://vim.wikia.com/wiki/Improve_completion_popup_menu
+"inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
+"inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+"inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+"inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+"inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
+"inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
+
 
 "" TILE ALL OPEN BUFFERS
 "" http://www.vimbits.com/bits/375
