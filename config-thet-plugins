@@ -1,6 +1,5 @@
 source $HOME/.vim/config-vam
 
-"" https://github.com/koron/minimap-vim
 
 " CodeOverview
 " L9
@@ -47,9 +46,6 @@ source $HOME/.vim/config-vam
     "\ 'Syntastic',
     "\ 'vim-flake8',
 
-""let scm['minimap'] = {'type': 'git', 'url': 'git://github.com/tyru/minimap.vim.git'}
-    "\ 'minimap',
-
 ""  \ 'powerline',
 ""    \ 'vim-airline',
 ""    \ 'tabline',
@@ -80,6 +76,7 @@ call ActivateAddons([
     \ 'fugitive',
     \ 'html5',
     \ 'jedi-vim',
+    \ 'minimap-vim',
     \ 'molokai',
     \ 'tabline',
     \ 'vim-airline',
@@ -94,6 +91,7 @@ call ActivateAddons([
 "" jedi
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#show_call_signatures = 0
+let g:jedi#popup_select_first = 0
 set completeopt=longest,menuone
 
 "" vim airline

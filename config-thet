@@ -5,7 +5,6 @@ source $HOME/.vim/config-common
 source $HOME/.vim/config-textmate-like
 source $HOME/.vim/config-comment-inout
 source $HOME/.vim/bclose.vim
-"source $HOME/.vim/minimap.vim
 source $HOME/.vim/config-thet-plugins
 
 set background=dark
@@ -183,6 +182,10 @@ map <C-S-P> "+P
 nnoremap <leader>gh :GitGutterToggle<CR>
 " Gitv, vim gitk
 nnoremap <leader>gg :Gitv<CR>
+" MiniMap
+" https://github.com/koron/minimap-vim
+nnoremap mm :MinimapSync<CR>
+nnoremap mc :MinimapStop<CR>
 
 
 "" fontsize
