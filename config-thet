@@ -130,7 +130,7 @@ nnoremap <leader>j vipJ^
 
 "" remap
 set spelllang=de,en
-map <silent> <leader>r :set spell!<CR>
+map <silent> <leader>d :set spell!<CR>
 nmap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
 
 "" MULTIPAGE
@@ -228,7 +228,7 @@ nnoremap ty :Unite outline<CR>
 ""nnoremap ty :VoomToggle<CR>
 
 "" vimroom
-nnoremap tr :VimroomToggle<CR>
+nnoremap <leader>r :VimroomToggle<CR>
 
 
 
@@ -310,7 +310,7 @@ nmap <leader>q :call Ranger()<cr>
 "" split windows
 "" http://techdebug.com/blog/2008/05/22/vim-split-tips/
 " Max/unmax splits
-nnoremap <leader>d :call MaximizeToggle()<cr>
+nnoremap <C-w>e :call MaximizeToggle()<cr>
 "nnoremap <c-W>O :call MaximizeToggle()<cr>
 "nnoremap <c-W><c-O> :call MaximizeToggle()<cr>
 function! MaximizeToggle()

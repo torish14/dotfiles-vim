@@ -56,7 +56,6 @@ source $HOME/.vim/config-vam
 ""    \ 'unite-outline',
 ""    \ 'git-vim',
 ""    \ 'Solarized',
-""    \ 'vimroom',
 ""    \ 'gitv',
 
 
@@ -85,6 +84,7 @@ call ActivateAddons([
     \ 'vim-less',
     \ 'vim-snipmate',
     \ 'vim-snippets',
+    \ 'vimroom',
     \ ])
 
 
