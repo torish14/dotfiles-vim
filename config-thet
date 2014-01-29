@@ -179,9 +179,9 @@ map <C-S-P> "+P
 """" PLUGINS
 
 " git gutter
-nnoremap <leader>gh :GitGutterToggle<CR>
+nnoremap <leader>gg :GitGutterToggle<CR>
 " Gitv, vim gitk
-nnoremap <leader>gg :Gitv<CR>
+nnoremap <leader>gh :Gitv<CR>
 " MiniMap
 " https://github.com/koron/minimap-vim
 nnoremap mm :MinimapSync<CR>
