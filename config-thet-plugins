@@ -2,61 +2,44 @@ source $HOME/.vim/config-vam
 
 
 " CodeOverview
-" L9
+" Conque_Shell
+" FuzzyFinder
 " Markdown
-" Scratch
+" Powerline
+" Solarized
 " TabBar
 " Tabular
+" TaskList
+" VOoM
 " Wombat
 " YankRing
 " ack
-" delimitMate
 " flake8
 " git-vim
-" fugitive
+" git-vim
+" gitv
+" jQuery
 " javaScriptLint
+" lint
+" lusty
+" pep83160
+" powerline
+" pyflakes2441
 " python%790
+" scratch
 " showmarks
+" snipmate
 " sparkup
 " supertab
 " taglist
 " tslime
 " unimpaired
+" unite
+" unite-outline
 " utl
-" vim-less
-" vimroom: http://projects.mikewest.org/vimroom/
-"            \ 'lint',
-
-    "\ 'html5',
-    "\ 'jQuery',
-    "\ 'VOoM',
-    "\ 'Conque_Shell',
-    "\ 'Powerline',
-    "\ 'powerline',
-    "\ 'pep83160',
-    "\ 'pyflakes2441',
-    "\ 'Syntastic',
-    "\ 'vtreeexplorer',
-    "\ 'snipmate',
-    "\ 'pyflakes2441',
-    "\ 'TaskList',
-    "\ 'vim-snipmate',
-    "\ 'scratch',
-    "\ 'lusty',
-    "\ 'Syntastic',
-    "\ 'vim-flake8',
-
-""  \ 'powerline',
-""    \ 'vim-airline',
-""    \ 'tabline',
-""    \ 'vim-bufferline',
-
-""    \ 'FuzzyFinder',
-""    \ 'unite',
-""    \ 'unite-outline',
-""    \ 'git-vim',
-""    \ 'Solarized',
-""    \ 'gitv',
+" vim-bufferline
+" vim-flake8
+" vtreeexplorer
 
 
 call ActivateAddons([
@@ -219,9 +202,9 @@ let g:NERDTreeWinSize=31
 
 
 "" Conque_Shell
-let g:ConqueTerm_FastMode = 0
-let g:ConqueTerm_Color = 1
-let g:ConqueTerm_CloseOnEnd = 1
+"let g:ConqueTerm_FastMode = 0
+"let g:ConqueTerm_Color = 1
+"let g:ConqueTerm_CloseOnEnd = 1
 
 
 "" autocomplpopup
