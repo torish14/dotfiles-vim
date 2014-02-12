@@ -60,6 +60,7 @@ call ActivateAddons([
     \ 'jedi-vim',
     \ 'minimap-vim',
     \ 'molokai',
+    \ 'robotframework-vim',
     \ 'tabline',
     \ 'vim-airline',
     \ 'vim-css3-syntax',
