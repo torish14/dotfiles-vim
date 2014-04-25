@@ -1,6 +1,7 @@
 "" DEBUG
 ""set verbose
 
+source $HOME/.vim/plugins.vim
 source $HOME/.vim/config-common
 source $HOME/.vim/config-textmate-like
 source $HOME/.vim/config-comment-inout
@@ -185,7 +186,7 @@ nnoremap <leader>gg :GitGutterToggle<CR>
 nnoremap <leader>gh :Gitv<CR>
 " MiniMap
 " https://github.com/koron/minimap-vim
-nnoremap mm :MinimapSync<CR>
+nnoremap mimi :MinimapSync<CR>
 nnoremap mc :MinimapStop<CR>
 
 
@@ -215,8 +216,7 @@ nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
 "" buffergator
 noremap <leader>m :BuffergatorToggle<CR>
 noremap <leader>n :NERDTreeToggle<CR>
-
-
+noremap <leader>N :NERDTree<CR>
 
 
 "" Tagbar
