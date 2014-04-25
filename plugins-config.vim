@@ -1,76 +1,7 @@
-source $HOME/.vim/config-vam
-
-
-" CodeOverview
-" Conque_Shell
-" FuzzyFinder
-" Markdown
-" Powerline
-" Solarized
-" TabBar
-" Tabular
-" TaskList
-" VOoM
-" Wombat
-" YankRing
-" ack
-" flake8
-" git-vim
-" git-vim
-" gitv
-" jQuery
-" javaScriptLint
-" lint
-" lusty
-" pep83160
-" powerline
-" pyflakes2441
-" python%790
-" scratch
-" showmarks
-" snipmate
-" sparkup
-" supertab
-" taglist
-" tslime
-" unimpaired
-" unite
-" unite-outline
-" utl
-" vim-bufferline
-" vim-flake8
-" vtreeexplorer
-" jedi-vim
-
-
-call ActivateAddons([
-    \ 'AutoComplPop',
-    \ 'Buffergator',
-    \ 'EasyGrep',
-    \ 'L9',
-    \ 'LustyExplorer',
-    \ 'LustyJuggler',
-    \ 'Syntastic',
-    \ 'Tagbar',
-    \ 'The_NERD_tree',
-    \ 'css_color@skammer',
-    \ 'delimitMate',
-    \ 'fontsize',
-    \ 'fugitive',
-    \ 'html5',
-    \ 'minimap-vim',
-    \ 'molokai',
-    \ 'robotframework-vim',
-    \ 'tabline',
-    \ 'vim-airline',
-    \ 'vim-css3-syntax',
-    \ 'vim-gitgutter',
-    \ 'vim-less',
-    \ 'vim-snipmate',
-    \ 'vim-snippets',
-    \ 'vimroom',
-    \ ])
-
+"" neocomplete
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_min_syntax_length = 3
 
 "" jedi
 "let g:jedi#auto_vim_configuration = 0
@@ -96,27 +27,8 @@ let g:syntastic_ignore_files=['bin/', '.css']
 let g:syntastic_python_checkers=['flake8']
 " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
 let g:syntastic_python_flake8_args='--ignore=E702'
-
 " Javascript checker
 let g:syntastic_javascript_checkers=['jshint']
-""let g:syntastic_javascript_checkers=['jslint']
-
-""let g:syntastic_python_checkers=['pyflakes', 'pep8']
-""let g:syntastic_python_checkers=['flake8', 'pylint']
-""let g:syntastic_python_checkers=['pylint']
-""let g:syntastic_python_checker_args='--ignore=E701 --disable=C0321'
-""let g:syntastic_python_checker_args='--disable=C0321'
-
-"" doesn't work with flake8 installed
-""let g:syntastic_python_checker = 'flake8'
-""let g:syntastic_python_checkers = ['flake8']
-""let g:syntastic_python_flake8_args = '--ignore=E701'
-""let g:syntastic_python_checker_args = '--ignore=E701'
-""let g:syntastic_python_checkers = ['pylint']
-""let g:syntastic_python_pylint_args = '--disable=C0321'
-
-""autocmd BufWritePost *.py call Flake8()
-
 
 "" unite
 let g:unite_enable_split_vertically=1
@@ -217,16 +129,5 @@ let g:NERDTreeWinSize=31
 "let g:ConqueTerm_Color = 1
 "let g:ConqueTerm_CloseOnEnd = 1
 
-
-"" autocomplpopup
-""fun! GetSnipsInCurrentScope()
-""    let snips = {}
-""    for scope in [bufnr('%')] + split(&ft, '\.') + ['_']
-""        call extend(snips, get(s:snippets, scope, {}), 'keep')
-""        call extend(snips, get(s:multi_snips, scope, {}), 'keep')
-""    endfor
-""    return snips
-""endf
-""let g:acp_behaviorSnipmateLength=1
 
 "" vim:ft=vim

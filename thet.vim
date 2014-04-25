@@ -2,11 +2,10 @@
 ""set verbose
 
 source $HOME/.vim/plugins.vim
-source $HOME/.vim/config-common
-source $HOME/.vim/config-textmate-like
-source $HOME/.vim/config-comment-inout
+source $HOME/.vim/common.vim
+source $HOME/.vim/plugins-config.vim
+source $HOME/.vim/inoutcomment.vim
 source $HOME/.vim/bclose.vim
-source $HOME/.vim/config-thet-plugins
 
 set background=dark
 "set background=light
@@ -14,6 +13,22 @@ colorscheme molokai
 ""colorscheme solarized
 ""colorscheme peaksea
 ""colorscheme wombat
+
+
+" The last two lines make the tab key match bracket pairs. I use this to move
+" around all the time and <tab> is a hell of a lot easier to type than %.
+nnoremap <TAB> %
+vnoremap <TAB> %
+
+"" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+"" WINDOWS / BUFFERS
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 
 "" GUI
 if has('gui_running')

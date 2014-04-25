@@ -1,5 +1,0 @@
-
-noremap ; :
-inoremap jj <ESC>
-
-"" vim:ft=vim
