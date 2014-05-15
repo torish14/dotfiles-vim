@@ -10,7 +10,6 @@ Plugin 'gmarik/vundle'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Raimondi/delimitMate'
-Plugin 'Shougo/neocomplcache.vim'
 Plugin 'bling/vim-airline'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'drmikehenry/vim-fontsize'
@@ -32,6 +31,11 @@ Plugin 'skammer/vim-css-color'
 Plugin 'tlib'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-vinegar'
+
+"" autocomplete
+""Plugin 'Shougo/neocomplcache.vim'
+Plugin 'othree/vim-autocomplpop'
+Plugin 'L9'
 
 "" git, etc
 Plugin 'tpope/vim-fugitive'
