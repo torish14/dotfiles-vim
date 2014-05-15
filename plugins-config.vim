@@ -20,7 +20,7 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=0
 let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
-let g:syntastic_ignore_files=['bin/', '.css']
+let g:syntastic_ignore_files=['bin/', '.min.css', '.min.js']
 
 " Python checker
 " that fixed ignore config
