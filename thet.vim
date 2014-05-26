@@ -78,6 +78,8 @@ set foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
 autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=2 filetype=robot
+"" https://github.com/tpope/vim-markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 ""treat ZCML as XML:
 ""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
@@ -240,6 +242,9 @@ nnoremap tt :TagbarToggle<CR>
 nnoremap ty :Unite outline<CR>
 
 
+"" Autoformat
+noremap <leader>f :Autoformat<CR><CR>
+
 "" Voom
 ""nnoremap ty :VoomToggle<CR>
 
@@ -251,8 +256,8 @@ nnoremap ty :Unite outline<CR>
 
 
 "" Fuzzy Finder
-nmap <LEADER>f :FufFile<SPACE>**/<CR>
-nmap <LEADER>F :FufRenewCache<CR>
+"nmap <LEADER>f :FufFile<SPACE>**/<CR>
+"nmap <LEADER>F :FufRenewCache<CR>
 "nmap <leader>t :FufCoverageFile<Space>
 "nmap <leader>ft :FufTag<Space>
 
@@ -374,6 +379,7 @@ endfunction
 noremap <silent> <leader>a :vertical :ball<cr>
 
 
+
 function! RangeChooser()
     let temp = tempname()
 " The option "--choosefiles" was added in ranger 1.5.1. Use the next line
@@ -399,3 +405,23 @@ function! RangeChooser()
 endfunction
 command! -bar RangerChooser call RangeChooser()
 nnoremap <leader>r :<C-U>RangerChooser<CR>
+
+" https://groups.google.com/forum/#!msg/vim_use/b0ECdpN4vEo/aUR5-naoPLoJ
+"fun! RangerChooser(...)
+"    let tmpfile = tempname()
+"    if a:0 > 0 && a:1 != ""
+"        let dir = a:1
+"    elseif expand("%")
+"        let dir = expand("%:p:h")
+"    else
+"        let dir = "."
+"    endif
+"    exe 'silent !ranger --choosefile='.tmpfile dir
+"    if filereadable(tmpfile)
+"        exe 'edit' readfile(tmpfile)[0]
+"        call delete(tmpfile)
+"    endif
+"    redraw!
+"endfun
+""map ,r :call RangerChooser()<CR>
+"command -nargs=? RangerChooser call RangerChooser("<args>")
