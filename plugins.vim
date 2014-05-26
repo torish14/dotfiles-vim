@@ -31,6 +31,7 @@ Plugin 'skammer/vim-css-color'
 Plugin 'tlib'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-vinegar'
+Plugin 'Chiel92/vim-autoformat'
 
 "" autocomplete
 ""Plugin 'Shougo/neocomplcache.vim'

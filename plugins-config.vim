@@ -1,3 +1,7 @@
+"" https://github.com/Chiel92/vim-autoformat
+"" https://github.com/hhatto/autopep8
+let g:formatprg_args_expr_python = '"--aggressive --aggressive".(&textwidth ? " --max-line-length=".&textwidth : "")." /dev/stdin "'
+
 let g:extradite_resize = 0
 
 "" neocomplete
