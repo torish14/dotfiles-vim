@@ -200,7 +200,12 @@ map <C-S-P> "+P
 " git gutter
 nnoremap <leader>gg :GitGutterToggle<CR>
 " Gitv, vim gitk
-nnoremap <leader>gh :Gitv<CR>
+nnoremap <leader>gv :Gitv<CR>
+nnoremap <leader>gm :Merginal<CR>
+nnoremap <leader>gi :Gissues<CR>
+nnoremap <leader>ga :Giadd<CR>
+
+
 " MiniMap
 " https://github.com/koron/minimap-vim
 nnoremap mimi :MinimapSync<CR>
@@ -272,11 +277,30 @@ noremap <silent> <f9> :NERDTreeToggle<CR>
 ""map <leader>nx :NERDTreeClose<CR>
 
 
+function! SynOff()
+    " Set Syntax hightlighting to off and other performance tweaks.
+    " Useful when pasting big files
+    syntax off
+    set nocursorcolumn
+    set nocursorline
+    set noshowmatch
+    let g:syntastic_mode_map = { 'mode': 'passive' }
+    :GitGutterDisable
+endfunction
+nmap <leader>1 :call SynOff()<CR>
 
 
-
-
-
+function! SynOn()
+    " Set Syntax hightlighting to off and other performance tweaks.
+    " Useful when pasting big files
+    syntax on
+    "set cursorcolumn
+    set cursorline
+    set showmatch
+    let g:syntastic_mode_map = { 'mode': 'active' }
+    :GitGutterEnable
+endfunction
+nmap <leader>2 :call SynOn()<CR>
 
 
 

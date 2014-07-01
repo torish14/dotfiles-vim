@@ -29,6 +29,7 @@ set autoindent
 
 "" turn on syntax highlighting¬
 syntax on
+set synmaxcol=140  " limit syntax highlighting to the num cols
 
 "" enables filetype specific plugins
 filetype on
