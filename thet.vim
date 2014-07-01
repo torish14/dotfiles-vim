@@ -67,6 +67,8 @@ set linebreak "" when wrapping, don't break words
 set colorcolumn=79
 set cursorline
 
+set lazyredraw  " dont redraw while vim is busy
+
 " fold paragraphs
 " http://vimdoc.sourceforge.net/htmldoc/fold.html
 set foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
@@ -277,13 +279,20 @@ noremap <silent> <f9> :NERDTreeToggle<CR>
 ""map <leader>nx :NERDTreeClose<CR>
 
 
+
+
 function! SynOff()
     " Set Syntax hightlighting to off and other performance tweaks.
     " Useful when pasting big files
+    " See:
+    " http://stackoverflow.com/questions/4775605/vim-syntax-highlight-improve-performance
+    " http://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-to-long
+    "
     syntax off
     set nocursorcolumn
     set nocursorline
     set noshowmatch
+    set lazyredraw
     let g:syntastic_mode_map = { 'mode': 'passive' }
     :GitGutterDisable
 endfunction
@@ -291,8 +300,7 @@ nmap <leader>1 :call SynOff()<CR>
 
 
 function! SynOn()
-    " Set Syntax hightlighting to off and other performance tweaks.
-    " Useful when pasting big files
+    " Set Syntax hightlighting to on
     syntax on
     "set cursorcolumn
     set cursorline
