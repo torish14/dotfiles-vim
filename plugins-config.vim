@@ -1,6 +1,7 @@
 "" https://github.com/Chiel92/vim-autoformat
 "" https://github.com/hhatto/autopep8
 let g:formatprg_args_expr_python = '"--aggressive --aggressive".(&textwidth ? " --max-line-length=".&textwidth : "")." /dev/stdin "'
+let g:formatprg_args_expr_xml = '"-q -xml --show-errors 0 --show-warnings 0 --force-output --indent auto --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
 
 let g:extradite_resize = 0
 
@@ -21,6 +22,7 @@ let g:airline_powerline_fonts=1
 
 "" Syntastic
 let g:syntastic_always_populate_loc_list=1
+""let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=0
 let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
@@ -34,7 +36,8 @@ let g:syntastic_python_checkers=['flake8']
 " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
 let g:syntastic_python_flake8_args='--ignore=E702'
 " Javascript checker
-let g:syntastic_javascript_checkers=['jshint']
+" let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_javascript_checkers=['jslint']
 
 "" unite
 let g:unite_enable_split_vertically=1
