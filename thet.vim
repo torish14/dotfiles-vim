@@ -242,6 +242,9 @@ noremap <leader>m :BuffergatorToggle<CR>
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>
 
+noremap <leader>b :CtrlPMixed<CR>
+
+
 
 "" Tagbar
 nnoremap tt :TagbarToggle<CR>

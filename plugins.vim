@@ -1,4 +1,4 @@
-"" https://github.com/gmarik/Vundle.vim 
+"" https://github.com/gmarik/Vundle.vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -18,7 +18,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'koron/minimap-vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'mikewest/vimroom'
 Plugin 'mkitt/tabline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -27,6 +26,9 @@ Plugin 'tlib'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-vinegar'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+Plugin 'kien/ctrlp.vim'
 
 " Syntaxn
 Plugin 'sheerun/vim-polyglot'
@@ -48,3 +50,4 @@ Plugin 'gregsexton/gitv'
 Plugin 'idanarye/vim-merginal'
 Plugin 'int3/vim-extradite'
 Plugin 'jaxbot/github-issues.vim'
+Plugin 'Keithbsmiley/gist.vim'
