@@ -188,12 +188,15 @@ nmap <C-Down> :tabp<CR>
 
 """" CLIPBOARD
 "" default copy/paste
-nmap 1 "ay
-nmap 11 "ayy
-nmap 2 "ap
+map 1 "+yy
+map 2 "+P
+
+"nmap 1 "ay
+"nmap 11 "ayy
+"nmap 2 "ap
 "" copy/paste paste to/from clipboard
-map <C-S-Y> "+yy
-map <C-S-P> "+P
+"map <C-S-1> "+yy
+"map <C-S-2> "+P
 "" set clipboard=unnamed
 "" set clipboard=unnamedplus
 
