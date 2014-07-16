@@ -87,6 +87,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 ""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
 ""autocmd BufRead,BufNewFile *.pt set filetype=xml
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
+autocmd BufNewFile,BufRead *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
 
 "" allow ctrl-backspace to generate escape key sequence
 ""inoremap <C-BS> <Esc>
