@@ -29,6 +29,7 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tyru/open-browser.vim'
 
 " Syntaxn
 Plugin 'sheerun/vim-polyglot'

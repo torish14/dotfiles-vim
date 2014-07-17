@@ -3,6 +3,12 @@
 let g:netrw_browsex_viewer= "gnome-open"
 
 
+"" Use open-browser. Supports search!
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
+
+
 "" https://github.com/Chiel92/vim-autoformat
 "" https://github.com/hhatto/autopep8
 let g:formatprg_args_expr_python = '"--aggressive --aggressive".(&textwidth ? " --max-line-length=".&textwidth : "")." /dev/stdin "'
