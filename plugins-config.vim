@@ -2,18 +2,13 @@
 "" indent guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_color_change_percent = 5
-nnoremap <leader>u :IndentGuidesToggle<CR>
 
-"" help netrw-gx
-let g:netrw_browsex_viewer= "gnome-open"
-
-
-"" Use open-browser. Supports search!
-let g:netrw_nogx = 1 " disable netrw's gx mapping.
-nmap gx <Plug>(openbrowser-smart-search)
-vmap gx <Plug>(openbrowser-smart-search)
+"" netrw-gx
+let g:netrw_browsex_viewer= "gnome-open"  " explicitly configure gnome-open for netrw. more: help netrw-gx
+let g:netrw_nogx = 1 " disable netrw's gx mapping. use open-browser.
 
 
+"" vim autoformat
 "" https://github.com/Chiel92/vim-autoformat
 "" https://github.com/hhatto/autopep8
 let g:formatprg_args_expr_python = '"--aggressive --aggressive".(&textwidth ? " --max-line-length=".&textwidth : "")." /dev/stdin "'

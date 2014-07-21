@@ -11,20 +11,7 @@ set background=dark
 "set background=light
 colorscheme molokai
 
-
-" The last two lines make the tab key match bracket pairs. I use this to move
-" around all the time and <tab> is a hell of a lot easier to type than %.
-nnoremap <TAB> %
-vnoremap <TAB> %
-
-"" Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
-
-"" WINDOWS / BUFFERS
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
 
 
 "" GUI
@@ -44,6 +31,7 @@ if has('gui_running')
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
     set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+    ""set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
     ""set guifont=Ubuntu\ Mono\ 11
     ""set guifont=Source\ Code\ Pro\ 10
 endif
@@ -86,42 +74,17 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
 autocmd BufNewFile,BufRead *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
 
-"" allow ctrl-backspace to generate escape key sequence
-""inoremap <C-BS> <Esc>
-command W execute "w"
+command W execute "w"  " :W or :Wa should write/write all
 command Wa execute "wa"
 
 "" delete into blackhole register, so that other aren't overwritten
 "" thanks bairu from #vim!
 nnoremap <Del> "_x
 
-nnoremap <leader><Up> <C-w>k
-nnoremap <leader><Down> <C-w>j
-nnoremap <leader><Left> <C-w>h
-nnoremap <leader><Right> <C-w>l
-
-nnoremap <C-w><Up> <C-w>k
-nnoremap <C-w><Down> <C-w>j
-nnoremap <C-w><Left> <C-w>h
-nnoremap <C-w><Right> <C-w>l
-
 set smartindent
 
-nmap <F5> :set nosmarttab<CR>
-"":setlocal si! si?<CR>
-""set noautoindent
-""set nocindent
-""set nosmarttab
 
 set foldlevelstart=20 " set foldlevel higher so opened buffers arent folded
-"" open/close all folds
-""nmap <C-TAB> za
-""nmap <C-S-TAB> zA
-nmap <C-S-Right> zo
-nmap <C-S-Left> zc
-"" termit might override usage of -A-
-""nmap <C-S-A-Right> zO
-""nmap <C-S-A-Left> zC
 
 " toggle list
 set nolist
@@ -131,30 +94,21 @@ unmap <silent> <leader>n
 map <silent> <leader>l :set number!<CR>  " shortcut to turn off line numbers¬
 
 
-"" syntastic next/prev Error
-nnoremap <leader>i :lprev<CR>
-nnoremap <leader>o :lnext<CR>
-
-
-"" remap ; to insert selection from visual mode
+"" paste selected text into command line
 "" http://stackoverflow.com/questions/4878980/vim-insert-selected-text-into-command-line
+"" http://stackoverflow.com/a/8750499/1130358
 vnoremap ; y:<C-r>"<C-b>
 
-"" wrap text
-nnoremap <leader>w gqip
-
-"" join text in paragraph
-"" http://tech.groups.yahoo.com/group/vim/message/126388
-nnoremap <leader>j vipJ^
+"" allow semicolon to enter command mode from normal mode
+""noremap ; :
+""noremap <leader>; <ESC>
 
 "" remap
 set spelllang=de,en
 map <silent> <leader>d :set spell!<CR>
 nmap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
 
-"" MULTIPAGE
-"" see: http://stackoverflow.com/questions/6873076/auto-scrollable-pagination-with-vim-using-vertical-split
-nmap <silent> <Leader>ef :vsplit<bar>wincmd l<bar>exe "norm! Ljz<c-v><cr>"<cr>:set scb<cr>:wincmd h<cr> :set scb<cr>
+
 
 "" center scrolling
 "map <S-Up> <Up>zz
@@ -164,25 +118,6 @@ map <leader>zz :let &scrolloff=999-&scrolloff<cr>
 " center search
 nmap n nzz
 nmap N Nzz
-
-" select all
-nmap <C-a> ggVG
-
-"" next/previous buffer
-nmap <silent> <C-left> :bprev<CR>
-nmap <silent> <C-right> :bnext<CR>
-"" close buffer and goto next. works with TabBar
-""nmap <C-x> :bd<CR>:bnext<CR>
-"" Bclose script doesn't delete windows. Annoyance Free.
-nmap <C-x> :Bclose<CR>
-
-
-nmap <C-n> :tabnew<CR>
-"nmap <leader>t :tabnew
-"nmap <C-n> :tab split<CR>
-nmap <C-c> :tabclose<CR>
-nmap <C-Up> :tabn<CR>
-nmap <C-Down> :tabp<CR>
 
 """" CLIPBOARD
 "" default copy/paste
@@ -197,92 +132,6 @@ map 2 "+P
 "map <C-S-2> "+P
 "" set clipboard=unnamed
 "" set clipboard=unnamedplus
-
-"""" PLUGINS
-
-" git gutter
-nnoremap <leader>gg :GitGutterToggle<CR>
-" Gitv, vim gitk
-nnoremap <leader>gv :Gitv<CR>
-nnoremap <leader>gm :Merginal<CR>
-nnoremap <leader>gi :Gissues<CR>
-nnoremap <leader>ga :Giadd<CR>
-
-
-" MiniMap
-" https://github.com/koron/minimap-vim
-nnoremap mimi :MinimapSync<CR>
-nnoremap mc :MinimapStop<CR>
-
-
-"" fontsize
-nmap <silent> <leader>9 <Plug>FontsizeBegin
-nmap <silent> <leader>= <Plug>FontsizeInc
-nmap <silent> <leader>- <Plug>FontsizeDec
-nmap <silent> <leader>0 <Plug>FontsizeDefault
-
-"" open bash in vertical split
-nnoremap <leader>c :lcd %:p:h<CR>:ConqueTermSplit bash<CR>
-
-
-"" allow semicolon to enter command mode from normal mode
-""noremap ; :
-
-"" paste selected text into command line
-"" http://stackoverflow.com/a/8750499/1130358
-vnoremap ; y:<C-r>"<C-b>
-
-noremap <leader>; <ESC>
-
-"" lusty
-nnoremap <leader>, :LustyJuggler<CR>
-nnoremap <leader>/ :LustyFilesystemExplorer<CR>
-nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
-"" buffergator
-noremap <leader>m :BuffergatorToggle<CR>
-noremap <leader>n :NERDTreeToggle<CR>
-noremap <leader>N :NERDTree<CR>
-
-noremap <leader>b :CtrlPMixed<CR>
-
-
-
-"" Tagbar
-nnoremap tt :TagbarToggle<CR>
-"" unite-outline
-nnoremap ty :Unite outline<CR>
-
-
-"" Autoformat
-noremap <leader>f :Autoformat<CR><CR>
-
-"" Voom
-""nnoremap ty :VoomToggle<CR>
-
-"" vimroom
-"" nnoremap <leader>r :VimroomToggle<CR>
-
-
-
-
-
-"" Fuzzy Finder
-"nmap <LEADER>f :FufFile<SPACE>**/<CR>
-"nmap <LEADER>F :FufRenewCache<CR>
-"nmap <leader>t :FufCoverageFile<Space>
-"nmap <leader>ft :FufTag<Space>
-
-"" TaskList
-""nmap <F11> :TaskList<CR>
-
-"" NERDTree
-noremap <silent> <f9> :NERDTreeToggle<CR>
-""map <leader>nm :NERDTree<CR>
-""map <leader>nn :NERDTreeToggle<CR>
-""map <leader>nf :NERDTreeFind<CR>
-""map <leader>nx :NERDTreeClose<CR>
-
-
 
 
 function! SynOff()
@@ -461,3 +310,5 @@ nnoremap <leader>r :<C-U>RangerChooser<CR>
 "endfun
 ""map ,r :call RangerChooser()<CR>
 "command -nargs=? RangerChooser call RangerChooser("<args>")
+
+source $HOME/.vim/keymap.vim
