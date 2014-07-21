@@ -23,7 +23,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'sjbach/lusty'
 Plugin 'tlib'
-Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-vinegar'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'junegunn/goyo.vim'
@@ -32,6 +31,12 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tyru/open-browser.vim'
 
 Plugin 'nathanaelkane/vim-indent-guides'
+
+" Colorscheme
+Plugin 'tomasr/molokai'
+Plugin 'endel/vim-github-colorscheme'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ciaranm/inkpot'
 
 " Syntaxn
 Plugin 'sheerun/vim-polyglot'

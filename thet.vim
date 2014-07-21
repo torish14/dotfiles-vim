@@ -10,9 +10,6 @@ source $HOME/.vim/bclose.vim
 set background=dark
 "set background=light
 colorscheme molokai
-""colorscheme solarized
-""colorscheme peaksea
-""colorscheme wombat
 
 
 " The last two lines make the tab key match bracket pairs. I use this to move
