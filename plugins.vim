@@ -25,8 +25,8 @@ Plugin 'sjbach/lusty'
 Plugin 'tlib'
 Plugin 'tpope/vim-vinegar'
 Plugin 'Chiel92/vim-autoformat'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
+Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
+Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
 Plugin 'kien/ctrlp.vim'
 Plugin 'tyru/open-browser.vim'
 
@@ -48,8 +48,9 @@ Plugin 'hail2u/vim-css3-syntax'
 
 "" autocomplete
 ""Plugin 'Shougo/neocomplcache.vim'
-Plugin 'othree/vim-autocomplpop'
-Plugin 'L9'
+""Plugin 'othree/vim-autocomplpop'
+""Plugin 'L9'
+Plugin 'Valloric/YouCompleteMe'
 
 "" git, etc
 Plugin 'tpope/vim-fugitive'
