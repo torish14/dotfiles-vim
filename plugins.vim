@@ -31,6 +31,8 @@ Plugin 'junegunn/limelight.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tyru/open-browser.vim'
 
+Plugin 'nathanaelkane/vim-indent-guides'
+
 " Syntaxn
 Plugin 'sheerun/vim-polyglot'
 Plugin 'mfukar/robotframework-vim'

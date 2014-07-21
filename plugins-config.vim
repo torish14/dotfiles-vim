@@ -1,4 +1,8 @@
 
+"" indent guides
+let g:indent_guides_enable_on_vim_startup = 1
+nnoremap <leader>u :IndentGuidesToggle<CR>
+
 "" help netrw-gx
 let g:netrw_browsex_viewer= "gnome-open"
 
