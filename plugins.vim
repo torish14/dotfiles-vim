@@ -30,8 +30,6 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'bling/vim-airline'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'drmikehenry/vim-fontsize'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'koron/minimap-vim'
 Plugin 'mkitt/tabline.vim'
@@ -65,11 +63,14 @@ Plugin 'marijnh/tern_for_vim'
 " Plugin 'skammer/vim-css-color'
 " Plugin 'groenewege/vim-less'
 
-"" autocomplete
+" autocomplete and snippets
 ""Plugin 'Shougo/neocomplcache.vim'
 ""Plugin 'othree/vim-autocomplpop'
 ""Plugin 'L9'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
+"Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
+Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
 
 "" git, etc
 Plugin 'tpope/vim-fugitive'

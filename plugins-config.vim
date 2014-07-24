@@ -1,4 +1,53 @@
 
+"" let g:ycm_key_list_select_completion = []
+let g:ycm_filetype_blacklist = {
+    \ 'tagbar' : 1,
+    \ 'qf' : 1,
+    \ 'unite' : 1,
+    \ 'vimwiki' : 1,
+    \ 'pandoc' : 1,
+    \ 'infolog' : 1,
+    \ 'mail' : 1
+\}
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+"let g:ycm_path_to_python_interpreter = '/home/thet/dev/cloud19/wireframe/noeku-buildout/bin/zopepy'
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_use_ultisnips_completer = 1
+"let g:ycm_server_keep_logfiles = 1
+set completeopt=longest,menuone
+
+"let g:UltiSnipsExpandTrigger='<Tab>'
+
+"" http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
+function! g:UltiSnips_Complete()
+    call UltiSnips#ExpandSnippet()
+    if g:ulti_expand_res == 0
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips#JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
+    endif
+    return ""
+endfunction
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-e>"
+" this mapping Enter key to <C-y> to chose the current highlight item
+" and close the selection list, same as other IDEs.
+" CONFLICT with some plugins like tpope/Endwise
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+
 "" indent guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_color_change_percent = 5
