@@ -74,7 +74,8 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
 autocmd BufNewFile,BufRead *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
 
-command W execute "w"  " :W or :Wa should write/write all
+"" :W or :Wa should write/write all
+command W execute "w"
 command Wa execute "wa"
 
 "" delete into blackhole register, so that other aren't overwritten
