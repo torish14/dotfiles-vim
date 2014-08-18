@@ -39,15 +39,17 @@ nmap <silent> <leader>- <Plug>FontsizeDec
 nmap <silent> <leader>0 <Plug>FontsizeDefault
 
 "" lusty
-nnoremap <leader>, :LustyJuggler<CR>
-nnoremap <leader>/ :LustyFilesystemExplorer<CR>
-nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
+"nnoremap <leader>, :LustyJuggler<CR>
+"nnoremap <leader>/ :LustyFilesystemExplorer<CR>
+"nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
 "" buffergator
 noremap <leader>m :BuffergatorToggle<CR>
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>
 
-noremap <leader>b :CtrlPMixed<CR>
+noremap <leader>, :CtrlPBuffer<CR>
+noremap <leader>. :CtrlP<CR>
+noremap <leader>/ :CtrlPMixed<CR>
 
 
 "" Tagbar
