@@ -101,6 +101,12 @@ map <silent> <leader>l :set number!<CR>  " shortcut to turn off line numbers¬
 "" http://stackoverflow.com/a/8750499/1130358
 vnoremap ; y:<C-r>"<C-b>
 
+" http://stackoverflow.com/questions/906535/how-to-copy-yanked-text-to-vi-command-prompt
+" 1) open command line :
+" 2) register mode: <ctrl-r>
+" 3) paste default register: "
+" 3b) paste clipboard: +
+
 "" allow semicolon to enter command mode from normal mode
 ""noremap ; :
 ""noremap <leader>; <ESC>
