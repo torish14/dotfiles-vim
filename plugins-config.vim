@@ -55,7 +55,8 @@ let g:indent_guides_color_change_percent = 5
 "" netrw-gx
 let g:netrw_browsex_viewer= "gnome-open"  " explicitly configure gnome-open for netrw. more: help netrw-gx
 let g:netrw_nogx = 1 " disable netrw's gx mapping. use open-browser.
-
+"" netrw
+let g:netrw_liststyle = 3
 
 "" vim autoformat
 "" https://github.com/Chiel92/vim-autoformat
@@ -143,7 +144,6 @@ let g:tagbar_type_markdown = {
     \ 'kinds': ['h:header']
 \ }
 
-
 "" Fuzzy Finder
 "" max results, lot o' files in a buildout :)
 "let g:fuzzy_ceiling=35000
@@ -194,6 +194,11 @@ let g:NERDTreeHijackNetrw=0
 let g:NERDTreeMouseMode=2
 let g:NERDTreeMinimalUI=1
 let g:NERDTreeWinSize=31
+
+let g:NERDTreeAutoCenter=1
+let g:NERDTreeAutoCenterThreshold=10
+
+let g:NERDTreeCascadeOpenSingleChildDir=1
 
 
 "" Conque_Shell
