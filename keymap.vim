@@ -1,6 +1,9 @@
 
 """" PLUGINS
 
+" --- Enable / Toggle DelimitMate
+nnoremap <leader>q :DelimitMateSwitch<CR>
+
 " git gutter
 nnoremap <leader>gg :GitGutterToggle<CR>
 " Gitv, vim gitk
