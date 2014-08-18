@@ -111,7 +111,6 @@ map <silent> <leader>d :set spell!<CR>
 nmap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
 
 
-
 "" center scrolling
 "map <S-Up> <Up>zz
 "map <S-Down> <Down>zz
@@ -120,6 +119,14 @@ map <leader>zz :let &scrolloff=999-&scrolloff<cr>
 " center search
 nmap n nzz
 nmap N Nzz
+
+"" search object
+" http://vim.wikia.com/wiki/Copy_or_change_search_hit
+" http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
+vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
+    \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
+omap s :normal vs<CR>
+
 
 """" CLIPBOARD
 "" default copy/paste
