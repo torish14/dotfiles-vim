@@ -1,3 +1,6 @@
+" MUST READ
+" http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
+
 "" https://github.com/gmarik/Vundle.vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -39,6 +42,8 @@ Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
 Plugin 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead netrw_gx. Supports search!
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
+
+"Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
 
 "Plugin 'koron/minimap-vim'  " https://github.com/koron/minimap-vim
 "Plugin 'MarcWeber/vim-addon-mw-utils'  " https://github.com/MarcWeber/vim-addon-mw-utils

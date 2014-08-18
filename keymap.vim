@@ -1,7 +1,11 @@
 
 """" PLUGINS
 
-" --- Enable / Toggle DelimitMate
+" vim expand region
+"vmap v <Plug>(expand_region_expand)
+"vmap <C-v> <Plug>(expand_region_shrink)
+
+" DelimitMate toggle
 nnoremap <leader>q :DelimitMateSwitch<CR>
 
 " git gutter
