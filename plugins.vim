@@ -68,6 +68,7 @@ Plugin 'marijnh/tern_for_vim'  " https://github.com/marijnh/tern_for_vim
 " Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 
 " autocomplete and snippets
+"Plugin 'thet/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets

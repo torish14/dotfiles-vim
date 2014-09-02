@@ -1,5 +1,5 @@
 
-"" let g:ycm_key_list_select_completion = []
+"" YouCompleteMe
 let g:ycm_filetype_blacklist = {
     \ 'tagbar' : 1,
     \ 'qf' : 1,
@@ -10,6 +10,7 @@ let g:ycm_filetype_blacklist = {
     \ 'mail' : 1
 \}
 let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+"let g:ycm_key_list_previous_completion=['<Up>']
 let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
@@ -22,7 +23,8 @@ let g:ycm_use_ultisnips_completer = 1
 "let g:ycm_server_keep_logfiles = 1
 set completeopt=longest,menuone
 
-"let g:UltiSnipsExpandTrigger='<Tab>'
+"" Ultisnips
+"let g:UltiSnipsExpandTrigger="<TAB>"
 
 "" http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
 function! g:UltiSnips_Complete()
@@ -42,9 +44,9 @@ endfunction
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-e>"
-" this mapping Enter key to <C-y> to chose the current highlight item
-" and close the selection list, same as other IDEs.
-" CONFLICT with some plugins like tpope/Endwise
+"" this mapping Enter key to <C-y> to chose the current highlight item
+"" and close the selection list, same as other IDEs.
+"" CONFLICT with some plugins like tpope/Endwise
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 
