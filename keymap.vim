@@ -8,6 +8,9 @@
 " DelimitMate toggle
 nnoremap <leader>q :DelimitMateSwitch<CR>
 
+" zeal integration
+nnoremap gz :!zeal --query "<cword>"&<CR><CR>
+
 " git gutter
 nnoremap <leader>gg :GitGutterToggle<CR>
 " Gitv, vim gitk
@@ -40,16 +43,17 @@ nmap <silent> <leader>0 <Plug>FontsizeDefault
 
 "" lusty
 "nnoremap <leader>, :LustyJuggler<CR>
+nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
 "nnoremap <leader>/ :LustyFilesystemExplorer<CR>
-"nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
 "" buffergator
 noremap <leader>m :BuffergatorToggle<CR>
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>
 
 noremap <leader>, :CtrlPBuffer<CR>
-noremap <leader>. :CtrlP<CR>
-noremap <leader>/ :CtrlPMixed<CR>
+"noremap <leader>. :CtrlP<CR>
+"noremap <leader>/ :CtrlPMixed<CR>
+noremap <leader>/ :CtrlP<CR>
 
 
 "" Tagbar
