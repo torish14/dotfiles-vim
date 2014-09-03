@@ -62,16 +62,17 @@ Plugin 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
 Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 Plugin 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
-Plugin 'marijnh/tern_for_vim'  " https://github.com/marijnh/tern_for_vim
+" Plugin 'marijnh/tern_for_vim'  " https://github.com/marijnh/tern_for_vim
 " Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
 " Plugin 'skammer/vim-css-color'  " https://github.com/skammer/vim-css-color
 " Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 
 " autocomplete and snippets
 "Plugin 'thet/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
+Plugin 'Shougo/neocomplete.vim'  " https://github.com/Shougo/neocomplete.vim
 ""Plugin 'Shougo/neocomplcache.vim'  " https://github.com/Shougo/neocomplcache.vim
 ""Plugin 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
 ""Plugin 'L9'
