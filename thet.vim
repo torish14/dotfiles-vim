@@ -36,6 +36,8 @@ if has('gui_running')
     ""set guifont=Source\ Code\ Pro\ 10
 endif
 
+highlight Comment gui=italic
+
 " fugitive fix, could not rename swap file
 " http://stackoverflow.com/questions/2932399/error-using-the-gdiff-command-of-fugitive-vim-using-gvim-for-windows-and-msys-g
 if has("win32") || has("win64")
