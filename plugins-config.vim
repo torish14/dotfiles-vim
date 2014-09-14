@@ -1,3 +1,20 @@
+" The Silver Searcher
+" http://robots.thoughtbot.com/faster-grepping-in-vimshell
+" https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ -i --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -i -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+
 "" neocomplete
 "let g:acp_enableAtStartup = 0
 "let g:neocomplete#enable_at_startup = 1
