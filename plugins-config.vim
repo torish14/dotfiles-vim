@@ -99,6 +99,19 @@
 "inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 
+"" neocomplete
+"let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_smart_case = 1
+"let g:neocomplcache_min_syntax_length = 3
+
+"" jedi
+"let g:jedi#auto_vim_configuration = 0
+"let g:jedi#show_call_signatures = 0
+"let g:jedi#popup_select_first = 0
+"set completeopt=longest,menuone
+
+
+
 "" indent guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_color_change_percent = 5
@@ -119,17 +132,6 @@ let g:formatprg_args_expr_zpt = '"-q -xml --show-errors 0 --show-warnings 0 --fo
 let g:formatprg_html = "html5tidy"
 
 let g:extradite_resize = 0
-
-"" neocomplete
-"let g:neocomplcache_enable_at_startup = 1
-"let g:neocomplcache_enable_smart_case = 1
-"let g:neocomplcache_min_syntax_length = 3
-
-"" jedi
-"let g:jedi#auto_vim_configuration = 0
-"let g:jedi#show_call_signatures = 0
-"let g:jedi#popup_select_first = 0
-"set completeopt=longest,menuone
 
 "" vim airline
 let g:airline#extensions#tabline#enabled=1
