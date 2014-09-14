@@ -114,8 +114,8 @@ nmap <C-Up> :tabn<CR>
 nmap <C-Down> :tabp<CR>
 
 " make the tab key match bracket pairs
-nnoremap <TAB> %
-vnoremap <TAB> %
+"nnoremap <TAB> %
+"vnoremap <TAB> %
 
 "" WINDOWS / BUFFERS movement
 nnoremap <C-h> <C-w>h
