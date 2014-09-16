@@ -1,9 +1,9 @@
 " The Silver Searcher
-" http://robots.thoughtbot.com/faster-grepping-in-vimshell
+" http://robots.thoughtbot.com/faster-grepping-in-vim
 " https://github.com/ggreer/the_silver_searcher
 if executable('ag')
   " Use ag over grep
-  set grepprg=ag\ -i --nogroup\ --nocolor
+  set grepprg=ag\ -i\ --nogroup\ --nocolor
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -i -l --nocolor -g ""'
@@ -13,7 +13,9 @@ if executable('ag')
 endif
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
+" bind \ (backward slash) to grep shortcut
+command -nargs=+ -complete=file -bar Ag silent! grep! -i <args>|cwindow|redraw!
+nnoremap \ :Ag<SPACE>
 
 "" neocomplete
 "let g:acp_enableAtStartup = 0
