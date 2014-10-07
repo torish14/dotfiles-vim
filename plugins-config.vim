@@ -145,10 +145,16 @@ let g:netrw_liststyle = 3
 "" https://github.com/Chiel92/vim-autoformat
 "" https://github.com/hhatto/autopep8
 let g:formatprg_args_expr_python = '"--aggressive --aggressive".(&textwidth ? " --max-line-length=".&textwidth : "")." /dev/stdin "'
-let g:formatprg_args_expr_xml = '"-q -xml --show-errors 0 --show-warnings 0 --force-output --indent auto --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
+
+let g:formatprg_xml = "tidy"
 let g:formatprg_zpt = "html5tidy"
-let g:formatprg_args_expr_zpt = '"-q -xml --show-errors 0 --show-warnings 0 --force-output --indent auto --indent-attributes 1 --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
 let g:formatprg_html = "html5tidy"
+let g:formatprg_args_expr_xml = '"-q -i -xml -wrap 0 -utf8"'
+let g:formatprg_args_expr_zpt = '"-q -i -xml -wrap 0 -utf8"'
+let g:formatprg_args_expr_html = '"-q -i -xml -wrap 0 -utf8"'
+
+"let g:formatprg_args_expr_xml = '"-q -xml --show-errors 0 --show-warnings 0 --force-output --indent auto --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
+"let g:formatprg_args_expr_zpt = '"-q -i -xmlributes 1 --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
 
 let g:extradite_resize = 0
 
@@ -175,6 +181,9 @@ let g:syntastic_python_flake8_args='--ignore=E702'
 " Javascript checker
 let g:syntastic_javascript_checkers=['jshint']
 " let g:syntastic_javascript_checkers=['jslint']
+
+" html
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 "" unite
 let g:unite_enable_split_vertically=1
