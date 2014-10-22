@@ -44,10 +44,7 @@ Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead n
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 
 "Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-addon-local-vimrc
-
-
 "Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
-
 "Plugin 'koron/minimap-vim'  " https://github.com/koron/minimap-vim
 "Plugin 'MarcWeber/vim-addon-mw-utils'  " https://github.com/MarcWeber/vim-addon-mw-utils
 "Plugin 'tlib'
@@ -66,25 +63,28 @@ Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 Plugin 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
+
 " Plugin 'marijnh/tern_for_vim'  " https://github.com/marijnh/tern_for_vim
 " Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
 " Plugin 'skammer/vim-css-color'  " https://github.com/skammer/vim-css-color
 " Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 
 " autocomplete and snippets
-"Plugin 'thet/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
-"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-"Plugin 'Shougo/neocomplete.vim'  " https://github.com/Shougo/neocomplete.vim
-""Plugin 'Shougo/neocomplcache.vim'  " https://github.com/Shougo/neocomplcache.vim
 Plugin 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
 Plugin 'L9'
+
+"Plugin 'thet/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+"Plugin 'Shougo/neocomplete.vim'  " https://github.com/Shougo/neocomplete.vim
+""Plugin 'Shougo/neocomplcache.vim'  " https://github.com/Shougo/neocomplcache.vim
 "" Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
 
 "" git, etc
 Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+
 "" gitguteer alternative for other vcs: https://github.com/mhinz/vim-signify
 "Plugin 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 "Plugin 'idanarye/vim-merginal'  " https://github.com/idanarye/vim-merginal
