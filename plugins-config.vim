@@ -159,7 +159,7 @@ let g:formatprg_args_expr_html = '"-q -i -xml -wrap 0 -utf8"'
 let g:extradite_resize = 0
 
 "" vim airline
-let g:airline#extensions#tabline#enabled=1
+"let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 
 "" Syntastic
@@ -192,10 +192,12 @@ let g:unite_enable_split_vertically=1
 
 "" buffergator
 let g:buffergator_viewport_split_policy = 'L'
+let g:buffergator_autodismiss_on_select = 0
+let g:buffergator_autoupdate = 1
+let g:buffergator_split_size = 40
 let g:buffergator_sort_regime = 'filepath'
 let g:buffergator_display_regime = 'basename'
-let g:buffergator_split_size = 40
-let g:buffergator_autodismiss_on_select = 1
+let g:buffergator_show_full_directory_path = 0
 let g:buffergator_suppress_keymaps = 1
 
 

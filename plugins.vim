@@ -33,7 +33,7 @@ Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
-Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
+"Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 Plugin 'sjbach/lusty'  " https://github.com/sjbach/lusty
 Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
@@ -43,7 +43,7 @@ Plugin 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead netrw_gx. Supports search!
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 
-Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-addon-local-vimrc
+"Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-addon-local-vimrc
 
 
 "Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
@@ -55,8 +55,8 @@ Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-add
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plugin 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
-Plugin 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
-Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
+"Plugin 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
+"Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
 
 " Syntaxn
 Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
