@@ -42,6 +42,7 @@ Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
 Plugin 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead netrw_gx. Supports search!
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
+Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
 
 "Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-addon-local-vimrc
 "Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region

@@ -1,3 +1,14 @@
+
+" incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+let g:incsearch#consistent_n_direction = 1
+let g:incsearch#magic = '\v'
+" buffer completion: <c-l>
+<Over>(buffer-complete)
+
+
 " The Silver Searcher
 " http://robots.thoughtbot.com/faster-grepping-in-vim
 " https://github.com/ggreer/the_silver_searcher
