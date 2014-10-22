@@ -10,6 +10,7 @@ source $HOME/.vim/bclose.vim
 set background=dark
 "set background=light
 colorscheme molokai
+let g:molokai_original = 0
 
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
 
