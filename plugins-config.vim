@@ -6,7 +6,7 @@ map g/ <Plug>(incsearch-stay)
 let g:incsearch#consistent_n_direction = 1
 let g:incsearch#magic = '\v'
 " buffer completion: <c-l>
-<Over>(buffer-complete)
+"<Over>(buffer-complete)
 
 
 " The Silver Searcher
