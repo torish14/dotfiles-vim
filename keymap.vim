@@ -68,31 +68,6 @@ nnoremap tt :TagbarToggle<CR>
 noremap <leader>f :Autoformat<CR><CR>
 
 
-"" Voom
-""nnoremap ty :VoomToggle<CR>
-
-"" vimroom
-"" nnoremap <leader>r :VimroomToggle<CR>
-
-
-"" Fuzzy Finder
-"nmap <LEADER>f :FufFile<SPACE>**/<CR>
-"nmap <LEADER>F :FufRenewCache<CR>
-"nmap <leader>t :FufCoverageFile<Space>
-"nmap <leader>ft :FufTag<Space>
-
-"" TaskList
-""nmap <F11> :TaskList<CR>
-
-"" NERDTree
-"" noremap <silent> <f9> :NERDTreeToggle<CR>
-""map <leader>nm :NERDTree<CR>
-""map <leader>nn :NERDTreeToggle<CR>
-""map <leader>nf :NERDTreeFind<CR>
-""map <leader>nx :NERDTreeClose<CR>
-
-
-
 """"" VIM STANDARD
 
 " wrap text

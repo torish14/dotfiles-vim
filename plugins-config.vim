@@ -1,3 +1,6 @@
+"LargeFile
+let g:LargeFile = 1  " 500k is already a large file
+
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
@@ -237,25 +240,6 @@ let g:tagbar_type_markdown = {
     \ 'ctagstype': 'markdown',
     \ 'kinds': ['h:header']
 \ }
-
-"" Fuzzy Finder
-"" max results, lot o' files in a buildout :)
-"let g:fuzzy_ceiling=35000
-"" show full paths
-"let g:fuzzy_path_display = 'highlighted_path'
-"" ignored files
-"let g:fuzzy_ignore = "*.png;*.PNG;*.pyc;*.pyo;*.JPG;*.jpg;*.GIF;*.gif;.svn/**;.git/**;*.mo;.DS_Store;.AppleDouble"
-"" available modes
-"let g:FuzzyFinderOptions = {
-"    \'File': {'mode_available': 1},
-"    \'Buffer': {'mode_available': 0},
-"    \'Dir': {'mode_available': 0},
-"    \'MruFile': {'mode_available': 0},
-"    \'MruCmd': {'mode_available': 0},
-"    \'Bookmark': {'mode_available': 0},
-"    \}
-"" Don't delete a full path when using backspace in file mode
-"let g:FuzzyFinderOptions.File.smart_bs = 0
 
 
 "" EASYGREP

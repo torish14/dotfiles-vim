@@ -34,6 +34,7 @@ Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 "Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
+Plugin 'itsgreggreg/tabline.vim'  " https://github.com/itsgreggreg/tabline.vim
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 "Plugin 'sjbach/lusty'  " https://github.com/sjbach/lusty
 Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
@@ -43,6 +44,7 @@ Plugin 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead netrw_gx. Supports search!
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
+Plugin 'LargeFile'  " https://github.com/vim-scripts/LargeFile
 
 "Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-addon-local-vimrc
 "Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
