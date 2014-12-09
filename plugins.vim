@@ -35,7 +35,7 @@ Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 "Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
-Plugin 'sjbach/lusty'  " https://github.com/sjbach/lusty
+"Plugin 'sjbach/lusty'  " https://github.com/sjbach/lusty
 Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
 Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim

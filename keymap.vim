@@ -43,23 +43,25 @@ nmap <silent> <leader>0 <Plug>FontsizeDefault
 
 "" lusty
 "nnoremap <leader>, :LustyJuggler<CR>
-nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
+"nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
 "nnoremap <leader>/ :LustyFilesystemExplorer<CR>
 "" buffergator
 noremap <leader>m :BuffergatorToggle<CR>
+noremap <leader>M :BuffergatorTabsToggle<CR>
+"" NERDTree
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>
-
+"" CtrlP
 noremap <leader>, :CtrlPBuffer<CR>
-"noremap <leader>. :CtrlP<CR>
-"noremap <leader>/ :CtrlPMixed<CR>
-noremap <leader>/ :CtrlP<CR>
+noremap <leader>. :CtrlP<CR>
+noremap <leader>/ :CtrlPMixed<CR>
+"noremap <leader>/ :CtrlP<CR>
 
 
 "" Tagbar
 nnoremap tt :TagbarToggle<CR>
 "" unite-outline
-nnoremap ty :Unite outline<CR>
+"" nnoremap ty :Unite outline<CR>
 
 
 "" Autoformat
@@ -83,7 +85,7 @@ noremap <leader>f :Autoformat<CR><CR>
 ""nmap <F11> :TaskList<CR>
 
 "" NERDTree
-noremap <silent> <f9> :NERDTreeToggle<CR>
+"" noremap <silent> <f9> :NERDTreeToggle<CR>
 ""map <leader>nm :NERDTree<CR>
 ""map <leader>nn :NERDTreeToggle<CR>
 ""map <leader>nf :NERDTreeFind<CR>

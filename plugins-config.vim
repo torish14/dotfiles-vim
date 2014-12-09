@@ -1,4 +1,3 @@
-
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
@@ -17,10 +16,10 @@ if executable('ag')
   set grepprg=ag\ -i\ --nogroup\ --nocolor
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -i -l --nocolor -g ""'
+  "let g:ctrlp_user_command = 'ag %s -i -l --nocolor -g ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
+  "let g:ctrlp_use_caching = 0
 endif
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
@@ -197,13 +196,13 @@ let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 "" unite
-let g:unite_enable_split_vertically=1
+"let g:unite_enable_split_vertically=1
 ""let g:unite_split_rule='right'
 
 
 "" buffergator
 let g:buffergator_viewport_split_policy = 'L'
-let g:buffergator_autodismiss_on_select = 0
+let g:buffergator_autodismiss_on_select = 1
 let g:buffergator_autoupdate = 1
 let g:buffergator_split_size = 40
 let g:buffergator_sort_regime = 'filepath'
