@@ -45,9 +45,11 @@ nmap <silent> <leader>0 <Plug>FontsizeDefault
 "nnoremap <leader>, :LustyJuggler<CR>
 "nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
 "nnoremap <leader>/ :LustyFilesystemExplorer<CR>
+
 "" buffergator
-noremap <leader>m :BuffergatorToggle<CR>
-noremap <leader>M :BuffergatorTabsToggle<CR>
+" noremap <leader>m :BuffergatorToggle<CR>
+" noremap <leader>M :BuffergatorTabsToggle<CR>
+
 "" NERDTree
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>

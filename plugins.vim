@@ -25,6 +25,10 @@ call vundle#rc()
 " http://vimawesome.com/plugin/vim-multiple-cursors
 " https://github.com/majutsushi/tagbar/wiki
 
+" Plugin 'sjbach/lusty'  " https://github.com/sjbach/lusty
+
+"" overrides ctrl-x
+" Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 
 Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 
@@ -32,11 +36,9 @@ Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
-Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 "Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
 Plugin 'itsgreggreg/tabline.vim'  " https://github.com/itsgreggreg/tabline.vim
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
-"Plugin 'sjbach/lusty'  " https://github.com/sjbach/lusty
 Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
 Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
