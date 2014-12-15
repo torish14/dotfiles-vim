@@ -37,7 +37,7 @@ Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 "Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
-Plugin 'itsgreggreg/tabline.vim'  " https://github.com/itsgreggreg/tabline.vim
+Plugin 'thet/tabline.vim'  " https://github.com/thet/tabline.vim
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
 Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim

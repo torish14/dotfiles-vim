@@ -172,7 +172,7 @@ let g:formatprg_args_expr_html = '"-q -i -xml -wrap 0 -utf8"'
 let g:extradite_resize = 0
 
 "" vim airline
-"let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 
 "" Syntastic
