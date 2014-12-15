@@ -82,6 +82,7 @@ nmap <silent> <C-left> :bprev<CR>
 nmap <silent> <C-right> :bnext<CR>
 " close buffer and goto next
 nnoremap <C-x> :Bclose<CR>
+nnoremap <leader>x :Bclose<CR>
 
 nmap <C-n> :tabnew<CR>
 "nmap <leader>t :tabnew
