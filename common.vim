@@ -118,20 +118,11 @@ nmap <leader>W :call Preserve("%s/\\s\\+$//e")<CR>
 "" completion mode to use and should play well with OmniCompletion:
 "let g:SuperTabDefaultCompletionType = "context"
 "imap <S-TAB> <C-X><C-O>
-""nmap <silent> b :LustyJuggler<CR>
-""nmap <silent> B :LustyJugglePrevious<CR>
-let g:LustyJugglerAltTabMode = 1
 set wildignore+=*.o,*.obj
 set wildignore+=*.pyc,*.pyo
 set wildignore+=.git,.svn,.hg
+
 ""set wildignore+=bin,develop-eggs,eggs,*egg-info/**,include,lib,parts,var
-
-nmap <silent> <leader>T :CommandTFlush<CR>
-nmap <silent> <leader>X :LustyFilesystemExplorer<CR>
-nmap <silent> <leader>x :LustyFilesystemExplorerFromHere<CR>
-nmap <silent> <leader>b :LustyBufferExplorer<CR>
-nmap <silent> <leader>B :LustyBufferGrep<CR>
-
 "" Showmarks ignoring type of windows
 ""h : Help
 ""m : Non-modifiable
