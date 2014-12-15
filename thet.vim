@@ -7,12 +7,6 @@ source $HOME/.vim/plugins-config.vim
 source $HOME/.vim/inoutcomment.vim
 source $HOME/.vim/bclose.vim
 
-"set background=dark
-""set background=light
-colorscheme molokai
-let g:molokai_original = 0
-" colorscheme github
-
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
 
 "" http://superuser.com/questions/697347/vim-how-to-treat-three-quotations-in-a-row-as-a-comment-rather-than-a-string
@@ -42,6 +36,15 @@ if has('gui_running')
     ""set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
     ""set guifont=Ubuntu\ Mono\ 11
     ""set guifont=Source\ Code\ Pro\ 10
+
+    "" COLORSCHEME
+    " set background=dark
+    " set background=light
+    " colorscheme github
+    colorscheme molokai
+    let g:molokai_original = 0
+else
+    colorscheme wombat
 endif
 
 highlight Comment gui=italic
@@ -84,6 +87,11 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 ""autocmd BufRead,BufNewFile *.pt set filetype=xml
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
 autocmd BufNewFile,BufRead *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
+
+" cd working directory to current file. enables to create files relative to
+" another.
+" http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
+autocmd BufEnter * silent! lcd %:p:h
 
 "" :W or :Wa should write/write all
 command W execute "w"
