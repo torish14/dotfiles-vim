@@ -55,8 +55,10 @@ Plugin 'LargeFile'  " https://github.com/vim-scripts/LargeFile
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plugin 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
-"Plugin 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
-"Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
+Plugin 'w0ng/vim-hybrid'  " https://github.com/w0ng/vim-hybrid
+Plugin 'Lokaltog/vim-distinguished'  " https://github.com/Lokaltog/vim-distinguished
+Plugin 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
+Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
 
 " Syntaxn
 Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
