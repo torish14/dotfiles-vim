@@ -16,6 +16,7 @@ set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops 
 "hi def link pythonDocstring pythonComment
 "highlight pythonDocstring gui=italic
 
+
 "" GUI
 if has('gui_running')
     set antialias
@@ -91,7 +92,8 @@ autocmd BufNewFile,BufRead *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
 " cd working directory to current file. enables to create files relative to
 " another.
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
-autocmd BufEnter * silent! lcd %:p:h
+" autocmd BufEnter * silent! lcd %:p:h
+set autochdir
 
 "" :W or :Wa should write/write all
 command W execute "w"
