@@ -24,6 +24,7 @@ Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead n
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
 Plugin 'LargeFile'  " https://github.com/vim-scripts/LargeFile
+Plugin 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
