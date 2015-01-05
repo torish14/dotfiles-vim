@@ -156,7 +156,7 @@ let g:NERDTreeSortOrder=[]
 """ when the root is changed, change Vim's working dir
 ""let NERDTreeChDirMode=2
 let g:NERDTreeChDirMode=0
-let g:NERDTreeHighlightCursorline=1
+let g:NERDTreeHighlightCursorline=0
 let g:NERDTreeHijackNetrw=0
 let g:NERDTreeMouseMode=2
 let g:NERDTreeMinimalUI=1

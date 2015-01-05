@@ -28,7 +28,10 @@ if has('gui_running')
     set go-=R
     set go-=M
     set go-=m
+
     highlight SpellBad term=underline gui=undercurl guisp=Red
+    highlight Comment gui=italic
+
     set fillchars+=vert:│ " Use a line-drawing char for pretty vertical splits.
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
@@ -37,6 +40,10 @@ if has('gui_running')
     ""set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
     ""set guifont=Ubuntu\ Mono\ 11
     ""set guifont=Source\ Code\ Pro\ 10
+
+    "http://stackoverflow.com/questions/6158860/change-color-of-cursor-in-vim
+    au InsertLeave * hi Cursor guibg=white
+    au InsertEnter * hi Cursor guibg=green
 
     "" COLORSCHEME
     " set background=dark
@@ -48,7 +55,6 @@ else
     colorscheme wombat
 endif
 
-highlight Comment gui=italic
 
 " fugitive fix, could not rename swap file
 " http://stackoverflow.com/questions/2932399/error-using-the-gdiff-command-of-fugitive-vim-using-gvim-for-windows-and-msys-g
@@ -64,7 +70,7 @@ set nowrap
 set nolist "" nolist needed for linebreak
 set linebreak "" when wrapping, don't break words
 set colorcolumn=79
-set cursorline
+set nocursorline
 
 set lazyredraw  " dont redraw while vim is busy
 
@@ -191,7 +197,7 @@ function! SynOn()
     " Set Syntax hightlighting to on
     syntax on
     "set cursorcolumn
-    set cursorline
+    "set cursorline
     set showmatch
     let g:syntastic_mode_map = { 'mode': 'active' }
     :GitGutterEnable
