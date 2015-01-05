@@ -32,7 +32,6 @@ if has('gui_running')
     highlight SpellBad term=underline gui=undercurl guisp=Red
     highlight Comment gui=italic
 
-    set fillchars+=vert:│ " Use a line-drawing char for pretty vertical splits.
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
@@ -54,6 +53,7 @@ if has('gui_running')
 else
     colorscheme wombat
 endif
+set fillchars+=vert:\ " No char for vertical split is even prettier thant |
 
 
 " fugitive fix, could not rename swap file
