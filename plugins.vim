@@ -25,6 +25,7 @@ Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim
 Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
 Plugin 'LargeFile'  " https://github.com/vim-scripts/LargeFile
 Plugin 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
+Plugin 'Z1MM32M4N/vim-superman'  " https://github.com/Z1MM32M4N/vim-superman
 
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
