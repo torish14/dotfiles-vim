@@ -42,7 +42,9 @@ let g:netrw_browsex_viewer= "gnome-open"  " explicitly configure gnome-open for 
 let g:netrw_nogx = 1 " disable netrw's gx mapping. use open-browser.
 "" netrw
 let g:netrw_liststyle = 3
-
+" delete/hide netrw buffer after leaving
+" https://github.com/tpope/vim-vinegar/issues/13#issuecomment-47133890
+autocmd FileType netrw setl bufhidden=wipe
 
 "" VIM AUTOFORMAT
 "" https://github.com/Chiel92/vim-autoformat
