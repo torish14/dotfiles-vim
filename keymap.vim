@@ -83,8 +83,11 @@ nmap <C-a> ggVG
 nmap <silent> <C-left> :bprev<CR>
 nmap <silent> <C-right> :bnext<CR>
 " close buffer and goto next
-nnoremap <C-x> :Bclose<CR>
-nnoremap <leader>x :Bclose<CR>
+"nnoremap <C-x> :Bclose<CR>
+"nnoremap <leader>x :Bclose<CR>
+"" now using vim-bbye
+nnoremap <C-x> :Bdelete<CR>
+nnoremap <leader>x :Bdelete<CR>
 
 nmap <C-n> :tabnew<CR>
 "nmap <leader>t :tabnew
