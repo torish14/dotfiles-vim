@@ -28,9 +28,6 @@ if has('gui_running')
     set go-=M
     set go-=m
 
-    highlight SpellBad term=underline gui=undercurl guisp=Red
-    highlight Comment gui=italic
-
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
@@ -49,6 +46,10 @@ if has('gui_running')
     " colorscheme github
     colorscheme molokai
     let g:molokai_original = 0
+
+    highlight SpellBad term=underline gui=undercurl guisp=Red
+    highlight Comment gui=italic
+    highlight Search guibg=LawnGreen guifg=RoyalBlue
 else
     colorscheme wombat
 endif
