@@ -14,6 +14,7 @@ Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
+Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
@@ -48,7 +49,8 @@ Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-Plugin 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
+Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
+"Plugin 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
 Plugin 'L9'
 
 "" git, etc

@@ -95,7 +95,7 @@ let g:syntastic_ignore_files=['bin/', '.min.css', '.min.js']
 " flake8 supports # noqa or # nopep8 to ignore individual lines
 let g:syntastic_python_checkers=['flake8']
 " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
-let g:syntastic_python_flake8_args='--ignore=E702'
+let g:syntastic_python_flake8_args='--ignore=E702,E221'
 
 " Javascript checker
 let g:syntastic_javascript_checkers=['jshint']
