@@ -38,8 +38,11 @@ Plugin 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-
 Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
 
 " Syntaxn
-Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
+" Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
 Plugin 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
+Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
+Plugin 'skammer/vim-css-color'  " https://github.com/skammer/vim-css-color
+Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 Plugin 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
 Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
