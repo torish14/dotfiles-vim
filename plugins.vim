@@ -12,6 +12,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 
 Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
+" Plugin 'bling/vim-bufferline'  " https://github.com/bling/vim-bufferline
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
