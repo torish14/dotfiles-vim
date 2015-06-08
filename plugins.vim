@@ -29,6 +29,8 @@ Plugin 'LargeFile'  " https://github.com/vim-scripts/LargeFile
 Plugin 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plugin 'Z1MM32M4N/vim-superman'  " https://github.com/Z1MM32M4N/vim-superman
 Plugin 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
+Plugin 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
+" Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
 
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai

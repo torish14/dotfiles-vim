@@ -5,6 +5,12 @@
 "vmap v <Plug>(expand_region_expand)
 "vmap <C-v> <Plug>(expand_region_shrink)
 
+nnoremap <leader>4 :setlocal tabstop=4 shiftwidth=4 softtabstop=4<CR>
+nnoremap <leader>2 :setlocal tabstop=2 shiftwidth=2 softtabstop=2<CR>
+
+" show full path to file
+nnoremap <leader>% :echo expand('%:p')<CR>
+
 " DelimitMate toggle
 nnoremap <leader>q :DelimitMateSwitch<CR>
 
@@ -68,6 +74,10 @@ nnoremap tt :TagbarToggle<CR>
 
 "" Autoformat
 noremap <leader>f :Autoformat<CR><CR>
+
+"" reformat to column based layout
+"" http://stackoverflow.com/questions/1229900/reformat-in-vim-for-a-nice-column-layout
+noremap <leader>t :%!column -t
 
 
 """"" VIM STANDARD

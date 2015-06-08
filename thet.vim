@@ -31,7 +31,7 @@ if has('gui_running')
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
-    set guifont=Ubuntu\ Mono\ for\ Powerline\ 11
+    set guifont=Ubuntu\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
     ""set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
     ""set guifont=Ubuntu\ Mono\ 11
     ""set guifont=Source\ Code\ Pro\ 10
@@ -52,6 +52,7 @@ if has('gui_running')
     highlight Search guibg=LawnGreen guifg=RoyalBlue
 else
     colorscheme wombat
+    highlight SpellBad term=underline
 endif
 set fillchars+=vert:\ " No char for vertical split is even prettier thant |
 
@@ -92,8 +93,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 ""treat ZCML as XML:
 ""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
 ""autocmd BufRead,BufNewFile *.pt set filetype=xml
-autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
-autocmd BufNewFile,BufRead *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
+
 
 " cd working directory to current file. enables to create files relative to
 " another.

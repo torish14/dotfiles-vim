@@ -98,12 +98,16 @@ let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
 let g:syntastic_ignore_files=['bin/', '.min.css', '.min.js']
 
 " Python checker
+let g:syntastic_python_python_exec = '~/dev/python-tools/bin/python'
+"let g:syntastic_python_checkers=['frosted']
+"let g:syntastic_python_pep8_args='--ignore=E702,E221'
 " that fixed ignore config
 " https://github.com/scrooloose/syntastic/issues/204#issuecomment-14585955
 " flake8 supports # noqa or # nopep8 to ignore individual lines
 let g:syntastic_python_checkers=['flake8']
 " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
 let g:syntastic_python_flake8_args='--ignore=E702,E221'
+
 
 " Javascript checker
 let g:syntastic_javascript_checkers=['jshint']
@@ -174,6 +178,13 @@ let g:NERDTreeWinSize=31
 let g:NERDTreeAutoCenter=1
 let g:NERDTreeAutoCenterThreshold=10
 let g:NERDTreeCascadeOpenSingleChildDir=1
+
+
+" web dev icons
+"let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = ' '
+"let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+"let g:webdevicons_conceal_nerdtree_brackets = 0
+"" let g:webdevicons_conceal_nerdtree_brackets = 1
 
 
 "" git
