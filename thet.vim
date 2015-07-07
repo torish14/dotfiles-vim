@@ -5,6 +5,7 @@ source $HOME/.vim/plugins.vim
 source $HOME/.vim/common.vim
 source $HOME/.vim/plugins-config.vim
 source $HOME/.vim/inoutcomment.vim
+source $HOME/.vim/ranger_filechooser.vim
 
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
 
@@ -226,36 +227,6 @@ nmap <leader>2 :call SynOn()<CR>
 "autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal tw=79 fo=aw2tq
 "autocmd BufRead,BufNewFile *.py setlocal tw=79 fo=aw2cq
 
-" Use ranger as vim file manager
-" http://ornicar.github.com/2011/02/12/ranger-as-vim-file-manager.html
-"function! Ranger()
-"    " Get a temp file name without creating it
-"    let tmpfile = substitute(system('mktemp -u'), '\n', '', '')
-"    " Launch ranger, passing it the temp file name
-"    silent exec '!RANGER_RETURN_FILE='.tmpfile.' ra'
-"    " If the temp file has been written by ranger
-"    if filereadable(tmpfile)
-"        " Get the selected file name from the temp file
-"        let filetoedit = system('cat '.tmpfile)
-"        exec 'edit '.filetoedit
-"        call delete(tmpfile)
-"    endif
-"    redraw!
-"endfunction
-"nmap <leader>XXX :call Ranger()<cr>
-
-"function! Ranger2()
-"    let tmp = /tmp/chosen
-"    silent !ra %:h --choosefile=/tmp/chosen
-"    if filereadable(tmp)
-"        let filetoedit = system('cat '.tmp)
-"        exec 'edit '.filetoedit
-"        call delete(tmp)
-"    endif
-"    redraw!
-"endfunction
-"nmap <leader>q :call Ranger2()<cr>
-
 
 "" split windows
 "" http://techdebug.com/blog/2008/05/22/vim-split-tips/
@@ -307,52 +278,5 @@ endfunction
 " open all buffers in separate (vertical) panes (see ':help :ball' and ':help :vertical')
 noremap <silent> <leader>a :vertical :ball<cr>
 
-
-
-function! RangeChooser()
-    let temp = tempname()
-" The option "--choosefiles" was added in ranger 1.5.1. Use the next line
-" with ranger 1.4.2 through 1.5.0 instead.
-"exec 'silent !ranger --choosefile=' . shellescape(temp)
-    exec 'silent !ranger --choosefiles=' . shellescape(temp)
-    if !filereadable(temp)
-" Nothing to read.
-        return
-    endif
-    let names = readfile(temp)
-    if empty(names)
-" Nothing to open.
-        return
-    endif
-" Edit the first item.
-    exec 'edit ' . fnameescape(names[0])
-" Add any remaning items to the arg list/buffer list.
-    for name in names[1:]
-        exec 'argadd ' . fnameescape(name)
-    endfor
-    redraw!
-endfunction
-command! -bar RangerChooser call RangeChooser()
-nnoremap <leader>r :<C-U>RangerChooser<CR>
-
-" https://groups.google.com/forum/#!msg/vim_use/b0ECdpN4vEo/aUR5-naoPLoJ
-"fun! RangerChooser(...)
-"    let tmpfile = tempname()
-"    if a:0 > 0 && a:1 != ""
-"        let dir = a:1
-"    elseif expand("%")
-"        let dir = expand("%:p:h")
-"    else
-"        let dir = "."
-"    endif
-"    exe 'silent !ranger --choosefile='.tmpfile dir
-"    if filereadable(tmpfile)
-"        exe 'edit' readfile(tmpfile)[0]
-"        call delete(tmpfile)
-"    endif
-"    redraw!
-"endfun
-""map ,r :call RangerChooser()<CR>
-"command -nargs=? RangerChooser call RangerChooser("<args>")
 
 source $HOME/.vim/keymap.vim
