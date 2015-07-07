@@ -38,7 +38,7 @@ if has('gui_running')
     ""set guifont=Source\ Code\ Pro\ 10
 
     "http://stackoverflow.com/questions/6158860/change-color-of-cursor-in-vim
-    au InsertLeave * hi Cursor guibg=white
+    au InsertLeave * hi Cursor guibg=blue
     au InsertEnter * hi Cursor guibg=green
 
     "" COLORSCHEME
