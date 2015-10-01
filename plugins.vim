@@ -31,6 +31,8 @@ Plugin 'Z1MM32M4N/vim-superman'  " https://github.com/Z1MM32M4N/vim-superman
 Plugin 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 Plugin 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 " Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
+Plugin 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
+Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
@@ -62,6 +64,8 @@ Plugin 'L9'
 "" git, etc
 Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+
+Plugin 'tpope/vim-unimpaired'  " https://github.com/tpope/vim-unimpaired
 
 
 "" ===========================================================================

@@ -192,14 +192,14 @@ let g:NERDTreeCascadeOpenSingleChildDir=1
 
 
 "" buffergator
-" let g:buffergator_viewport_split_policy = 'L'
-" let g:buffergator_autodismiss_on_select = 1
-" let g:buffergator_autoupdate = 1
-" let g:buffergator_split_size = 40
-" let g:buffergator_sort_regime = 'filepath'
-" let g:buffergator_display_regime = 'basename'
-" let g:buffergator_show_full_directory_path = 0
-" let g:buffergator_suppress_keymaps = 1
+let g:buffergator_viewport_split_policy = 'L'
+let g:buffergator_autodismiss_on_select = 0
+let g:buffergator_autoupdate = 1
+let g:buffergator_split_size = 40
+let g:buffergator_sort_regime = 'filepath'
+let g:buffergator_display_regime = 'basename'
+let g:buffergator_show_full_directory_path = 0
+let g:buffergator_suppress_keymaps = 1
 
 
 "" neocomplete cache

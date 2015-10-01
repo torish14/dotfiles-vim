@@ -53,12 +53,13 @@ nmap <silent> <leader>0 <Plug>FontsizeDefault
 "nnoremap <leader>/ :LustyFilesystemExplorer<CR>
 
 "" buffergator
-" noremap <leader>m :BuffergatorToggle<CR>
-" noremap <leader>M :BuffergatorTabsToggle<CR>
+noremap <leader>m :BuffergatorToggle<CR>
+noremap <leader>M :BuffergatorTabsToggle<CR>
 
 "" NERDTree
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>
+noremap <leader>b :NERDTreeFind<CR>
 "" CtrlP
 noremap <leader>, :CtrlPBuffer<CR>
 noremap <leader>. :CtrlP<CR>
@@ -95,6 +96,9 @@ nmap <silent> <C-right> :bnext<CR>
 " close buffer and goto next
 nnoremap <C-x> :Bdelete<CR>
 nnoremap <leader>x :Bdelete<CR>
+" vim-bufsurf -- browse in buffer history
+nmap <silent> <C-A-left> :BufSurfBack<CR>
+nmap <silent> <C-A-right> :BufSurfForward<CR>
 
 nmap <C-n> :tabnew<CR>
 "nmap <leader>t :tabnew
