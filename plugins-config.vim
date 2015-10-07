@@ -139,6 +139,21 @@ let g:tagbar_type_markdown = {
     \ 'kinds': ['h:header']
 \ }
 
+let g:tagbar_type_rst = {
+    \ 'ctagstype': 'rst',
+    \ 'ctagsbin' : '/home/thet/.vim/rst2ctags/rst2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '|',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }
+
 
 "" EASYGREP
 let g:EasyGrepMode=1
