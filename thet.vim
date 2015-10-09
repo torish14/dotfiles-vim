@@ -71,7 +71,6 @@ set ttyfast
 set nowrap
 set nolist "" nolist needed for linebreak
 set linebreak "" when wrapping, don't break words
-set colorcolumn=79
 set nocursorline
 
 set lazyredraw  " dont redraw while vim is busy
