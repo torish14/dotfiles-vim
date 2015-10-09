@@ -154,6 +154,33 @@ let g:tagbar_type_rst = {
     \ 'sort': 0,
 \ }
 
+let g:tagbar_type_javascript = {
+    \ 'ctagstype' : 'javascript',
+    \ 'kinds'     : [
+        \ 'a:arrays',
+        \ 'o:objects',
+        \ 'r:variables',
+        \ 'f:functions',
+    \ ]
+\ }
+
+let g:tagbar_type_coffee = {
+    \ 'ctagstype' : 'coffee',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 'm:methods',
+        \ 'f:functions',
+        \ 'v:variables',
+        \ 'f:fields',
+    \ ]
+\ }
+
+let g:tagbar_type_make = {
+    \ 'kinds':[
+        \ 'm:macros',
+        \ 't:targets'
+    \ ]
+\}
 
 "" EASYGREP
 let g:EasyGrepMode=1
