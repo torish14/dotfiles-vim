@@ -87,6 +87,20 @@ noremap <leader>t :%!column -t
 nnoremap <leader>w gqip
 " join text in paragraph http://tech.groups.yahoo.com/group/vim/message/126388
 nnoremap <leader>j vipJ^
+
+nnoremap <leader>e :call SoftWrap80()<cr>
+
+function! SoftWrap80()
+    if &wrap
+        set columns&
+        set nowrap
+    else
+        set columns=80
+        set wrap
+    endif
+endfunction
+
+
 " select all
 nmap <C-a> ggVG
 
