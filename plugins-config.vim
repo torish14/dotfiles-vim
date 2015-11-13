@@ -57,14 +57,18 @@ autocmd FileType netrw setl bufhidden=wipe
 "" VIM AUTOFORMAT
 "" https://github.com/Chiel92/vim-autoformat
 "" https://github.com/hhatto/autopep8
-let g:formatprg_args_expr_python = '"--aggressive --aggressive".(&textwidth ? " --max-line-length=".&textwidth : "")." /dev/stdin "'
+let g:formatdef_thet_python = '"--aggressive --aggressive".(&textwidth ? " --max-line-length=".&textwidth : "")." /dev/stdin "'
+let g:formatters_python = ['thet_python']
 
-let g:formatprg_xml = "tidy"
-let g:formatprg_zpt = "html5tidy"
-let g:formatprg_html = "html5tidy"
-let g:formatprg_args_expr_xml = '"-q -i -xml -wrap 0 -utf8"'
-let g:formatprg_args_expr_zpt = '"-q -i -xml -wrap 0 -utf8"'
-let g:formatprg_args_expr_html = '"-q -i -xml -wrap 0 -utf8"'
+let g:formatdef_thet_xml = "tidy -q -i -xml -wrap 0 -utf8"
+let g:formatdef_thet_zcml = "tidy -q -i -xml -wrap 0 -utf8"
+let g:formatdef_thet_zpt = "html5tidy -q -i -xml -wrap 0 -utf8"
+let g:formatdef_thet_html = "html5tidy -q -i -xml -wrap 0 -utf8"
+
+let g:formatters_xml =  ['thet_xml']
+let g:formatters_zcml =  ['thet_zcml']
+let g:formatters_zpt =  ['thet_zpt']
+let g:formatters_html = ['thet_html']
 
 "let g:formatprg_args_expr_xml = '"-q -xml --show-errors 0 --show-warnings 0 --force-output --indent auto --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
 "let g:formatprg_args_expr_zpt = '"-q -i -xmlributes 1 --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
