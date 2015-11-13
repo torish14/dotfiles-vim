@@ -49,12 +49,6 @@ set expandtab
 
 set foldmethod=indent
 
-set wrap
-set textwidth=79
-if version >= 730
-  set colorcolumn=80
-endif
-match ErrorMsg '\%>80v.+'
 set formatoptions=qrnl
 
 "" highlight all python syntax
