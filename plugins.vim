@@ -53,6 +53,8 @@ Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 Plugin 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
+Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
+
 
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
