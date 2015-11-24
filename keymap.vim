@@ -8,6 +8,13 @@
 nnoremap <leader>4 :setlocal tabstop=4 shiftwidth=4 softtabstop=4<CR>
 nnoremap <leader>2 :setlocal tabstop=2 shiftwidth=2 softtabstop=2<CR>
 
+noremap <leader>z :setlocal foldcolumn=8<CR>
+noremap <leader>Z :setlocal foldcolumn=0<CR>
+
+nmap <leader>1 :call SynOff()<CR>
+nmap <leader>! :call SynOn()<CR>
+
+
 " show full path to file
 nnoremap <leader>% :echo expand('%:p')<CR>
 

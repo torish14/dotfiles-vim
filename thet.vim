@@ -199,10 +199,11 @@ function! SynOff()
     set nocursorline
     set noshowmatch
     set lazyredraw
-    let g:syntastic_mode_map = { 'mode': 'passive' }
+    "let g:syntastic_mode_map = { 'mode': 'passive' }
     :GitGutterDisable
+    "" Turns off (turning on with same command seems to be broken)
+    :SyntasticToggleMode
 endfunction
-nmap <leader>1 :call SynOff()<CR>
 
 
 function! SynOn()
@@ -211,12 +212,11 @@ function! SynOn()
     "set cursorcolumn
     "set cursorline
     set showmatch
-    let g:syntastic_mode_map = { 'mode': 'active' }
+    "let g:syntastic_mode_map = { 'mode': 'active' }
     :GitGutterEnable
+    "" Turns on again
+    :SyntasticCheck
 endfunction
-nmap <leader>2 :call SynOn()<CR>
-
-
 
 
 "" quit fast
