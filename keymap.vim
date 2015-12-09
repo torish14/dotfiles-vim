@@ -1,7 +1,17 @@
 
-"""" PLUGINS
+"" spellcheck
+map <silent> <leader>d :set spell!<CR>
 
-" vim expand region
+"" reformat - strip whitespace
+nnoremap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
+"" reformat - wrap text
+nnoremap <leader>w gqip
+"" reformat - join text
+nnoremap <leader>j vipJ^
+"" reformat - split each sentence
+nnoremap <leader>k vap:s/\([\.\?!]\) \+/\1\r/e<CR>
+
+"" vim expand region
 "vmap v <Plug>(expand_region_expand)
 "vmap <C-v> <Plug>(expand_region_shrink)
 
@@ -89,11 +99,6 @@ noremap <leader>t :%!column -t
 
 
 """"" VIM STANDARD
-
-" wrap text
-nnoremap <leader>w gqip
-" join text in paragraph http://tech.groups.yahoo.com/group/vim/message/126388
-nnoremap <leader>j vipJ^
 
 nnoremap <leader>e :call SoftWrap80()<cr>
 

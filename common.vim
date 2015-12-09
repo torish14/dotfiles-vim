@@ -80,13 +80,6 @@ set smartcase  " unless they contain upper-case letters
 map <silent> <leader>h :set hlsearch!<CR>¬
 map <LEADER>a :Ack<SPACE>
 
-""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" SPELLCHECK
-""  - no spellcheck by default
-""
-map <silent> <leader>s :set spell!<CR>
-set nospell
 
 ""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -103,7 +96,6 @@ function! Preserve(command)
     let @/=_s
     call cursor(l, c)
 endfunction
-nmap <leader>W :call Preserve("%s/\\s\\+$//e")<CR>
 
 ""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

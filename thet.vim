@@ -9,6 +9,15 @@ source $HOME/.vim/ranger_filechooser.vim
 
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" SPELLCHECK
+""  - no spellcheck by default
+""
+set nospell
+set spelllang=de,en
+
+
 "" http://superuser.com/questions/697347/vim-how-to-treat-three-quotations-in-a-row-as-a-comment-rather-than-a-string
 "" Highlight docstrings as comments, not string.
 "syn region pythonDocstring  start=+^\s*[uU]\?[rR]\?"""+ end=+"""+ keepend excludenl contains=pythonEscape,@Spell,pythonDoctest,pythonDocTest2,pythonSpaceError
@@ -148,11 +157,6 @@ vnoremap ; y:<C-r>"<C-b>
 "" allow semicolon to enter command mode from normal mode
 ""noremap ; :
 ""noremap <leader>; <ESC>
-
-"" remap
-set spelllang=de,en
-map <silent> <leader>d :set spell!<CR>
-nmap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
 
 
 "" center scrolling
