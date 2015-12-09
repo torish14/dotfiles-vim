@@ -8,7 +8,7 @@ nnoremap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
 nnoremap <leader>w gqip
 "" reformat - join text
 nnoremap <leader>j vipJ^
-"" reformat - split each sentence
+"" reformat - split each sentence - http://superuser.com/questions/275364
 nnoremap <leader>k vap:s/\([\.\?!]\) \+/\1\r/e<CR>
 
 "" vim expand region
