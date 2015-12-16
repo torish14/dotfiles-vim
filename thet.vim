@@ -30,13 +30,13 @@ set spelllang=de,en
 if has('gui_running')
     set antialias
     " Remove all the UI cruft
-    set go-=T
-    set go-=l
-    set go-=L
-    set go-=r
-    set go-=R
-    set go-=M
-    set go-=m
+    set go-=T  " toolbar
+    set go-=l  " left hand scrollbar
+    set go-=L  " left hand scrollbar - present on split windows
+    "" set go-=r  " right hand scrollbar
+    "" set go-=R  " right hand scrollbar - present on split windows
+    set go-=M  " rm menubar and don't source the menubar script
+    set go-=m  " menubar
 
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
