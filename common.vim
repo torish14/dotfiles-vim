@@ -77,8 +77,6 @@ set gdefault
 set hlsearch  " highlight the terms
 set ignorecase  " make searches case-insensitive
 set smartcase  " unless they contain upper-case letters
-map <silent> <leader>h :set hlsearch!<CR>¬
-map <LEADER>a :Ack<SPACE>
 
 
 ""

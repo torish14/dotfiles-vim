@@ -36,7 +36,12 @@ nnoremap <leader>q :DelimitMateSwitch<CR>
 nnoremap gz :!zeal --query "<cword>"&<CR><CR>
 
 " git gutter
-nnoremap <leader>gg :GitGutterToggle<CR>
+nmap <leader>hg <Plug>GitGutterToggle
+nmap <leader>hn <Plug>GitGutterNextHunk
+nmap <leader>hp <Plug>GitGutterPrevHunk
+nmap <Leader>hs <Plug>GitGutterStageHunk
+nmap <Leader>hr <Plug>GitGutterRevertHunk
+
 " Gitv, vim gitk
 nnoremap <leader>gv :Gitv<CR>
 nnoremap <leader>gm :Merginal<CR>
