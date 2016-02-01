@@ -1,4 +1,8 @@
 
+"" isort python files
+command! -range=% Isort :<line1>,<line2>! isort -
+map <leader>i :Isort<CR>
+
 "" spellcheck
 map <silent> <leader>d :set spell!<CR>
 
@@ -36,12 +40,12 @@ nnoremap <leader>q :DelimitMateSwitch<CR>
 nnoremap gz :!zeal --query "<cword>"&<CR><CR>
 
 " git gutter
+nmap ]c <Plug>GitGutterNextHunk
+nmap [c <Plug>GitGutterPrevHunk
 nmap <leader>hg <Plug>GitGutterToggle
-nmap <leader>hn <Plug>GitGutterNextHunk
-nmap <leader>hp <Plug>GitGutterPrevHunk
-nmap <Leader>hs <Plug>GitGutterStageHunk
+nmap <Leader>ha <Plug>GitGutterStageHunk
 nmap <Leader>hr <Plug>GitGutterRevertHunk
-nmap <Leader>hv <Plug>GitGutterPreviewHunk
+nmap <Leader>hp <Plug>GitGutterPreviewHunk
 
 " Gitv, vim gitk
 nnoremap <leader>gv :Gitv<CR>
@@ -56,8 +60,8 @@ nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
 "" syntastic next/prev Error
-nnoremap <leader>i :lprev<CR>
-nnoremap <leader>o :lnext<CR>
+nnoremap ]e :lnext<CR>
+nnoremap [e :lprev<CR>
 
 " MiniMap
 " https://github.com/koron/minimap-vim
