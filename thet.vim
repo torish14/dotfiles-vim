@@ -61,7 +61,7 @@ if has('gui_running')
     highlight Comment gui=italic
     highlight Search guibg=LawnGreen guifg=RoyalBlue
 else
-    colorscheme wombat
+    colorscheme molokai
     highlight SpellBad term=underline
 endif
 set fillchars+=vert:\ " No char for vertical split is even prettier thant |
