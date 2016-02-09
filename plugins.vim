@@ -11,8 +11,8 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 
-Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
-" Plugin 'bling/vim-bufferline'  " https://github.com/bling/vim-bufferline
+Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
+"Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
@@ -69,6 +69,8 @@ Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 
 Plugin 'tpope/vim-unimpaired'  " https://github.com/tpope/vim-unimpaired
 
+"" Musi
+"Plugin 'sbl/scvim'  " https://github.com/sbl/scvim
 
 "" ===========================================================================
 
@@ -77,6 +79,7 @@ Plugin 'tpope/vim-unimpaired'  " https://github.com/tpope/vim-unimpaired
 "Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-addon-local-vimrc
 "Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
 "Plugin 'koron/minimap-vim'  " https://github.com/koron/minimap-vim
+"Plugin 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 "Plugin 'MarcWeber/vim-addon-mw-utils'  " https://github.com/MarcWeber/vim-addon-mw-utils
 "Plugin 'tlib'
 

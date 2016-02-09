@@ -2,14 +2,6 @@
 let g:LargeFile = 1  " 500k is already a large file
 
 
-" let g:bufferline_echo = 0
-" let g:bufferline_active_buffer_left = ''
-" let g:bufferline_active_buffer_right = ''
-" let g:bufferline_show_bufnr = 0
-" let g:bufferline_rotate = 1
-" let g:bufferline_fixed_index =  1 "always second (default)
-" let g:bufferline_fname_mod = ':~:.'
-
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
