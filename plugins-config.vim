@@ -1,6 +1,8 @@
 "LargeFile
 let g:LargeFile = 1  " 500k is already a large file
 
+" BufTabLine
+let g:buftabline_indicators = 1
 
 " incsearch
 map /  <Plug>(incsearch-forward)
