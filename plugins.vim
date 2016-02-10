@@ -12,7 +12,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 
 Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
-"Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
+Plugin 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
@@ -131,8 +131,6 @@ Plugin 'tpope/vim-unimpaired'  " https://github.com/tpope/vim-unimpaired
 
 "" Modifies tabline, etc too much
 " Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
-" Plugin 'thet/tabline.vim'  " https://github.com/thet/tabline.vim
 " Plugin 'zefei/vim-wintabs'  " https://github.com/zefei/vim-wintabs
-" Plugin 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 " Plugin 'fholgado/minibufexpl.vim'  " https://github.com/fholgado/minibufexpl.vim
-
+" Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
