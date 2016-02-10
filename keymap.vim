@@ -137,6 +137,13 @@ nnoremap <leader>x :Bdelete<CR>
 nmap <silent> <C-A-left> :BufSurfBack<CR>
 nmap <silent> <C-A-right> :BufSurfForward<CR>
 
+autocmd FileType nerdtree noremap <buffer> <C-left> <nop>
+autocmd FileType nerdtree noremap <buffer> <C-right> <nop>
+autocmd FileType nerdtree noremap <buffer> <C-x> <nop>
+autocmd FileType buffergator noremap <buffer> <C-left> <nop>
+autocmd FileType buffergator noremap <buffer> <C-right> <nop>
+autocmd FileType buffergator noremap <buffer> <C-x> <nop>
+
 nmap <C-n> :tabnew<CR>
 "nmap <leader>t :tabnew
 "nmap <C-n> :tab split<CR>
