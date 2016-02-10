@@ -50,20 +50,18 @@ if has('gui_running')
     au InsertLeave * hi Cursor guibg=blue
     au InsertEnter * hi Cursor guibg=green
 
-    "" COLORSCHEME
-    " set background=dark
-    " set background=light
-    " colorscheme github
-    colorscheme molokai
-    let g:molokai_original = 0
-
-    highlight SpellBad term=underline gui=undercurl guisp=Red
     highlight Comment gui=italic
     highlight Search guibg=LawnGreen guifg=RoyalBlue
 else
-    colorscheme molokai
-    highlight SpellBad term=underline
+    set t_Co=256
 endif
+"" COLORSCHEME
+" set background=dark
+" set background=light
+" colorscheme github
+colorscheme molokai
+let g:molokai_original = 0
+highlight SpellBad term=underline gui=undercurl guisp=Red
 set fillchars+=vert:\ " No char for vertical split is even prettier thant |
 
 
