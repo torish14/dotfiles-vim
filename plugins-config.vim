@@ -4,6 +4,16 @@ let g:LargeFile = 1  " 500k is already a large file
 " BufTabLine
 let g:buftabline_indicators = 1
 
+" lightline
+let g:lightline = {
+      \ 'component_function': {
+      \   'filename': 'LightLineFilename'
+      \ }
+      \ }
+function! LightLineFilename()
+  return expand('%')
+endfunction
+
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
@@ -67,25 +77,6 @@ let g:formatters_html = ['thet_html']
 
 "let g:formatprg_args_expr_xml = '"-q -xml --show-errors 0 --show-warnings 0 --force-output --indent auto --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
 "let g:formatprg_args_expr_zpt = '"-q -i -xmlributes 1 --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
-
-
-" AIRLINE
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
-let g:airline#extensions#tabline#show_tab_nr = 0
-let g:airline#extensions#tabline#show_tab_type = 0
-let g:airline#extensions#tabline#buffer_idx_mode = 0
-
-let g:airline#extensions#tabline#fnamemod = ':p:.'
-let g:airline#extensions#tabline#fnamecollapse = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-let g:airline#extensions#tabline#show_close_button = 0
 
 
 "" SYNTASTIC

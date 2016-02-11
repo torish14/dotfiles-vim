@@ -1,4 +1,9 @@
 
+" open file relative to current file
+" no need for autochdir
+" http://stackoverflow.com/questions/1708623/opening-files-in-the-same-folder-as-the-current-file-in-vim
+map <leader>e :e %:h/
+
 "" isort python files
 command! -range=% Isort :<line1>,<line2>! isort -
 map <leader>i :Isort<CR>
@@ -111,19 +116,6 @@ noremap <leader>t :%!column -t
 
 """"" VIM STANDARD
 
-nnoremap <leader>e :call SoftWrap80()<cr>
-
-function! SoftWrap80()
-    if &wrap
-        set columns&
-        set nowrap
-    else
-        set columns=80
-        set wrap
-    endif
-endfunction
-
-
 " select all
 nmap <C-a> ggVG
 
@@ -170,10 +162,6 @@ nnoremap <C-w><Up> <C-w>k
 nnoremap <C-w><Down> <C-w>j
 nnoremap <C-w><Left> <C-w>h
 nnoremap <C-w><Right> <C-w>l
-
-"" MULTIPAGE
-"" see: http://stackoverflow.com/questions/6873076/auto-scrollable-pagination-with-vim-using-vertical-split
-nmap <silent> <Leader>ef :vsplit<bar>wincmd l<bar>exe "norm! Ljz<c-v><cr>"<cr>:set scb<cr>:wincmd h<cr> :set scb<cr>
 
 nmap <F5> :set nosmarttab<CR>
 "":setlocal si! si?<CR>

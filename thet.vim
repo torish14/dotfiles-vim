@@ -118,7 +118,7 @@ autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
 " another.
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 " autocmd BufEnter * silent! lcd %:p:h
-set autochdir
+" set autochdir
 
 "" :W or :Wa should write/write all
 command W execute "w"
