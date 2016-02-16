@@ -95,13 +95,8 @@ function! Preserve(command)
     call cursor(l, c)
 endfunction
 
-""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" http://vim.wikia.com/wiki/VimTip1486
-"" You may also try the context value, which lets SuperTab decide which
-"" completion mode to use and should play well with OmniCompletion:
-"let g:SuperTabDefaultCompletionType = "context"
-"imap <S-TAB> <C-X><C-O>
+
 set wildignore+=*.o,*.obj
 set wildignore+=*.pyc,*.pyo
 set wildignore+=.git,.svn,.hg

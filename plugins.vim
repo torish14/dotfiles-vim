@@ -59,9 +59,10 @@ Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
-"Plugin 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
-Plugin 'L9'
+Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+"Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
+"Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
+"Plugin 'L9'
 
 "" git, etc
 Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
@@ -89,14 +90,6 @@ Plugin 'tpope/vim-unimpaired'  " https://github.com/tpope/vim-unimpaired
 " Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
 " Plugin 'skammer/vim-css-color'  " https://github.com/skammer/vim-css-color
 " Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
-
-
-"" AUTOCOMPLETE
-"Plugin 'thet/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
-"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
-"Plugin 'Shougo/neocomplete.vim'  " https://github.com/Shougo/neocomplete.vim
-""Plugin 'Shougo/neocomplcache.vim'  " https://github.com/Shougo/neocomplcache.vim
-"" Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
 
 
 "" GIT

@@ -65,15 +65,18 @@ autocmd FileType netrw setl bufhidden=wipe
 let g:formatdef_thet_python = '"autopep8 - --range ".a:firstline." ".a:lastline." ".(&textwidth ? "--max-line-length=".&textwidth : "")." -a -a --ignore=E24,E70"'
 let g:formatters_python = ['thet_python']
 
-let g:formatdef_thet_xml = "tidy -q -i -xml -wrap 0 -utf8"
-let g:formatdef_thet_zcml = "tidy -q -i -xml -wrap 0 -utf8"
-let g:formatdef_thet_zpt = "html5tidy -q -i -xml -wrap 0 -utf8"
-let g:formatdef_thet_html = "html5tidy -q -i -xml -wrap 0 -utf8"
+let g:formatters_zcml =  ['htmlbeautify', 'tidy_xml']
+let g:formatters_zpt =  ['htmlbeautify', 'tidy_html']
 
-let g:formatters_xml =  ['thet_xml']
-let g:formatters_zcml =  ['thet_zcml']
-let g:formatters_zpt =  ['thet_zpt']
-let g:formatters_html = ['thet_html']
+" let g:formatdef_thet_xml = "tidy -q -i -xml -wrap 0 -utf8"
+" let g:formatdef_thet_zcml = "tidy -q -i -xml -wrap 0 -utf8"
+" let g:formatdef_thet_zpt = "html5tidy -q -i -xml -wrap 0 -utf8"
+" let g:formatdef_thet_html = "html5tidy -q -i -xml -wrap 0 -utf8"
+
+" let g:formatters_xml =  ['thet_xml']
+" let g:formatters_zcml =  ['thet_zcml']
+" let g:formatters_zpt =  ['thet_zpt']
+" let g:formatters_html = ['thet_html']
 
 "let g:formatprg_args_expr_xml = '"-q -xml --show-errors 0 --show-warnings 0 --force-output --indent auto --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
 "let g:formatprg_args_expr_zpt = '"-q -i -xmlributes 1 --indent-spaces ".&shiftwidth." --vertical-space yes --tidy-mark no -wrap 0"'
@@ -234,71 +237,18 @@ let g:buffergator_show_full_directory_path = 0
 let g:buffergator_suppress_keymaps = 1
 
 
-"" neocomplete cache
-"let g:neocomplcache_enable_at_startup = 1
-"let g:neocomplcache_enable_smart_case = 1
-"let g:neocomplcache_min_syntax_length = 3
+"" YouCompleteMe
 
+let g:ycm_filetype_blacklist = {
+    \ 'tagbar' : 1,
+    \ 'qf' : 1,
+    \ 'unite' : 1,
+    \ 'vimwiki' : 1,
+    \ 'pandoc' : 1,
+    \ 'infolog' : 1,
+    \ 'mail' : 1
+    \}
 
-"" neocomplete
-"let g:acp_enableAtStartup = 0
-"let g:neocomplete#enable_at_startup = 1
-"let g:neocomplete#enable_smart_case = 1
-"let g:neocomplete#sources#syntax#min_keyword_length = 3
-"let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-"
-"" Define dictionary.
-"let g:neocomplete#sources#dictionary#dictionaries = {
-"    \ 'default' : '',
-"    \ 'vimshell' : $HOME.'/.vimshell_hist',
-"    \ 'scheme' : $HOME.'/.gosh_completions'
-"        \ }
-"
-"" Define keyword.
-"if !exists('g:neocomplete#keyword_patterns')
-"    let g:neocomplete#keyword_patterns = {}
-"endif
-"let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-"
-"" Plugin key-mappings.
-"inoremap <expr><C-g>     neocomplete#undo_completion()
-"inoremap <expr><C-l>     neocomplete#complete_common_string()
-"
-"inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-"function! s:my_cr_function()
-"    return pumvisible() ? neocomplete#close_popup() : "\<CR>"
-"endfunction
-"" <TAB>: completion.
-"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-"" <C-h>, <BS>: close popup and delete backword char.
-"inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-"inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-"inoremap <expr><C-y>  neocomplete#close_popup()
-"inoremap <expr><C-e>  neocomplete#cancel_popup()
-"
-"" Enable omni completion.
-"autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-"autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-"autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-"
-"" Enable heavy omni completion.
-"if !exists('g:neocomplete#sources#omni#input_patterns')
-"  let g:neocomplete#sources#omni#input_patterns = {}
-"endif
-
-
-""" YouCompleteMe
-"let g:ycm_filetype_blacklist = {
-"    \ 'tagbar' : 1,
-"    \ 'qf' : 1,
-"    \ 'unite' : 1,
-"    \ 'vimwiki' : 1,
-"    \ 'pandoc' : 1,
-"    \ 'infolog' : 1,
-"    \ 'mail' : 1
-"\}
 "let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
 ""let g:ycm_key_list_previous_completion=['<Up>']
 "let g:ycm_complete_in_comments = 1
