@@ -33,6 +33,7 @@ Plugin 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enha
 " Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
 Plugin 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
+Plugin 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
 
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
@@ -59,9 +60,9 @@ Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
 "Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
-"Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
+Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
 "Plugin 'L9'
 
 "" git, etc
