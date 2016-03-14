@@ -10,7 +10,7 @@ set showmode
 set showcmd  " Display an incomplete command in the lower right corner of the Vim window
 set history=1000  " have 1000 lines of command-line (etc) history
 set so=4  " Set a margin of lines when scrolling
-set statusline=\ \ \ \ \ line:%l\ column:%c\ \ \ %M%Y%r%=%-14.(%t%)\ %p%%
+"" set statusline=\ \ \ \ \ line:%l\ column:%c\ \ \ %M%Y%r%=%-14.(%t%)\ %p%%
                     " set a custom status line similar to that of ``:set ruler``
 set completeopt+=longest,menuone
 set laststatus=2  " show the statusline in all window
