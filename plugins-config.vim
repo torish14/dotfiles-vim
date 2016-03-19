@@ -1,18 +1,10 @@
+source $HOME/.vim/lightline-config.vim
+
 "LargeFile
 let g:LargeFile = 1  " 500k is already a large file
 
 " BufTabLine
 let g:buftabline_indicators = 1
-
-" lightline
-let g:lightline = {
-      \ 'component_function': {
-      \   'filename': 'LightLineFilename'
-      \ }
-      \ }
-function! LightLineFilename()
-  return expand('%')
-endfunction
 
 " incsearch
 map /  <Plug>(incsearch-forward)
