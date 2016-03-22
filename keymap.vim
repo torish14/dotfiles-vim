@@ -111,6 +111,9 @@ noremap <leader>f :Autoformat<CR><CR>
 "" Tabs to spaces
 noremap <leader>t :set expandtab<CR>:retab<CR><CR>
 
+" http://stackoverflow.com/questions/4781070/how-to-insert-tab-character-when-expandtab-option-is-on-in-vim
+" <CTRL-V><Tab> in insert mode
+
 "" reformat to column based layout
 "" http://stackoverflow.com/questions/1229900/reformat-in-vim-for-a-nice-column-layout
 noremap <leader>c :%!column -t
