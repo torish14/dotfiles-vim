@@ -69,8 +69,6 @@ Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
 Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 
-Plugin 'tpope/vim-unimpaired'  " https://github.com/tpope/vim-unimpaired
-
 "" Musi
 "Plugin 'sbl/scvim'  " https://github.com/sbl/scvim
 
