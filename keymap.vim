@@ -1,3 +1,21 @@
+"" clipboard copy/paste
+map 1 "+yy
+map 2 "+P
+
+noremap <leader>p :set list!<CR>
+map <silent> <leader>l :set number!<CR>
+
+"" center scrolling
+"map <S-Up> <Up>zz
+"map <S-Down> <Down>zz
+"" scoll lock toggle
+map <leader>zz :let &scrolloff=999-&scrolloff<cr>
+" center search
+nmap n nzz
+nmap N Nzz
+
+" tile all open buffers in vertical panes - http://www.vimbits.com/bits/375
+noremap <silent> <leader>a :vertical :ball<cr>
 
 " open file relative to current file
 " no need for autochdir

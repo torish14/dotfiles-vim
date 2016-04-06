@@ -73,16 +73,17 @@ else
    set directory=~/tmp
 end
 
-set showmatch " indicate open/closing brackets
+set number       " turn on line numbers¬
+set showmatch    " indicate open/closing brackets
 set ttyfast
 set nowrap
-set nolist "" nolist needed for linebreak
-set linebreak "" when wrapping, don't break words
+set nolist       " nolist needed for linebreak
+set linebreak    " when wrapping, don't break words
 set nocursorline
 set colorcolumn=80
 match ErrorMsg '\%>80v.+'
 
-set lazyredraw  " dont redraw while vim is busy
+set lazyredraw   " dont redraw while vim is busy
 
 " fold paragraphs
 " http://vimdoc.sourceforge.net/htmldoc/fold.html
@@ -131,15 +132,7 @@ nnoremap <Del> "_x
 
 set smartindent
 
-
 set foldlevelstart=20 " set foldlevel higher so opened buffers arent folded
-
-" toggle list
-set nolist
-unmap <leader>l
-noremap <leader>p :set list!<CR>
-unmap <silent> <leader>n
-map <silent> <leader>l :set number!<CR>  " shortcut to turn off line numbers¬
 
 
 "" paste selected text into command line
@@ -157,38 +150,12 @@ vnoremap ; y:<C-r>"<C-b>
 ""noremap ; :
 ""noremap <leader>; <ESC>
 
-
-"" center scrolling
-"map <S-Up> <Up>zz
-"map <S-Down> <Down>zz
-"" scoll lock toggle
-map <leader>zz :let &scrolloff=999-&scrolloff<cr>
-" center search
-nmap n nzz
-nmap N Nzz
-
 "" search object
 " http://vim.wikia.com/wiki/Copy_or_change_search_hit
 " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
 vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
     \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
 omap s :normal vs<CR>
-
-
-"""" CLIPBOARD
-"" default copy/paste
-map 1 "+yy
-map 2 "+P
-
-"nmap 1 "ay
-"nmap 11 "ayy
-"nmap 2 "ap
-"" copy/paste paste to/from clipboard
-"map <C-S-1> "+yy
-"map <C-S-2> "+P
-"" set clipboard=unnamed
-"" set clipboard=unnamedplus
-
 
 function! SynOff()
     " Set Syntax hightlighting to off and other performance tweaks.
@@ -222,29 +189,8 @@ function! SynOn()
 endfunction
 
 
-"" quit fast
-"nmap :qq<CR> :qall<CR>
-
-"" move lines and blocks
-"" see http://vim.wikia.com/wiki/Moving_lines_up_or_down
-"nnoremap <C-Up> :m+<CR>==
-"nnoremap <C-Down> :m-2<CR>==
-"inoremap <C-Up> <Esc>:m+<CR>==gi
-"inoremap <C-Down> <Esc>:m-2<CR>==gi
-"vnoremap <C-Up> :m'>+<CR>gv=gv
-"vnoremap <C-Down> :m-2<CR>gv=gv
-
-"" autocomplpopup bug
-"autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal tw=79 fo=aw2tq
-"autocmd BufRead,BufNewFile *.py setlocal tw=79 fo=aw2cq
-
-
-"" split windows
-"" http://techdebug.com/blog/2008/05/22/vim-split-tips/
-" Max/unmax splits
+" Maximize toggle splits - http://techdebug.com/blog/2008/05/22/vim-split-tips/
 nnoremap <C-w>e :call MaximizeToggle()<cr>
-"nnoremap <c-W>O :call MaximizeToggle()<cr>
-"nnoremap <c-W><c-O> :call MaximizeToggle()<cr>
 function! MaximizeToggle()
   if exists("s:maximize_session")
     exec "source " . s:maximize_session
@@ -260,34 +206,5 @@ function! MaximizeToggle()
     only
   endif
 endfunction
-"nnoremap <C-w>a :call WindowToggle()<CR>
-"function! WindowToggle()
-"    "" toggle
-"    let s:toggle_split = exists('s:toggle_split') ? !s:toggle_split : 1
-"    if s:toggle_split
-"        "" <C-w>w<CR>
-"        echo 'implement me 1'
-"    else
-"        "" <C-p>p<CR>
-"        echo 'imeplement me 2'
-"    endif
-"endfunction
-
-
-"" autocomplete behavior
-"" http://vim.wikia.com/wiki/Improve_completion_popup_menu
-"inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
-"inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
-"inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
-"inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
-"inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
-"inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
-
-
-"" TILE ALL OPEN BUFFERS
-"" http://www.vimbits.com/bits/375
-" open all buffers in separate (vertical) panes (see ':help :ball' and ':help :vertical')
-noremap <silent> <leader>a :vertical :ball<cr>
-
 
 source $HOME/.vim/keymap.vim

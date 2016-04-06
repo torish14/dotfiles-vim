@@ -55,18 +55,6 @@ set formatoptions=qrnl
 let python_highlight_all=1
 
 ""
-set number  " turn on line numbers¬
-map <silent> <leader>n :set number!<CR>  " shortcut to turn off line numbers¬
-
-""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" TABSTOP AND LINESTOP SYMBOLS
-""  <leader>l       -- Toggle tabstop(▸) and linestop symobls (¬)
-""
-set list
-nmap <leader>l :set list!<CR>
-
-""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" SEARCH
 ""
