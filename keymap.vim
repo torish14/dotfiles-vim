@@ -1,6 +1,8 @@
 " SECTION FOR <leader>` MAPPINGS
+" jsom formating
 nnoremap <leader>`json :%!python -m json.tool<CR>
-
+" insert filename
+inoremap <leader>`fn <C-R>=expand("%:p")<CR>
 
 "" clipboard copy/paste
 map 1 "+yy
