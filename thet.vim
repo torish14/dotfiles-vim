@@ -79,7 +79,6 @@ set nowrap
 set nolist "" nolist needed for linebreak
 set linebreak "" when wrapping, don't break words
 set nocursorline
-set textwidth=79
 set colorcolumn=80
 match ErrorMsg '\%>80v.+'
 
@@ -94,7 +93,7 @@ set foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
 
 "" bufstop for xml based files
 autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufRead,BufNewFile *.js setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufRead,BufNewFile *.js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=2 filetype=robot
 "" https://github.com/tpope/vim-markdown
@@ -105,6 +104,8 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 "" seetings see:
 autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0
 
+"" wrap python at col 79
+autocmd BufRead,BufNewFile *.py setlocal textwidth=79
 
 ""treat ZCML as XML:
 ""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
