@@ -57,8 +57,16 @@ autocmd FileType netrw setl bufhidden=wipe
 let g:formatdef_thet_python = '"autopep8 - --range ".a:firstline." ".a:lastline." ".(&textwidth ? "--max-line-length=".&textwidth : "")." -a -a --ignore=E24,E70"'
 let g:formatters_python = ['thet_python']
 
-let g:formatters_zcml =  ['htmlbeautify', 'tidy_xml']
-let g:formatters_zpt =  ['htmlbeautify', 'tidy_html']
+
+"" xml_pp provided by perl-XML-Twig (Fedora)
+let g:formatdef_xmlpp = "xml_pp -s indented_a"
+let g:formatters_zcml =  ['xmlpp']
+let g:formatters_zpt =   ['xmlpp']
+"let g:formatters_zcml =  ['xmlpp', 'htmlbeautify', 'tidy_xml']
+"let g:formatters_zpt =   ['xmlpp', 'htmlbeautify', 'tidy_html']
+
+" let g:formatters_zcml =  ['htmlbeautify', 'tidy_xml']
+" let g:formatters_zpt =  ['htmlbeautify', 'tidy_html']
 
 " let g:formatdef_thet_xml = "tidy -q -i -xml -wrap 0 -utf8"
 " let g:formatdef_thet_zcml = "tidy -q -i -xml -wrap 0 -utf8"
@@ -80,14 +88,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list=1
+let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list=0
-let g:syntastic_check_on_open=1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
-let g:syntastic_auto_jump=0
+let g:syntastic_auto_jump = 0
 let g:syntastic_stl_format = '[%E{%e Errors}%B{, }%W{%w Warnings}]'
-let g:syntastic_ignore_files=['bin/', '.min.css', '.min.js']
+let g:syntastic_ignore_files = ['bin/', '.min.css', '.min.js']
 
 let g:syntastic_error_symbol = '❌'
 let g:syntastic_style_error_symbol = '⁉️'
