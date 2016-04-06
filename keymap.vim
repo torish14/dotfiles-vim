@@ -1,3 +1,7 @@
+" SECTION FOR <leader>` MAPPINGS
+nnoremap <leader>`json :%!python -m json.tool<CR>
+
+
 "" clipboard copy/paste
 map 1 "+yy
 map 2 "+P
