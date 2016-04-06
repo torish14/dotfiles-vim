@@ -10,6 +10,11 @@ source $HOME/.vim/ranger_filechooser.vim
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
 
 
+"" project specific .vimrc
+"" https://andrew.stwrt.ca/posts/project-specific-vimrc/
+set exrc
+set secure
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" SPELLCHECK
 ""  - no spellcheck by default
