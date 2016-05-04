@@ -55,7 +55,7 @@ Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 Plugin 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
 Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
-
+Plugin 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
 
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips

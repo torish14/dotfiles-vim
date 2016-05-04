@@ -1,3 +1,7 @@
+" MatchTagAlways
+nnoremap <leader>]t :MtaJumpToOtherTag<cr>
+nnoremap <leader>[t :MtaJumpToOtherTag<cr>
+
 " SECTION FOR <leader>` MAPPINGS
 " jsom formating
 nnoremap <leader>`json :%!python -m json.tool<CR>

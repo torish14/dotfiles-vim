@@ -1,5 +1,15 @@
 source $HOME/.vim/lightline-config.vim
 
+" MatchTagAlways
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'jinja' : 1,
+    \ 'pt' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'zcml' : 1,
+    \}
+
 "LargeFile
 let g:LargeFile = 1  " 500k is already a large file
 
@@ -57,11 +67,19 @@ autocmd FileType netrw setl bufhidden=wipe
 let g:formatdef_thet_python = '"autopep8 - --range ".a:firstline." ".a:lastline." ".(&textwidth ? "--max-line-length=".&textwidth : "")." -a -a --ignore=E24,E70"'
 let g:formatters_python = ['thet_python']
 
+let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
+
+let g:formatters_zpt = ['htmlbeautify']
+let g:formatters_xml = ['htmlbeautify']
+let g:formatters_zcml = ['htmlbeautify']
+
+let g:formatters_less = ['cssbeautify']
+
 
 "" xml_pp provided by perl-XML-Twig (Fedora)
-let g:formatdef_xmlpp = "xml_pp -s indented_a"
-let g:formatters_zcml =  ['xmlpp']
-let g:formatters_zpt =   ['xmlpp']
+"let g:formatdef_xmlpp = "xml_pp -s indented_a"
+"let g:formatters_zcml =  ['xmlpp']
+"let g:formatters_zpt =   ['xmlpp']
 "let g:formatters_zcml =  ['xmlpp', 'htmlbeautify', 'tidy_xml']
 "let g:formatters_zpt =   ['xmlpp', 'htmlbeautify', 'tidy_html']
 
