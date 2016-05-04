@@ -117,7 +117,7 @@ autocmd BufRead,BufNewFile *.py setlocal textwidth=79
 ""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
 ""autocmd BufRead,BufNewFile *.pt set filetype=xml
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
-autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt.html syntax=xml
+autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
 autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
 
 
