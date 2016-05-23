@@ -71,9 +71,10 @@ let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
 
 let g:formatters_zpt = ['htmlbeautify']
 let g:formatters_xml = ['htmlbeautify']
-let g:formatters_zcml = ['htmlbeautify']
 
-let g:formatters_less = ['cssbeautify']
+let g:formatdef_thet_cssbrush = '"cssbrush ".bufname("%")'
+let g:formatters_less = ['thet_cssbrush']
+let g:formatters_css = ['thet_cssbrush']
 
 
 "" xml_pp provided by perl-XML-Twig (Fedora)

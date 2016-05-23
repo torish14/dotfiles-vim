@@ -119,6 +119,8 @@ autocmd BufRead,BufNewFile *.py setlocal textwidth=79
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
 autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
 autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
+autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
+autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 
 
 " cd working directory to current file. enables to create files relative to
