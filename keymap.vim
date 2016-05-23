@@ -7,10 +7,19 @@ nnoremap <leader>[t :MtaJumpToOtherTag<cr>
 nnoremap <leader>`json :%!python -m json.tool<CR>
 " insert filename
 inoremap <leader>`fn <C-R>=expand("%:p")<CR>
+"" reformat to column based layout
+"" http://stackoverflow.com/questions/1229900/reformat-in-vim-for-a-nice-column-layout
+noremap <leader>`t :%!column -t<CR>
+
 
 "" clipboard copy/paste
 map 1 "+yy
 map 2 "+P
+
+" copy filename to clipboard
+" http://vim.wikia.com/wiki/Copy_filename_to_clipboard
+nmap ,cs :let @+=expand("%")<CR>
+nmap ,cl :let @+=expand("%:p")<CR>
 
 noremap <leader>p :set list!<CR>
 map <silent> <leader>l :set number!<CR>
@@ -141,11 +150,6 @@ noremap <leader>t :set expandtab<CR>:retab<CR><CR>
 
 " http://stackoverflow.com/questions/4781070/how-to-insert-tab-character-when-expandtab-option-is-on-in-vim
 " <CTRL-V><Tab> in insert mode
-
-"" reformat to column based layout
-"" http://stackoverflow.com/questions/1229900/reformat-in-vim-for-a-nice-column-layout
-noremap <leader>c :%!column -t
-
 
 """"" VIM STANDARD
 
