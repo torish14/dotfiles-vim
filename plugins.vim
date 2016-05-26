@@ -11,17 +11,13 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 
-Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plugin 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
-Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
-Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
 Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
-Plugin 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
 Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead netrw_gx. Supports search!
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
@@ -31,9 +27,45 @@ Plugin 'Z1MM32M4N/vim-superman'  " https://github.com/Z1MM32M4N/vim-superman
 Plugin 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 Plugin 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 " Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
-Plugin 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
+" Plugin 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
+
+
+" Buffer
+Plugin 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
+Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
-Plugin 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
+Plugin 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
+Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
+Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
+
+
+" Syntaxn
+Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
+Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
+Plugin 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
+Plugin 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+" Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
+Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
+Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
+Plugin 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
+Plugin 'ap/vim-css-color'  " https://github.com/skammer/vim-css-color
+Plugin 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
+Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
+Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
+
+
+" autocomplete and snippets
+Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
+Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
+Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
+"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+"Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
+
+
+"" git, etc
+Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
+Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+
 
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
@@ -43,31 +75,6 @@ Plugin 'Lokaltog/vim-distinguished'  " https://github.com/Lokaltog/vim-distingui
 Plugin 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
 Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
 
-" Syntaxn
-" Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
-Plugin 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
-Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
-Plugin 'ap/vim-css-color'  " https://github.com/skammer/vim-css-color
-Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
-Plugin 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
-Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
-Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
-Plugin 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
-Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
-Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
-Plugin 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
-
-" autocomplete and snippets
-Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
-Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
-"Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
-Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
-"Plugin 'L9'
-
-"" git, etc
-Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
-Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 
 "" Musi
 "Plugin 'sbl/scvim'  " https://github.com/sbl/scvim
