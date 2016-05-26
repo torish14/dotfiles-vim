@@ -21,7 +21,7 @@ Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
 Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
-Plugin 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
+Plugin 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
 Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead netrw_gx. Supports search!
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
