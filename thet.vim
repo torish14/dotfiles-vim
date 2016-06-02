@@ -1,6 +1,7 @@
 "" DEBUG
 ""set verbose
 
+source $HOME/.vim/python-config.vim
 source $HOME/.vim/plugins.vim
 source $HOME/.vim/common.vim
 source $HOME/.vim/plugins-config.vim
