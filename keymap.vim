@@ -1,3 +1,14 @@
+" jedi
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_definitions_command = ""
+
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>pn"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>pr"
+
+
 " MatchTagAlways
 nnoremap <leader>]t :MtaJumpToOtherTag<cr>
 nnoremap <leader>[t :MtaJumpToOtherTag<cr>
@@ -21,7 +32,7 @@ map 2 "+P
 nmap ,cs :let @+=expand("%")<CR>
 nmap ,cl :let @+=expand("%:p")<CR>
 
-noremap <leader>p :set list!<CR>
+"noremap <leader>p :set list!<CR>
 map <silent> <leader>l :set number!<CR>
 
 "" center scrolling
@@ -46,7 +57,7 @@ command! -range=% Isort :<line1>,<line2>! isort -
 map <leader>i :Isort<CR>
 
 "" spellcheck
-map <silent> <leader>d :set spell!<CR>
+"map <silent> <leader>d :set spell!<CR>
 
 "" reformat - strip whitespace
 nnoremap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
@@ -90,10 +101,10 @@ nmap <Leader>hr <Plug>GitGutterRevertHunk
 nmap <Leader>hp <Plug>GitGutterPreviewHunk
 
 " Gitv, vim gitk
-nnoremap <leader>gv :Gitv<CR>
-nnoremap <leader>gm :Merginal<CR>
-nnoremap <leader>gi :Gissues<CR>
-nnoremap <leader>ga :Giadd<CR>
+"nnoremap <leader>gv :Gitv<CR>
+"nnoremap <leader>gm :Merginal<CR>
+"nnoremap <leader>gi :Gissues<CR>
+"nnoremap <leader>ga :Giadd<CR>
 
 
 nnoremap <leader>u :IndentGuidesToggle<CR>
@@ -130,11 +141,29 @@ noremap <leader>M :BuffergatorTabsToggle<CR>
 noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>
 noremap <leader>b :NERDTreeFind<CR>
+
 "" CtrlP
 noremap <leader>, :CtrlPBuffer<CR>
-noremap <leader>. :CtrlP<CR>
-noremap <leader>/ :CtrlPMixed<CR>
+noremap <leader>/ :CtrlP<CR>
+"noremap <leader>/ :CtrlPMixed<CR>
 "noremap <leader>/ :CtrlP<CR>
+"
+function! g:CtrlPCurrentBufferDir()
+    let ctrlp_working_path_mode = 'c'
+    :CtrlP
+endfunction
+noremap <leader>. :call CtrlPCurrentBufferDir()<CR>
+
+
+
+" ctrlp-funky
+nnoremap <leader>' :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <leader>; :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+
+" CtrlSF / AG
+nmap <leader>\ <Plug>CtrlSFPrompt
+
 
 
 "" Tagbar

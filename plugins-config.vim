@@ -1,4 +1,11 @@
 source $HOME/.vim/lightline-config.vim
+source $HOME/.vim/plugins-config-ctrlp.vim
+
+
+"" jedi
+let g:jedi#show_call_signatures = 2
+let g:jedi#force_py_version = 2
+
 
 " MatchTagAlways
 let g:mta_filetypes = {
@@ -29,21 +36,11 @@ let g:incsearch#magic = '\v'
 " The Silver Searcher
 " http://robots.thoughtbot.com/faster-grepping-in-vim
 " https://github.com/ggreer/the_silver_searcher
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ -i\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  "let g:ctrlp_user_command = 'ag %s -i -l --nocolor -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  "let g:ctrlp_use_caching = 0
-endif
 " bind K to grep word under cursor
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+"nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " bind \ (backward slash) to grep shortcut
-command -nargs=+ -complete=file -bar Ag silent! grep! -i <args>|cwindow|redraw!
-nnoremap \ :Ag<SPACE>
+"command -nargs=+ -complete=file -bar Ag silent! grep! -i <args>|cwindow|redraw!
+"nnoremap \ :Ag<SPACE>
 
 
 "" indent guides
@@ -343,12 +340,6 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 "" CONFLICT with some plugins like tpope/Endwise
 "inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-
-"" jedi
-"let g:jedi#auto_vim_configuration = 0
-"let g:jedi#show_call_signatures = 0
-"let g:jedi#popup_select_first = 0
-"set completeopt=longest,menuone
 
 
 "" Conque_Shell

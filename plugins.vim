@@ -14,7 +14,6 @@ Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 Plugin 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
-Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
@@ -23,15 +22,24 @@ Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim
 Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
 Plugin 'LargeFile'  " https://github.com/vim-scripts/LargeFile
 Plugin 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
-Plugin 'Z1MM32M4N/vim-superman'  " https://github.com/Z1MM32M4N/vim-superman
+Plugin 'jez/vim-superman'  " https://github.com/jez/vim-superman
 Plugin 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 Plugin 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
+
+Plugin 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
+Plugin 'dyng/ctrlsf.vim'  " https://github.com/dyng/ctrlsf.vim
+" Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
+
 " Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
 " Plugin 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
 
 
 " Buffer
 Plugin 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
+Plugin 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
+Plugin 'tacahiroy/ctrlp-funky'  " https://github.com/tacahiroy/ctrlp-funky
+
+
 Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plugin 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
@@ -52,7 +60,7 @@ Plugin 'ap/vim-css-color'  " https://github.com/skammer/vim-css-color
 Plugin 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
 Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
-
+Plugin 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
 
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
