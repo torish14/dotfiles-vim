@@ -214,10 +214,10 @@ nmap <C-Down> :tabp<CR>
 "vnoremap <TAB> %
 
 "" WINDOWS / BUFFERS movement
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
+"nnoremap <C-l> <C-w>l
 "
 nnoremap <leader><Up> <C-w>k
 nnoremap <leader><Down> <C-w>j
