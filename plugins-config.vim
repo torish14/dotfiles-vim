@@ -1,5 +1,6 @@
-source $HOME/.vim/lightline-config.vim
 source $HOME/.vim/plugins-config-ctrlp.vim
+source $HOME/.vim/plugins-config-tagbar.vim
+source $HOME/.vim/plugins-config-lightline.vim
 
 
 "" jedi

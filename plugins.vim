@@ -61,6 +61,7 @@ Plugin 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-v
 Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
 Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
 Plugin 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
+Plugin 'ternjs/tern_for_vim'  " https://github.com/ternjs/tern_for_vim
 
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
