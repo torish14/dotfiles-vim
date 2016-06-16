@@ -63,7 +63,8 @@ autocmd FileType netrw setl bufhidden=wipe
 "" https://github.com/hhatto/autopep8
 ""let g:formatdef_thet_python = '"-a -a -a -a ".(&textwidth ? "--max-line-length=".&textwidth : "")." /dev/stdin "'
 let g:formatdef_thet_python = '"autopep8 - --range ".a:firstline." ".a:lastline." ".(&textwidth ? "--max-line-length=".&textwidth : "")." -a -a --ignore=E24,E70"'
-let g:formatters_python = ['thet_python']
+" let g:formatters_python = ['thet_python']
+let g:formatters_python = ['yapf']
 
 let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
 
