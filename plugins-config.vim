@@ -18,6 +18,12 @@ let g:mta_filetypes = {
     \ 'zcml' : 1,
     \}
 
+
+" Set limelight on Goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+
 "LargeFile
 let g:LargeFile = 1  " 500k is already a large file
 
