@@ -17,7 +17,7 @@ Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plugin 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plugin 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plugin 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
-Plugin 'tyru/open-browser.vim'  " https://github.com/ Use open-browser instead netrw_gx. Supports search!
+Plugin 'tyru/open-browser.vim'  " https://github.com/tyru/open-browser.vim
 Plugin 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 Plugin 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
 Plugin 'LargeFile'  " https://github.com/vim-scripts/LargeFile
@@ -44,8 +44,9 @@ Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plugin 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
-Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
-
+" Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
+Plugin 'tpope/vim-eunuch'  " https://github.com/tpope/vim-eunuch
+Plugin 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-filebeagle
 
 " Syntaxn
 Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
