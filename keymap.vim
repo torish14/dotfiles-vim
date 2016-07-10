@@ -24,8 +24,13 @@ noremap <leader>`t :%!column -t<CR>
 
 
 "" clipboard copy/paste
-map 1 "+yy
-map 2 "+P
+if has('gui_running')
+    map 1 "+yy
+    map 2 "+P
+else
+    map 1 <Plug>(fakeclip-Y)
+    map 2 <Plug>(fakeclip-P)
+endif
 
 " copy filename to clipboard
 " http://vim.wikia.com/wiki/Copy_filename_to_clipboard
@@ -142,6 +147,10 @@ noremap <leader>n :NERDTreeToggle<CR>
 noremap <leader>N :NERDTree<CR>
 noremap <leader>b :NERDTreeFind<CR>
 
+"" FileBeagle
+map <silent> _  <Plug>FileBeagleOpenCurrentWorkingDir
+map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
+
 "" CtrlP
 noremap <leader>, :CtrlPBuffer<CR>
 noremap <leader>/ :CtrlP<CR>
@@ -173,7 +182,8 @@ nnoremap tt :TagbarToggle<CR>
 
 
 "" Autoformat
-noremap <leader>f :Autoformat<CR><CR>
+map <leader>f :Autoformat<CR><CR>
+
 "" Tabs to spaces
 noremap <leader>t :set expandtab<CR>:retab<CR><CR>
 

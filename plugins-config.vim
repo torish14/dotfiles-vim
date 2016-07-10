@@ -19,6 +19,10 @@ let g:mta_filetypes = {
     \}
 
 
+" filebeagle defines <leader>f, which I don't want
+let g:filebeagle_suppress_keymaps = 1
+
+
 " Set limelight on Goyo
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!

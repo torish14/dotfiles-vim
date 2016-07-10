@@ -11,6 +11,12 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 
+if has('gui_running')
+    " all right...
+else
+    Plugin 'kana/vim-fakeclip'  " https://github.com/kana/vim-fakeclip
+endif
+
 Plugin 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
@@ -56,6 +62,7 @@ Plugin 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
 " Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
 Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
+Plugin 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
 Plugin 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
 Plugin 'ap/vim-css-color'  " https://github.com/skammer/vim-css-color
 Plugin 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
