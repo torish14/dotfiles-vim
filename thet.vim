@@ -111,8 +111,10 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 "" seetings see:
 autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0
 
+
+"" ANNOYING! wrapts too often, too eary
 "" wrap python at col 79
-autocmd BufRead,BufNewFile *.py setlocal textwidth=79
+" autocmd BufRead,BufNewFile *.py setlocal textwidth=79
 
 ""treat ZCML as XML:
 ""autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml set filetype=xml
@@ -138,7 +140,9 @@ command Wa execute "wa"
 "" thanks bairu from #vim!
 nnoremap <Del> "_x
 
-set smartindent
+"" ANNOYING! moves comment on beginning of line
+"" set smartindent
+set cindent
 
 set foldlevelstart=20 " set foldlevel higher so opened buffers arent folded
 
