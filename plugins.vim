@@ -11,12 +11,6 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'  " https://github.com/gmarik/vundle
 
-if has('gui_running')
-    " all right...
-else
-    Plugin 'kana/vim-fakeclip'  " https://github.com/kana/vim-fakeclip
-endif
-
 Plugin 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 Plugin 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plugin 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep

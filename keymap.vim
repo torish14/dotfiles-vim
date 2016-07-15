@@ -23,13 +23,23 @@ inoremap <leader>`fn <C-R>=expand("%:p")<CR>
 noremap <leader>`t :%!column -t<CR>
 
 
+" See: https://github.com/neovim/neovim/issues/583
+function! ClipboardYank()
+    call system('xclip -i -selection clipboard', @@)
+endfunction
+function! ClipboardPaste()
+    let @@ = system('xclip -o -selection clipboard')
+endfunction
+
+
 "" clipboard copy/paste
 if has('gui_running')
     map 1 "+yy
     map 2 "+P
 else
-    map 1 <Plug>(fakeclip-Y)
-    map 2 <Plug>(fakeclip-P)
+    map 1 yy:call ClipboardYank()<CR>
+    map 2 :call ClipboardPaste()<CR>p
+    map 3 dd:call ClipboardYank()<CR>
 endif
 
 " copy filename to clipboard
