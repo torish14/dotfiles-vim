@@ -27,8 +27,7 @@ Plugin 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 Plugin 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 
 Plugin 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
-Plugin 'dyng/ctrlsf.vim'  " https://github.com/dyng/ctrlsf.vim
-" Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
+Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
 
 " Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
 " Plugin 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
@@ -37,8 +36,6 @@ Plugin 'dyng/ctrlsf.vim'  " https://github.com/dyng/ctrlsf.vim
 " Buffer
 Plugin 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
 Plugin 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
-Plugin 'tacahiroy/ctrlp-funky'  " https://github.com/tacahiroy/ctrlp-funky
-
 
 Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
@@ -64,6 +61,8 @@ Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-
 Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
 Plugin 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
 Plugin 'ternjs/tern_for_vim'  " https://github.com/ternjs/tern_for_vim
+Plugin 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
+
 
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
@@ -76,6 +75,7 @@ Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
 "" git, etc
 Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+Plugin 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 
 
 " Colorscheme
@@ -85,6 +85,7 @@ Plugin 'w0ng/vim-hybrid'  " https://github.com/w0ng/vim-hybrid
 Plugin 'Lokaltog/vim-distinguished'  " https://github.com/Lokaltog/vim-distinguished
 Plugin 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
 Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
+Plugin 'hukl/Smyck-Color-Scheme'  " https://github.com/hukl/Smyck-Color-Scheme
 
 
 "" Musi
@@ -111,7 +112,6 @@ Plugin 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
 
 "" GIT
 "" gitguteer alternative for other vcs: https://github.com/mhinz/vim-signify
-"Plugin 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 "Plugin 'idanarye/vim-merginal'  " https://github.com/idanarye/vim-merginal
 "Plugin 'int3/vim-extradite'  " https://github.com/int3/vim-extradite
 "Plugin 'jaxbot/github-issues.vim'  " https://github.com/jaxbot/github-issues.vim

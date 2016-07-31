@@ -65,7 +65,9 @@ noremap <silent> <leader>a :vertical :ball<cr>
 " open file relative to current file
 " no need for autochdir
 " http://stackoverflow.com/questions/1708623/opening-files-in-the-same-folder-as-the-current-file-in-vim
-map <leader>e :e %:h/
+" map <leader>e :e %:h/
+" use next instead of edit. next supports opening multiple files via GLOBS
+map <leader>e :n %:h/
 
 "" isort python files
 command! -range=% Isort :<line1>,<line2>! isort -
@@ -181,8 +183,7 @@ nnoremap <leader>' :CtrlPFunky<Cr>
 nnoremap <leader>; :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 " CtrlSF / AG
-nmap <leader>\ <Plug>CtrlSFPrompt
-
+nmap \ :Ag<SPACE>
 
 
 "" Tagbar

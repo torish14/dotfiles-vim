@@ -31,6 +31,18 @@ set spelllang=de,en
 "hi def link pythonDocstring pythonComment
 "highlight pythonDocstring gui=italic
 
+"" COLORSCHEME
+" set background=dark
+" set background=light
+" colorscheme github
+
+" let g:hybrid_custom_term_colors = 0
+" let g:hybrid_reduced_contrast = 1
+" colorscheme hybrid
+
+let g:molokai_original = 0
+colorscheme molokai
+
 
 "" GUI
 if has('gui_running')
@@ -60,13 +72,9 @@ if has('gui_running')
     highlight Search guibg=LawnGreen guifg=RoyalBlue
 else
     set t_Co=256
+    highlight Normal ctermbg=none
 endif
-"" COLORSCHEME
-" set background=dark
-" set background=light
-" colorscheme github
-colorscheme molokai
-let g:molokai_original = 0
+
 highlight SpellBad term=underline gui=undercurl guisp=Red
 set fillchars+=vert:\ " No char for vertical split is even prettier thant |
 

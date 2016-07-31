@@ -7,3 +7,7 @@ sort case insensitive::
 
     :sort i
 
+
+format json::
+
+    :%!python -m json.tool
