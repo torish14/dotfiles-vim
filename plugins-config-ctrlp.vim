@@ -19,7 +19,7 @@ let g:ctrlp_max_files = 0
 " If ag is available use it as filename list generator instead of 'find'
 if executable("ag")
     set grepprg=ag\ --nogroup\ --nocolor\ -U\ -f
-    let g:ctrlp_user_command = 'ag %s -i -l -U -f --nocolor --nogroup --hidden -g ""'
+    let g:ctrlp_user_command = 'ag %s -i -l -U -f --nocolor --nogroup --hidden -g "" --ignore *.png --ignore *.gif --ignore *.jpg'
 else
     " Ignore files in .gitignore
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
