@@ -62,7 +62,7 @@ Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
 Plugin 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
 Plugin 'ternjs/tern_for_vim'  " https://github.com/ternjs/tern_for_vim
 Plugin 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
-
+Plugin 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 
 " autocomplete and snippets
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips

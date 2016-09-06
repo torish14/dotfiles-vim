@@ -133,10 +133,11 @@ vmap gx <Plug>(openbrowser-smart-search)
 nnoremap ]e :lnext<CR>
 nnoremap [e :lprev<CR>
 
-" MiniMap
-" https://github.com/koron/minimap-vim
-nnoremap mimi :MinimapSync<CR>
-nnoremap mc :MinimapStop<CR>
+" minimap
+let g:minimap_show='ms'
+let g:minimap_update='mu'
+let g:minimap_close='mc'
+let g:minimap_toggle='mm'
 
 
 "" fontsize
