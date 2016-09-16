@@ -29,33 +29,28 @@ Plugin 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enha
 Plugin 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
 Plugin 'rking/ag.vim'  " https://github.com/rking/ag.vim
 
-" Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
-" Plugin 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
-
-
 " Buffer
 Plugin 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
 Plugin 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
 
 Plugin 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
-Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plugin 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 Plugin 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
-" Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
 Plugin 'tpope/vim-eunuch'  " https://github.com/tpope/vim-eunuch
+Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plugin 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-filebeagle
+Plugin 'yegappan/mru'  " https://github.com/yegappan/mru
 
 " Syntaxn
 Plugin 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plugin 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 Plugin 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plugin 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
-" Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
 Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 Plugin 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
 Plugin 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
-Plugin 'ap/vim-css-color'  " https://github.com/skammer/vim-css-color
+Plugin 'ap/vim-css-color'  " https://github.com/ap/vim-css-color
 Plugin 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plugin 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
 Plugin 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
@@ -68,15 +63,11 @@ Plugin 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/v
 Plugin 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plugin 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
 Plugin 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
-"Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
-"Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
-
 
 "" git, etc
 Plugin 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 Plugin 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 Plugin 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
-
 
 " Colorscheme
 Plugin 'tomasr/molokai'  " https://github.com/tomasr/molokai
@@ -93,54 +84,32 @@ Plugin 'hukl/Smyck-Color-Scheme'  " https://github.com/hukl/Smyck-Color-Scheme
 
 "" ===========================================================================
 
-
-"" GENERAL
-"Plugin 'MarcWeber/vim-addon-local-vimrc'  " https://github.com/MarcWeber/vim-addon-local-vimrc
-"Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
-"Plugin 'koron/minimap-vim'  " https://github.com/koron/minimap-vim
-"Plugin 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
-"Plugin 'MarcWeber/vim-addon-mw-utils'  " https://github.com/MarcWeber/vim-addon-mw-utils
-"Plugin 'tlib'
-
-
-"" SYNTAXN
+" Plugin 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
 " Plugin 'marijnh/tern_for_vim'  " https://github.com/marijnh/tern_for_vim
-" Plugin 'othree/html5.vim'  " https://github.com/othree/html5.vim
-" Plugin 'skammer/vim-css-color'  " https://github.com/skammer/vim-css-color
-" Plugin 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
-
-
-"" GIT
+" Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
+" Plugin 'zefei/vim-wintabs'  " https://github.com/zefei/vim-wintabs
+" Plugin 'fholgado/minibufexpl.vim'  " https://github.com/fholgado/minibufexpl.vim
+" Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
+" Plugin 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
+" Plugin 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
+" Plugin 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
+" Plugin 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
+" Plugin 'Valloric/YouCompleteMe'  " https://github.com/Valloric/YouCompleteMe
+" Plugin 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
 "" gitguteer alternative for other vcs: https://github.com/mhinz/vim-signify
-"Plugin 'idanarye/vim-merginal'  " https://github.com/idanarye/vim-merginal
-"Plugin 'int3/vim-extradite'  " https://github.com/int3/vim-extradite
-"Plugin 'jaxbot/github-issues.vim'  " https://github.com/jaxbot/github-issues.vim
-"Plugin 'Keithbsmiley/gist.vim'  " https://github.com/Keithbsmiley/gist.vim
+" Plugin 'idanarye/vim-merginal'  " https://github.com/idanarye/vim-merginal
+" Plugin 'int3/vim-extradite'  " https://github.com/int3/vim-extradite
+" Plugin 'jaxbot/github-issues.vim'  " https://github.com/jaxbot/github-issues.vim
+" Plugin 'Keithbsmiley/gist.vim'  " https://github.com/Keithbsmiley/gist.vim
 
-
-" TODO
 " https://github.com/reedes/vim-thematic
+" http://cocopon.me/app/vim-color-gallery/
 " http://blog.codinghorror.com/progamming-fonts/
 " https://github.com/Lokaltog/powerline-fonts
-" https://github.com/itchyny/lightline.vim
-" http://cocopon.me/app/vim-color-gallery/
-" http://vimcolorschemetest.googlecode.com/svn/html/index-c.html
 
 " http://vimawesome.com/plugin/tabular
 " http://vimawesome.com/plugin/gundo
 " http://vimawesome.com/plugin/unimpaired-vim
 " http://vimawesome.com/plugin/commentary-vim
 " http://vimawesome.com/plugin/webapi-vim
-" http://vimawesome.com/plugin/vim-multiple-cursors
-" https://github.com/majutsushi/tagbar/wiki
-
-" Plugin 'sjbach/lusty'  " https://github.com/sjbach/lusty
-
-"" overrides ctrl-x
-" Plugin 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
-
-"" Modifies tabline, etc too much
-" Plugin 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
-" Plugin 'zefei/vim-wintabs'  " https://github.com/zefei/vim-wintabs
-" Plugin 'fholgado/minibufexpl.vim'  " https://github.com/fholgado/minibufexpl.vim
-" Plugin 'bling/vim-airline'  " https://github.com/bling/vim-airline
+" https://github.com/sjbach/lusty
