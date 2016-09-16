@@ -197,7 +197,7 @@ nnoremap tt :TagbarToggle<CR>
 map <leader>f :Autoformat<CR><CR>
 
 "" Tabs to spaces
-noremap <leader>t :set expandtab<CR>:retab<CR><CR>
+noremap <leader>t :setlocal ft=unix<CR>:setlocal expandtab<CR>:retab<CR><CR>
 
 " http://stackoverflow.com/questions/4781070/how-to-insert-tab-character-when-expandtab-option-is-on-in-vim
 " <CTRL-V><Tab> in insert mode
