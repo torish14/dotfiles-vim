@@ -1,19 +1,19 @@
 "" GENERAL - I think we can all agree this would be nice default
 let mapleader = ","
 set nomodeline  " FreeBSD security advisory for this one...
-set enc=utf-8  " set the default encoding
+" set enc=utf-8  " set the default encoding
 set title  " set the title of the window
 set titlestring=%f%(\ [%M]%)¬
 set nocompatible  " This setting prevents vim from emulating the original vi's
                   " bugs and limitations
 set showmode
 set showcmd  " Display an incomplete command in the lower right corner of the Vim window
-set history=1000  " have 1000 lines of command-line (etc) history
+" set history=1000  " have 1000 lines of command-line (etc) history
 set so=4  " Set a margin of lines when scrolling
 "" set statusline=\ \ \ \ \ line:%l\ column:%c\ \ \ %M%Y%r%=%-14.(%t%)\ %p%%
                     " set a custom status line similar to that of ``:set ruler``
 set completeopt+=longest,menuone
-set laststatus=2  " show the statusline in all window
+" set laststatus=2  " show the statusline in all window
 set equalalways  " set all window splits equal
 if has('mouse')
     set mouse=a  " have the mouse enabled all the time
@@ -22,10 +22,10 @@ endif
 set hidden  " allow for switching buffers when a file has changes
 set t_vb=  " make sure the bell shuts up
 set pastetoggle=<F2>
-set wildmenu
+" set wildmenu
 set wildmode=list:longest
-set backspace=indent,eol,start
-set autoindent
+" set backspace=indent,eol,start
+" set autoindent
 
 "" turn on syntax highlighting¬
 syntax on
@@ -60,7 +60,7 @@ let python_highlight_all=1
 ""
 nnoremap / /\v
 vnoremap / /\v
-set incsearch  " find as you type
+" set incsearch  " find as you type
 set gdefault
 set hlsearch  " highlight the terms
 set ignorecase  " make searches case-insensitive
