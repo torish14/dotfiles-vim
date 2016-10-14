@@ -6,5 +6,6 @@
 .netrwhist
 /addons/
 /backup/
-/bundle/
+/autoload/
+/plugged/
 spell
