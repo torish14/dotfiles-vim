@@ -34,8 +34,12 @@ endfunction
 
 "" clipboard copy/paste
 if has('gui_running')
+    " copy selection or line
     map 1 "+yy
+    " paste before
     map 2 "+P
+    " paste after
+    map @ "+p
 else
     map 1 yy:call ClipboardYank()<CR>
     map 2 :call ClipboardPaste()<CR>p
@@ -176,12 +180,8 @@ function! g:CtrlPCurrentBufferDir()
 endfunction
 noremap <leader>. :call CtrlPCurrentBufferDir()<CR>
 
-
-
-" ctrlp-funky
-nnoremap <leader>' :CtrlPFunky<Cr>
-" narrow the list down with a word under cursor
-nnoremap <leader>; :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+" FZF
+nnoremap <leader>' :FZF<CR>
 
 " CtrlSF / AG
 nmap \ :Ag<SPACE>
