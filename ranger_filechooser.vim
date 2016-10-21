@@ -9,14 +9,31 @@
 
 function! RangeChooser()
     let temp = tempname()
-    
+
     let cmd = 'silent !ranger --choosefiles=' . shellescape(temp)
     if has("gui_running")
+
         " let cmd = substitute(cmd, '!', '!termit -e ', '')
+
         " let cmd = substitute(cmd, '!', '!gnome-terminal --hide-menubar -e ', '')
-        let cmd = substitute(cmd, '!', '!xterm -e ', '')
+
+        " " config like ~/.fzf/plugin/fzf.vim
+        " let xterm = printf(
+        "     \ '!xterm -bg "\%s" -fg "\%s" -geometry %dx%d+%d+%d -e ',
+        "     \ synIDattr(hlID("Normal"), "bg"),
+        "     \ synIDattr(hlID("Normal"), "fg"),
+        "     \ &columns, &lines/2, getwinposx(), getwinposy()
+        " \)
+
+        " let cmd = substitute(cmd, '!', xterm, '')
+
+        " dark xterm color scheme: http://www.futurile.net/2016/06/15/xterm-256color-themes-molokai-terminal-theme/
+        " custom font: https://wiki.archlinux.org/index.php/Xterm#Fonts
+        " i dont know why, but this opens xterm maximized, which is actually what I want.
+        let cmd = substitute(cmd, '!', '!xterm -geometry 800x400+0+0 -e ', '')
+
     endif
-    exec cmd 
+    exec cmd
     if !filereadable(temp)
         redraw!
         " Nothing to read.
