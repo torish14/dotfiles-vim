@@ -27,6 +27,7 @@ Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
 " Buffer
 Plug 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
 Plug 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
 
 Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
