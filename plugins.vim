@@ -31,6 +31,8 @@ Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
 
 
 "" BUFFER NAVIGATION
+""""""""""""""""""""
+
 Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 
@@ -48,6 +50,8 @@ Plug 'tpope/vim-eunuch'  " https://github.com/tpope/vim-eunuch
 
 
 "" GIT, ETC
+"""""""""""
+
 Plug 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
