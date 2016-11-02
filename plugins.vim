@@ -64,6 +64,7 @@ Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plug 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
+" , {'do': 'cd ~/.vim/plugged/jedi-vim/jedi/; git co master'}
 
 Plug 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plug 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
