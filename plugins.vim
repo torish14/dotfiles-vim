@@ -74,6 +74,9 @@ Plug 'ap/vim-css-color'  " https://github.com/ap/vim-css-color
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
 Plug 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
+
+Plug 'pangloss/vim-javascript'  " https://github.com/pangloss/vim-javascript
+Plug 'mxw/vim-jsx'  " https://github.com/mxw/vim-jsx
 Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
 
 Plug 'ternjs/tern_for_vim'  " https://github.com/ternjs/tern_for_vim

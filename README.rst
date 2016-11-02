@@ -1,3 +1,23 @@
+thet's vim configuration
+========================
+
+External tools
+--------------
+
+I personally do not install these node modules globally with the ``-g`` option but instead have them in my ``~/node_modules/``.
+I have all node modules which I regulary need to use in my systems ``PATH``.
+
+Node modules used by this vim configuration::
+
+    npm install eslint
+    npm install babel-eslint
+    npm install eslint-plugin-react
+
+
+
+.. note:: The following is outdated and not checked for validity.
+
+
 DOTFILES-VIM
 ============
 
