@@ -89,6 +89,7 @@ Plug 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
 
 
 "" COLORSCHEME
+Plug 'morhetz/gruvbox'  " https://github.com/morhetz/gruvbox
 Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'w0ng/vim-hybrid'  " https://github.com/w0ng/vim-hybrid
