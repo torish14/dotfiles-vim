@@ -1,3 +1,11 @@
+List/Browse recently opened files
+---------------------------------
+http://stackoverflow.com/questions/309723/view-a-list-of-recent-documents-in-vim
+
+::
+    :oldfiles
+    :browse old
+
 
 Reload current vim file::
     :so %
