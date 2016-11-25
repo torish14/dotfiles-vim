@@ -113,8 +113,13 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/
 "" VISUAL STUFF
 """""""""""""""
 
+" set background=dark
+" set background=light
+
 let g:molokai_original = 0
 colorscheme molokai
+" colorscheme gruvbox
+" colorscheme github
 
 "" GUI
 if has('gui_running')
