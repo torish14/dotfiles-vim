@@ -165,16 +165,9 @@ set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops 
 set wildignore+=*.o,*.obj
 set wildignore+=*.pyc,*.pyo
 set wildignore+=.git,.svn,.hg
-
-if has("win32") || has("win64")
-   set backupdir=$TMP
-   set directory=$TMP
-else
-   set backupdir=~/tmp
-   set directory=~/tmp
-end
-set backupskip=~/tmp/*,/tmp/*
-
+set backupdir=~/.tmp
+set directory=~/.tmp
+set backupskip=~/.tmp/*
 
 
 "" FUNCTIONS
