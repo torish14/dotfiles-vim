@@ -1,6 +1,19 @@
 thet's vim configuration
 ========================
 
+Bootstrap plugin system
+-----------------------
+
+Provided, you have you vim configuration in ``~/.vim``, do::
+
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+Then::
+
+    vim +PlugInstall
+
+
 External tools
 --------------
 
@@ -12,7 +25,6 @@ Node modules used by this vim configuration::
     npm install eslint
     npm install babel-eslint
     npm install eslint-plugin-react
-
 
 
 .. note:: The following is outdated and not checked for validity.
