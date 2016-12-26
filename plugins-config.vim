@@ -62,7 +62,7 @@ highlight SyntasticStyleWarningSign ctermfg=yellow guifg=yellow
 " Python checker
 let g:syntastic_python_python_exec = '~/dev/python-tools/bin/python'
 " flake8 supports # noqa or # nopep8 to ignore individual lines
-let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checkers=['pylama']
 " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
 let g:syntastic_python_flake8_args='--ignore=E702,E221,E222,E241'
 
