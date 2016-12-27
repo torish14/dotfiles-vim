@@ -16,10 +16,21 @@ py << EOF
 import os
 import ast
 
-path_instance = os.path.join(os.getcwd(), 'bin', 'pythonpaths')
-if os.path.isfile(path_instance):
 
-    code = ast.parse(open(path_instance).read())
+def _set_pathfile(pathfile):
+    if os.path.isfile(pathfile):
+        return pathfile
+    return None
+
+
+pathfile = _set_pathfile(os.path.join(os.getcwd(), 'bin', 'test')) or\
+    _set_pathfile(os.path.join(os.getcwd(), 'bin', 'instance')) or\
+    _set_pathfile(os.path.join(os.getcwd(), 'bin', 'pythonpaths'))
+
+
+if pathfile:
+
+    code = ast.parse(open(pathfile).read())
 
     # Only get the sys.path modification part from the zc.recipe.egg
     # interpreter script
