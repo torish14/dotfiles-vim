@@ -2,6 +2,7 @@
 ""set verbose
 
 set nocompatible  " This setting prevents vim from emulating the original vi's bugs and limitations
+set encoding=utf-8  " set the default encoding
 
 let mapleader = ","  " leader key
 
@@ -238,7 +239,6 @@ endfunction
 "" OLD AND OBSOLETE
 "" partly already set by plugin vim-sensible
 
-" set enc=utf-8  " set the default encoding
 " set history=1000  " have 1000 lines of command-line (etc) history
 " set statusline=\ \ \ \ \ line:%l\ column:%c\ \ \ %M%Y%r%=%-14.(%t%)\ %p%%
                     " set a custom status line similar to that of ``:set ruler``
