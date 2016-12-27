@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
 
+
 "" VISUAL
 """""""""
 
@@ -59,7 +60,8 @@ Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 
 "" SYNTAX
 Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
-Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
+Plug 'neomake/neomake'  " https://github.com/neomake/neomake
+"Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate

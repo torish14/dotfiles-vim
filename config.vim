@@ -108,6 +108,7 @@ autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
 autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
 autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
+autocmd! BufReadPost,BufWritePost * Neomake
 
 
 
