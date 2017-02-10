@@ -25,7 +25,9 @@ Node modules used by this vim configuration::
     npm install eslint
     npm install babel-eslint
     npm install eslint-plugin-react
-
+    npm install js-beautify
+    npm install csscomb
+    npm install cssbrush
 
 .. note:: The following is outdated and not checked for validity.
 
