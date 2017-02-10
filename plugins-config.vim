@@ -39,7 +39,7 @@ let g:formatters_css = ['thet_cssbrush']
 
 "" NEOMAKE
 """"""""""
-
+let g:neomake_javascript_enabled_makers = ['eslint']
 
 
 "" SYNTASTIC
