@@ -102,7 +102,8 @@ Plug 'hukl/Smyck-Color-Scheme'  " https://github.com/hukl/Smyck-Color-Scheme
 
 
 "" Musi
-"Plug 'sbl/scvim'  " https://github.com/sbl/scvim
+Plug 'supercollider/scvim'  " https://github.com/supercollider/scvim
+" Plug 'sbl/scvim'  " https://github.com/sbl/scvim
 
 "" ===========================================================================
 
