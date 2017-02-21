@@ -59,6 +59,8 @@ Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 
 
 "" SYNTAX
+Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
+
 Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plug 'neomake/neomake'  " https://github.com/neomake/neomake
 "Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
