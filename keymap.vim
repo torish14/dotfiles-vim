@@ -168,9 +168,11 @@ noremap <leader>b :NERDTreeFind<CR>
 map <silent> _  <Plug>FileBeagleOpenCurrentWorkingDir
 map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
 
+" FZF
+nnoremap <leader>/ :FZF<CR>
 "" CtrlP
 noremap <leader>, :CtrlPBuffer<CR>
-noremap <leader>/ :CtrlP<CR>
+noremap <leader>' :CtrlP<CR>
 "noremap <leader>/ :CtrlPMixed<CR>
 "noremap <leader>/ :CtrlP<CR>
 "
@@ -179,9 +181,6 @@ function! g:CtrlPCurrentBufferDir()
     :CtrlP
 endfunction
 noremap <leader>. :call CtrlPCurrentBufferDir()<CR>
-
-" FZF
-nnoremap <leader>' :FZF<CR>
 
 " CtrlSF / AG
 nmap \ :Ag<SPACE>
