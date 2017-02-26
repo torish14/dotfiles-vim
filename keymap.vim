@@ -169,7 +169,10 @@ map <silent> _  <Plug>FileBeagleOpenCurrentWorkingDir
 map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
 
 " FZF
-nnoremap <leader>/ :FZF<CR>
+" nnoremap <leader>/ :FZF<CR>
+noremap <leader>/ :call FZFfiles()<CR>
+noremap <leader>c :call FZFcolor()<CR>
+
 "" CtrlP
 noremap <leader>, :CtrlPBuffer<CR>
 noremap <leader>' :CtrlP<CR>
