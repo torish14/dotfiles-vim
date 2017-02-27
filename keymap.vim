@@ -171,19 +171,21 @@ map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
 " FZF
 " nnoremap <leader>/ :FZF<CR>
 noremap <leader>/ :call FZFfiles()<CR>
+noremap <leader>. :call FZFmru()<CR>
+noremap <leader>, :call FZFbuffers()<CR>
 noremap <leader>c :call FZFcolor()<CR>
 
 "" CtrlP
-noremap <leader>, :CtrlPBuffer<CR>
+" noremap <leader>, :CtrlPBuffer<CR>
 noremap <leader>' :CtrlP<CR>
 "noremap <leader>/ :CtrlPMixed<CR>
 "noremap <leader>/ :CtrlP<CR>
 "
-function! g:CtrlPCurrentBufferDir()
-    let ctrlp_working_path_mode = 'c'
-    :CtrlP
-endfunction
-noremap <leader>. :call CtrlPCurrentBufferDir()<CR>
+"function! g:CtrlPCurrentBufferDir()
+"    let ctrlp_working_path_mode = 'c'
+"    :CtrlP
+"endfunction
+"noremap <leader>. :call CtrlPCurrentBufferDir()<CR>
 
 " CtrlSF / AG
 nmap \ :Ag<SPACE>
