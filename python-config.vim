@@ -24,6 +24,7 @@ def _set_pathfile(pathfile):
 
 
 pathfile = _set_pathfile(os.path.join(os.getcwd(), 'bin', 'test')) or\
+    _set_pathfile(os.path.join(os.getcwd(), 'bin', 'gunicorn')) or\
     _set_pathfile(os.path.join(os.getcwd(), 'bin', 'instance')) or\
     _set_pathfile(os.path.join(os.getcwd(), 'bin', 'pythonpaths'))
 
