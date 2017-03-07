@@ -1,6 +1,6 @@
 "" DEBUG
 ""set verbose
-
+"
 set nocompatible  " This setting prevents vim from emulating the original vi's bugs and limitations
 set encoding=utf-8  " set the default encoding
 
@@ -110,6 +110,30 @@ autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
 autocmd! BufReadPost,BufWritePost * Neomake
 
+
+" lower timeout for parenthesis matching for better performance.
+" See: http://vi.stackexchange.com/a/5318/6303
+let g:matchparen_timeout = 20
+let g:matchparen_insert_timeout = 20
+
+" More performance tips:
+"
+" See, which plugins register for a specific event:
+" http://stackoverflow.com/a/19031285/1337474
+" :au CursorMoved
+"
+" Track performance:
+" http://stackoverflow.com/a/12216578/1337474
+" ":profile start profile.log
+" ":profile func *
+" ":profile file *
+" "" At this point do slow actions
+" ":profile pause
+" ":noautocmd qall!
+"
+" Startup time:
+" http://stackoverflow.com/a/1702904/1337474
+" vim --startuptime vim.log
 
 
 "" VISUAL STUFF

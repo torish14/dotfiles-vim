@@ -74,7 +74,11 @@ Plug 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plug 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 Plug 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
 Plug 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
-Plug 'ap/vim-css-color'  " https://github.com/ap/vim-css-color
+" Plug 'ap/vim-css-color', {'for': 'css'}  " https://github.com/ap/vim-css-color
+if has('gui_running')
+    Plug 'chrisbra/Colorizer', {'for': 'css'}  " https://github.com/chrisbra/Colorizer
+endif
+
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
 Plug 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
