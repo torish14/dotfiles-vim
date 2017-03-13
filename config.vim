@@ -110,6 +110,18 @@ autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
 autocmd! BufReadPost,BufWritePost * Neomake
 
+" Open some binaries with external tools
+autocmd BufReadCmd *.pdf silent !gnome-open % &
+autocmd BufEnter *.pdf bdelete
+autocmd BufReadCmd *.png silent !gnome-open % &
+autocmd BufEnter *.png bdelete
+autocmd BufReadCmd *.jpg silent !gnome-open % &
+autocmd BufEnter *.jpg bdelete
+autocmd BufReadCmd *.jpeg silent !gnome-open % &
+autocmd BufEnter *.jpeg bdelete
+autocmd BufReadCmd *.gif silent !gnome-open % &
+autocmd BufEnter *.gif bdelete
+
 
 " lower timeout for parenthesis matching for better performance.
 " See: http://vi.stackexchange.com/a/5318/6303
