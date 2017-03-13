@@ -135,6 +135,10 @@ let g:matchparen_insert_timeout = 20
 " http://stackoverflow.com/a/1702904/1337474
 " vim --startuptime vim.log
 
+" Anti performance setting - 250ms. default is 4s
+" Increases gitgutter update speed.
+set updatetime=250
+
 
 "" VISUAL STUFF
 """""""""""""""
