@@ -6,7 +6,7 @@
 
 function! FZFfiles()
     call fzf#run({
-    \   'source': 'ag  -U -i -l -g "" --ignore ./var --ignore ./parts --ignore ./develop-eggs --ignore *.py? --ignore *.min.* --ignore *.gif --ignore *.png',
+    \   'source': 'ag  -filU -g "" --ignore ./var --ignore ./parts --ignore ./develop-eggs --ignore *.py? --ignore *.min.* --ignore *.gif --ignore *.png',
     \   'sink':    'e',
     \ })
 endfunction
