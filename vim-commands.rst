@@ -36,3 +36,57 @@ sort case insensitive::
 format json::
 
     :%!python -m json.tool
+
+format js:
+https://www.npmjs.com/package/prettier
+::
+    :%!prettier --single-quote
+
+
+vimscript
+---------
+
+Echo variable value::
+    :echo g:SuperTabDefaultCompletionType
+
+
+
+performance profiling
+---------------------
+http://stackoverflow.com/a/12216578/1337474
+::
+    :profile start profile.log
+    :profile func *
+    :profile file *
+    " At this point do slow actions
+    :profile pause
+    :noautocmd qall!
+
+http://stackoverflow.com/a/1702904/1337474
+::
+    vim --startuptime vim.log
+
+
+Find duplicate autocommand handlers:
+http://stackoverflow.com/a/19031285/1337474
+e.g.::
+    :au CursorMoved
+
+Mathparen slows down:
+http://vi.stackexchange.com/a/5318/6303
+::
+    let g:matchparen_timeout = 20
+    let g:matchparen_insert_timeout = 20
+
+
+
+General tips
+------------
+
+- Open binary files in external browser
+http://stackoverflow.com/questions/7810845/how-to-open-pdf-files-under-cursor-using-gf-with-external-pdf-readers-in-vim
+::
+    au BufReadCmd *.pdf silent !gnome-open % &
+
+
+
