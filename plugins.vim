@@ -47,7 +47,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://git
 
 Plug 'yegappan/mru'  " https://github.com/yegappan/mru
 Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
-Plug 'tpope/vim-eunuch'  " https://github.com/tpope/vim-eunuch
 
 
 "" GIT, ETC
@@ -63,9 +62,7 @@ Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorco
 
 Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plug 'neomake/neomake'  " https://github.com/neomake/neomake
-"Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
-Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plug 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
 " , {'do': 'cd ~/.vim/plugged/jedi-vim/jedi/; git co master'}
@@ -74,10 +71,7 @@ Plug 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plug 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 Plug 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
 Plug 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
-" Plug 'ap/vim-css-color', {'for': 'css'}  " https://github.com/ap/vim-css-color
-if has('gui_running')
-    Plug 'chrisbra/Colorizer', {'for': 'css'}  " https://github.com/chrisbra/Colorizer
-endif
+Plug 'chrisbra/Colorizer', {'for': 'css'}  " https://github.com/chrisbra/Colorizer
 
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
@@ -93,7 +87,7 @@ Plug 'ternjs/tern_for_vim'  " https://github.com/ternjs/tern_for_vim
 "" AUTOCOMPLETE AND SNIPPETS
 Plug 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plug 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-Plug 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
+Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
 
 
 "" COLORSCHEME
@@ -109,12 +103,25 @@ Plug 'hukl/Smyck-Color-Scheme'  " https://github.com/hukl/Smyck-Color-Scheme
 
 "" Musi
 Plug 'supercollider/scvim'  " https://github.com/supercollider/scvim
-" Plug 'sbl/scvim'  " https://github.com/sbl/scvim
 
 "" ===========================================================================
 
+"" Not performing well...
+"" Slow cursor
+" Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+
+"" Found alternatives for...
+
+" Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
+" Plug 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
+" Plug 'ap/vim-css-color', {'for': 'css'}  " https://github.com/ap/vim-css-color
+" Plug 'sbl/scvim'  " https://github.com/sbl/scvim
+
+
+"" ===========================================================================
+
+" Plug 'tpope/vim-eunuch'  " https://github.com/tpope/vim-eunuch
 " Plug 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
-" Plug 'marijnh/tern_for_vim'  " https://github.com/marijnh/tern_for_vim
 " Plug 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
 " Plug 'zefei/vim-wintabs'  " https://github.com/zefei/vim-wintabs
 " Plug 'fholgado/minibufexpl.vim'  " https://github.com/fholgado/minibufexpl.vim

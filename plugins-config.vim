@@ -15,6 +15,11 @@ let g:jedi#show_call_signatures = 0
 let g:jedi#completions_enabled = 0
 
 
+"" COMPLETOR
+""""""""""""
+let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
+
+
 "" VIM AUTOFORMAT
 """""""""""""""""
 
