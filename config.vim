@@ -175,14 +175,16 @@ if has('gui_running')
     set go-=M  " rm menubar and don't source the menubar script
     set go-=m  " menubar
 
+    " http://vim.wikia.com/wiki/Configuring_the_cursor
+    highlight Cursor guifg=black guibg=white
+    highlight iCursor guifg=white guibg=blue
+    set guicursor=n-v-c:block-Cursor
+    set guicursor+=i:ver100-iCursor
+    set guicursor+=i:hor100-iCursor
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
     set guifont=Ubuntu\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
-
-    " http://stackoverflow.com/questions/6158860/change-color-of-cursor-in-vim
-    au InsertLeave * hi Cursor guibg=blue
-    au InsertEnter * hi Cursor guibg=green
 
     highlight Comment gui=italic
     highlight Search guibg=LawnGreen guifg=RoyalBlue
