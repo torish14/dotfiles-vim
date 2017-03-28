@@ -1,3 +1,14 @@
+
+Location window commands
+------------------------
+
+E.g. Lightline posts it's errors there::
+
+    :lopen
+    :lclose
+    :ll #LINENUMBER
+
+
 List/Browse recently opened files
 ---------------------------------
 http://stackoverflow.com/questions/309723/view-a-list-of-recent-documents-in-vim

@@ -44,7 +44,47 @@ let g:formatters_css = ['thet_cssbrush']
 
 "" NEOMAKE
 """"""""""
+function! EslintConfig()
+    let g:neomake_javascript_eslint_maker = {
+        \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", '.&shiftwidth.']}'],
+        \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
+        \ '%W%f: line %l\, col %c\, Warning - %m'
+        \ }
+endfunction
+function! EslintConfig2()
+    let g:neomake_javascript_eslint_maker = {
+        \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 2]}'],
+        \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
+        \ '%W%f: line %l\, col %c\, Warning - %m'
+        \ }
+endfunction
+function! EslintConfig4()
+    let g:neomake_javascript_eslint_maker = {
+        \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 4]}'],
+        \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
+        \ '%W%f: line %l\, col %c\, Warning - %m'
+        \ }
+endfunction
+
 let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_open_list = 2
+
+let g:neomake_warning_sign = {
+  \ 'text': '⚠',
+  \ 'texthl': 'WarningMsg',
+  \ }
+let g:neomake_error_sign = {
+  \ 'text': '✖',
+  \ 'texthl': 'ErrorMsg',
+  \ }
+let g:neomake_message_sign = {
+  \ 'text': '➤',
+  \ 'texthl': 'WarningMsg',
+  \ }
+let g:neomake_info_sign = {
+  \ 'text': 'ℹ',
+  \ 'texthl': 'WarningMsg',
+  \ }
 
 
 "" EASYGREP

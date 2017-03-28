@@ -94,8 +94,8 @@ nnoremap <leader>k vap:s/\([\.\?!;]\) \+/\1\r/e<CR>
 "vmap v <Plug>(expand_region_expand)
 "vmap <C-v> <Plug>(expand_region_shrink)
 
-nnoremap <leader>4 :setlocal tabstop=4 shiftwidth=4 softtabstop=4<CR>
-nnoremap <leader>2 :setlocal tabstop=2 shiftwidth=2 softtabstop=2<CR>
+nnoremap <leader>4 :setlocal tabstop=4 shiftwidth=4 softtabstop=4<CR>call EslintConfig4()<CR>
+nnoremap <leader>2 :setlocal tabstop=2 shiftwidth=2 softtabstop=2<CR>call EslintConfig2()<CR>
 
 noremap <leader>z :setlocal foldcolumn=8<CR>
 noremap <leader>Z :setlocal foldcolumn=0<CR>

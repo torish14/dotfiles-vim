@@ -128,6 +128,8 @@ autocmd BufEnter *.jpeg bdelete
 autocmd BufReadCmd *.gif silent !gnome-open % &
 autocmd BufEnter *.gif bdelete
 
+autocmd BufEnter *.js :call EslintConfig()
+
 
 " lower timeout for parenthesis matching for better performance.
 " See: http://vi.stackexchange.com/a/5318/6303
