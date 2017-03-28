@@ -24,3 +24,16 @@ else
     " Ignore files in .gitignore
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 endif
+
+"" Keymap
+"" CtrlP
+"noremap <leader>, :CtrlPBuffer<CR>
+"noremap <leader>' :CtrlP<CR>
+"noremap <leader>/ :CtrlPMixed<CR>
+"noremap <leader>/ :CtrlP<CR>
+"
+"function! g:CtrlPCurrentBufferDir()
+"    let ctrlp_working_path_mode = 'c'
+"    :CtrlP
+"endfunction
+"noremap <leader>. :call CtrlPCurrentBufferDir()<CR>

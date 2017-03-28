@@ -1,4 +1,4 @@
-source $HOME/.vim/plugins-config-ctrlp.vim
+" source $HOME/.vim/plugins-config-ctrlp.vim
 source $HOME/.vim/plugins-config-fzf.vim
 source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim

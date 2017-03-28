@@ -41,8 +41,6 @@ Plug 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-file
 Plug 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 
-Plug 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
-Plug 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
 
 Plug 'yegappan/mru'  " https://github.com/yegappan/mru
@@ -112,6 +110,8 @@ Plug 'supercollider/scvim'  " https://github.com/supercollider/scvim
 
 "" Found alternatives for...
 
+" Plug 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
+" Plug 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
 " Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 " Plug 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
 " Plug 'ap/vim-css-color', {'for': 'css'}  " https://github.com/ap/vim-css-color
