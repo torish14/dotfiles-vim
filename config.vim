@@ -108,7 +108,13 @@ autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
 autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
 autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
-autocmd! BufReadPost,BufWritePost * Neomake
+autocmd! BufReadPost,BufWritePost * call CheckSyntax()
+
+function CheckSyntax()
+    Neomake
+    call lightline#update()
+endfunction
+
 
 " Open some binaries with external tools
 autocmd BufReadCmd *.pdf silent !gnome-open % &
