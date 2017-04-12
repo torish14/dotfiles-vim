@@ -59,7 +59,8 @@ Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 
 Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
-Plug 'neomake/neomake'  " https://github.com/neomake/neomake
+Plug 'w0rp/ale'  " https://github.com/w0rp/ale
+" Plug 'neomake/neomake'  " https://github.com/neomake/neomake
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plug 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
@@ -68,7 +69,7 @@ Plug 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plug 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
 Plug 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
 Plug 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
-Plug 'chrisbra/Colorizer', {'for': 'css'}  " https://github.com/chrisbra/Colorizer
+Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'sass']}  " https://github.com/chrisbra/Colorizer
 
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax

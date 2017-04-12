@@ -42,49 +42,97 @@ let g:formatters_less = ['thet_cssbrush']
 let g:formatters_css = ['thet_cssbrush']
 
 
+let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
+let g:formatters_javascript = ['thet_javascript']
+
+
+"" ALE
+""""""
+
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '⚠'
+
+let g:ale_statusline_format = ['✖%d', '⚠ %d', '✓ ok']
+
+" http://pylint-messages.wikidot.com/all-codes
+let g:ale_python_pylint_options = "-d C0103,C0111,C0301,E0611,E1101,F0401,R0903,R0914,W0201"
+" http://flake8.pycqa.org/en/latest/user/error-codes.html
+" let g:ale_python_flake8_args =
+
+
+" set statusline+=%{ALEGetStatusLine()}
+"
+" " http://vim.wikia.com/wiki/Change_statusline_color_to_show_insert_or_normal_mode
+" function! InsertStatuslineColor(mode)
+"   if a:mode == 'i'
+"     hi statusline guibg=green
+"   elseif a:mode == 'r'
+"     hi statusline guibg=red
+"   else
+"     hi statusline guibg=blue
+" endif
+" endfunction
+"
+" au InsertEnter * call InsertStatuslineColor(v:insertmode)
+" au InsertChange * call InsertStatuslineColor(v:insertmode)
+" au InsertLeave * hi statusline guibg=blue
+"
+" " default the statusline to green when entering Vim
+" hi statusline guibg=blue
+
+
 "" NEOMAKE
 """"""""""
-function! EslintConfig()
-    let g:neomake_javascript_eslint_maker = {
-        \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", '.&shiftwidth.']}'],
-        \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
-        \ '%W%f: line %l\, col %c\, Warning - %m'
-        \ }
-endfunction
-function! EslintConfig2()
-    let g:neomake_javascript_eslint_maker = {
-        \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 2]}'],
-        \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
-        \ '%W%f: line %l\, col %c\, Warning - %m'
-        \ }
-endfunction
-function! EslintConfig4()
-    let g:neomake_javascript_eslint_maker = {
-        \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 4]}'],
-        \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
-        \ '%W%f: line %l\, col %c\, Warning - %m'
-        \ }
-endfunction
-
-let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_open_list = 2
-
-let g:neomake_warning_sign = {
-  \ 'text': '⚠',
-  \ 'texthl': 'WarningMsg',
-  \ }
-let g:neomake_error_sign = {
-  \ 'text': '✖',
-  \ 'texthl': 'ErrorMsg',
-  \ }
-let g:neomake_message_sign = {
-  \ 'text': '➤',
-  \ 'texthl': 'WarningMsg',
-  \ }
-let g:neomake_info_sign = {
-  \ 'text': 'ℹ',
-  \ 'texthl': 'WarningMsg',
-  \ }
+" function! EslintConfig()
+"     let g:neomake_javascript_eslint_maker = {
+"         \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", '.&shiftwidth.']}'],
+"         \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
+"         \ '%W%f: line %l\, col %c\, Warning - %m'
+"         \ }
+" endfunction
+" function! EslintConfig2()
+"     let g:neomake_javascript_eslint_maker = {
+"         \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 2]}'],
+"         \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
+"         \ '%W%f: line %l\, col %c\, Warning - %m'
+"         \ }
+" endfunction
+" function! EslintConfig4()
+"     let g:neomake_javascript_eslint_maker = {
+"         \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 4]}'],
+"         \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
+"         \ '%W%f: line %l\, col %c\, Warning - %m'
+"         \ }
+" endfunction
+"
+" let g:neomake_javascript_enabled_makers = ['eslint']
+" let g:neomake_open_list = 0
+"
+" let g:neomake_warning_sign = {
+"   \ 'text': '⚠',
+"   \ 'texthl': 'WarningMsg',
+"   \ }
+" let g:neomake_error_sign = {
+"   \ 'text': '✖',
+"   \ 'texthl': 'ErrorMsg',
+"   \ }
+" let g:neomake_message_sign = {
+"   \ 'text': '➤',
+"   \ 'texthl': 'WarningMsg',
+"   \ }
+" let g:neomake_info_sign = {
+"   \ 'text': 'ℹ',
+"   \ 'texthl': 'WarningMsg',
+"   \ }
+"
+" autocmd BufEnter *.js :call EslintConfig()
+" autocmd! BufReadPost,BufWritePost * call CheckSyntax()
+" function CheckSyntax()
+"     Neomake
+"     call lightline#update()
+" endfunction
 
 
 "" EASYGREP

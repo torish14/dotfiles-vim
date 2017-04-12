@@ -1,7 +1,7 @@
 let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ],
-      \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype', 'neomake_errors', 'neomake_warnings'] ]
+      \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype', 'warnings_errors'] ]
       \ },
       \ 'subseparator': { 'left': '|', 'right': '|' },
       \ 'component_function': {
@@ -13,10 +13,10 @@ let g:lightline = {
       \   'mode': 'LightLineMode',
       \ },
       \ 'component_expand': {
-      \     'neomake_errors': 'LightLineNeomakeErrors',
-      \     'neomake_warnings': 'LightLineNeomakeWarnings',
+      \     'warnings_errors': 'ALEGetStatusLine',
       \ },
       \ }
+
 
 function! LightLineModified()
   return &ft =~ 'help' ? '' : &modified ? '+' : &modifiable ? '' : '-'
@@ -69,16 +69,37 @@ function! TagbarStatusFunc(current, sort, fname, ...) abort
 endfunction
 
 
-function! LightLineNeomakeErrors()
-  if !exists(":Neomake") || ((get(neomake#statusline#QflistCounts(), "E", 0) + get(neomake#statusline#LoclistCounts(), "E", 0)) == 0)
-    return ''
-  endif
-  return 'E:'.(get(neomake#statusline#LoclistCounts(), 'E', 0) + get(neomake#statusline#QflistCounts(), 'E', 0))
-endfunction
 
-function! LightLineNeomakeWarnings()
-  if !exists(":Neomake") || ((get(neomake#statusline#QflistCounts(), "W", 0) + get(neomake#statusline#LoclistCounts(), "W", 0)) == 0)
-    return ''
-  endif
-  return 'W:'.(get(neomake#statusline#LoclistCounts(), 'W', 0) + get(neomake#statusline#QflistCounts(), 'W', 0))
-endfunction
+" let g:lightline = {
+"       \ 'active': {
+"       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ],
+"       \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype', 'neomake_errors', 'neomake_warnings'] ]
+"       \ },
+"       \ 'subseparator': { 'left': '|', 'right': '|' },
+"       \ 'component_function': {
+"       \   'fugitive': 'LightLineFugitive',
+"       \   'filename': 'LightLineFilename',
+"       \   'fileformat': 'LightLineFileformat',
+"       \   'filetype': 'LightLineFiletype',
+"       \   'fileencoding': 'LightLineFileencoding',
+"       \   'mode': 'LightLineMode',
+"       \ },
+"       \ 'component_expand': {
+"       \     'neomake_errors': 'LightLineNeomakeErrors',
+"       \     'neomake_warnings': 'LightLineNeomakeWarnings',
+"       \ },
+"       \ }
+"  
+" function! LightLineNeomakeErrors()
+"   if !exists(":Neomake") || ((get(neomake#statusline#QflistCounts(), "E", 0) + get(neomake#statusline#LoclistCounts(), "E", 0)) == 0)
+"     return ''
+"   endif
+"   return 'E:'.(get(neomake#statusline#LoclistCounts(), 'E', 0) + get(neomake#statusline#QflistCounts(), 'E', 0))
+" endfunction
+" 
+" function! LightLineNeomakeWarnings()
+"   if !exists(":Neomake") || ((get(neomake#statusline#QflistCounts(), "W", 0) + get(neomake#statusline#LoclistCounts(), "W", 0)) == 0)
+"     return ''
+"   endif
+"   return 'W:'.(get(neomake#statusline#LoclistCounts(), 'W', 0) + get(neomake#statusline#QflistCounts(), 'W', 0))
+" endfunction
