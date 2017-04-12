@@ -108,12 +108,6 @@ autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
 autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
 autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
-autocmd! BufReadPost,BufWritePost * call CheckSyntax()
-
-function CheckSyntax()
-    Neomake
-    call lightline#update()
-endfunction
 
 
 " Open some binaries with external tools
@@ -127,8 +121,6 @@ autocmd BufReadCmd *.jpeg silent !gnome-open % &
 autocmd BufEnter *.jpeg bdelete
 autocmd BufReadCmd *.gif silent !gnome-open % &
 autocmd BufEnter *.gif bdelete
-
-autocmd BufEnter *.js :call EslintConfig()
 
 
 " lower timeout for parenthesis matching for better performance.
@@ -157,7 +149,8 @@ let g:matchparen_insert_timeout = 20
 
 " Anti performance setting - 250ms. default is 4s
 " Increases gitgutter update speed.
-set updatetime=250
+" set updatetime=250
+set updatetime=4000
 
 
 "" VISUAL STUFF
@@ -166,8 +159,9 @@ set updatetime=250
 " set background=dark
 " set background=light
 
-let g:molokai_original = 0
-colorscheme molokai
+colorscheme slate
+" let g:molokai_original = 0
+" colorscheme molokai
 " colorscheme gruvbox
 " colorscheme github
 
@@ -206,6 +200,8 @@ if has('mouse')
 endif
 
 highlight SpellBad term=underline gui=undercurl guisp=Red
+highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
 set fillchars+=vert:\ " No char for vertical split is even prettier thant |
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
 
