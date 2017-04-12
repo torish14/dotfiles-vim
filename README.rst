@@ -28,6 +28,7 @@ Node modules used by this vim configuration::
     npm install js-beautify
     npm install csscomb
     npm install cssbrush
+    npm install html-beautify
 
 .. note:: The following is outdated and not checked for validity.
 

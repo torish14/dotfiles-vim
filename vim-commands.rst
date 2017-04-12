@@ -1,4 +1,20 @@
 
+Folding
+-------
+::
+
+    zc  "" close a fold
+	zo  "" open a fold
+    za  "" toggle fold
+
+	zC  "" like above
+    zO  "" but on all
+	zA  "" folding levels
+
+    zR  "" open all folds in buffer
+    zM  "" close all folds in buffer
+
+
 Location window commands
 ------------------------
 
@@ -52,6 +68,13 @@ format js:
 https://www.npmjs.com/package/prettier
 ::
     :%!prettier --single-quote
+
+reformat for column layout::
+    :%!column -t
+
+reformat vim table for column layout::
+
+    :%!column -t -s \& -o \&
 
 
 vimscript
