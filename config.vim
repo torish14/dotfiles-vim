@@ -159,9 +159,9 @@ set updatetime=4000
 " set background=dark
 " set background=light
 
-colorscheme slate
-" let g:molokai_original = 0
-" colorscheme molokai
+let g:molokai_original = 0
+colorscheme molokai
+" colorscheme slate
 " colorscheme gruvbox
 " colorscheme github
 
