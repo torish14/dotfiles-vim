@@ -1,4 +1,17 @@
 
+Save / Load a session
+---------------------
+https://bocoup.com/blog/sessions-the-vim-feature-you-probably-arent-using
+
+Save a session with ``mks`` or ``mksession``::
+    :mks SESSIONFILE.vim
+
+Load a session by sourcing that file::
+    :source SESSIONFILE.vim
+
+Or:
+    $ vim -S SESSIONFILE.vim
+
 Folding
 -------
 ::
