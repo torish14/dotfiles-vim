@@ -81,6 +81,8 @@ Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
 
 Plug 'ternjs/tern_for_vim'  " https://github.com/ternjs/tern_for_vim
 
+Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+
 
 "" AUTOCOMPLETE AND SNIPPETS
 Plug 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
