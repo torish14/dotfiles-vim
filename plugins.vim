@@ -18,7 +18,7 @@ Plug 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-i
 
 Plug 'tyru/open-browser.vim'  " https://github.com/tyru/open-browser.vim
 
-Plug 'LargeFile'  " https://github.com/vim-scripts/LargeFile
+Plug 'mhinz/vim-hugefile'  "  https://github.com/mhinz/vim-hugefile
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'jez/vim-superman'  " https://github.com/jez/vim-superman
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
@@ -73,15 +73,14 @@ Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'sass']}  " https://github.co
 
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
-Plug 'sql.vim--Stinson'  " https://github.com/vim-scripts/sql.vim--Stinson
+Plug 'kgust/sql.vim'  "  https://github.com/kgust/sql.vim
 
-Plug 'pangloss/vim-javascript'  " https://github.com/pangloss/vim-javascript
+Plug 'pangloss/vim-javascript', {'for': 'javascript'}  " https://github.com/pangloss/vim-javascript
 Plug 'mxw/vim-jsx'  " https://github.com/mxw/vim-jsx
 Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs/tern_for_vim
 
-Plug 'ternjs/tern_for_vim'  " https://github.com/ternjs/tern_for_vim
-
-Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+"" Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
 
 
 "" AUTOCOMPLETE AND SNIPPETS
