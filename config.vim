@@ -33,13 +33,16 @@ set title  " set the title of the window
 set titlestring=%f%(\ [%M]%)¬
 set showmode
 set showcmd  " Display an incomplete command in the lower right corner of the Vim window
-set equalalways  " set all window splits equal
 set hidden  " allow for switching buffers when a file has changes
 set t_vb=  " make sure the bell shuts up
 set pastetoggle=<F2>
 set number       " turn on line numbers¬
 set showmatch    " indicate open/closing brackets
 set ttyfast
+
+set equalalways  " set all window splits equal
+set splitbelow  " put the new window below the current one
+set splitright  " put the new window right of the current one
 
 set nowrap
 set nolist       " nolist needed for linebreak
@@ -179,7 +182,7 @@ if has('gui_running')
 
     " http://vim.wikia.com/wiki/Configuring_the_cursor
     highlight Cursor guifg=black guibg=white
-    highlight iCursor guifg=white guibg=blue
+    highlight iCursor guifg=white guibg=green
     set guicursor=n-v-c:block-Cursor
     set guicursor+=i:ver100-iCursor
     set guicursor+=i:hor100-iCursor
