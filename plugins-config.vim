@@ -3,6 +3,12 @@ source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim
 
 
+"" vim-plug
+"""""""""""
+" https://github.com/junegunn/vim-plug/issues/651
+let g:plug_window = 'enew'
+
+
 "" GITGUTTER
 """"""""""""
 
@@ -28,6 +34,13 @@ let g:jedi#completions_enabled = 1
 "" COMPLETOR
 """"""""""""
 let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
+
+
+"" JavaScript
+"""""""""""""
+
+" vim-jsx
+let g:jsx_ext_required = 0
 
 
 "" VIM AUTOFORMAT
@@ -61,7 +74,7 @@ let g:formatters_javascript = ['thet_javascript']
 """"""
 
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_sign_column_always = 1
+let g:ale_sign_column_always = 0
 let g:ale_sign_error = '✖'
 let g:ale_sign_warning = '⚠'
 
@@ -72,6 +85,9 @@ let g:ale_python_pylint_options = "-d C0103,C0111,C0301,E0611,E1101,F0401,R0903,
 " http://flake8.pycqa.org/en/latest/user/error-codes.html
 " let g:ale_python_flake8_args =
 
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 
 " set statusline+=%{ALEGetStatusLine()}
 "

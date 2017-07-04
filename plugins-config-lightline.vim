@@ -11,9 +11,7 @@ let g:lightline = {
       \   'filetype': 'LightLineFiletype',
       \   'fileencoding': 'LightLineFileencoding',
       \   'mode': 'LightLineMode',
-      \ },
-      \ 'component_expand': {
-      \     'warnings_errors': 'ALEGetStatusLine',
+      \   'warnings_errors': 'ALEStatus',
       \ },
       \ }
 
@@ -68,38 +66,15 @@ function! TagbarStatusFunc(current, sort, fname, ...) abort
   return lightline#statusline(0)
 endfunction
 
+function! ALEStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
 
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
 
-" let g:lightline = {
-"       \ 'active': {
-"       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ],
-"       \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype', 'neomake_errors', 'neomake_warnings'] ]
-"       \ },
-"       \ 'subseparator': { 'left': '|', 'right': '|' },
-"       \ 'component_function': {
-"       \   'fugitive': 'LightLineFugitive',
-"       \   'filename': 'LightLineFilename',
-"       \   'fileformat': 'LightLineFileformat',
-"       \   'filetype': 'LightLineFiletype',
-"       \   'fileencoding': 'LightLineFileencoding',
-"       \   'mode': 'LightLineMode',
-"       \ },
-"       \ 'component_expand': {
-"       \     'neomake_errors': 'LightLineNeomakeErrors',
-"       \     'neomake_warnings': 'LightLineNeomakeWarnings',
-"       \ },
-"       \ }
-"  
-" function! LightLineNeomakeErrors()
-"   if !exists(":Neomake") || ((get(neomake#statusline#QflistCounts(), "E", 0) + get(neomake#statusline#LoclistCounts(), "E", 0)) == 0)
-"     return ''
-"   endif
-"   return 'E:'.(get(neomake#statusline#LoclistCounts(), 'E', 0) + get(neomake#statusline#QflistCounts(), 'E', 0))
-" endfunction
-" 
-" function! LightLineNeomakeWarnings()
-"   if !exists(":Neomake") || ((get(neomake#statusline#QflistCounts(), "W", 0) + get(neomake#statusline#LoclistCounts(), "W", 0)) == 0)
-"     return ''
-"   endif
-"   return 'W:'.(get(neomake#statusline#LoclistCounts(), 'W', 0) + get(neomake#statusline#QflistCounts(), 'W', 0))
-" endfunction
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction

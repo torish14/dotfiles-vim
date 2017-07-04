@@ -9,9 +9,13 @@ let g:jedi#completions_command = "<C-Space>"
 let g:jedi#rename_command = "<leader>pr"
 
 
+"" ALE next/prev Error
+nmap ]e :ALENextWrap<cr>
+nmap [e :ALEPreviousWrap<cr>
+
 " MatchTagAlways
-nnoremap <leader>]t :MtaJumpToOtherTag<cr>
-nnoremap <leader>[t :MtaJumpToOtherTag<cr>
+nnoremap ]t :MtaJumpToOtherTag<cr>
+nnoremap [t :MtaJumpToOtherTag<cr>
 
 " SECTION FOR <leader>` MAPPINGS
 " jsom formating
@@ -133,9 +137,6 @@ nnoremap <leader>u :IndentGuidesToggle<CR>
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
-"" syntastic next/prev Error
-nnoremap ]e :lnext<CR>
-nnoremap [e :lprev<CR>
 
 " minimap
 let g:minimap_show='ms'
