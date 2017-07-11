@@ -189,7 +189,8 @@ if has('gui_running')
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
-    set guifont=Ubuntu\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
+    "set guifont=Ubuntu\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
+    "set guifont=UbuntuMono\ Ner\ Font\ Regular\ 11
 
     highlight Comment gui=italic
     highlight Search guibg=LawnGreen guifg=RoyalBlue
