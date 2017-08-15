@@ -90,9 +90,10 @@ Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs
 "" AUTOCOMPLETE AND SNIPPETS
 Plug 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plug 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-" Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
-Plug 'vim-scripts/L9'  " https://github.com/vim-scripts/L9
-Plug 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
+Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
+"" AutoComplPop --- always works, when others don't
+" Plug 'vim-scripts/L9'  " https://github.com/vim-scripts/L9
+" Plug 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
 
 "" COLORSCHEME
 Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai

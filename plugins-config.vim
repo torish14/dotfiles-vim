@@ -28,7 +28,6 @@ let g:jedi#completions_enabled = 1
 "" COMPLETOR
 """"""""""""
 let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
-let g:completor_auto_trigger = 0
 
 
 "" JavaScript
@@ -233,7 +232,7 @@ autocmd! User GoyoLeave Limelight!
 
 
 "" LargeFile
-let g:LargeFile = 1  " 500k is already a large file
+let g:LargeFile = 1  " 1M is already a large file
 
 
 "" BufTabLine
