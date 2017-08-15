@@ -4,8 +4,13 @@
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-sensible'
 
+" https://github.com/maralla/pack
+" https://github.com/junegunn/vim-plug/issues/651
+let g:plug_window = 'enew'
+let g:plug_url_format = 'git@github.com:%s.git'
+
+Plug 'tpope/vim-sensible'
 
 "" VISUAL
 """""""""
@@ -17,8 +22,7 @@ Plug 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
 Plug 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 
 Plug 'tyru/open-browser.vim'  " https://github.com/tyru/open-browser.vim
-
-Plug 'mhinz/vim-hugefile'  "  https://github.com/mhinz/vim-hugefile
+Plug 'vim-scripts/LargeFile'  " https://github.com/vim-scripts/LargeFile
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'jez/vim-superman'  " https://github.com/jez/vim-superman
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
@@ -43,8 +47,8 @@ Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
 
-Plug 'yegappan/mru'  " https://github.com/yegappan/mru
-Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
+" Plug 'yegappan/mru'  " https://github.com/yegappan/mru
+" Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 
 
 "" GIT, ETC
@@ -86,18 +90,19 @@ Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs
 "" AUTOCOMPLETE AND SNIPPETS
 Plug 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plug 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
-
+" Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
+Plug 'vim-scripts/L9'  " https://github.com/vim-scripts/L9
+Plug 'othree/vim-autocomplpop'  " https://github.com/othree/vim-autocomplpop
 
 "" COLORSCHEME
-Plug 'morhetz/gruvbox'  " https://github.com/morhetz/gruvbox
 Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
-Plug 'w0ng/vim-hybrid'  " https://github.com/w0ng/vim-hybrid
-Plug 'Lokaltog/vim-distinguished'  " https://github.com/Lokaltog/vim-distinguished
-Plug 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
-Plug 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
-Plug 'hukl/Smyck-Color-Scheme'  " https://github.com/hukl/Smyck-Color-Scheme
+" Plug 'morhetz/gruvbox'  " https://github.com/morhetz/gruvbox
+" Plug 'w0ng/vim-hybrid'  " https://github.com/w0ng/vim-hybrid
+" Plug 'Lokaltog/vim-distinguished'  " https://github.com/Lokaltog/vim-distinguished
+" Plug 'altercation/vim-colors-solarized'  " https://github.com/altercation/vim-colors-solarized
+" Plug 'ciaranm/inkpot'  " https://github.com/ciaranm/inkpot
+" Plug 'hukl/Smyck-Color-Scheme'  " https://github.com/hukl/Smyck-Color-Scheme
 
 
 "" Musi

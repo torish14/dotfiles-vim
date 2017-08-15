@@ -3,12 +3,6 @@ source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim
 
 
-"" vim-plug
-"""""""""""
-" https://github.com/junegunn/vim-plug/issues/651
-let g:plug_window = 'enew'
-
-
 "" GITGUTTER
 """"""""""""
 
@@ -34,6 +28,7 @@ let g:jedi#completions_enabled = 1
 "" COMPLETOR
 """"""""""""
 let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
+let g:completor_auto_trigger = 0
 
 
 "" JavaScript
