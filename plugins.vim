@@ -23,7 +23,6 @@ Plug 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-i
 
 Plug 'tyru/open-browser.vim'  " https://github.com/tyru/open-browser.vim
 Plug 'vim-scripts/LargeFile'  " https://github.com/vim-scripts/LargeFile
-Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'jez/vim-superman'  " https://github.com/jez/vim-superman
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 
@@ -31,21 +30,20 @@ Plug 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanc
 
 Plug 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plug 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
-Plug 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
+" Plug 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
 Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
 
 
 "" BUFFER NAVIGATION
 """"""""""""""""""""
 
-" Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 Plug 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-filebeagle
 Plug 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
-" Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
 
+" Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
+" Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 " Plug 'yegappan/mru'  " https://github.com/yegappan/mru
 " Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 
@@ -59,31 +57,33 @@ Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 
 
 "" SYNTAX
+Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
+Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
+Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'sass']}  " https://github.com/chrisbra/Colorizer
+
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 
-Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plug 'w0rp/ale'  " https://github.com/w0rp/ale
-" Plug 'neomake/neomake'  " https://github.com/neomake/neomake
+Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
-Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plug 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
+Plug 'pangloss/vim-javascript', {'for': 'javascript'}  " https://github.com/pangloss/vim-javascript
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs/tern_for_vim
 
 Plug 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plug 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
-Plug 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
-Plug 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
-Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'sass']}  " https://github.com/chrisbra/Colorizer
-
-Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
-Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
-Plug 'kgust/sql.vim'  "  https://github.com/kgust/sql.vim
-
-Plug 'pangloss/vim-javascript', {'for': 'javascript'}  " https://github.com/pangloss/vim-javascript
 Plug 'mxw/vim-jsx'  " https://github.com/mxw/vim-jsx
+Plug 'leafgarland/typescript-vim'  " https://github.com/leafgarland/typescript-vim
 Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs/tern_for_vim
+Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
+Plug 'chr4/nginx.vim'  " https://github.com/chr4/nginx.vim
 
-"" Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+" Plug 'neomake/neomake'  " https://github.com/neomake/neomake
+" Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+" Plug 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
+" Plug 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
+" Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
+" Plug 'kgust/sql.vim'  "  https://github.com/kgust/sql.vim
 
 
 "" AUTOCOMPLETE AND SNIPPETS
@@ -106,7 +106,7 @@ Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-color
 
 
 "" Musi
-Plug 'supercollider/scvim'  " https://github.com/supercollider/scvim
+" Plug 'supercollider/scvim'  " https://github.com/supercollider/scvim
 
 " Add plugins to &runtimepath
 call plug#end()

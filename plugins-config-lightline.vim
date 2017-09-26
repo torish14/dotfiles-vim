@@ -1,11 +1,12 @@
 let g:lightline = {
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ],
+      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'modified', 'filename' ] ],
       \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype', 'warnings_errors'] ]
       \ },
       \ 'subseparator': { 'left': '|', 'right': '|' },
       \ 'component_function': {
       \   'fugitive': 'LightLineFugitive',
+      \   'modified': 'LightLineModified',
       \   'filename': 'LightLineFilename',
       \   'fileformat': 'LightLineFileformat',
       \   'filetype': 'LightLineFiletype',
@@ -17,7 +18,7 @@ let g:lightline = {
 
 
 function! LightLineModified()
-  return &ft =~ 'help' ? '' : &modified ? '+' : &modifiable ? '' : '-'
+  return &ft =~ 'help' ? '' : &modified ? '*' : &modifiable ? '' : '-'
 endfunction
 
 function! LightLineReadonly()
