@@ -55,8 +55,8 @@ endif
 nmap ,cs :let @+=expand("%")<CR>
 nmap ,cl :let @+=expand("%:p")<CR>
 
-"noremap <leader>p :set list!<CR>
-map <silent> <leader>l :set number!<CR>
+" noremap <leader>p :set list!<CR>
+" map <silent> <leader>l :set number!<CR>
 
 "" center scrolling
 "map <S-Up> <Up>zz

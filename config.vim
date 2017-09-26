@@ -106,7 +106,8 @@ autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0  " only use semantic linebreaks in text files.
 
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
-autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
+"" autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
+autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=xhtml syntax=xhtml
 autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
 autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
 autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
@@ -114,15 +115,15 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/
 
 
 " Open some binaries with external tools
-autocmd BufReadCmd *.pdf silent !gnome-open % &
+autocmd BufReadCmd *.pdf silent !xdg-open % &
 autocmd BufEnter *.pdf bdelete
-autocmd BufReadCmd *.png silent !gnome-open % &
+autocmd BufReadCmd *.png silent !xdg-open % &
 autocmd BufEnter *.png bdelete
-autocmd BufReadCmd *.jpg silent !gnome-open % &
+autocmd BufReadCmd *.jpg silent !xdg-open % &
 autocmd BufEnter *.jpg bdelete
-autocmd BufReadCmd *.jpeg silent !gnome-open % &
+autocmd BufReadCmd *.jpeg silent !xdg-open % &
 autocmd BufEnter *.jpeg bdelete
-autocmd BufReadCmd *.gif silent !gnome-open % &
+autocmd BufReadCmd *.gif silent !xdg-open % &
 autocmd BufEnter *.gif bdelete
 
 

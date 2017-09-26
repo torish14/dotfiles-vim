@@ -21,7 +21,7 @@ let g:gitgutter_eager = 0
 " let g:jedi#show_call_signatures = 0
 " let g:jedi#completions_enabled = 0
 let g:jedi#popup_on_dot = 1
-let g:jedi#show_call_signatures = 1
+let g:jedi#show_call_signatures = 0
 let g:jedi#completions_enabled = 1
 
 
@@ -60,7 +60,8 @@ let g:formatters_less = ['thet_cssbrush']
 let g:formatters_css = ['thet_cssbrush']
 
 
-let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
+" let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
+let g:formatdef_thet_javascript = '"prettier --single-quote --tab-width ".shiftwidth()'
 let g:formatters_javascript = ['thet_javascript']
 
 

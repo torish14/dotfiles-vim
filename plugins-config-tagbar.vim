@@ -1,5 +1,14 @@
 "" Tagbar
 
+let g:tagbar_type_css = {
+\ 'ctagstype' : 'Css',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 's:selectors',
+        \ 'i:identities'
+    \ ]
+\ }
+
 " ZCML
 let g:tagbar_type_zcml = {
     \ 'ctagstype': 'zcml',
@@ -120,4 +129,4 @@ let g:tagbar_type_r = {
     \ ]
 \ }
 
-let g:tern#command = ['/home/thet/node_modules/.bin/tern', '--no-port-file']
+"" let g:tern#command = ['/home/thet/node_modules/.bin/tern', '--no-port-file']

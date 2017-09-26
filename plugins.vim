@@ -38,12 +38,11 @@ Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
 "" BUFFER NAVIGATION
 """"""""""""""""""""
 
-Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
+" Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
-
 Plug 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-filebeagle
 Plug 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
-Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
+" Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
 
