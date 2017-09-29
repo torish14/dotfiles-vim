@@ -160,14 +160,17 @@ nmap <silent> <leader>0 <Plug>FontsizeDefault
 noremap <leader>m :BuffergatorToggle<CR>
 noremap <leader>M :BuffergatorTabsToggle<CR>
 
-"" NERDTree
-noremap <leader>n :NERDTreeToggle<CR>
-noremap <leader>N :NERDTree<CR>
-noremap <leader>b :NERDTreeFind<CR>
-
 "" FileBeagle
 map <silent> _  <Plug>FileBeagleOpenCurrentWorkingDir
 map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
+
+" CTRL-P
+map <silent> = :CtrlPBuffer<CR>
+
+
+" "" Lusty Juggler
+" map <silent> = :LustyJuggler<CR>
+
 
 " FZF
 " nnoremap <leader>/ :FZF<CR>
@@ -204,22 +207,23 @@ noremap <leader>t :setlocal ft=unix<CR>:setlocal expandtab<CR>:%s/\r//g<CR>:reta
 " select all
 nmap <C-a> ggVG
 
-"" next/previous buffer
-nmap <silent> <C-left> :bprev<CR>
-nmap <silent> <C-right> :bnext<CR>
+""" next/previous buffer
+"nmap <silent> <C-left> :bprev<CR>
+"nmap <silent> <C-right> :bnext<CR>
+
 " close buffer and goto next
 nnoremap <C-x> :Bdelete<CR>
 nnoremap <leader>x :Bdelete<CR>
-" vim-bufsurf -- browse in buffer history
-nmap <silent> <C-A-left> :BufSurfBack<CR>
-nmap <silent> <C-A-right> :BufSurfForward<CR>
 
-autocmd FileType nerdtree noremap <buffer> <C-left> <nop>
-autocmd FileType nerdtree noremap <buffer> <C-right> <nop>
-autocmd FileType nerdtree noremap <buffer> <C-x> <nop>
-autocmd FileType buffergator noremap <buffer> <C-left> <nop>
-autocmd FileType buffergator noremap <buffer> <C-right> <nop>
-autocmd FileType buffergator noremap <buffer> <C-x> <nop>
+
+noremap <leader>n :MBEToggle<CR>
+noremap <leader>b :MBEToggleMRU<CR>
+"" next/previous buffer
+nmap <silent> <C-left> :MBEbp<CR>
+nmap <silent> <C-right> :MBEbn<CR>
+nmap <silent> <C-right> :MBEbn<CR>
+
+
 
 nmap <C-n> :tabnew<CR>
 "nmap <leader>t :tabnew
@@ -263,3 +267,21 @@ nmap <C-S-Left> zc
 ""nmap <C-S-A-Right> zO
 ""nmap <C-S-A-Left> zC
 
+
+
+
+"" vim-bufsurf -- browse in buffer history
+"nmap <silent> <C-A-left> :BufSurfBack<CR>
+"nmap <silent> <C-A-right> :BufSurfForward<CR>
+"
+""" NERDTree
+"noremap <leader>n :NERDTreeToggle<CR>
+"noremap <leader>N :NERDTree<CR>
+"noremap <leader>b :NERDTreeFind<CR>
+
+"autocmd FileType nerdtree noremap <buffer> <C-left> <nop>
+"autocmd FileType nerdtree noremap <buffer> <C-right> <nop>
+"autocmd FileType nerdtree noremap <buffer> <C-x> <nop>
+"autocmd FileType buffergator noremap <buffer> <C-left> <nop>
+"autocmd FileType buffergator noremap <buffer> <C-right> <nop>
+"autocmd FileType buffergator noremap <buffer> <C-x> <nop>

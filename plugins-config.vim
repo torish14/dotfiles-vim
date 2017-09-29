@@ -3,6 +3,25 @@ source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim
 
 
+"" Mini Buffer Explorer
+"""""""""""""""""""""""
+let g:miniBufExplVSplit =   0
+let g:miniBufExplBRSplit = 0
+let g:miniBufExplorerAutoStart = 0
+let g:miniBufExplBuffersNeeded = 0
+let g:miniBufExplShowBufNumbers = 1
+
+
+"" filebeagle defines <leader>f, which I don't want
+let g:filebeagle_suppress_keymaps = 1
+let g:filebeagle_show_hidden = 1
+
+
+"" Lusty Juggler
+""""""""""""""""
+let g:LustyJugglerDefaultMappings = 0
+
+
 "" GITGUTTER
 """"""""""""
 
@@ -27,7 +46,8 @@ let g:jedi#completions_enabled = 1
 
 "" COMPLETOR
 """"""""""""
-let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
+" let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
+let g:completor_node_binary = '/usr/bin/nodejs'
 
 
 "" JavaScript
@@ -131,10 +151,6 @@ let g:mta_filetypes = {
     \ 'xml' : 1,
     \ 'zcml' : 1,
     \}
-
-
-"" filebeagle defines <leader>f, which I don't want
-let g:filebeagle_suppress_keymaps = 1
 
 
 "" Set limelight on Goyo
