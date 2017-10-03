@@ -5,11 +5,24 @@ source $HOME/.vim/plugins-config-lightline.vim
 
 "" Mini Buffer Explorer
 """""""""""""""""""""""
-let g:miniBufExplVSplit =   0
+let g:miniBufExplVSplit = 20
 let g:miniBufExplBRSplit = 0
 let g:miniBufExplorerAutoStart = 0
 let g:miniBufExplBuffersNeeded = 0
 let g:miniBufExplShowBufNumbers = 1
+
+
+"" BUFFERGATOR
+""""""""""""""
+let g:buffergator_autoexpand_on_split = 0
+let g:buffergator_viewport_split_policy = 'L'
+let g:buffergator_autodismiss_on_select = 0
+let g:buffergator_autoupdate = 1
+let g:buffergator_split_size = 40
+let g:buffergator_sort_regime = 'bufnum'
+let g:buffergator_display_regime = 'basename'
+let g:buffergator_show_full_directory_path = 0
+let g:buffergator_suppress_keymaps = 1
 
 
 "" filebeagle defines <leader>f, which I don't want
@@ -24,7 +37,6 @@ let g:LustyJugglerDefaultMappings = 0
 
 "" GITGUTTER
 """"""""""""
-
 let g:gitgutter_grep_command = 'ag'
 let g:gitgutter_async = 1
 " let g:gitgutter_realtime = 0
@@ -33,7 +45,6 @@ let g:gitgutter_eager = 0
 
 "" JEDI
 """""""
-
 " let g:jedi#force_py_version = 2
 "" Disable jedi completion, which is way too slow for big projects
 " let g:jedi#popup_on_dot = 0
@@ -123,20 +134,6 @@ let g:EasyGrepInvertWholeWord=0
 let g:EasyGrepFileAssociationsInExplorer=0
 let g:EasyGrepOptionPrefix='<leader>vy'
 let g:EasyGrepReplaceAllPerFile=0
-
-
-
-"" BUFFERGATOR
-""""""""""""""
-
-let g:buffergator_viewport_split_policy = 'L'
-let g:buffergator_autodismiss_on_select = 0
-let g:buffergator_autoupdate = 1
-let g:buffergator_split_size = 40
-let g:buffergator_sort_regime = 'filepath'
-let g:buffergator_display_regime = 'basename'
-let g:buffergator_show_full_directory_path = 0
-let g:buffergator_suppress_keymaps = 1
 
 
 "" OTHER

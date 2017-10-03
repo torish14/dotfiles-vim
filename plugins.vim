@@ -37,12 +37,11 @@ Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
 "" BUFFER NAVIGATION
 """"""""""""""""""""
 
-Plug 'thet/minibufexpl.vim'  " https://github.com/thet/minibufexpl.vim / https://github.com/fholgado/minibufexpl.vim
-Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 Plug 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-filebeagle
 Plug 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
 Plug 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
+Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 
 " Plug 'vim-scripts/LustyJuggler'  " https://github.com/vim-scripts/LustyJuggler
 "                                  " https://github.com/sjbach/lusty
@@ -111,6 +110,11 @@ Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-color
 
 "" Musi
 " Plug 'supercollider/scvim'  " https://github.com/supercollider/scvim
+
+
+"" Look also at these:
+" https://github.com/justinmk/vim-dirvish  " like filebeagle
+" Plug 'thet/minibufexpl.vim'  " https://github.com/thet/minibufexpl.vim / https://github.com/fholgado/minibufexpl.vim
 
 " Add plugins to &runtimepath
 call plug#end()
