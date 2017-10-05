@@ -37,15 +37,18 @@ Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
 "" BUFFER NAVIGATION
 """"""""""""""""""""
 
+
 Plug 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-filebeagle
 Plug 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
 Plug 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 
+" Keep until buffergator is fixed to work as vertical replacement.
+Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
+
 " Plug 'vim-scripts/LustyJuggler'  " https://github.com/vim-scripts/LustyJuggler
 "                                  " https://github.com/sjbach/lusty
-" Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 " Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
 " Plug 'yegappan/mru'  " https://github.com/yegappan/mru
 " Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf

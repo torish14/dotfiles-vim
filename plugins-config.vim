@@ -2,6 +2,8 @@ source $HOME/.vim/plugins-config-fzf.vim
 source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim
 
+"" BufTabLine
+let g:buftabline_indicators = 1
 
 "" Mini Buffer Explorer
 """""""""""""""""""""""
@@ -28,7 +30,7 @@ let g:buffergator_suppress_keymaps = 1
 "" filebeagle defines <leader>f, which I don't want
 let g:filebeagle_suppress_keymaps = 1
 let g:filebeagle_show_hidden = 1
-
+let g:filebeagle_check_gitignore = 1
 
 "" Lusty Juggler
 """"""""""""""""
@@ -262,8 +264,6 @@ let g:indent_guides_color_change_percent = 5
 "autocmd FileType netrw setl bufhidden=wipe
 "
 
-""" BufTabLine
-"let g:buftabline_indicators = 1
 "
 "
 """ NERDTree

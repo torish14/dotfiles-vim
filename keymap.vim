@@ -207,9 +207,9 @@ noremap <leader>t :setlocal ft=unix<CR>:setlocal expandtab<CR>:%s/\r//g<CR>:reta
 " select all
 nmap <C-a> ggVG
 
-""" next/previous buffer
-"nmap <silent> <C-left> :bprev<CR>
-"nmap <silent> <C-right> :bnext<CR>
+"" next/previous buffer
+nmap <silent> <C-left> :bprev<CR>
+nmap <silent> <C-right> :bnext<CR>
 
 " close buffer and goto next
 nnoremap <C-x> :Bdelete<CR>
@@ -218,10 +218,6 @@ nnoremap <leader>x :Bdelete<CR>
 
 noremap <leader>n :MBEToggle<CR>
 noremap <leader>b :MBEToggleMRU<CR>
-"" next/previous buffer
-nmap <silent> <C-left> :MBEbp<CR>
-nmap <silent> <C-right> :MBEbn<CR>
-nmap <silent> <C-right> :MBEbn<CR>
 
 
 
