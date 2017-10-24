@@ -1,13 +1,42 @@
 "" Tagbar
 
+""" CSS / LESS / SCSS
+
+" From: https://github.com/mtscout6/vim-tagbar-css
+
 let g:tagbar_type_css = {
-\ 'ctagstype' : 'Css',
-    \ 'kinds'     : [
-        \ 'c:classes',
-        \ 's:selectors',
-        \ 'i:identities'
-    \ ]
-\ }
+\  'ctagstype' : 'css',
+\  'kinds' : [
+\    'v:variables',
+\    'c:classes',
+\    'i:identities',
+\    't:tags',
+\    'm:medias'
+\  ]
+\}
+
+let g:tagbar_type_less = {
+\  'ctagstype' : 'css',
+\  'kinds' : [
+\    'v:variables',
+\    'c:classes',
+\    'i:identities',
+\    't:tags',
+\    'm:medias'
+\  ]
+\}
+
+let g:tagbar_type_scss = {
+\  'ctagstype' : 'css',
+\  'kinds' : [
+\    'v:variables',
+\    'c:classes',
+\    'i:identities',
+\    't:tags',
+\    'm:medias'
+\  ]
+\}
+
 
 " ZCML
 let g:tagbar_type_zcml = {

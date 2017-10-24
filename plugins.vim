@@ -62,7 +62,7 @@ Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 
 
-"" SYNTAX
+"" SYNTAXN
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'sass']}  " https://github.com/chrisbra/Colorizer
@@ -83,9 +83,10 @@ Plug 'leafgarland/typescript-vim'  " https://github.com/leafgarland/typescript-v
 Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'chr4/nginx.vim'  " https://github.com/chr4/nginx.vim
+Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+Plug 'plasticboy/vim-markdown'  " https://github.com/plasticboy/vim-markdown
 
 " Plug 'neomake/neomake'  " https://github.com/neomake/neomake
-" Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
 " Plug 'JulesWang/css.vim'  " https://github.com/JulesWang/css.vim
 " Plug 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
 " Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
