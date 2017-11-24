@@ -2,6 +2,26 @@ source $HOME/.vim/plugins-config-fzf.vim
 source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim
 
+
+"" Colorizer
+let g:colorizer_auto_filetype='css,less,scss'
+let g:colorizer_skip_comments = 0
+
+""" Denite
+"call denite#custom#map(
+"      \ 'insert',
+"      \ '<Down>',
+"      \ '<denite:move_to_next_line>',
+"      \ 'noremap'
+"      \)
+"call denite#custom#map(
+"      \ 'insert',
+"      \ '<Up>',
+"      \ '<denite:move_to_previous_line>',
+"      \ 'noremap'
+"      \)
+
+
 "" BufTabLine
 let g:buftabline_indicators = 1
 

@@ -25,6 +25,8 @@ Plug 'tyru/open-browser.vim'  " https://github.com/tyru/open-browser.vim
 Plug 'vim-scripts/LargeFile'  " https://github.com/vim-scripts/LargeFile
 Plug 'jez/vim-superman'  " https://github.com/jez/vim-superman
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
+" Plug 'tpope/vim-obsession'  " https://github.com/tpope/vim-obsession
+
 
 Plug 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 
@@ -36,17 +38,17 @@ Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
 
 "" BUFFER NAVIGATION
 """"""""""""""""""""
-
+" Plug 'Shougo/denite.nvim'  " https://github.com/Shougo/denite.nvim
 
 Plug 'jeetsukumaran/vim-filebeagle'  " https://github.com/jeetsukumaran/vim-filebeagle
 Plug 'jeetsukumaran/vim-buffergator'  " https://github.com/jeetsukumaran/vim-buffergator
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
-Plug 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 
 " Keep until buffergator is fixed to work as vertical replacement.
 Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 
+" Plug 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 " Plug 'vim-scripts/LustyJuggler'  " https://github.com/vim-scripts/LustyJuggler
 "                                  " https://github.com/sjbach/lusty
 " Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
@@ -65,7 +67,7 @@ Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 "" SYNTAXN
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
-Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'sass']}  " https://github.com/chrisbra/Colorizer
+Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'scss']}  " https://github.com/chrisbra/Colorizer
 
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 
@@ -104,6 +106,7 @@ Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
 "" COLORSCHEME
 Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
+" Plug 'jonathanfilip/lucius'  " https://github.com/jonathanfilip/lucius
 " Plug 'morhetz/gruvbox'  " https://github.com/morhetz/gruvbox
 " Plug 'w0ng/vim-hybrid'  " https://github.com/w0ng/vim-hybrid
 " Plug 'Lokaltog/vim-distinguished'  " https://github.com/Lokaltog/vim-distinguished

@@ -164,10 +164,13 @@ noremap <leader>M :BuffergatorTabsToggle<CR>
 map <silent> _  <Plug>FileBeagleOpenCurrentWorkingDir
 map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
 
-" CTRL-P
-map <silent> = :CtrlPBuffer<CR>
+""" Denite
+"map <silent> =  :Denite -split=no buffer<CR>
+"map <silent> +  :Denite -split=no file_rec<CR>
+" -matchers="matcher_fuzzy" -sorters="sorter_rank"
 
-
+"" CTRL-P
+" map <silent> = :CtrlPBuffer<CR>
 " "" Lusty Juggler
 " map <silent> = :LustyJuggler<CR>
 

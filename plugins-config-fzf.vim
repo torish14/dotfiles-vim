@@ -3,6 +3,8 @@
 " More info:
 " https://github.com/junegunn/fzf/wiki/Examples-(vim)
 
+let g:fzf_layout = { 'window': 'enew' }
+
 
 function! FZFfiles()
     call fzf#run({
