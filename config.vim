@@ -48,7 +48,7 @@ set nowrap
 set nolist       " nolist needed for linebreak
 set linebreak    " when wrapping, don't break words
 
-set cursorline
+" set cursorline
 set colorcolumn=80
 set so=4  " Set a margin of lines when scrolling
 
@@ -163,11 +163,10 @@ set updatetime=4000
 " set background=dark
 " set background=light
 
-let g:molokai_original = 0
-colorscheme molokai
-" colorscheme slate
-" colorscheme gruvbox
+" let g:molokai_original = 0
+" colorscheme molokai
 " colorscheme github
+colorscheme industry
 
 "" GUI
 if has('gui_running')
@@ -182,11 +181,11 @@ if has('gui_running')
     set go-=m  " menubar
 
     " http://vim.wikia.com/wiki/Configuring_the_cursor
-    highlight Cursor guifg=black guibg=white
-    highlight iCursor guifg=white guibg=green
-    set guicursor=n-v-c:block-Cursor
-    set guicursor+=i:ver100-iCursor
-    set guicursor+=i:hor100-iCursor
+    " highlight Cursor guifg=black guibg=white
+    " highlight iCursor guifg=white guibg=green
+    " set guicursor=n-v-c:block-Cursor
+    " set guicursor+=i:ver100-iCursor
+    " set guicursor+=i:hor100-iCursor
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
@@ -194,10 +193,12 @@ if has('gui_running')
     "set guifont=UbuntuMono\ Ner\ Font\ Regular\ 11
 
     highlight Comment gui=italic
+    highlight CursorLineNR gui=bold
     highlight Search guibg=LawnGreen guifg=RoyalBlue
 else
     set t_Co=256
     highlight Normal ctermbg=none
+    highlight CursorLineNR cterm=bold
 endif
 if has('mouse')
     set mouse=a  " have the mouse enabled all the time
@@ -205,7 +206,20 @@ if has('mouse')
 endif
 
 highlight SpellBad term=underline gui=undercurl guisp=Red
-highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+" highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+" Highlighting the current line number in vim
+" https://stackoverflow.com/a/13275419/1337474
+" hi clear CursorLine
+" augroup CLClear
+"     autocmd! ColorScheme * hi clear CursorLine
+" augroup END
+" hi CursorLineNR cterm=bold
+" augroup CLNRSet
+"     autocmd! ColorScheme * hi CursorLineNR cterm=bold
+" augroup END
+
 
 set fillchars+=vert:\ " No char for vertical split is even prettier thant |
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
