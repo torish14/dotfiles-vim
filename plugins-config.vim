@@ -3,6 +3,12 @@ source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim
 
 
+"" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
 "" Colorizer
 let g:colorizer_auto_filetype='css,less,scss'
 let g:colorizer_skip_comments = 0
