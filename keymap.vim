@@ -200,7 +200,9 @@ map <leader>g :%!jscs -x<CR>
 " - FileType Unix,
 " - Tabs to spaces,
 " - Remove Carriage Returns (^M)
-noremap <leader>t :setlocal ft=unix<CR>:setlocal expandtab<CR>:%s/\r//g<CR>:retab<CR><CR>
+" noremap <leader>t :setlocal ft=unix<CR>:setlocal expandtab<CR>:%s/\r//g<CR>:retab<CR><CR>
+" noremap <leader>t :setlocal ft=unix<CR>:setlocal expandtab<CR>:call Preserve("%s/\\s\\+$//e")<CR>:call Preserve("%s/\\r//e")<CR>:retab<CR><CR>
+noremap <leader>t :setlocal expandtab<CR>:call Preserve("%s/\\s\\+$//e")<CR>:call Preserve("%s/\\r//e")<CR>:retab<CR><CR>
 
 " http://stackoverflow.com/questions/4781070/how-to-insert-tab-character-when-expandtab-option-is-on-in-vim
 " <CTRL-V><Tab> in insert mode
