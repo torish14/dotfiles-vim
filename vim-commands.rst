@@ -1,3 +1,11 @@
+vim colors
+----------
+https://codeyarns.com/2011/07/29/vim-chart-of-color-names/
+
+count pattern
+-------------
+:%s/PATTERN//gn
+
 
 Save / Load a session
 ---------------------
