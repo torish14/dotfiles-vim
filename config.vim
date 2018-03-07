@@ -48,7 +48,7 @@ set nowrap
 set nolist       " nolist needed for linebreak
 set linebreak    " when wrapping, don't break words
 
-" set cursorline
+set cursorline
 set colorcolumn=80
 set so=4  " Set a margin of lines when scrolling
 
@@ -166,7 +166,12 @@ set updatetime=4000
 " let g:molokai_original = 0
 " colorscheme molokai
 " colorscheme github
-colorscheme industry
+" colorscheme industry
+
+set background=dark
+colorscheme PaperColor
+" set highlight Normal guibg=black
+
 
 "" GUI
 if has('gui_running')
@@ -189,8 +194,8 @@ if has('gui_running')
     set guicursor+=a:blinkon0 " Disable all blinking
     set guicursor+=a:blinkoff0
     set guicursor+=a:blinkwait0
+    set guifont=UbuntuMono\ Nerd\ Font\ Regular\ 11
     "set guifont=Ubuntu\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
-    "set guifont=UbuntuMono\ Ner\ Font\ Regular\ 11
 
     highlight Comment gui=italic
     highlight CursorLineNR gui=bold
