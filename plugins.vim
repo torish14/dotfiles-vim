@@ -33,7 +33,7 @@ Plug 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanc
 Plug 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 Plug 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
 " Plug 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
-Plug 'rking/ag.vim'  " https://github.com/rking/ag.vim
+Plug 'mileszs/ack.vim'  " https://github.com/mileszs/ack.vim
 
 
 "" BUFFER NAVIGATION
@@ -55,6 +55,10 @@ Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 " Plug 'yegappan/mru'  " https://github.com/yegappan/mru
 " Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 
+Plug 'jeetsukumaran/vim-indentwise'  " https://github.com/jeetsukumaran/vim-indentwise
+Plug 'jeetsukumaran/vim-gazetteer'  " https://github.com/jeetsukumaran/vim-gazetteer
+Plug 'dahu/vim-lotr'  " https://github.com/dahu/vim-lotr
+
 
 "" GIT, ETC
 """""""""""
@@ -67,7 +71,7 @@ Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 "" SYNTAXN
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
-Plug 'chrisbra/Colorizer', {'for': ['css', 'less', 'scss']}  " https://github.com/chrisbra/Colorizer
+Plug 'ap/vim-css-color'  " https://github.com/ap/vim-css-color
 
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 
@@ -75,14 +79,18 @@ Plug 'w0rp/ale'  " https://github.com/w0rp/ale
 Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plug 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
-Plug 'pangloss/vim-javascript', {'for': 'javascript'}  " https://github.com/pangloss/vim-javascript
+" Plug 'pangloss/vim-javascript', {'for': 'javascript'}  " https://github.com/pangloss/vim-javascript
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs/tern_for_vim
+
+Plug 'othree/yajs.vim', {'for': 'javascript'}  " https://github.com/othree/yajs.vim
+Plug 'othree/javascript-libraries-syntax.vim', {'for': 'javascript'}  " https://github.com/othree/javascript-libraries-syntax.vim
+Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}  " https://github.com/othree/es.next.syntax.vim
+Plug 'mxw/vim-jsx'  " https://github.com/mxw/vim-jsx
 
 Plug 'othree/html5.vim'  " https://github.com/othree/html5.vim
 Plug 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
-Plug 'mxw/vim-jsx'  " https://github.com/mxw/vim-jsx
 Plug 'leafgarland/typescript-vim'  " https://github.com/leafgarland/typescript-vim
-Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
+" Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'chr4/nginx.vim'  " https://github.com/chr4/nginx.vim
 Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
@@ -106,6 +114,7 @@ Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
 "" COLORSCHEME
 Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
+Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 " Plug 'jonathanfilip/lucius'  " https://github.com/jonathanfilip/lucius
 " Plug 'morhetz/gruvbox'  " https://github.com/morhetz/gruvbox
 " Plug 'w0ng/vim-hybrid'  " https://github.com/w0ng/vim-hybrid

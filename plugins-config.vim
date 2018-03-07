@@ -3,6 +3,12 @@ source $HOME/.vim/plugins-config-tagbar.vim
 source $HOME/.vim/plugins-config-lightline.vim
 
 
+"" Ack.vim
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+
 "" UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -55,8 +61,9 @@ let g:buffergator_suppress_keymaps = 1
 
 "" filebeagle defines <leader>f, which I don't want
 let g:filebeagle_suppress_keymaps = 1
-let g:filebeagle_show_hidden = 1
-let g:filebeagle_check_gitignore = 1
+let g:filebeagle_show_hidden = 0  " show with ``gh``
+"let g:filebeagle_check_gitignore = 1
+
 
 "" Lusty Juggler
 """"""""""""""""
@@ -91,6 +98,9 @@ let g:completor_node_binary = '/usr/bin/nodejs'
 
 "" JavaScript
 """""""""""""
+
+let g:used_javascript_libs = 'jquery,underscore,backbone,angularjs,requirejs,jasmine,chai,react,flux'
+
 
 " vim-jsx
 let g:jsx_ext_required = 0

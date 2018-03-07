@@ -16,7 +16,6 @@ let g:lightline = {
       \ },
       \ }
 
-
 function! LightLineModified()
   return &ft =~ 'help' ? '' : &modified ? '*' : &modifiable ? '' : '-'
 endfunction
