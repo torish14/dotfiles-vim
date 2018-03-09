@@ -71,7 +71,7 @@ Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 "" SYNTAXN
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
-Plug 'ap/vim-css-color'  " https://github.com/ap/vim-css-color
+Plug 'ap/vim-css-color', {'for': ['css', 'html', 'less']}  " https://github.com/ap/vim-css-color
 
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 
@@ -80,20 +80,20 @@ Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 Plug 'davidhalter/jedi-vim'  " https://github.com/davidhalter/jedi-vim
 " Plug 'pangloss/vim-javascript', {'for': 'javascript'}  " https://github.com/pangloss/vim-javascript
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs/tern_for_vim
+" Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs/tern_for_vim
 
 Plug 'othree/yajs.vim', {'for': 'javascript'}  " https://github.com/othree/yajs.vim
 Plug 'othree/javascript-libraries-syntax.vim', {'for': 'javascript'}  " https://github.com/othree/javascript-libraries-syntax.vim
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}  " https://github.com/othree/es.next.syntax.vim
-Plug 'mxw/vim-jsx'  " https://github.com/mxw/vim-jsx
+Plug 'mxw/vim-jsx', {'for': 'javascript'}  " https://github.com/mxw/vim-jsx
 
-Plug 'othree/html5.vim'  " https://github.com/othree/html5.vim
-Plug 'groenewege/vim-less'  " https://github.com/groenewege/vim-less
+Plug 'othree/html5.vim', {'for': 'html'}  " https://github.com/othree/html5.vim
+Plug 'groenewege/vim-less', {'for': 'less'}  " https://github.com/groenewege/vim-less
 Plug 'leafgarland/typescript-vim'  " https://github.com/leafgarland/typescript-vim
 " Plug 'kchmck/vim-coffee-script'  " https://github.com/kchmck/vim-coffee-script
 Plug 'mfukar/robotframework-vim'  " https://github.com/mfukar/robotframework-vim
 Plug 'chr4/nginx.vim'  " https://github.com/chr4/nginx.vim
-Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+Plug 'Valloric/MatchTagAlways', {'for': 'html'}  " https://github.com/Valloric/MatchTagAlways
 Plug 'plasticboy/vim-markdown'  " https://github.com/plasticboy/vim-markdown
 
 " Plug 'neomake/neomake'  " https://github.com/neomake/neomake
