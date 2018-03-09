@@ -254,6 +254,12 @@ nnoremap <C-w><Down> <C-w>j
 nnoremap <C-w><Left> <C-w>h
 nnoremap <C-w><Right> <C-w>l
 
+map <S-Left> :vertical resize +1<CR>
+map <S-Right> :vertical resize -1<CR>
+map <S-Up> :resize -1<CR>
+map <S-Down> :resize +1<CR>
+
+
 nmap <F5> :set nosmarttab<CR>
 "":setlocal si! si?<CR>
 ""set noautoindent
