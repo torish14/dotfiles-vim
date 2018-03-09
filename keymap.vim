@@ -183,7 +183,7 @@ noremap <leader>, :call FZFbuffers()<CR>
 noremap <leader>c :call FZFcolor()<CR>
 
 " Ack.vim
-nmap \ :Ack<SPACE>
+nmap \ :AckWindow<SPACE>
 
 
 "" Tagbar
