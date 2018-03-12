@@ -103,7 +103,8 @@ let g:used_javascript_libs = 'jquery,underscore,backbone,angularjs,requirejs,jas
 
 
 " vim-jsx
-let g:jsx_ext_required = 0
+" set to ``0`` or ``:set ft=javascript.jsx`` when doing React.
+let g:jsx_ext_required = 1
 
 
 "" VIM AUTOFORMAT
