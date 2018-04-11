@@ -1,6 +1,6 @@
 source $HOME/.vim/plugins-config-fzf.vim
 source $HOME/.vim/plugins-config-tagbar.vim
-source $HOME/.vim/plugins-config-lightline.vim
+" source $HOME/.vim/plugins-config-lightline.vim
 
 
 "" Ack.vim
@@ -72,10 +72,10 @@ let g:LustyJugglerDefaultMappings = 0
 
 "" GITGUTTER
 """"""""""""
-let g:gitgutter_grep_command = 'ag'
-let g:gitgutter_async = 1
-" let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
+" let g:gitgutter_grep_command = 'ag'
+" let g:gitgutter_async = 1
+" " let g:gitgutter_realtime = 0
+" let g:gitgutter_eager = 0
 
 
 "" JEDI

@@ -14,7 +14,7 @@ Plug 'tpope/vim-sensible'
 
 "" VISUAL
 """""""""
-Plug 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
+" Plug 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
 Plug 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plug 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plug 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
@@ -59,7 +59,8 @@ Plug 'dahu/vim-lotr'  " https://github.com/dahu/vim-lotr
 """""""""""
 
 Plug 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
-Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+" Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+Plug 'mhinz/vim-signify'  " https://github.com/mhinz/vim-signify
 Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 
 
@@ -90,6 +91,7 @@ Plug 'plasticboy/vim-markdown', {'for': 'markdown'}  " https://github.com/plasti
 Plug 'mfukar/robotframework-vim', {'for': 'robot'}  " https://github.com/mfukar/robotframework-vim
 Plug 'chr4/nginx.vim', {'for': 'nginx'}  " https://github.com/chr4/nginx.vim
 
+Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
 
 " Plug 'pangloss/vim-javascript', {'for': 'javascript'}  " https://github.com/pangloss/vim-javascript
 " Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " https://github.com/ternjs/tern_for_vim
