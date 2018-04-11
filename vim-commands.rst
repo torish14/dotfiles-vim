@@ -2,6 +2,11 @@ vim colors
 ----------
 https://codeyarns.com/2011/07/29/vim-chart-of-color-names/
 
+jump end of file
+----------------
+::
+    :$
+
 count pattern
 -------------
 :%s/PATTERN//gn
