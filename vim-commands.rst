@@ -2,6 +2,42 @@ vim colors
 ----------
 https://codeyarns.com/2011/07/29/vim-chart-of-color-names/
 
+
+spell correction
+----------------
+https://stackoverflow.com/questions/640351/how-can-i-spellcheck-in-gvim#640362
+
+::
+    :setlocal spell spelllang=en_us
+    :set spell
+
+For spell checker and to activate right button on mouse::
+
+    :set mousemodel=popup
+
+
+::
+    :help spell
+
+    To search for the next misspelled word:
+
+    ]s           Move to next misspelled word after the cursor.
+                 A count before the command can be used to repeat.
+                 'wrapscan' applies.
+
+    [s           Like "]s" but search backwards, find the misspelled
+                 word before the cursor.
+
+    Finding suggestions for bad words:
+
+    z=           For the word under/after the cursor, suggest correctly
+                 spelled words.
+
+    To add words to your own word list:
+
+    zg           Add word under the cursor as a good word
+
+
 jump end of file
 ----------------
 ::
