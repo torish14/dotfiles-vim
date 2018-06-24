@@ -37,7 +37,7 @@ set hidden  " allow for switching buffers when a file has changes
 set t_vb=  " make sure the bell shuts up
 set pastetoggle=<F2>
 set number       " turn on line numbers¬
-set showmatch    " indicate open/closing brackets
+set noshowmatch    " do not indicate open/closing brackets - use matchparen
 set ttyfast
 
 set equalalways  " set all window splits equal
@@ -100,7 +100,7 @@ set foldmethod=indent
 set foldlevelstart=20  " set foldlevel higher so opened buffers arent folded
 
 autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufRead,BufNewFile *.js setlocal tabstop=4 shiftwidth=4 softtabstop=4 foldmethod=indent  " foldmethod=syntax
+autocmd BufRead,BufNewFile *.js,*.jsx setlocal tabstop=2 shiftwidth=2 softtabstop=2 foldmethod=indent  " foldmethod=syntax
 autocmd BufRead,BufNewFile *.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=2 filetype=robot
 autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0  " only use semantic linebreaks in text files.
@@ -129,8 +129,9 @@ autocmd BufEnter *.gif bdelete
 
 " lower timeout for parenthesis matching for better performance.
 " See: http://vi.stackexchange.com/a/5318/6303
-let g:matchparen_timeout = 20
-let g:matchparen_insert_timeout = 20
+let g:matchparen_timeout = 100
+let g:matchparen_insert_timeout = 100
+
 
 " More performance tips:
 "
@@ -169,6 +170,9 @@ set updatetime=4000
 " colorscheme industry
 
 set background=dark
+" let g:oceanic_next_terminal_bold = 1
+" let g:oceanic_next_terminal_italic = 1
+" colorscheme OceanicNext
 colorscheme PaperColor
 " set highlight Normal guibg=black
 
