@@ -4,11 +4,12 @@
 " https://github.com/junegunn/fzf/wiki/Examples-(vim)
 
 let g:fzf_layout = { 'window': 'enew' }
+let g:fzf_launcher = 'xterm -e sh -ic %s'
 
 
 function! FZFfiles()
     call fzf#run({
-    \   'source': 'ag  -filU -g "" --ignore ./var --ignore ./parts --ignore ./develop-eggs --ignore *.py?',
+    \   'source': 'ag  -filU -g "" --ignore ./var --ignore ./develop-eggs --ignore *.py?',
     \   'sink':    'e',
     \ })
 endfunction
