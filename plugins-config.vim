@@ -72,9 +72,9 @@ let g:LustyJugglerDefaultMappings = 0
 
 "" GITGUTTER
 """"""""""""
-" let g:gitgutter_grep_command = 'ag'
-" let g:gitgutter_async = 1
-" " let g:gitgutter_realtime = 0
+let g:gitgutter_grep_command = 'ag'
+let g:gitgutter_async = 1
+" let g:gitgutter_realtime = 0
 " let g:gitgutter_eager = 0
 
 
@@ -85,7 +85,7 @@ let g:LustyJugglerDefaultMappings = 0
 " let g:jedi#popup_on_dot = 0
 " let g:jedi#show_call_signatures = 0
 " let g:jedi#completions_enabled = 0
-let g:jedi#popup_on_dot = 1
+let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0
 let g:jedi#completions_enabled = 1
 
@@ -99,12 +99,16 @@ let g:completor_node_binary = '/usr/bin/nodejs'
 "" JavaScript
 """""""""""""
 
-let g:used_javascript_libs = 'jquery,underscore,backbone,angularjs,requirejs,jasmine,chai,react,flux'
+" let g:used_javascript_libs = 'jquery,underscore,backbone,angularjs,requirejs,jasmine,chai,react,flux'
 
 
 " vim-jsx
 " set to ``0`` or ``:set ft=javascript.jsx`` when doing React.
-let g:jsx_ext_required = 1
+" let g:jsx_ext_required = 1
+
+" vim-jsx-pretty
+" let g:vim_jsx_pretty_enable_jsx_highlight = 1
+" let g:vim_jsx_pretty_colorful_config = 0
 
 
 "" VIM AUTOFORMAT
@@ -137,12 +141,13 @@ let g:formatters_javascript = ['thet_javascript']
 
 "" ALE
 """"""
-
+let g:ale_lint_on_enter = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_column_always = 0
 let g:ale_sign_error = '✖'
 let g:ale_sign_warning = '⚠'
-
+let g:ale_echo_cursor = 1
+let g:ale_echo_delay = 500
 let g:ale_statusline_format = ['✖%d', '⚠ %d', '✓ ok']
 
 " http://pylint-messages.wikidot.com/all-codes
