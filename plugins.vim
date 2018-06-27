@@ -60,6 +60,7 @@ Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 "" GIT, ETC
 """""""""""
 
+Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 Plug 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 " Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 Plug 'mhinz/vim-signify'  " https://github.com/mhinz/vim-signify
