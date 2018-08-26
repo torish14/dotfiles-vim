@@ -18,7 +18,7 @@ Plug 'tpope/vim-sensible'
 Plug 'drmikehenry/vim-fontsize'  " https://github.com/drmikehenry/vim-fontsize
 Plug 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plug 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
-Plug 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
+" Plug 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 Plug 'tyru/open-browser.vim'  " https://github.com/tyru/open-browser.vim
 Plug 'vim-scripts/LargeFile'  " https://github.com/vim-scripts/LargeFile
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
@@ -79,7 +79,7 @@ Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 
 Plug 'davidhalter/jedi-vim', {'for': 'python'}  " https://github.com/davidhalter/jedi-vim
 
-Plug 'Valloric/MatchTagAlways', {'for': 'html'}  " https://github.com/Valloric/MatchTagAlways
+" Plug 'Valloric/MatchTagAlways', {'for': 'html'}  " https://github.com/Valloric/MatchTagAlways
 Plug 'othree/html5.vim', {'for': 'html'}  " https://github.com/othree/html5.vim
 Plug 'ap/vim-css-color', {'for': ['css', 'less']}  " https://github.com/ap/vim-css-color
 Plug 'groenewege/vim-less', {'for': 'less'}  " https://github.com/groenewege/vim-less

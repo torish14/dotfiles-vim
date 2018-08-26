@@ -94,7 +94,7 @@ let g:jedi#completions_enabled = 1
 """"""""""""
 " let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
 let g:completor_node_binary = '/usr/bin/nodejs'
-
+let g:completor_completion_delay = 300
 
 "" JavaScript
 """""""""""""
@@ -142,12 +142,14 @@ let g:formatters_javascript = ['thet_javascript']
 "" ALE
 """"""
 let g:ale_lint_on_enter = 0
+let g:ale_lint_on_filetype_changed = 0
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_sign_column_always = 0
+let g:ale_lint_delay = 500
+let g:ale_echo_cursor = 1
+let g:ale_echo_delay = 200
+let g:ale_sign_column_always = 1
 let g:ale_sign_error = '✖'
 let g:ale_sign_warning = '⚠'
-let g:ale_echo_cursor = 1
-let g:ale_echo_delay = 500
 let g:ale_statusline_format = ['✖%d', '⚠ %d', '✓ ok']
 
 " http://pylint-messages.wikidot.com/all-codes

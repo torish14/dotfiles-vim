@@ -37,7 +37,17 @@ set hidden  " allow for switching buffers when a file has changes
 set t_vb=  " make sure the bell shuts up
 set pastetoggle=<F2>
 set number       " turn on line numbers¬
+
+" performance improvements
 set noshowmatch    " do not indicate open/closing brackets - use matchparen
+" let loaded_matchparen = 1
+" set NoMatchParen
+" lower timeout for parenthesis matching for better performance.
+" See: http://vi.stackexchange.com/a/5318/6303
+let g:matchparen_timeout = 100
+let g:matchparen_insert_timeout = 100
+
+
 set ttyfast
 
 set equalalways  " set all window splits equal
@@ -55,7 +65,14 @@ set so=4  " Set a margin of lines when scrolling
 set lazyredraw   " dont redraw while vim is busy
 set wildmode=list:longest
 set formatoptions=qrnl
-set completeopt+=longest,menuone
+
+" autocomplete options:
+"   - also show, if only one item is present
+"   - do not insert automatically
+"   - do not select automatically
+"   - show previews with additional info, if availalble
+set completeopt=menuone,noinsert,noselect,preview
+
 
 match ErrorMsg '\%>80v.+'
 
@@ -125,12 +142,6 @@ autocmd BufReadCmd *.jpeg silent !xdg-open % &
 autocmd BufEnter *.jpeg bdelete
 autocmd BufReadCmd *.gif silent !xdg-open % &
 autocmd BufEnter *.gif bdelete
-
-
-" lower timeout for parenthesis matching for better performance.
-" See: http://vi.stackexchange.com/a/5318/6303
-let g:matchparen_timeout = 100
-let g:matchparen_insert_timeout = 100
 
 
 " More performance tips:
@@ -266,31 +277,31 @@ endfunction
 
 
 
-"" SYNTAX OFF / ON
-""""""""""""""""""
-
-function! SynOff()
-    " Set Syntax hightlighting to off and other performance tweaks.
-    " Useful when pasting big files
-    " See:
-    " http://stackoverflow.com/questions/4775605/vim-syntax-highlight-improve-performance
-    " http://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-to-long
-    "
-    syntax off
-    set nocursorcolumn
-    set nocursorline
-    set noshowmatch
-    set lazyredraw
-    :GitGutterDisable
-endfunction
-
-
-function! SynOn()
-    " Set Syntax hightlighting to on
-    syntax on
-    " set cursorcolumn
-    set cursorline
-    set showmatch
-    :GitGutterEnable
-endfunction
+" "" SYNTAX OFF / ON
+" """"""""""""""""""
+"
+" function! SynOff()
+"     " Set Syntax hightlighting to off and other performance tweaks.
+"     " Useful when pasting big files
+"     " See:
+"     " http://stackoverflow.com/questions/4775605/vim-syntax-highlight-improve-performance
+"     " http://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-to-long
+"     "
+"     syntax off
+"     set nocursorcolumn
+"     set nocursorline
+"     set noshowmatch
+"     set lazyredraw
+"     :GitGutterDisable
+" endfunction
+"
+"
+" function! SynOn()
+"     " Set Syntax hightlighting to on
+"     syntax on
+"     " set cursorcolumn
+"     set cursorline
+"     set showmatch
+"     :GitGutterEnable
+" endfunction
 
