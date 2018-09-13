@@ -91,7 +91,7 @@ Plug 'neoclide/vim-jsx-improve'  " https://github.com/neoclide/vim-jsx-improve
 " Plug 'othree/yajs.vim', {'for': 'javascript'}  " https://github.com/othree/yajs.vim
 " Plug 'othree/javascript-libraries-syntax.vim', {'for': 'javascript'}  " https://github.com/othree/javascript-libraries-syntax.vim
 " Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}  " https://github.com/othree/es.next.syntax.vim
-" Plug 'leafgarland/typescript-vim', {'for': 'typescript'}  " https://github.com/leafgarland/typescript-vim
+Plug 'leafgarland/typescript-vim', {'for': 'typescript'}  " https://github.com/leafgarland/typescript-vim
 
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}  " https://github.com/plasticboy/vim-markdown
 
