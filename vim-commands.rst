@@ -185,4 +185,7 @@ http://stackoverflow.com/questions/7810845/how-to-open-pdf-files-under-cursor-us
     au BufReadCmd *.pdf silent !gnome-open % &
 
 
+::
+    :set wrap
+    :set nowrap
 
