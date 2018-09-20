@@ -117,13 +117,13 @@ let g:completor_completion_delay = 300
 "" https://github.com/Chiel92/vim-autoformat
 "" https://github.com/hhatto/autopep8
 " Using autopep8 - yapf messes files up with my current setup...
-let g:formatters_python = ['autopep8']
 "let g:formatters_python = ['yapf']
 "if exists('g:formatdef_yapf')
 "    "" Use config files (~/.config/yapf/style)
 "    unlet g:formatdef_yapf
 "endif
 
+let g:formatters_python = ['autopep8']
 
 let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
 let g:formatters_zpt = ['htmlbeautify']

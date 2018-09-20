@@ -1,3 +1,17 @@
+
+
+search/replace
+--------------
+
+``cw`` or ``cgn``
+
+
+
+http://vimcasts.org/episodes/operating-on-search-matches-using-gn/
+
+``cgn``: search for next word, select the next match and start insert mode. repeat with ``.``
+
+
 vim colors
 ----------
 https://codeyarns.com/2011/07/29/vim-chart-of-color-names/
