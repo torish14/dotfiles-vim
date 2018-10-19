@@ -123,6 +123,10 @@ let g:completor_completion_delay = 300
 "    unlet g:formatdef_yapf
 "endif
 
+" Troubles? see:
+" https://github.com/Chiel92/vim-autoformat#help-the-formatter-doesnt-work-as-expected
+" let g:autoformat_verbosemode=1
+
 let g:formatters_python = ['autopep8']
 
 let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
@@ -135,7 +139,8 @@ let g:formatters_css = ['thet_cssbrush']
 
 
 " let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
-let g:formatdef_thet_javascript = '"prettier --single-quote --tab-width ".shiftwidth()'
+" let g:formatdef_thet_javascript = '"prettier --single-quote --tab-width ".shiftwidth()'
+let g:formatdef_thet_javascript = '"prettier --single-quote --stdin --stdin-filepath ".expand("%:p").(&textwidth ? " --print-width ".&textwidth : "")." --tab-width=".shiftwidth()'
 let g:formatters_javascript = ['thet_javascript']
 
 
