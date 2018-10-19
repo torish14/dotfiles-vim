@@ -84,6 +84,7 @@ Plug 'othree/html5.vim', {'for': 'html'}  " https://github.com/othree/html5.vim
 Plug 'ap/vim-css-color', {'for': ['css', 'less']}  " https://github.com/ap/vim-css-color
 Plug 'groenewege/vim-less', {'for': 'less'}  " https://github.com/groenewege/vim-less
 
+Plug 'posva/vim-vue', {'for': ['javascript']}  " https://github.com/posva/vim-vue
 Plug 'neoclide/vim-jsx-improve'  " https://github.com/neoclide/vim-jsx-improve
 " Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/pangloss/vim-javascript
 " Plug 'MaxMEllon/vim-jsx-pretty' {'for': ['javascript', 'javascript.jsx']}  " https://github.com/MaxMEllon/vim-jsx-pretty
