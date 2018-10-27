@@ -214,8 +214,16 @@ noremap <leader>t :setlocal expandtab<CR>:call Preserve("%s/\\s\\+$//e")<CR>:cal
 nmap <C-a> ggVG
 
 "" next/previous buffer
-nmap <silent> <C-left> :bprev<CR>
-nmap <silent> <C-right> :bnext<CR>
+" nmap <silent> <C-left> :bprev<CR>
+" nmap <silent> <C-right> :bnext<CR>
+
+"" vem-tabline next/previous
+" https://github.com/pacha/vem-tabline/blob/master/doc/tabline.txt
+nmap <S-Left> :call vem_tabline#tabline.move_buffer('left')<CR>
+nmap <S-Right> :call vem_tabline#tabline.move_buffer('right')<CR>
+nmap <C-Left> :call vem_tabline#tabline.select_buffer('left')<CR>
+nmap <C-Right> :call vem_tabline#tabline.select_buffer('right')<CR>
+
 
 " close buffer and goto next
 nnoremap <C-x> :Bdelete<CR>
@@ -243,21 +251,22 @@ nmap <C-Down> :tabp<CR>
 "nnoremap <C-j> <C-w>j
 "nnoremap <C-k> <C-w>k
 "nnoremap <C-l> <C-w>l
-"
+
 nnoremap <leader><Up> <C-w>k
 nnoremap <leader><Down> <C-w>j
 nnoremap <leader><Left> <C-w>h
 nnoremap <leader><Right> <C-w>l
-"
+
 nnoremap <C-w><Up> <C-w>k
 nnoremap <C-w><Down> <C-w>j
 nnoremap <C-w><Left> <C-w>h
 nnoremap <C-w><Right> <C-w>l
 
-map <S-Left> :vertical resize +1<CR>
-map <S-Right> :vertical resize -1<CR>
-map <S-Up> :resize -1<CR>
-map <S-Down> :resize +1<CR>
+" Resize splits
+map <S-w><Left> :vertical resize +1<CR>
+map <S-w><Right> :vertical resize -1<CR>
+map <S-w><Up> :resize -1<CR>
+map <S-w><Down> :resize +1<CR>
 
 
 nmap <F5> :set nosmarttab<CR>

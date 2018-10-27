@@ -35,7 +35,8 @@ let g:colorizer_skip_comments = 0
 
 
 "" BufTabLine
-let g:buftabline_indicators = 1
+" let g:buftabline_indicators = 1
+
 
 "" Mini Buffer Explorer
 """""""""""""""""""""""

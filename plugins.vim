@@ -44,7 +44,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://git
 Plug 'severin-lemaignan/vim-minimap'  " https://github.com/severin-lemaignan/vim-minimap
 
 " Keep until buffergator is fixed to work as vertical replacement.
-Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
+" Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
+Plug 'pacha/vem-tabline'  " https://github.com/pacha/vem-tabline
 
 " Plug 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 " Plug 'vim-scripts/LustyJuggler'  " https://github.com/vim-scripts/LustyJuggler
