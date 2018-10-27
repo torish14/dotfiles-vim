@@ -211,6 +211,7 @@ if has('gui_running')
     set guicursor+=a:blinkwait0
     set guifont=UbuntuMono\ Nerd\ Font\ Regular\ 11
     "set guifont=Ubuntu\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
+    set linespace=1 " a little more line spacing
 
     highlight Comment gui=italic
     highlight CursorLineNR gui=bold
