@@ -37,6 +37,10 @@ let g:colorizer_skip_comments = 0
 "" BufTabLine
 " let g:buftabline_indicators = 1
 
+"" vem-tabline
+" Show all buffers in tablines also when splitting windows
+let g:vem_tabline_multiwindow_mode = 0
+
 
 "" Mini Buffer Explorer
 """""""""""""""""""""""
