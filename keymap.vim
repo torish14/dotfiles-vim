@@ -117,13 +117,14 @@ nnoremap <leader>q :DelimitMateSwitch<CR>
 " zeal integration
 nnoremap gz :!zeal --query "<cword>"&<CR><CR>
 
+" vim signify defines ]c and [c
 " git gutter
-nmap ]c <Plug>GitGutterNextHunk
-nmap [c <Plug>GitGutterPrevHunk
-nmap <leader>hg <Plug>GitGutterToggle
-nmap <Leader>ha <Plug>GitGutterStageHunk
-nmap <Leader>hr <Plug>GitGutterRevertHunk
-nmap <Leader>hp <Plug>GitGutterPreviewHunk
+" nmap ]c <Plug>GitGutterNextHunk
+" nmap [c <Plug>GitGutterPrevHunk
+" nmap <leader>hg <Plug>GitGutterToggle
+" nmap <Leader>ha <Plug>GitGutterStageHunk
+" nmap <Leader>hr <Plug>GitGutterRevertHunk
+" nmap <Leader>hp <Plug>GitGutterPreviewHunk
 
 " Gitv, vim gitk
 "nnoremap <leader>gv :Gitv<CR>
@@ -183,7 +184,8 @@ noremap <leader>, :call FZFbuffers()<CR>
 noremap <leader>c :call FZFcolor()<CR>
 
 " Ack.vim
-nmap \ :AckWindow<SPACE>
+"nmap \ :AckWindow<SPACE>
+nmap \ :Ack<SPACE>
 
 
 "" Tagbar
@@ -291,10 +293,10 @@ nmap <C-S-Left> zc
 "nmap <silent> <C-A-left> :BufSurfBack<CR>
 "nmap <silent> <C-A-right> :BufSurfForward<CR>
 "
-""" NERDTree
-"noremap <leader>n :NERDTreeToggle<CR>
-"noremap <leader>N :NERDTree<CR>
-"noremap <leader>b :NERDTreeFind<CR>
+"" NERDTree
+noremap <leader>n :NERDTreeToggle<CR>
+noremap <leader>N :NERDTree<CR>
+noremap <leader>b :NERDTreeFind<CR>
 
 "autocmd FileType nerdtree noremap <buffer> <C-left> <nop>
 "autocmd FileType nerdtree noremap <buffer> <C-right> <nop>

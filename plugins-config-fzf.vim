@@ -4,7 +4,7 @@
 " https://github.com/junegunn/fzf/wiki/Examples-(vim)
 
 let g:fzf_layout = { 'window': 'enew' }
-let g:fzf_launcher = 'xterm -e sh -ic %s'
+" let g:fzf_launcher = 'xterm -e sh -ic %s'
 
 
 function! FZFfiles()

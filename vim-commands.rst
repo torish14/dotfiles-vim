@@ -1,4 +1,14 @@
 
+retab
+-----
+
+tabs to spaces: ``set et|retab``  (expandtab, retab)
+spaces to tabs: ``set noet|retab!`` (noexpandtab, retab)
+
+.. ATTENTION: these changes all whitespace, even those between non-whitespace characters to spaces resp. tabs.
+
+For an alternative, see: http://vim.wikia.com/wiki/Super_retab
+
 
 search/replace
 --------------

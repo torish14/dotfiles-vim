@@ -49,7 +49,8 @@ Plug 'pacha/vem-tabline'  " https://github.com/pacha/vem-tabline
 
 " Plug 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
 " Plug 'vim-scripts/LustyJuggler'  " https://github.com/vim-scripts/LustyJuggler
-" Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
+Plug 'scrooloose/nerdtree'  " https://github.com/scrooloose/nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin'  " https://github.com/Xuyuanp/nerdtree-git-plugin
 " Plug 'yegappan/mru'  " https://github.com/yegappan/mru
 " Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 
@@ -110,6 +111,10 @@ Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
 " Plug 'hail2u/vim-css3-syntax'  " https://github.com/hail2u/vim-css3-syntax
 " Plug 'evanmiller/nginx-vim-syntax'  " https://github.com/evanmiller/nginx-vim-syntax
 " Plug 'kgust/sql.vim'  "  https://github.com/kgust/sql.vim
+
+" DBGP debugger interface
+"Plug 'vim-vdebug/vdebug'  " https://github.com/vim-vdebug/vdebug
+
 
 
 "" AUTOCOMPLETE AND SNIPPETS
