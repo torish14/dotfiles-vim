@@ -322,8 +322,7 @@ let g:indent_guides_color_change_percent = 5
 "
 """ NERDTree
 """"""""""""
-"
-"let g:NERDTreeIgnore=['\~$', '\.svn$', '\.git*$', '\.pyc$', '\.pyo$', '\.mo$', '\.log$', '__pycache__', '.egg-info', 'develop-eggs']
+let g:NERDTreeIgnore=['\~$', '\.svn$', '\.git*$', '\.pyc$', '\.pyo$', '\.mo$', '\.log$', '__pycache__', '.egg-info', 'develop-eggs']
 """" set the sort order to alphabetical
 "let g:NERDTreeSortOrder=[]
 """" when the root is changed, change Vim's working dir
