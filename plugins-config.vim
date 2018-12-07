@@ -145,8 +145,9 @@ let g:formatters_css = ['thet_cssbrush']
 
 " let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
 " let g:formatdef_thet_javascript = '"prettier --single-quote --tab-width ".shiftwidth()'
-let g:formatdef_thet_javascript = '"prettier --single-quote --stdin --stdin-filepath ".expand("%:p").(&textwidth ? " --print-width ".&textwidth : "")." --tab-width=".shiftwidth()'
-let g:formatters_javascript = ['thet_javascript']
+" let g:formatdef_thet_javascript = '"prettier --single-quote --stdin --stdin-filepath ".expand("%:p").(&textwidth ? " --print-width ".&textwidth : "")." --tab-width=".shiftwidth()'
+" let g:formatters_javascript = ['thet_javascript']
+let g:formatters_javascript = ['prettier']
 
 
 "" ALE
@@ -168,8 +169,13 @@ let g:ale_python_pylint_options = "-d C0103,C0111,C0301,E0611,E1101,F0401,R0903,
 " let g:ale_python_flake8_args =
 
 let g:ale_linters = {
-\   'javascript': ['eslint'],
+\   'javascript': ['prettier-eslint'],
 \}
+" \   'python': ['black'],
+
+" NEEDS TO BE SET BEFORE PLUGIN IS LOADED
+" let g:ale_completion_enabled = 1
+let g:ale_set_balloons = 1
 
 
 "" EASYGREP

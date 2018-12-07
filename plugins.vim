@@ -1,6 +1,11 @@
 " MUST READ
 " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
 
+
+" NEEDS TO BE SET BEFORE PLUGIN IS LOADED
+let g:ale_completion_enabled = 1
+
+
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
@@ -79,7 +84,7 @@ Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 " Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 " Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
 
-Plug 'davidhalter/jedi-vim', {'for': 'python'}  " https://github.com/davidhalter/jedi-vim
+" Plug 'davidhalter/jedi-vim', {'for': 'python'}  " https://github.com/davidhalter/jedi-vim
 
 " Plug 'Valloric/MatchTagAlways', {'for': 'html'}  " https://github.com/Valloric/MatchTagAlways
 Plug 'othree/html5.vim', {'for': ['html', 'tal']}  " https://github.com/othree/html5.vim

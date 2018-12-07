@@ -14,6 +14,30 @@ Then::
     vim +PlugInstall
 
 
+
+External tools / 2
+------------------
+
+https://github.com/prettier/prettier
+https://prettier.io/
+https://github.com/w0rp/ale
+https://github.com/vuejs/vetur/tree/master/server
+https://github.com/prettier/prettier-eslint
+https://github.com/prettier/eslint-plugin-prettier
+https://eslint.org/docs/user-guide/configuring
+https://htmlhint.io/
+https://github.com/htmlhint/HTMLHint
+https://github.com/maralla/completor.vim
+https://github.com/sourcegraph/javascript-typescript-langserver
+https://github.com/palantir/python-language-server
+
+https://pipenv.readthedocs.io/en/latest/basics/
+https://github.com/pypa/pipenv
+https://github.com/pyenv/pyenv
+https://github.com/pypa/pipenv/issues/3241
+
+
+
 External tools
 --------------
 
