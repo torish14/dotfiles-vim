@@ -108,6 +108,9 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set autoindent
+set smartindent
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4

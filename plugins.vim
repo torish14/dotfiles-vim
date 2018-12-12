@@ -76,6 +76,10 @@ Plug 'rhysd/ghpr-blame.vim'  " https://github.com/rhysd/ghpr-blame.vim
 
 
 "" SYNTAXN
+
+" Against indentation annoyances
+Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
+
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 Plug 'w0rp/ale'  " https://github.com/w0rp/ale
 Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
