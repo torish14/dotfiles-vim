@@ -1,4 +1,32 @@
 
+
+
+
+copy yanked text to command prompt
+----------------------------------
+
+https://stackoverflow.com/questions/906535/how-to-copy-yanked-text-to-vi-command-prompt
+
+<ctrl-r>*  - system clipboard
+<ctrl-r>"
+
+
+
+show last comand
+----------------
+https://stackoverflow.com/questions/8928070/vim-show-my-last-command-command
+: + arrow-up
+
+
+multiple search/replace in one line
+-----------------------------------
+
+https://stackoverflow.com/questions/4737099/multiple-search-and-replace-in-one-line
+
+
+
+:%s/SEARCH/REPLACE/e
+
 retab
 -----
 
