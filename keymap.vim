@@ -268,10 +268,10 @@ nnoremap <C-w><Left> <C-w>h
 nnoremap <C-w><Right> <C-w>l
 
 " Resize splits
-map <S-w><Left> :vertical resize +1<CR>
-map <S-w><Right> :vertical resize -1<CR>
-map <S-w><Up> :resize -1<CR>
-map <S-w><Down> :resize +1<CR>
+map <S-A-Up> :vertical resize +1<CR>
+map <C-A-Down> :vertical resize -1<CR>
+map <C-S-A-Up> :resize -1<CR>
+map <C-S-A-Down> :resize +1<CR>
 
 
 nmap <F5> :set nosmarttab<CR>
