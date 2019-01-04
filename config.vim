@@ -4,27 +4,6 @@
 set nocompatible  " This setting prevents vim from emulating the original vi's bugs and limitations
 set encoding=utf-8  " set the default encoding
 
-let mapleader = ","  " leader key
-
-
-"" delete into blackhole register, so that other aren't overwritten
-"" thanks bairu from #vim!
-nnoremap <Del> "_x
-
-
-"" :W or :Wa should write/write all
-command W execute "w"
-command Wa execute "wa"
-
-
-"" paste selected text into command line
-"" http://stackoverflow.com/questions/4878980/vim-insert-selected-text-into-command-line
-"" http://stackoverflow.com/a/8750499/1130358
-nnoremap ; y:<C-r>"<C-b>
-vnoremap ; y:<C-r>"<C-b>
-
-
-
 "" GENERAL SETTINGS
 """""""""""""""""""
 
@@ -80,9 +59,6 @@ match ErrorMsg '\%>80v.+'
 
 "" SEARCH
 """""""""
-
-nnoremap / /\v
-vnoremap / /\v
 set gdefault
 set hlsearch  " highlight the terms
 set ignorecase  " make searches case-insensitive

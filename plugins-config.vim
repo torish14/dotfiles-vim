@@ -222,9 +222,6 @@ let g:LargeFile = 1  " 1M is already a large file
 
 
 "" incsearch
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
 let g:incsearch#consistent_n_direction = 1
 let g:incsearch#magic = '\v'
 " buffer completion: <c-l>

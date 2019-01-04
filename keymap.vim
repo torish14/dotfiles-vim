@@ -1,5 +1,43 @@
-nmap <leader>d :ALEGoToDefinition
-nmap <leader>g :ALEFindReferences
+""""""""
+"" BASIC
+
+
+let mapleader = ","  " leader key
+
+
+"" delete into blackhole register, so that other aren't overwritten
+"" thanks bairu from #vim!
+nnoremap <Del> "_x
+
+
+"" :W or :Wa should write/write all
+command W execute "w"
+command Wa execute "wa"
+
+
+"" paste selected text into command line
+"" http://stackoverflow.com/questions/4878980/vim-insert-selected-text-into-command-line
+"" http://stackoverflow.com/a/8750499/1130358
+nnoremap ; y:<C-r>"<C-b>
+vnoremap ; y:<C-r>"<C-b>
+
+
+"" SEARCH
+" nnoremap / /\v
+" vnoremap / /\v
+
+
+"" incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
+
+""""""""""
+"" PLUGINS
+
+noremap <leader>d :ALEGoToDefinition
+noremap <leader>g :ALEFindReferences
 
 " jedi
 " let g:jedi#goto_command = "<leader>d"
@@ -13,16 +51,16 @@ nmap <leader>g :ALEFindReferences
 
 
 "" ALE next/prev Error
-nmap ]e :ALENextWrap<cr>
-nmap [e :ALEPreviousWrap<cr>
+noremap ]e :ALENextWrap<cr>
+noremap [e :ALEPreviousWrap<cr>
 
 " MatchTagAlways
-nnoremap ]t :MtaJumpToOtherTag<cr>
-nnoremap [t :MtaJumpToOtherTag<cr>
+noremap ]t :MtaJumpToOtherTag<cr>
+noremap [t :MtaJumpToOtherTag<cr>
 
 " SECTION FOR <leader>` MAPPINGS
 " jsom formating
-nnoremap <leader>`json :%!python -m json.tool<CR>
+noremap <leader>`json :%!python -m json.tool<CR>
 " insert filename
 inoremap <leader>`fn <C-R>=expand("%:p")<CR>
 "" reformat to column based layout
@@ -42,21 +80,21 @@ endfunction
 "" clipboard copy/paste
 if has('gui_running')
     " copy selection or line
-    map 1 "+yy
+    noremap 1 "+yy
     " paste before
-    map 2 "+P
+    noremap 2 "+P
     " paste after
-    map @ "+p
+    noremap @ "+p
 else
-    map 1 yy:call ClipboardYank()<CR>
-    map 2 :call ClipboardPaste()<CR>p
-    map 3 dd:call ClipboardYank()<CR>
+    noremap 1 yy:call ClipboardYank()<CR>
+    noremap 2 :call ClipboardPaste()<CR>p
+    noremap 3 dd:call ClipboardYank()<CR>
 endif
 
 " copy filename to clipboard
 " http://vim.wikia.com/wiki/Copy_filename_to_clipboard
-nmap ,cs :let @+=expand("%")<CR>
-nmap ,cl :let @+=expand("%:p")<CR>
+noremap ,cs :let @+=expand("%")<CR>
+noremap ,cl :let @+=expand("%:p")<CR>
 
 " noremap <leader>p :set list!<CR>
 " map <silent> <leader>l :set number!<CR>
@@ -65,80 +103,80 @@ nmap ,cl :let @+=expand("%:p")<CR>
 "map <S-Up> <Up>zz
 "map <S-Down> <Down>zz
 "" scoll lock toggle
-map <leader>zz :let &scrolloff=999-&scrolloff<cr>
+noremap <leader>zz :let &scrolloff=999-&scrolloff<cr>
 " center search
-nmap n nzz
-nmap N Nzz
+noremap n nzz
+noremap N Nzz
 
 " tile all open buffers in vertical panes - http://www.vimbits.com/bits/375
-noremap <silent> <leader>a :vertical :ball<cr>
+map <silent> <leader>a :vertical :ball<cr>
 
 " open file relative to current file
 " no need for autochdir
 " http://stackoverflow.com/questions/1708623/opening-files-in-the-same-folder-as-the-current-file-in-vim
-" map <leader>e :e %:h/
+" noremap <leader>e :e %:h/
 " use next instead of edit. next supports opening multiple files via GLOBS
-map <leader>e :n %:h/
+noremap <leader>e :n %:h/
 
 "" isort python files
 command! -range=% Isort :<line1>,<line2>! isort -
-map <leader>i :Isort<CR>
+noremap <leader>i :Isort<CR>
 
 "" spellcheck
 "map <silent> <leader>d :set spell!<CR>
 
 "" reformat - strip whitespace
-nnoremap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
+noremap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
 "" reformat - wrap text
-nnoremap <leader>w gqip
+noremap <leader>w gqip
 "" reformat - join text
-nnoremap <leader>j vipJ^
+noremap <leader>j vipJ^
 "" reformat - split each sentence - http://superuser.com/questions/275364
-""nnoremap <leader>k vap:s/\([\.\?!,;]\) \+/\1\r/e<CR>
-nnoremap <leader>k vap:s/\([\.\?!;]\) \+/\1\r/e<CR>
+""noremap <leader>k vap:s/\([\.\?!,;]\) \+/\1\r/e<CR>
+noremap <leader>k vap:s/\([\.\?!;]\) \+/\1\r/e<CR>
 
 "" vim expand region
 "vmap v <Plug>(expand_region_expand)
 "vmap <C-v> <Plug>(expand_region_shrink)
 
-nnoremap <leader>4 :setlocal tabstop=4 shiftwidth=4 softtabstop=4<CR>
-nnoremap <leader>2 :setlocal tabstop=2 shiftwidth=2 softtabstop=2<CR>
+noremap <leader>4 :setlocal tabstop=4 shiftwidth=4 softtabstop=4<CR>
+noremap <leader>2 :setlocal tabstop=2 shiftwidth=2 softtabstop=2<CR>
 
 noremap <leader>z :setlocal foldcolumn=8<CR>
 noremap <leader>Z :setlocal foldcolumn=0<CR>
 
-" nmap <leader>1 :call SynOff()<CR>
-" nmap <leader>! :call SynOn()<CR>
+" noremap <leader>1 :call SynOff()<CR>
+" noremap <leader>! :call SynOn()<CR>
 
 
 " show full path to file
-nnoremap <leader>% :echo expand('%:p')<CR>
+noremap <leader>% :echo expand('%:p')<CR>
 
 " DelimitMate toggle
-nnoremap <leader>q :DelimitMateSwitch<CR>
+noremap <leader>q :DelimitMateSwitch<CR>
 
 " zeal integration
-nnoremap gz :!zeal --query "<cword>"&<CR><CR>
+noremap gz :!zeal --query "<cword>"&<CR><CR>
 
 " vim signify defines ]c and [c
 " git gutter
-" nmap ]c <Plug>GitGutterNextHunk
-" nmap [c <Plug>GitGutterPrevHunk
-" nmap <leader>hg <Plug>GitGutterToggle
-" nmap <Leader>ha <Plug>GitGutterStageHunk
-" nmap <Leader>hr <Plug>GitGutterRevertHunk
-" nmap <Leader>hp <Plug>GitGutterPreviewHunk
+" noremap ]c <Plug>GitGutterNextHunk
+" noremap [c <Plug>GitGutterPrevHunk
+" noremap <leader>hg <Plug>GitGutterToggle
+" noremap <Leader>ha <Plug>GitGutterStageHunk
+" noremap <Leader>hr <Plug>GitGutterRevertHunk
+" noremap <Leader>hp <Plug>GitGutterPreviewHunk
 
 " Gitv, vim gitk
-"nnoremap <leader>gv :Gitv<CR>
-"nnoremap <leader>gm :Merginal<CR>
-"nnoremap <leader>gi :Gissues<CR>
-"nnoremap <leader>ga :Giadd<CR>
+"noremap <leader>gv :Gitv<CR>
+"noremap <leader>gm :Merginal<CR>
+"noremap <leader>gi :Gissues<CR>
+"noremap <leader>ga :Giadd<CR>
 
 
-nnoremap <leader>u :IndentGuidesToggle<CR>
+noremap <leader>u :IndentGuidesToggle<CR>
 
-nmap gx <Plug>(openbrowser-smart-search)
+noremap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
 
@@ -150,15 +188,15 @@ let g:minimap_toggle='mm'
 
 
 "" fontsize
-nmap <silent> <leader>9 <Plug>FontsizeBegin
-nmap <silent> <leader>= <Plug>FontsizeInc
-nmap <silent> <leader>- <Plug>FontsizeDec
-nmap <silent> <leader>0 <Plug>FontsizeDefault
+map <silent> <leader>9 <Plug>FontsizeBegin
+map <silent> <leader>= <Plug>FontsizeInc
+map <silent> <leader>- <Plug>FontsizeDec
+map <silent> <leader>0 <Plug>FontsizeDefault
 
 "" lusty
-"nnoremap <leader>, :LustyJuggler<CR>
-"nnoremap <leader>. :LustyFilesystemExplorerFromHere<CR>
-"nnoremap <leader>/ :LustyFilesystemExplorer<CR>
+"noremap <leader>, :LustyJuggler<CR>
+"noremap <leader>. :LustyFilesystemExplorerFromHere<CR>
+"noremap <leader>/ :LustyFilesystemExplorer<CR>
 
 "" buffergator
 noremap <leader>m :BuffergatorToggle<CR>
@@ -180,26 +218,26 @@ map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
 
 
 " FZF
-" nnoremap <leader>/ :FZF<CR>
+" noremap <leader>/ :FZF<CR>
 noremap <leader>/ :call FZFfiles()<CR>
 noremap <leader>. :call FZFmru()<CR>
 noremap <leader>, :call FZFbuffers()<CR>
 noremap <leader>c :call FZFcolor()<CR>
 
 " Ack.vim
-"nmap \ :AckWindow<SPACE>
-nmap \ :Ack<SPACE>
+"noremap \ :AckWindow<SPACE>
+noremap \ :Ack<SPACE>
 
 
 "" Tagbar
-nnoremap tt :TagbarToggle<CR>
+noremap tt :TagbarToggle<CR>
 "" unite-outline
-"" nnoremap ty :Unite outline<CR>
+"" noremap ty :Unite outline<CR>
 
 
 "" Autoformat
-map <leader>f :Autoformat<CR><CR>
-map <leader>g :%!jscs -x<CR>
+noremap <leader>f :Autoformat<CR><CR>
+noremap <leader>g :%!jscs -x<CR>
 
 
 "" CLEANUP FILE
@@ -216,23 +254,23 @@ noremap <leader>t :setlocal expandtab<CR>:call Preserve("%s/\\s\\+$//e")<CR>:cal
 """"" VIM STANDARD
 
 " select all
-nmap <C-a> ggVG
+noremap <C-a> ggVG
 
 "" next/previous buffer
-" nmap <silent> <C-left> :bprev<CR>
-" nmap <silent> <C-right> :bnext<CR>
+" map <silent> <C-left> :bprev<CR>
+" map <silent> <C-right> :bnext<CR>
 
 "" vem-tabline next/previous
 " https://github.com/pacha/vem-tabline/blob/master/doc/tabline.txt
-nmap <S-Left> :call vem_tabline#tabline.move_buffer('left')<CR>
-nmap <S-Right> :call vem_tabline#tabline.move_buffer('right')<CR>
-nmap <C-Left> :call vem_tabline#tabline.select_buffer('left')<CR>
-nmap <C-Right> :call vem_tabline#tabline.select_buffer('right')<CR>
+noremap <S-Left> :call vem_tabline#tabline.move_buffer('left')<CR>
+noremap <S-Right> :call vem_tabline#tabline.move_buffer('right')<CR>
+noremap <C-Left> :call vem_tabline#tabline.select_buffer('left')<CR>
+noremap <C-Right> :call vem_tabline#tabline.select_buffer('right')<CR>
 
 
 " close buffer and goto next
-nnoremap <C-x> :Bdelete<CR>
-nnoremap <leader>x :Bdelete<CR>
+noremap <C-x> :Bdelete<CR>
+noremap <leader>x :Bdelete<CR>
 
 
 noremap <leader>n :MBEToggle<CR>
@@ -240,61 +278,61 @@ noremap <leader>b :MBEToggleMRU<CR>
 
 
 
-nmap <C-n> :tabnew<CR>
-"nmap <leader>t :tabnew
-"nmap <C-n> :tab split<CR>
-nmap <C-c> :tabclose<CR>
-nmap <C-Up> :tabn<CR>
-nmap <C-Down> :tabp<CR>
+noremap <C-n> :tabnew<CR>
+"noremap <leader>t :tabnew
+"noremap <C-n> :tab split<CR>
+noremap <C-c> :tabclose<CR>
+noremap <C-Up> :tabn<CR>
+noremap <C-Down> :tabp<CR>
 
 " make the tab key match bracket pairs
-"nnoremap <TAB> %
+"noremap <TAB> %
 "vnoremap <TAB> %
 
 "" WINDOWS / BUFFERS movement
-"nnoremap <C-h> <C-w>h
-"nnoremap <C-j> <C-w>j
-"nnoremap <C-k> <C-w>k
-"nnoremap <C-l> <C-w>l
+"noremap <C-h> <C-w>h
+"noremap <C-j> <C-w>j
+"noremap <C-k> <C-w>k
+"noremap <C-l> <C-w>l
 
-nnoremap <leader><Up> <C-w>k
-nnoremap <leader><Down> <C-w>j
-nnoremap <leader><Left> <C-w>h
-nnoremap <leader><Right> <C-w>l
+noremap <leader><Up> <C-w>k
+noremap <leader><Down> <C-w>j
+noremap <leader><Left> <C-w>h
+noremap <leader><Right> <C-w>l
 
-nnoremap <C-w><Up> <C-w>k
-nnoremap <C-w><Down> <C-w>j
-nnoremap <C-w><Left> <C-w>h
-nnoremap <C-w><Right> <C-w>l
+noremap <C-w><Up> <C-w>k
+noremap <C-w><Down> <C-w>j
+noremap <C-w><Left> <C-w>h
+noremap <C-w><Right> <C-w>l
 
 " Resize splits
-map <S-A-Up> :vertical resize +1<CR>
-map <C-A-Down> :vertical resize -1<CR>
-map <C-S-A-Up> :resize -1<CR>
-map <C-S-A-Down> :resize +1<CR>
+noremap <S-A-Up> :vertical resize +1<CR>
+noremap <C-A-Down> :vertical resize -1<CR>
+noremap <C-S-A-Up> :resize -1<CR>
+noremap <C-S-A-Down> :resize +1<CR>
 
 
-nmap <F5> :set nosmarttab<CR>
+noremap <F5> :set nosmarttab<CR>
 "":setlocal si! si?<CR>
 ""set noautoindent
 ""set nocindent
 ""set nosmarttab
 
 "" open/close all folds
-""nmap <C-TAB> za
-""nmap <C-S-TAB> zA
-nmap <C-S-Right> zo
-nmap <C-S-Left> zc
+""noremap <C-TAB> za
+""noremap <C-S-TAB> zA
+noremap <C-S-Right> zo
+noremap <C-S-Left> zc
 "" termit might override usage of -A-
-""nmap <C-S-A-Right> zO
-""nmap <C-S-A-Left> zC
+""noremap <C-S-A-Right> zO
+""noremap <C-S-A-Left> zC
 
 
 
 
 "" vim-bufsurf -- browse in buffer history
-"nmap <silent> <C-A-left> :BufSurfBack<CR>
-"nmap <silent> <C-A-right> :BufSurfForward<CR>
+"map <silent> <C-A-left> :BufSurfBack<CR>
+"map <silent> <C-A-right> :BufSurfForward<CR>
 "
 "" NERDTree
 noremap <leader>n :NERDTreeToggle<CR>
