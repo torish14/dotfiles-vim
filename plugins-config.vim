@@ -312,7 +312,7 @@ let g:indent_guides_color_change_percent = 5
 
 """ netrw-gx
 "let g:netrw_browsex_viewer= "gnome-open"  " explicitly configure gnome-open for netrw. more: help netrw-gx
-"let g:netrw_nogx = 1 " disable netrw's gx mapping. use open-browser.
+let g:netrw_nogx = 1 " disable netrw's gx mapping. use open-browser.
 "
 """ netrw
 "let g:netrw_liststyle = 3
