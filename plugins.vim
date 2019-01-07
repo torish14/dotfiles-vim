@@ -67,12 +67,16 @@ Plug 'Xuyuanp/nerdtree-git-plugin'  " https://github.com/Xuyuanp/nerdtree-git-pl
 "" GIT, ETC
 """""""""""
 
-Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 Plug 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
-" Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
+Plug 'shumphrey/fugitive-gitlab.vim'  " https://github.com/shumphrey/fugitive-gitlab.vim
 Plug 'mhinz/vim-signify'  " https://github.com/mhinz/vim-signify
-Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
-Plug 'rhysd/ghpr-blame.vim'  " https://github.com/rhysd/ghpr-blame.vim
+" Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+
+Plug 'junegunn/gv.vim'  " https://github.com/junegunn/gv.vim
+
+Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
+" Plug 'rhysd/ghpr-blame.vim'  " https://github.com/rhysd/ghpr-blame.vim
 
 
 "" SYNTAXN
@@ -80,7 +84,9 @@ Plug 'rhysd/ghpr-blame.vim'  " https://github.com/rhysd/ghpr-blame.vim
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
 
-Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
+" Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
+Plug 'sgur/vim-editorconfig'  " https://github.com/sgur/vim-editorconfig
+
 Plug 'w0rp/ale'  " https://github.com/w0rp/ale
 Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
