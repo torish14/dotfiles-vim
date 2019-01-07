@@ -160,12 +160,12 @@ noremap gz :!zeal --query "<cword>"&<CR><CR>
 
 " vim signify defines ]c and [c
 " git gutter
-" noremap ]c <Plug>GitGutterNextHunk
-" noremap [c <Plug>GitGutterPrevHunk
-" noremap <leader>hg <Plug>GitGutterToggle
-" noremap <Leader>ha <Plug>GitGutterStageHunk
-" noremap <Leader>hr <Plug>GitGutterRevertHunk
-" noremap <Leader>hp <Plug>GitGutterPreviewHunk
+" nmap ]c <Plug>GitGutterNextHunk
+" nmap [c <Plug>GitGutterPrevHunk
+" nmap <leader>hg <Plug>GitGutterToggle
+" nmap <Leader>ha <Plug>GitGutterStageHunk
+" nmap <Leader>hr <Plug>GitGutterRevertHunk
+" nmap <Leader>hp <Plug>GitGutterPreviewHunk
 
 " Gitv, vim gitk
 "noremap <leader>gv :Gitv<CR>
@@ -176,7 +176,7 @@ noremap gz :!zeal --query "<cword>"&<CR><CR>
 
 noremap <leader>u :IndentGuidesToggle<CR>
 
-noremap gx <Plug>(openbrowser-smart-search)
+nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
 
