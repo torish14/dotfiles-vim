@@ -3,6 +3,8 @@ source $HOME/.vim/plugins-config-tagbar.vim
 " source $HOME/.vim/plugins-config-lightline.vim
 
 
+let g:fugitive_gitlab_domains = ['https://git.bluedynamics.eu/', 'https://git.iem.at/']
+
 "" Ack.vim
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
