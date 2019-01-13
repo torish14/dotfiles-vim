@@ -306,7 +306,7 @@ noremap <C-w><Left> <C-w>h
 noremap <C-w><Right> <C-w>l
 
 " Resize splits
-noremap <S-A-Up> :vertical resize +1<CR>
+noremap <C-A-Up> :vertical resize +1<CR>
 noremap <C-A-Down> :vertical resize -1<CR>
 noremap <C-S-A-Up> :resize -1<CR>
 noremap <C-S-A-Down> :resize +1<CR>
