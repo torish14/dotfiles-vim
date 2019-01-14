@@ -3,6 +3,8 @@ source $HOME/.vim/plugins-config-tagbar.vim
 " source $HOME/.vim/plugins-config-lightline.vim
 
 
+let g:rainbow_active = 1
+
 let g:fugitive_gitlab_domains = ['https://git.bluedynamics.eu/', 'https://git.iem.at/']
 
 "" Ack.vim
