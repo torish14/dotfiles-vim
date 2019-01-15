@@ -81,7 +81,7 @@ Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 
 "" SYNTAXN
 
-Plug 'luochen1990/rainbow'  " https://github.com/luochen1990/rainbow
+"" Plug 'luochen1990/rainbow'  " https://github.com/luochen1990/rainbow
 
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
