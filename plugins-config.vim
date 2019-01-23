@@ -177,6 +177,13 @@ let g:ale_linters = {
 \}
 " \   'python': ['black'],
 
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier', 'eslint'],
+\   'python': ['black'],
+\}
+
+
 " NEEDS TO BE SET BEFORE PLUGIN IS LOADED
 " let g:ale_completion_enabled = 1
 let g:ale_set_balloons = 1

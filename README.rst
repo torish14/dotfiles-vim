@@ -28,13 +28,28 @@ https://eslint.org/docs/user-guide/configuring
 https://htmlhint.io/
 https://github.com/htmlhint/HTMLHint
 https://github.com/maralla/completor.vim
-https://github.com/sourcegraph/javascript-typescript-langserver
-https://github.com/palantir/python-language-server
 
 https://pipenv.readthedocs.io/en/latest/basics/
 https://github.com/pypa/pipenv
 https://github.com/pyenv/pyenv
 https://github.com/pypa/pipenv/issues/3241
+
+
+https://github.com/davidhalter/jedi
+https://github.com/palantir/python-language-server
+  https://github.com/rupert/pyls-black
+  https://github.com/paradoxxxzero/pyls-isort
+
+https://github.com/mads-hartmann/bash-language-server
+https://github.com/rcjsuen/dockerfile-language-server-nodejs
+https://github.com/sourcegraph/javascript-typescript-langserver
+https://github.com/vscode-langservers/vscode-css-languageserver-bin
+
+
+
+https://github.com/felixfbecker/php-language-server
+::
+  composer require felixfbecker/language-server
 
 
 
