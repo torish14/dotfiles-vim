@@ -70,8 +70,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'  " https://github.com/Xuyuanp/nerdtree-git-pl
 Plug 'tpope/vim-fugitive'  " https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
 Plug 'shumphrey/fugitive-gitlab.vim'  " https://github.com/shumphrey/fugitive-gitlab.vim
-Plug 'mhinz/vim-signify'  " https://github.com/mhinz/vim-signify
-" Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
+" Plug 'mhinz/vim-signify'  " https://github.com/mhinz/vim-signify
+Plug 'airblade/vim-gitgutter'  " https://github.com/airblade/vim-gitgutter
 
 Plug 'junegunn/gv.vim'  " https://github.com/junegunn/gv.vim
 
