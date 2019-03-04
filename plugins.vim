@@ -25,7 +25,10 @@ Plug 'junegunn/goyo.vim'  " http://github.com/junegunn/goyo.vim
 Plug 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
 " Plug 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 Plug 'tyru/open-browser.vim'  " https://github.com/tyru/open-browser.vim
-Plug 'vim-scripts/LargeFile'  " https://github.com/vim-scripts/LargeFile
+
+" Plug 'vim-scripts/LargeFile'  " https://github.com/vim-scripts/LargeFile
+" Plug 'mhinz/vim-hugefile'  " https://github.com/mhinz/vim-hugefile
+
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 Plug 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 Plug 'haya14busa/incsearch.vim'  " https://github.com/haya14busa/incsearch.vim
