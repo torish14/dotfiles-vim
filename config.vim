@@ -89,17 +89,18 @@ set smartindent
 
 set tabstop=4
 set shiftwidth=4
-set softtabstop=4
+set softtabstop=0
 set expandtab
 set cindent  " C-Style indent. better than smartindent, as it doesn't move comments at beginning of file
 set foldmethod=indent
 set foldlevelstart=20  " set foldlevel higher so opened buffers arent folded
 
-autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufRead,BufNewFile *.js,*.jsx,*.vue setlocal tabstop=2 shiftwidth=2 softtabstop=2 foldmethod=indent  " foldmethod=syntax
-autocmd BufRead,BufNewFile *.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
-autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=2 filetype=robot
+autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=0
+autocmd BufRead,BufNewFile *.js,*.jsx,*.vue setlocal tabstop=2 shiftwidth=2 softtabstop=0 foldmethod=indent  " foldmethod=syntax
+autocmd BufRead,BufNewFile *.css setlocal tabstop=4 shiftwidth=4 softtabstop=0
+autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=0 filetype=robot
 autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0  " only use semantic linebreaks in text files.
+autocmd BufRead,BufNewFile *.php setlocal tabstop=4 shiftwidth=4 softtabstop=0
 
 autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
 "" autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
