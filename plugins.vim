@@ -106,7 +106,7 @@ Plug 'othree/html5.vim', {'for': ['html', 'tal']}  " https://github.com/othree/h
 Plug 'ap/vim-css-color', {'for': ['css', 'less', 'scss', 'sass']}  " https://github.com/ap/vim-css-color
 Plug 'groenewege/vim-less', {'for': 'less'}  " https://github.com/groenewege/vim-less
 
-Plug 'posva/vim-vue', {'for': ['javascript']}  " https://github.com/posva/vim-vue
+Plug 'posva/vim-vue', {'for': ['javascript.vue']}  " https://github.com/posva/vim-vue
 Plug 'neoclide/vim-jsx-improve', {'for': ['javascript.jsx']} " https://github.com/neoclide/vim-jsx-improve
 " Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/pangloss/vim-javascript
 " Plug 'MaxMEllon/vim-jsx-pretty' {'for': ['javascript', 'javascript.jsx']}  " https://github.com/MaxMEllon/vim-jsx-pretty

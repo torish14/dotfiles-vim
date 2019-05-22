@@ -172,9 +172,19 @@ let g:ale_python_pylint_options = "-d C0103,C0111,C0301,E0611,E1101,F0401,R0903,
 " http://flake8.pycqa.org/en/latest/user/error-codes.html
 " let g:ale_python_flake8_args =
 
+let g:ale_linter_aliases = {
+\  'vue': ['vue', 'javascript'],
+\  'jsx': ['css', 'javascript']
+\}
+
 let g:ale_linters = {
 \   'javascript': ['prettier-eslint'],
+\   'vue': ['eslint', 'vls'],
+\   'jsx': ['stylelint', 'eslint']
 \}
+
+
+
 " \   'python': ['black'],
 
 let g:ale_fixers = {
