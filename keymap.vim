@@ -36,6 +36,8 @@ map g/ <Plug>(incsearch-stay)
 """"""""""
 "" PLUGINS
 
+noremap <leader>r :Ranger<CR>
+
 noremap <leader>d :ALEGoToDefinition
 noremap <leader>g :ALEFindReferences
 

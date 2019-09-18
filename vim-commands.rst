@@ -1,5 +1,9 @@
 
+Search for multiple words
+-------------------------
+https://stackoverflow.com/questions/41007769/how-to-search-for-multiple-strings-in-a-vi-editor-on-solaris
 
+SEARCHTERM|SEARCHTERM2
 
 
 copy yanked text to command prompt

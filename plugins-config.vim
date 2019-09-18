@@ -2,6 +2,9 @@ source $HOME/.vim/plugins-config-fzf.vim
 source $HOME/.vim/plugins-config-tagbar.vim
 " source $HOME/.vim/plugins-config-lightline.vim
 
+"" ranger
+let g:ranger_map_keys = 0
+
 
 "" let g:rainbow_active = 1
 
@@ -156,6 +159,7 @@ let g:formatters_javascript = ['prettier']
 
 "" ALE
 """"""
+" let g:ale_fix_on_save = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_filetype_changed = 0
 let g:ale_lint_on_text_changed = 'never'
@@ -173,7 +177,7 @@ let g:ale_python_pylint_options = "-d C0103,C0111,C0301,E0611,E1101,F0401,R0903,
 " let g:ale_python_flake8_args =
 
 let g:ale_linter_aliases = {
-\  'vue': ['vue', 'javascript'],
+\  'vue': ['vue', 'javascript', 'html', 'scss'],
 \  'jsx': ['css', 'javascript']
 \}
 
@@ -182,7 +186,6 @@ let g:ale_linters = {
 \   'vue': ['eslint', 'vls'],
 \   'jsx': ['stylelint', 'eslint']
 \}
-
 
 
 " \   'python': ['black'],

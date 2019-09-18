@@ -66,6 +66,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'  " https://github.com/Xuyuanp/nerdtree-git-pl
 " Plug 'jeetsukumaran/vim-gazetteer'  " https://github.com/jeetsukumaran/vim-gazetteer
 " Plug 'dahu/vim-lotr'  " https://github.com/dahu/vim-lotr
 
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
+
 
 "" GIT, ETC
 """""""""""
@@ -111,7 +114,7 @@ Plug 'neoclide/vim-jsx-improve', {'for': ['javascript.jsx']} " https://github.co
 " Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/pangloss/vim-javascript
 " Plug 'MaxMEllon/vim-jsx-pretty' {'for': ['javascript', 'javascript.jsx']}  " https://github.com/MaxMEllon/vim-jsx-pretty
 " Plug 'mxw/vim-jsx', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/mxw/vim-jsx
-" Plug 'othree/yajs.vim', {'for': 'javascript'}  " https://github.com/othree/yajs.vim
+Plug 'othree/yajs.vim', {'for': 'javascript'}  " https://github.com/othree/yajs.vim
 " Plug 'othree/javascript-libraries-syntax.vim', {'for': 'javascript'}  " https://github.com/othree/javascript-libraries-syntax.vim
 " Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}  " https://github.com/othree/es.next.syntax.vim
 Plug 'leafgarland/typescript-vim', {'for': 'typescript'}  " https://github.com/leafgarland/typescript-vim
