@@ -162,12 +162,12 @@ noremap gz :!zeal --query "<cword>"&<CR><CR>
 
 " vim signify defines ]c and [c
 " git gutter
-nmap ]c <Plug>GitGutterNextHunk
-nmap [c <Plug>GitGutterPrevHunk
-nmap <leader>hg <Plug>GitGutterToggle
-nmap <Leader>ha <Plug>GitGutterStageHunk
-nmap <Leader>hr <Plug>GitGutterRevertHunk
-nmap <Leader>hp <Plug>GitGutterPreviewHunk
+nmap ]c <Plug>(GitGutterNextHunk)
+nmap [c <Plug>(GitGutterPrevHunk)
+nmap <leader>hg <Plug>(GitGutterToggle)
+nmap <Leader>ha <Plug>(GitGutterStageHunk)
+nmap <Leader>hr <Plug>(GitGutterRevertHunk)
+nmap <Leader>hp <Plug>(GitGutterPreviewHunk)
 
 " Gitv, vim gitk
 "noremap <leader>gv :Gitv<CR>
