@@ -6,8 +6,6 @@ source $HOME/.vim/plugins-config-tagbar.vim
 let g:ranger_map_keys = 0
 
 
-"" let g:rainbow_active = 1
-
 let g:fugitive_gitlab_domains = ['https://git.bluedynamics.eu/', 'https://git.iem.at/']
 
 "" Ack.vim
@@ -24,24 +22,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "" Colorizer
 let g:colorizer_auto_filetype='css,less,scss'
 let g:colorizer_skip_comments = 0
-
-""" Denite
-"call denite#custom#map(
-"      \ 'insert',
-"      \ '<Down>',
-"      \ '<denite:move_to_next_line>',
-"      \ 'noremap'
-"      \)
-"call denite#custom#map(
-"      \ 'insert',
-"      \ '<Up>',
-"      \ '<denite:move_to_previous_line>',
-"      \ 'noremap'
-"      \)
-
-
-"" BufTabLine
-" let g:buftabline_indicators = 1
 
 "" vem-tabline
 " Show all buffers in tablines also when splitting windows
@@ -88,38 +68,6 @@ let g:gitgutter_async = 1
 " let g:gitgutter_realtime = 0
 " let g:gitgutter_eager = 0
 
-
-"" JEDI
-"""""""
-" let g:jedi#force_py_version = 2
-"" Disable jedi completion, which is way too slow for big projects
-" let g:jedi#popup_on_dot = 0
-" let g:jedi#show_call_signatures = 0
-" let g:jedi#completions_enabled = 0
-let g:jedi#popup_on_dot = 0
-let g:jedi#show_call_signatures = 0
-let g:jedi#completions_enabled = 1
-
-
-"" COMPLETOR
-""""""""""""
-" let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
-let g:completor_node_binary = '/usr/bin/nodejs'
-let g:completor_completion_delay = 300
-
-"" JavaScript
-"""""""""""""
-
-" let g:used_javascript_libs = 'jquery,underscore,backbone,angularjs,requirejs,jasmine,chai,react,flux'
-
-
-" vim-jsx
-" set to ``0`` or ``:set ft=javascript.jsx`` when doing React.
-" let g:jsx_ext_required = 1
-
-" vim-jsx-pretty
-" let g:vim_jsx_pretty_enable_jsx_highlight = 1
-" let g:vim_jsx_pretty_colorful_config = 0
 
 
 "" VIM AUTOFORMAT
@@ -257,96 +205,10 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_color_change_percent = 5
 
 
-" DISABLED
-" ========
-
-" set statusline+=%{ALEGetStatusLine()}
-"
-" " http://vim.wikia.com/wiki/Change_statusline_color_to_show_insert_or_normal_mode
-" function! InsertStatuslineColor(mode)
-"   if a:mode == 'i'
-"     hi statusline guibg=green
-"   elseif a:mode == 'r'
-"     hi statusline guibg=red
-"   else
-"     hi statusline guibg=blue
-" endif
-" endfunction
-"
-" au InsertEnter * call InsertStatuslineColor(v:insertmode)
-" au InsertChange * call InsertStatuslineColor(v:insertmode)
-" au InsertLeave * hi statusline guibg=blue
-"
-" " default the statusline to green when entering Vim
-" hi statusline guibg=blue
-
-
-"" NEOMAKE
-""""""""""
-" function! EslintConfig()
-"     let g:neomake_javascript_eslint_maker = {
-"         \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", '.&shiftwidth.']}'],
-"         \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
-"         \ '%W%f: line %l\, col %c\, Warning - %m'
-"         \ }
-" endfunction
-" function! EslintConfig2()
-"     let g:neomake_javascript_eslint_maker = {
-"         \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 2]}'],
-"         \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
-"         \ '%W%f: line %l\, col %c\, Warning - %m'
-"         \ }
-" endfunction
-" function! EslintConfig4()
-"     let g:neomake_javascript_eslint_maker = {
-"         \ 'args': ['-f', 'compact', '--rule', '{"indent": ["error", 4]}'],
-"         \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
-"         \ '%W%f: line %l\, col %c\, Warning - %m'
-"         \ }
-" endfunction
-"
-" let g:neomake_javascript_enabled_makers = ['eslint']
-" let g:neomake_open_list = 0
-"
-" let g:neomake_warning_sign = {
-"   \ 'text': '⚠',
-"   \ 'texthl': 'WarningMsg',
-"   \ }
-" let g:neomake_error_sign = {
-"   \ 'text': '✖',
-"   \ 'texthl': 'ErrorMsg',
-"   \ }
-" let g:neomake_message_sign = {
-"   \ 'text': '➤',
-"   \ 'texthl': 'WarningMsg',
-"   \ }
-" let g:neomake_info_sign = {
-"   \ 'text': 'ℹ',
-"   \ 'texthl': 'WarningMsg',
-"   \ }
-"
-" autocmd BufEnter *.js :call EslintConfig()
-" autocmd! BufReadPost,BufWritePost * call CheckSyntax()
-" function CheckSyntax()
-"     Neomake
-"     call lightline#update()
-" endfunction
-
-
-
 """ netrw-gx
-"let g:netrw_browsex_viewer= "gnome-open"  " explicitly configure gnome-open for netrw. more: help netrw-gx
 let g:netrw_nogx = 1 " disable netrw's gx mapping. use open-browser.
-"
-""" netrw
-"let g:netrw_liststyle = 3
-"" delete/hide netrw buffer after leaving
-"" https://github.com/tpope/vim-vinegar/issues/13#issuecomment-47133890
-"autocmd FileType netrw setl bufhidden=wipe
-"
 
-"
-"
+
 """ NERDTree
 """"""""""""
 let g:NERDTreeIgnore=['\~$', '\.svn$', '\.git*$', '\.pyc$', '\.pyo$', '\.mo$', '\.log$', '__pycache__', '.egg-info', 'develop-eggs']
