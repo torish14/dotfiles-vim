@@ -95,7 +95,7 @@ set cindent  " C-Style indent. better than smartindent, as it doesn't move comme
 set foldmethod=indent
 set foldlevelstart=20  " set foldlevel higher so opened buffers arent folded
 
-autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml setlocal tabstop=2 shiftwidth=2 softtabstop=0
+autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml,*.svg setlocal tabstop=2 shiftwidth=2 softtabstop=0
 autocmd BufRead,BufNewFile *.js,*.jsx,*.vue setlocal tabstop=2 shiftwidth=2 softtabstop=0 foldmethod=indent  " foldmethod=syntax
 autocmd BufRead,BufNewFile *.css setlocal tabstop=4 shiftwidth=4 softtabstop=0
 autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=0

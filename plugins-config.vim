@@ -143,6 +143,7 @@ let g:formatters_python = ['autopep8']
 let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
 let g:formatters_zpt = ['htmlbeautify']
 let g:formatters_xml = ['htmlbeautify']
+let g:formatters_svg = ['htmlbeautify']
 
 let g:formatdef_thet_cssbrush = '"cssbrush ".bufname("%")'
 let g:formatters_less = ['thet_cssbrush']
