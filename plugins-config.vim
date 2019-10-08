@@ -69,42 +69,6 @@ let g:gitgutter_async = 1
 " let g:gitgutter_eager = 0
 
 
-
-"" VIM AUTOFORMAT
-"""""""""""""""""
-
-"" https://github.com/Chiel92/vim-autoformat
-"" https://github.com/hhatto/autopep8
-" Using autopep8 - yapf messes files up with my current setup...
-"let g:formatters_python = ['yapf']
-"if exists('g:formatdef_yapf')
-"    "" Use config files (~/.config/yapf/style)
-"    unlet g:formatdef_yapf
-"endif
-
-" Troubles? see:
-" https://github.com/Chiel92/vim-autoformat#help-the-formatter-doesnt-work-as-expected
-" let g:autoformat_verbosemode=1
-
-let g:formatters_python = ['autopep8']
-
-let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
-let g:formatters_zpt = ['htmlbeautify']
-let g:formatters_xml = ['htmlbeautify']
-let g:formatters_svg = ['htmlbeautify']
-
-let g:formatdef_thet_cssbrush = '"cssbrush ".bufname("%")'
-let g:formatters_less = ['thet_cssbrush']
-let g:formatters_css = ['thet_cssbrush']
-
-
-" let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
-" let g:formatdef_thet_javascript = '"prettier --single-quote --tab-width ".shiftwidth()'
-" let g:formatdef_thet_javascript = '"prettier --single-quote --stdin --stdin-filepath ".expand("%:p").(&textwidth ? " --print-width ".&textwidth : "")." --tab-width=".shiftwidth()'
-" let g:formatters_javascript = ['thet_javascript']
-let g:formatters_javascript = ['prettier']
-
-
 "" ALE
 """"""
 " let g:ale_fix_on_save = 1
@@ -135,19 +99,51 @@ let g:ale_linters = {
 \   'jsx': ['stylelint', 'eslint']
 \}
 
-
-" \   'python': ['black'],
-
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['prettier', 'eslint'],
 \   'python': ['black'],
+\   'html': ['tidy'],
+\   'svg': ['tidy'],
+\   'xml': ['tidy'],
+\   'zpt': ['tidy'],
 \}
 
-
-" NEEDS TO BE SET BEFORE PLUGIN IS LOADED
-" let g:ale_completion_enabled = 1
 let g:ale_set_balloons = 1
+
+
+"" LanguageClient
+"""""""""""""""""
+let g:LanguageClient_autoStart = 1
+let g:LanguageClient_serverCommands = {
+    \ 'python': ['/home/thet/dev/python-tools/bin/pyls'],
+    \ 'javascript': ['/home/thet/node_modules/.bin/javascript-typescript-stdio'],
+    \ 'javascript.vue': ['/home/thet/node_modules/.bin/vls'],
+    \ 'json': ['/home/thet/node_modules/.bin/json-languageserver'],
+    \ 'html': ['/home/thet/node_modules/.bin/html-languageserver'],
+    \ 'xhtml': ['/home/thet/node_modules/.bin/html-languageserver'],
+    \ 'css': ['/home/thet/node_modules/.bin/css-languageserver'],
+    \ 'less': ['/home/thet/node_modules/.bin/css-languageserver'],
+    \ 'scss': ['/home/thet/node_modules/.bin/css-languageserver'],
+    \ 'sh': ['/home/thet/node_modules/.bin/bash-language-server'],
+\ }
+
+" docker-langserver
+
+
+"" DEOPLETE
+"""""""""""
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('sources', {
+  \ '_': ['buffer', 'file', 'LanguageClient'],
+\})
+
+
+""" ECHODOC
+"""""""""""
+"let g:echodoc#enable_at_startup = 1
+"let g:echodoc#type = 'virtual'
+""" let g:echodoc#type = 'floating'
 
 
 "" EASYGREP

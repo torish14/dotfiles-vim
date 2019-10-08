@@ -11,7 +11,6 @@
 " Plug 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
 
 
-
 "" BUFFER NAVIGATION
 """"""""""""""""""""
 " Plug 'Shougo/denite.nvim'  " https://github.com/Shougo/denite.nvim
@@ -37,6 +36,8 @@
 
 "" SYNTAXN
 """"""""""
+Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
+Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
 "" Plug 'luochen1990/rainbow'  " https://github.com/luochen1990/rainbow
 " Plug 'sgur/vim-editorconfig'  " https://github.com/sgur/vim-editorconfig
 " Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
@@ -88,7 +89,48 @@ Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}  " https://github.com
 
 
 
+"""""""""""""""""
 "" PLUGINS CONFIG
+"""""""""""""""""
+
+
+"" VIM AUTOFORMAT
+"""""""""""""""""
+
+"" https://github.com/Chiel92/vim-autoformat
+"" https://github.com/hhatto/autopep8
+" Using autopep8 - yapf messes files up with my current setup...
+"let g:formatters_python = ['yapf']
+"if exists('g:formatdef_yapf')
+"    "" Use config files (~/.config/yapf/style)
+"    unlet g:formatdef_yapf
+"endif
+
+" Troubles? see:
+" https://github.com/Chiel92/vim-autoformat#help-the-formatter-doesnt-work-as-expected
+" let g:autoformat_verbosemode=1
+
+let g:formatters_python = ['autopep8']
+
+let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
+let g:formatters_zpt = ['htmlbeautify']
+let g:formatters_xml = ['htmlbeautify']
+let g:formatters_svg = ['htmlbeautify']
+
+let g:formatdef_thet_cssbrush = '"cssbrush ".bufname("%")'
+let g:formatters_less = ['thet_cssbrush']
+let g:formatters_css = ['thet_cssbrush']
+
+
+" let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
+" let g:formatdef_thet_javascript = '"prettier --single-quote --tab-width ".shiftwidth()'
+" let g:formatdef_thet_javascript = '"prettier --single-quote --stdin --stdin-filepath ".expand("%:p").(&textwidth ? " --print-width ".&textwidth : "")." --tab-width=".shiftwidth()'
+" let g:formatters_javascript = ['thet_javascript']
+let g:formatters_javascript = ['prettier']
+
+
+
+
 
 "" let g:rainbow_active = 1
 
@@ -232,3 +274,8 @@ let g:completor_completion_delay = 300
 "     call lightline#update()
 " endfunction
 
+
+
+
+"" Autoformat
+noremap <leader>f :Autoformat<CR><CR>

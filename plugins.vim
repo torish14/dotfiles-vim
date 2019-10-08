@@ -3,7 +3,7 @@
 
 
 " NEEDS TO BE SET BEFORE PLUGIN IS LOADED
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 0
 
 
 " https://github.com/junegunn/vim-plug
@@ -58,14 +58,25 @@ Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
 
-Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 Plug 'w0rp/ale'  " https://github.com/w0rp/ale
-Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
+
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }  " https://github.com/autozimu/LanguageClient-neovim
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+" Plug 'Shougo/echodoc.vim'  " https://github.com/Shougo/echodoc.vim
+
+Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 
 Plug 'SirVer/ultisnips'  " https://github.com/SirVer/ultisnips
 Plug 'honza/vim-snippets'  " https://github.com/honza/vim-snippets
-Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
 
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'Valloric/MatchTagAlways', {'for': 'html'}  " https://github.com/Valloric/MatchTagAlways

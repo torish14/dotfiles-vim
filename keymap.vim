@@ -238,7 +238,7 @@ noremap tt :TagbarToggle<CR>
 
 
 "" Autoformat
-noremap <leader>f :Autoformat<CR><CR>
+noremap <leader>f :ALEFix<CR>
 noremap <leader>g :%!jscs -x<CR>
 
 
