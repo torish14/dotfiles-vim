@@ -105,7 +105,7 @@ autocmd BufRead,BufNewFile *.php setlocal tabstop=4 shiftwidth=4 softtabstop=0
 autocmd BufNewFile,BufRead *.robot set filetype=robot syntax=robot
 autocmd BufNewFile,BufRead *.vue set filetype=javascript.vue syntax=javascript
 autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx syntax=javascript
-autocmd BufRead,BufNewFile *.xml,*.zcml set filetype=xml
+autocmd BufRead,BufNewFile *.xml,*.zcml,*.svg set filetype=xml
 "" autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
 autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=xhtml syntax=xhtml
 autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx

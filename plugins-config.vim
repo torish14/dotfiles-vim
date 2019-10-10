@@ -104,9 +104,8 @@ let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \   'python': ['black'],
 \   'html': ['tidy'],
-\   'svg': ['tidy'],
+\   'xhtml': ['tidy'],
 \   'xml': ['tidy'],
-\   'zpt': ['tidy'],
 \}
 
 let g:ale_set_balloons = 1
