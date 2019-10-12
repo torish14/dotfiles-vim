@@ -14,6 +14,21 @@ Then::
     vim +PlugInstall
 
 
+Collaborative editing
+---------------------
+To try out:
+
+https://github.com/fanyun-sun/CoVim
+https://github.com/FredKSchott/CoVim
+https://github.com/Floobits/floobits-neovim
+https://github.com/typeintandem/tandem
+https://github.com/typeintandem/nvim
+https://teletype.atom.io/
+https://github.com/atom/teletype
+https://github.com/atom/teletype-client
+https://github.com/atom/teletype-server
+https://www.emacswiki.org/emacs/CollaborativeEditing
+
 
 External tools / 2
 ------------------
