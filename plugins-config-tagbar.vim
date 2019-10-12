@@ -63,13 +63,13 @@ let g:tagbar_type_cfg = {
 " Markdown
 let g:tagbar_type_markdown = {
     \ 'ctagstype': 'markdown',
-    \ 'ctagsbin' : '/home/thet/.vim/markdown2ctags/markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'ctagsbin' : 'markdown2ctags',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
     \ ],
-    \ 'sro' : '|',
+    \ 'sro' : '»',
     \ 'kind2scope' : {
         \ 's' : 'section',
     \ },
@@ -79,13 +79,13 @@ let g:tagbar_type_markdown = {
 " reStructuredText
 let g:tagbar_type_rst = {
     \ 'ctagstype': 'rst',
-    \ 'ctagsbin' : '/home/thet/.vim/rst2ctags/rst2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'ctagsbin' : 'rst2ctags',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
     \ ],
-    \ 'sro' : '|',
+    \ 'sro' : '»',
     \ 'kind2scope' : {
         \ 's' : 'section',
     \ },
