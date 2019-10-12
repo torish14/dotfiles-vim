@@ -14,6 +14,42 @@ Then::
     vim +PlugInstall
 
 
+Language Server Integration
+---------------------------
+
+In your buildour.cfg, set::
+
+  [buildout]
+  parts =
+    pyls
+
+  [pyls]
+  recipe = zc.recipe.egg
+  eggs =
+      ${robot:eggs}
+      python-language-server
+      pyls-black
+      pyls-isort
+      autopep8
+      mccabe
+      pycodestyle
+      pydocstyle
+      pyflakes
+      pylint
+      rope
+      yapf
+
+In your vim config, set (for LanguageClient-neovim)::
+
+    let g:LanguageClient_serverCommands = {
+      \ 'python': ['/PATH/TO/YOUR/BUILDOUT/bin/pyls'],
+    \ }
+
+
+Add the local ./bin directory to the PATH - this way pyls is found if you start nvim in the buildout-root directory::
+  export PATH=./bin:$PATH
+
+
 Collaborative editing
 ---------------------
 To try out:

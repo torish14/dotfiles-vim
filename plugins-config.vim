@@ -115,7 +115,7 @@ let g:ale_set_balloons = 1
 """""""""""""""""
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_serverCommands = {
-    \ 'python': ['/home/thet/dev/python-tools/bin/pyls'],
+    \ 'python': ['/home/thet/dev/empower.help/bda.empower/bin/pyls'],
     \ 'javascript': ['/home/thet/node_modules/.bin/javascript-typescript-stdio'],
     \ 'javascript.vue': ['/home/thet/node_modules/.bin/vls'],
     \ 'json': ['/home/thet/node_modules/.bin/json-languageserver'],
@@ -127,7 +127,14 @@ let g:LanguageClient_serverCommands = {
     \ 'sh': ['/home/thet/node_modules/.bin/bash-language-server'],
 \ }
 
+"    \ 'python': ['/home/thet/dev/python-tools/bin/pyls'],
 " docker-langserver
+
+"" Language Client Debugging
+" let g:LanguageClient_loggingLevel = 'INFO'
+" let g:LanguageClient_virtualTextPrefix = ''
+" let g:LanguageClient_loggingFile =  expand('~/.vim/LanguageClient.log')
+" let g:LanguageClient_serverStderr = expand('~/.vim/LanguageServer.log')
 
 
 "" DEOPLETE

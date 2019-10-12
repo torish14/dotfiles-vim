@@ -58,7 +58,7 @@ Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
 
-Plug 'w0rp/ale'  " https://github.com/w0rp/ale
+" Plug 'w0rp/ale'  " https://github.com/w0rp/ale
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }  " https://github.com/autozimu/LanguageClient-neovim
 

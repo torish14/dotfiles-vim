@@ -38,8 +38,14 @@ map g/ <Plug>(incsearch-stay)
 
 noremap <leader>r :Ranger<CR>
 
-noremap <leader>d :ALEGoToDefinition
-noremap <leader>g :ALEFindReferences
+
+nnoremap <silent> = :call LanguageClient_contextMenu()<CR>
+noremap <leader>d :call LanguageClient_textDocument_definition()<CR><CR>
+noremap <leader>g :call LanguageClient_textDocument_implementation()<CR><CR>
+
+
+" noremap <leader>d :ALEGoToDefinition
+" noremap <leader>g :ALEFindReferences
 
 " jedi
 " let g:jedi#goto_command = "<leader>d"
@@ -207,6 +213,7 @@ noremap <leader>M :BuffergatorTabsToggle<CR>
 "" FileBeagle
 map <silent> _  <Plug>FileBeagleOpenCurrentWorkingDir
 map <silent> -  <Plug>FileBeagleOpenCurrentBufferDir
+
 
 """ Denite
 "map <silent> =  :Denite -split=no buffer<CR>
