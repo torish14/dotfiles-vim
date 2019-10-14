@@ -1,3 +1,51 @@
+"" ===========================================================================
+
+"" Not performing well...
+"" Slow cursor
+" Plug 'Valloric/MatchTagAlways'  " https://github.com/Valloric/MatchTagAlways
+
+"" Found alternatives for...
+
+" Plug 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
+" Plug 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
+" Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
+" Plug 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
+" Plug 'ap/vim-css-color', {'for': 'css'}  " https://github.com/ap/vim-css-color
+" Plug 'sbl/scvim'  " https://github.com/sbl/scvim
+
+
+"" ===========================================================================
+
+" Plug 'tpope/vim-eunuch'  " https://github.com/tpope/vim-eunuch
+" Plug 'terryma/vim-expand-region'  " https://github.com/terryma/vim-expand-region
+" Plug 'mkitt/tabline.vim'  " https://github.com/mkitt/tabline.vim
+" Plug 'zefei/vim-wintabs'  " https://github.com/zefei/vim-wintabs
+" Plug 'fholgado/minibufexpl.vim'  " https://github.com/fholgado/minibufexpl.vim
+" Plug 'bling/vim-airline'  " https://github.com/bling/vim-airline
+" Plug 'tpope/vim-vinegar'  " https://github.com/tpope/vim-vinegar
+" Plug 'ryanoasis/vim-webdevicons'  " https://github.com/ryanoasis/vim-webdevicons
+" Plug 'jamessan/vim-gnupg'  " https://github.com/jamessan/vim-gnupg
+" Plug 'sheerun/vim-polyglot'  " https://github.com/sheerun/vim-polyglot
+" Plug 'garbas/vim-snipmate'  " https://github.com/garbas/vim-snipmate
+"" gitguteer alternative for other vcs: https://github.com/mhinz/vim-signify
+" Plug 'idanarye/vim-merginal'  " https://github.com/idanarye/vim-merginal
+" Plug 'int3/vim-extradite'  " https://github.com/int3/vim-extradite
+" Plug 'jaxbot/github-issues.vim'  " https://github.com/jaxbot/github-issues.vim
+" Plug 'Keithbsmiley/gist.vim'  " https://github.com/Keithbsmiley/gist.vim
+
+" https://github.com/reedes/vim-thematic
+" http://cocopon.me/app/vim-color-gallery/
+" http://blog.codinghorror.com/progamming-fonts/
+" https://github.com/Lokaltog/powerline-fonts
+
+" http://vimawesome.com/plugin/tabular
+" http://vimawesome.com/plugin/gundo
+" http://vimawesome.com/plugin/unimpaired-vim
+" http://vimawesome.com/plugin/commentary-vim
+" http://vimawesome.com/plugin/webapi-vim
+" https://github.com/sjbach/lusty
+
+
 "" PLUGINS
 
 " https://github.com/maralla/pack
@@ -36,8 +84,6 @@
 
 "" SYNTAXN
 """"""""""
-Plug 'Chiel92/vim-autoformat'  " https://github.com/Chiel92/vim-autoformat
-Plug 'maralla/completor.vim'  " https://github.com/maralla/completor.vim
 "" Plug 'luochen1990/rainbow'  " https://github.com/luochen1990/rainbow
 " Plug 'sgur/vim-editorconfig'  " https://github.com/sgur/vim-editorconfig
 " Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
@@ -94,40 +140,6 @@ Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}  " https://github.com
 """""""""""""""""
 
 
-"" VIM AUTOFORMAT
-"""""""""""""""""
-
-"" https://github.com/Chiel92/vim-autoformat
-"" https://github.com/hhatto/autopep8
-" Using autopep8 - yapf messes files up with my current setup...
-"let g:formatters_python = ['yapf']
-"if exists('g:formatdef_yapf')
-"    "" Use config files (~/.config/yapf/style)
-"    unlet g:formatdef_yapf
-"endif
-
-" Troubles? see:
-" https://github.com/Chiel92/vim-autoformat#help-the-formatter-doesnt-work-as-expected
-" let g:autoformat_verbosemode=1
-
-let g:formatters_python = ['autopep8']
-
-let g:formatdef_htmlbeautify = '"html-beautify -f - -p -m10 -s ".shiftwidth()'
-let g:formatters_zpt = ['htmlbeautify']
-let g:formatters_xml = ['htmlbeautify']
-let g:formatters_svg = ['htmlbeautify']
-
-let g:formatdef_thet_cssbrush = '"cssbrush ".bufname("%")'
-let g:formatters_less = ['thet_cssbrush']
-let g:formatters_css = ['thet_cssbrush']
-
-
-" let g:formatdef_thet_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
-" let g:formatdef_thet_javascript = '"prettier --single-quote --tab-width ".shiftwidth()'
-" let g:formatdef_thet_javascript = '"prettier --single-quote --stdin --stdin-filepath ".expand("%:p").(&textwidth ? " --print-width ".&textwidth : "")." --tab-width=".shiftwidth()'
-" let g:formatters_javascript = ['thet_javascript']
-let g:formatters_javascript = ['prettier']
-
 
 
 
@@ -154,23 +166,6 @@ let g:formatters_javascript = ['prettier']
 
 
 
-"" JEDI
-"""""""
-" let g:jedi#force_py_version = 2
-"" Disable jedi completion, which is way too slow for big projects
-" let g:jedi#popup_on_dot = 0
-" let g:jedi#show_call_signatures = 0
-" let g:jedi#completions_enabled = 0
-let g:jedi#popup_on_dot = 0
-let g:jedi#show_call_signatures = 0
-let g:jedi#completions_enabled = 1
-
-
-"" COMPLETOR
-""""""""""""
-" let g:completor_node_binary = '/home/thet/.nvm/versions/node/v7.2.0/bin/node'
-let g:completor_node_binary = '/usr/bin/nodejs'
-let g:completor_completion_delay = 300
 
 "" JavaScript
 """""""""""""
@@ -276,6 +271,83 @@ let g:completor_completion_delay = 300
 
 
 
+"" The Silver Searcher
+""""""""""""""""""""""
 
-"" Autoformat
-noremap <leader>f :Autoformat<CR><CR>
+" http://robots.thoughtbot.com/faster-grepping-in-vim
+" https://github.com/ggreer/the_silver_searcher
+" bind K to grep word under cursor
+"nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind \ (backward slash) to grep shortcut
+"command -nargs=+ -complete=file -bar Ag silent! grep! -i <args>|cwindow|redraw!
+"nnoremap \ :Ag<SPACE>
+
+
+"" Ultisnips
+""""""""""""
+
+"let g:UltiSnipsExpandTrigger="<S-Space>"
+"let g:UltiSnipsJumpForwardTrigger="<c-j>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+"let g:UltiSnipsExpandTrigger="<TAB>"
+
+"" http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
+" function! g:UltiSnips_Complete()
+"     call UltiSnips#ExpandSnippet()
+"     if g:ulti_expand_res == 0
+"         if pumvisible()
+"             return "\<C-n>"
+"         else
+"             call UltiSnips#JumpForwards()
+"             if g:ulti_jump_forwards_res == 0
+"                return "\<TAB>"
+"             endif
+"         endif
+"     endif
+"     return ""
+" endfunction
+" au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+" let g:UltiSnipsJumpForwardTrigger="<tab>"
+" let g:UltiSnipsListSnippets="<c-e>"
+"" this mapping Enter key to <C-y> to chose the current highlight item
+"" and close the selection list, same as other IDEs.
+"" CONFLICT with some plugins like tpope/Endwise
+" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+
+"" Conque_Shell
+" let g:ConqueTerm_FastMode = 0
+" let g:ConqueTerm_Color = 1
+" let g:ConqueTerm_CloseOnEnd = 1
+
+
+
+"" WEB DEV ICONS
+""""""""""""""""
+
+" let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = ' '
+" let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+" let g:webdevicons_conceal_nerdtree_brackets = 0
+"" let g:webdevicons_conceal_nerdtree_brackets = 1
+
+
+"" GIT
+""""""
+
+" let g:extradite_resize = 0
+
+
+"" UNITE
+""""""""
+
+"let g:unite_enable_split_vertically=1
+""let g:unite_split_rule='right'
+
+
+"" SYNTASTIC
+""""""""""""
+
+" let g:syntastic_python_checkers=['flake8', 'pydocstyle']
+" let g:syntastic_javascript_checkers=['jslint']
+

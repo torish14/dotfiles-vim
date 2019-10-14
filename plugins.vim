@@ -58,20 +58,6 @@ Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
 
-" Plug 'w0rp/ale'  " https://github.com/w0rp/ale
-
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }  " https://github.com/autozimu/LanguageClient-neovim
-
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-" Plug 'Shougo/echodoc.vim'  " https://github.com/Shougo/echodoc.vim
-
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
 
