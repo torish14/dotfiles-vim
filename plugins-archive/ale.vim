@@ -1,4 +1,11 @@
+" NEEDS TO BE SET BEFORE PLUGIN IS LOADED
+let g:ale_completion_enabled = 0
+
 Plug 'w0rp/ale'  " https://github.com/w0rp/ale
+
+
+" CONFIG
+""""""""
 
 " let g:ale_fix_on_save = 1
 let g:ale_lint_on_enter = 0
@@ -38,3 +45,16 @@ let g:ale_fixers = {
 \}
 
 let g:ale_set_balloons = 1
+
+
+" KEYMAP
+""""""""
+
+" noremap <leader>d :ALEGoToDefinition
+" noremap <leader>g :ALEFindReferences
+
+"" ALE next/prev Error
+noremap ]e :ALENextWrap<cr>
+noremap [e :ALEPreviousWrap<cr>
+
+noremap <leader>f :ALEFix<CR>

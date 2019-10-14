@@ -1,11 +1,14 @@
-" FZF
-"""""
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " https://github.com/junegunn/fzf
+
 " More info:
 " https://github.com/junegunn/fzf/wiki/Examples-(vim)
 
+
+" CONFIG
+""""""""
+
 let g:fzf_layout = { 'window': 'enew' }
 " let g:fzf_launcher = 'xterm -e sh -ic %s'
-
 
 function! FZFfiles()
     call fzf#run({
@@ -25,7 +28,6 @@ function! FZFcolor()
     \   'left':    30
     \ })
 endfunction
-
 
 " https://github.com/junegunn/fzf/wiki/Examples-(vim)#select-buffer
 function! s:fzf_buflist()
@@ -48,7 +50,6 @@ function! FZFbuffers()
     \ })
 endfunction
 
-
 " https://github.com/junegunn/fzf/wiki/Examples-(vim)#simple-mru-search
 function! s:fzf_allfiles()
     return extend(
@@ -65,4 +66,14 @@ function! FZFmru()
     \ 'down':    '40%'
     \ })
 endfunction
+
+
+" KEYMAP
+""""""""
+
+" noremap <leader>/ :FZF<CR>
+noremap <leader>/ :call FZFfiles()<CR>
+noremap <leader>. :call FZFmru()<CR>
+noremap <leader>, :call FZFbuffers()<CR>
+noremap <leader>c :call FZFcolor()<CR>
 

@@ -1,4 +1,8 @@
-"" Tagbar
+Plug 'majutsushi/tagbar'  " https://github.com/majutsushi/tagbar
+
+
+" CONFIG
+""""""""
 
 """ CSS / LESS / SCSS
 
@@ -159,3 +163,9 @@ let g:tagbar_type_r = {
 \ }
 
 "" let g:tern#command = ['/home/thet/node_modules/.bin/tern', '--no-port-file']
+
+
+" KEYMAP
+""""""""
+
+noremap tt :TagbarToggle<CR>

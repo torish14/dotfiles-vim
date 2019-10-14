@@ -4,6 +4,7 @@
 set nocompatible  " This setting prevents vim from emulating the original vi's bugs and limitations
 set encoding=utf-8  " set the default encoding
 
+
 "" GENERAL SETTINGS
 """""""""""""""""""
 
@@ -52,9 +53,7 @@ set formatoptions=qrnl
 "   - show previews with additional info, if availalble
 set completeopt=menuone,noinsert,noselect,preview
 
-
 match ErrorMsg '\%>80v.+'
-
 
 
 "" SEARCH
@@ -65,13 +64,11 @@ set ignorecase  " make searches case-insensitive
 set smartcase  " unless they contain upper-case letters
 
 
-
 "" SPELL CHECKING
 """""""""""""""""
 
 set nospell  " no spellcheck by default
 set spelllang=de,en
-
 
 
 "" SYNTAX AND FORMATING
@@ -225,10 +222,8 @@ highlight SpellBad term=underline gui=undercurl guisp=Red
 "     autocmd! ColorScheme * hi CursorLineNR cterm=bold
 " augroup END
 
-
 set fillchars+=vert:\ " No char for vertical split is even prettier thant |
 set listchars=tab:▸\ ,eol:¬  " Use the same symbols as TextMate for tabstops and EOLs
-
 
 
 "" FILES AND DIRECTORIES
@@ -241,10 +236,6 @@ set backupdir=~/.tmp
 set directory=~/.tmp
 set backupskip=~/.tmp/*
 
-
-"" FUNCTIONS
-""""""""""""
-""""""""""""
 
 "" STRIP TRAILING WHITESPACE
 """"""""""""""""""""""""""""
@@ -259,34 +250,4 @@ function! Preserve(command)
     let @/=_s
     call cursor(l, c)
 endfunction
-
-
-
-" "" SYNTAX OFF / ON
-" """"""""""""""""""
-"
-" function! SynOff()
-"     " Set Syntax hightlighting to off and other performance tweaks.
-"     " Useful when pasting big files
-"     " See:
-"     " http://stackoverflow.com/questions/4775605/vim-syntax-highlight-improve-performance
-"     " http://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-to-long
-"     "
-"     syntax off
-"     set nocursorcolumn
-"     set nocursorline
-"     set noshowmatch
-"     set lazyredraw
-"     :GitGutterDisable
-" endfunction
-"
-"
-" function! SynOn()
-"     " Set Syntax hightlighting to on
-"     syntax on
-"     " set cursorcolumn
-"     set cursorline
-"     set showmatch
-"     :GitGutterEnable
-" endfunction
 

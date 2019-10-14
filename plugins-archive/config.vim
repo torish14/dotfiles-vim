@@ -1,3 +1,5 @@
+Plug 'ryanoasis/vim-devicons'  " https://github.com/ryanoasis/vim-devicons
+
 "" ===========================================================================
 
 "" Not performing well...
@@ -6,8 +8,6 @@
 
 "" Found alternatives for...
 
-" Plug 'ctrlpvim/ctrlp.vim'  " https://github.com/ctrlpvim/ctrlp.vim
-" Plug 'felikz/ctrlp-py-matcher'  " https://github.com/felikz/ctrlp-py-matcher
 " Plug 'scrooloose/syntastic'  " https://github.com/scrooloose/syntastic
 " Plug 'vim-scripts/AutoComplPop'  " https://github.com/vim-scripts/AutoComplPop
 " Plug 'ap/vim-css-color', {'for': 'css'}  " https://github.com/ap/vim-css-color
@@ -43,33 +43,27 @@
 " http://vimawesome.com/plugin/unimpaired-vim
 " http://vimawesome.com/plugin/commentary-vim
 " http://vimawesome.com/plugin/webapi-vim
-" https://github.com/sjbach/lusty
 
 
 "" PLUGINS
 
 " https://github.com/maralla/pack
 " Plug 'itchyny/lightline.vim'  " https://github.com/itchyny/lightline.vim
-" Plug 'nathanaelkane/vim-indent-guides'  " https://github.com/nathanaelkane/vim-indent-guides
 " Plug 'vim-scripts/LargeFile'  " https://github.com/vim-scripts/LargeFile
 " Plug 'mhinz/vim-hugefile'  " https://github.com/mhinz/vim-hugefile
 " Plug 'jez/vim-superman'  " https://github.com/jez/vim-superman
-" Plug 'dkprice/vim-easygrep'  " https://github.com/dkprice/vim-easygrep
 " Plug 'tpope/vim-obsession'  " https://github.com/tpope/vim-obsession
 " Plug 'terryma/vim-multiple-cursors'  " https://github.com/terryma/vim-multiple-cursors
 
 
 "" BUFFER NAVIGATION
 """"""""""""""""""""
-" Plug 'Shougo/denite.nvim'  " https://github.com/Shougo/denite.nvim
 
 " Keep until buffergator is fixed to work as vertical replacement.
 " Plug 'ap/vim-buftabline'  " https://github.com/ap/vim-buftabline
 
 " Plug 'kien/ctrlp.vim'  " https://github.com/kien/ctrlp.vim
-" Plug 'vim-scripts/LustyJuggler'  " https://github.com/vim-scripts/LustyJuggler
 " Plug 'yegappan/mru'  " https://github.com/yegappan/mru
-" Plug 'ton/vim-bufsurf'  " https://github.com/ton/vim-bufsurf
 " Plug 'jeetsukumaran/vim-indentwise'  " https://github.com/jeetsukumaran/vim-indentwise
 " Plug 'jeetsukumaran/vim-gazetteer'  " https://github.com/jeetsukumaran/vim-gazetteer
 " Plug 'dahu/vim-lotr'  " https://github.com/dahu/vim-lotr
@@ -86,8 +80,6 @@
 """"""""""
 "" Plug 'luochen1990/rainbow'  " https://github.com/luochen1990/rainbow
 " Plug 'sgur/vim-editorconfig'  " https://github.com/sgur/vim-editorconfig
-" Plug 'Raimondi/delimitMate'  " https://github.com/Raimondi/delimitMate
-" Plug 'davidhalter/jedi-vim', {'for': 'python'}  " https://github.com/davidhalter/jedi-vim
 
 
 "" AutoComplPop --- always works, when others don't
@@ -131,7 +123,6 @@ Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}  " https://github.com
 
 "" Look also at these:
 " https://github.com/justinmk/vim-dirvish  " like filebeagle
-" Plug 'thet/minibufexpl.vim'  " https://github.com/thet/minibufexpl.vim / https://github.com/fholgado/minibufexpl.vim
 
 
 
@@ -145,20 +136,6 @@ Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}  " https://github.com
 
 
 "" let g:rainbow_active = 1
-
-""" Denite
-"call denite#custom#map(
-"      \ 'insert',
-"      \ '<Down>',
-"      \ '<denite:move_to_next_line>',
-"      \ 'noremap'
-"      \)
-"call denite#custom#map(
-"      \ 'insert',
-"      \ '<Up>',
-"      \ '<denite:move_to_previous_line>',
-"      \ 'noremap'
-"      \)
 
 
 "" BufTabLine
@@ -350,4 +327,65 @@ Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}  " https://github.com
 
 " let g:syntastic_python_checkers=['flake8', 'pydocstyle']
 " let g:syntastic_javascript_checkers=['jslint']
+
+
+"" LargeFile
+let g:LargeFile = 1  " 1M is already a large file
+
+
+" buffer completion: <c-l>
+"<Over>(buffer-complete)
+
+
+
+
+" Gitv, vim gitk
+"noremap <leader>gv :Gitv<CR>
+"noremap <leader>gm :Merginal<CR>
+"noremap <leader>gi :Gissues<CR>
+"noremap <leader>ga :Giadd<CR>
+
+
+"" unite-outline
+"" noremap ty :Unite outline<CR>
+
+noremap <leader>n :MBEToggle<CR>
+noremap <leader>b :MBEToggleMRU<CR>
+
+"" vim expand region
+"vmap v <Plug>(expand_region_expand)
+"vmap <C-v> <Plug>(expand_region_shrink)
+
+
+" "" SYNTAX OFF / ON
+" """"""""""""""""""
+"
+" noremap <leader>1 :call SynOff()<CR>
+" noremap <leader>! :call SynOn()<CR>
+
+
+" function! SynOff()
+"     " Set Syntax hightlighting to off and other performance tweaks.
+"     " Useful when pasting big files
+"     " See:
+"     " http://stackoverflow.com/questions/4775605/vim-syntax-highlight-improve-performance
+"     " http://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-to-long
+"     "
+"     syntax off
+"     set nocursorcolumn
+"     set nocursorline
+"     set noshowmatch
+"     set lazyredraw
+"     :GitGutterDisable
+" endfunction
+"
+"
+" function! SynOn()
+"     " Set Syntax hightlighting to on
+"     syntax on
+"     " set cursorcolumn
+"     set cursorline
+"     set showmatch
+"     :GitGutterEnable
+" endfunction
 

@@ -1,5 +1,9 @@
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }  " https://github.com/autozimu/LanguageClient-neovim
 
+
+" CONFIG
+""""""""
+
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_serverCommands = {
     \ 'python': ['/home/thet/dev/empower.help/bda.empower/bin/pyls'],
@@ -22,3 +26,11 @@ let g:LanguageClient_serverCommands = {
 " let g:LanguageClient_virtualTextPrefix = ''
 " let g:LanguageClient_loggingFile =  expand('~/.vim/LanguageClient.log')
 " let g:LanguageClient_serverStderr = expand('~/.vim/LanguageServer.log')
+
+
+" KEYMAP
+""""""""
+
+nnoremap <silent> = :call LanguageClient_contextMenu()<CR>
+noremap <leader>d :call LanguageClient_textDocument_definition()<CR><CR>
+noremap <leader>g :call LanguageClient_textDocument_implementation()<CR><CR>
