@@ -1,3 +1,8 @@
+Check installation
+------------------
+::
+    :checkhealth
+
 
 Search for multiple words
 -------------------------
