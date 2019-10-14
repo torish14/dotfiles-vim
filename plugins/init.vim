@@ -91,6 +91,7 @@ Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
+source $HOME/.vim/plugins/config.vim
 
 " Add plugins to &runtimepath
 call plug#end()

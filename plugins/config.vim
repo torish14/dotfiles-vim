@@ -1,6 +1,5 @@
-source $HOME/.vim/plugins-config-fzf.vim
-source $HOME/.vim/plugins-config-tagbar.vim
-" source $HOME/.vim/plugins-config-lightline.vim
+source $HOME/.vim/plugins/fzf.vim
+source $HOME/.vim/plugins/tagbar.vim
 
 "" ranger
 let g:ranger_map_keys = 0
