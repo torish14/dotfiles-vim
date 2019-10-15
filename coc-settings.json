@@ -1,0 +1,13 @@
+{
+    "coc.preferences.rootPatterns": [
+        ".vim",
+        ".git",
+        ".hg",
+        ".projections.json"
+    ],
+    "suggest.triggerCompletionWait": 6000,
+    "suggest.timeout": 20000,
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.jediEnabled": false,
+    "python.pythonPath": "python"
+}
