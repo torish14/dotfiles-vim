@@ -111,6 +111,8 @@ autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
 autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
 
+" jsonc comment highlighting
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " Open some binaries with external tools
 autocmd BufReadCmd *.pdf silent !xdg-open % &
@@ -146,8 +148,8 @@ autocmd BufEnter *.gif bdelete
 
 " Anti performance setting - 250ms. default is 4s
 " Increases gitgutter update speed.
-" set updatetime=250
-set updatetime=4000
+set updatetime=300
+" set updatetime=4000
 
 
 "" VISUAL STUFF
