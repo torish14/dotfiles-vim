@@ -53,7 +53,6 @@ Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-color
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
 
-source $HOME/.vim/plugins/ack.vim
 source $HOME/.vim/plugins/buffergator.vim
 source $HOME/.vim/plugins/coc.vim
 source $HOME/.vim/plugins/filebeagle.vim
@@ -63,6 +62,7 @@ source $HOME/.vim/plugins/incsearch.vim
 source $HOME/.vim/plugins/matchtagalways.vim
 source $HOME/.vim/plugins/open-browser.vim
 source $HOME/.vim/plugins/ranger.vim
+source $HOME/.vim/plugins/rg.vim
 source $HOME/.vim/plugins/snippets.vim
 source $HOME/.vim/plugins/tagbar.vim
 source $HOME/.vim/plugins/vem-tabline.vim
