@@ -62,7 +62,7 @@ set gdefault
 set hlsearch  " highlight the terms
 set ignorecase  " make searches case-insensitive
 set smartcase  " unless they contain upper-case letters
-
+set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case  " https://github.com/BurntSushi/ripgrep/issues/425#issuecomment-381446152
 
 "" SPELL CHECKING
 """""""""""""""""
