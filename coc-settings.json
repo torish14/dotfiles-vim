@@ -9,5 +9,10 @@
     "suggest.timeout": 20000,
     "python.envFile": "${workspaceFolder}/.env",
     "python.jediEnabled": false,
-    "python.pythonPath": "python"
+    "python.pythonPath": "python",
+    "html.format.enable": true,
+    "html.format.preserveNewLines": true,
+    "html.format.maxPreserveNewLines": 2,
+    "html.format.indentInnerHtml": false,
+    "html.format.wrapAttributes": "force"
 }
