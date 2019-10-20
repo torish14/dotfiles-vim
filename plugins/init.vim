@@ -47,24 +47,26 @@ Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
 
 "" COLORSCHEME
 """"""""""""""
+Plug 'rakr/vim-one'  " https://github.com/rakr/vim-one
 Plug 'mhartington/oceanic-next'  " https://github.com/mhartington/oceanic-next
 Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
-
 
 source $HOME/.vim/plugins/buffergator.vim
 source $HOME/.vim/plugins/coc.vim
 source $HOME/.vim/plugins/filebeagle.vim
 source $HOME/.vim/plugins/fugitive.vim
 source $HOME/.vim/plugins/fzf.vim
+source $HOME/.vim/plugins/git-messenger.vim
+source $HOME/.vim/plugins/grepper.vim
 source $HOME/.vim/plugins/incsearch.vim
 source $HOME/.vim/plugins/matchtagalways.vim
 source $HOME/.vim/plugins/open-browser.vim
 source $HOME/.vim/plugins/ranger.vim
-source $HOME/.vim/plugins/rg.vim
 source $HOME/.vim/plugins/snippets.vim
 source $HOME/.vim/plugins/tagbar.vim
+source $HOME/.vim/plugins/undotree.vim
 source $HOME/.vim/plugins/vem-tabline.vim
 
 " only when gui mode
