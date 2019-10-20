@@ -155,20 +155,9 @@ set updatetime=300
 "" VISUAL STUFF
 """""""""""""""
 
-" set background=dark
-" set background=light
-
-" let g:molokai_original = 0
-" colorscheme molokai
-" colorscheme github
-" colorscheme industry
-
-set background=dark
-" let g:oceanic_next_terminal_bold = 1
-" let g:oceanic_next_terminal_italic = 1
-" colorscheme OceanicNext
 colorscheme PaperColor
-" set highlight Normal guibg=black
+set background=dark
+" set background=light
 
 
 "" GUI

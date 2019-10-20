@@ -47,9 +47,6 @@ Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
 
 "" COLORSCHEME
 """"""""""""""
-Plug 'rakr/vim-one'  " https://github.com/rakr/vim-one
-Plug 'mhartington/oceanic-next'  " https://github.com/mhartington/oceanic-next
-Plug 'tomasr/molokai'  " https://github.com/tomasr/molokai
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
