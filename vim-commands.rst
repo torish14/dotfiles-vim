@@ -1,3 +1,26 @@
+Save as root
+------------
+::
+    :w !sudo tee %
+
+
+Motions
+-------
+
+Select inside tags::
+    vit
+
+Select around tags::
+    vat
+
+Delete/Cut inside tags::
+    dit
+
+Delete/Cut around tags::
+    dat
+
+
+
 Check installation
 ------------------
 ::
