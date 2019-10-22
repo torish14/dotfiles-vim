@@ -7,6 +7,8 @@ let mapleader = ","  " leader key
 "" :W or :Wa should write/write all
 command W execute "w"
 command Wa execute "wa"
+" write as root in neovim - https://stackoverflow.com/a/58215799/1337474
+cnoremap w!! execute 'silent! write !SUDO_ASKPASS=`which ssh-askpass` sudo tee % >/dev/null' <bar> edit!
 
 " select all
 noremap <C-a> ggVG
