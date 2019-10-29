@@ -200,7 +200,7 @@ endif
 
 highlight SpellBad term=underline gui=undercurl guisp=Red
 
-" highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+" highlight CursorLine cterm=NONE ctermbg=yellow ctermfg=black guibg=yellow guifg=black
 
 " Highlighting the current line number in vim
 " https://stackoverflow.com/a/13275419/1337474
