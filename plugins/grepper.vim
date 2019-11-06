@@ -14,5 +14,6 @@ let g:grepper.rg = {'grepprg': 'rg -H --no-heading --vimgrep --smart-case --foll
 """"""""
 
 nnoremap <BSlash> :Grepper -query<space>
+nnoremap <C-BSlash> :Grepper -query --no-ignore-vcs<space>
 nnoremap \| :Grepper -buffers -query<space>
 nnoremap <leader><Bslash> :Grepper -buffer -query<space>
