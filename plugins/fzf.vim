@@ -14,6 +14,7 @@ function! FZFfiles()
     call fzf#run({
     \   'source': 'ag  -filU -g "" --ignore ./var --ignore ./develop-eggs --ignore *.py?',
     \   'sink':    'e',
+    \   'options': '-m',
     \ })
 endfunction
 
@@ -67,13 +68,25 @@ function! FZFmru()
     \ })
 endfunction
 
+function! FZFGitFiles()
+  call fzf#run({
+    \ 'source': 'git ls-files',
+    \ 'sink': 'e',
+    \ 'options': '-m',
+    \ })
+endfunction
+
+
 
 " KEYMAP
 """"""""
 
-" noremap <leader>/ :FZF<CR>
+"noremap <leader>/ :FZF<CR>
+"noremap <leader>. :call FZFmru()<CR>
+
 noremap <leader>/ :call FZFfiles()<CR>
-noremap <leader>. :call FZFmru()<CR>
+noremap <leader>. :call FZFGitFiles()<CR>
+
 noremap <leader>, :call FZFbuffers()<CR>
 noremap <leader>c :call FZFcolor()<CR>
 
