@@ -153,8 +153,9 @@ set updatetime=300
 
 
 "" VISUAL STUFF
-"""""""""""""""
-
+""""""""""""""
+" Enable true color support
+set termguicolors
 colorscheme PaperColor
 set background=dark
 " set background=light
