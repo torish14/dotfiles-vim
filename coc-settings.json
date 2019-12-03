@@ -5,7 +5,8 @@
         ".hg",
         ".projections.json"
     ],
-    "coc.preferences.formatOnSaveFiletypes": ["python"],
+    "diagnostic.refreshAfterSave": true,
+    //"coc.preferences.formatOnSaveFiletypes": ["python", "css", "scss", "less", "Markdown", "javascript", "javascript.vue", "javascript.jsx"],
     "suggest.triggerCompletionWait": 6000,
     "suggest.timeout": 20000,
     "python.envFile": "${workspaceFolder}/.env",
