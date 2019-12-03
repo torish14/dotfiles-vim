@@ -61,12 +61,13 @@ if has('gui_running')
     " copy selection or line
     noremap 1 "+yy
     " paste before
-    noremap 2 "+P
+    noremap 2 "+p
     " paste after
-    noremap @ "+p
+    noremap @ "+P
 else
     noremap 1 yy:call ClipboardYank()<CR>
     noremap 2 :call ClipboardPaste()<CR>p
+    noremap @ :call ClipboardPaste()<CR>P
     noremap 3 dd:call ClipboardYank()<CR>
 endif
 
