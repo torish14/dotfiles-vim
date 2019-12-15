@@ -90,3 +90,6 @@ noremap <leader>. :call FZFGitFiles()<CR>
 noremap <leader>, :call FZFbuffers()<CR>
 noremap <leader>c :call FZFcolor()<CR>
 
+
+" Open multiple files by marking them with <tab>
+
