@@ -14,5 +14,6 @@ highlight TabLineFill    guibg=Grey guifg=White
 source $HOME/.vim/keymap.vim
 source $HOME/.vim/plugins/init.vim
 source $HOME/.vim/config.vim
+source $HOME/.vim/statusline.vim
 source $HOME/.vim/gpg.vim
 " end

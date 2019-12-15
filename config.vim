@@ -47,11 +47,15 @@ set wildmode=list:longest
 set formatoptions=qrnl
 
 " autocomplete options:
-"   - also show, if only one item is present
-"   - do not insert automatically
-"   - do not select automatically
-"   - show previews with additional info, if availalble
-set completeopt=menuone,noinsert,noselect,preview
+set completeopt-=menu
+set completeopt+=menuone   " Show the completions UI even with only 1 item
+set completeopt-=longest   " Don't insert the longest common text
+set completeopt-=preview   " Hide the documentation preview window (shown only if available)
+set completeopt+=noinsert  " Don't insert text automatically
+set completeopt-=noselect  " Highlight the first completion automatically
+
+"" Close preview window automatically, once completion is done:
+" autocmd CompleteDone * if !pumvisible() | pclose | endif
 
 match ErrorMsg '\%>80v.+'
 
