@@ -1,0 +1,52 @@
+autopep8
+bandit  # https://github.com/PyCQA/bandit
+black>=18.9b0
+bobtemplates.plone>=3.6.0b1
+docker-compose
+fabric
+frosted
+httpie
+i18ndude
+ipdb
+isort
+jedi>=0.14.1,<0.15
+locustio
+markdown2ctags
+mccabe
+modernize
+mr.bob
+pep8
+pip
+pipdeptree
+pipenv
+plonecli
+pre-commit
+pycodestyle
+pydocstyle
+pyflakes
+Pygments
+py-spy
+pylint
+pyls-black
+pyls-isort
+pynvim
+pypi-cli
+python-language-server
+requests
+restview
+rope
+rst2ctags
+rst2pdf
+rstcheck
+setuptools
+sixer
+Sphinx
+sphinx_rtd_theme
+tox
+vim-vint
+yapf
+zest.releaser
+zptlint
+# rst2html5
+# z3c.checkversions
+# z3c.dependencychecker

@@ -14,6 +14,9 @@ Then::
     vim +PlugInstall
 
 
+Have a look into ./extras for system wide node and python tools and a script for generating a .vscode configuration for Plone projects.
+
+
 Language Server Integration
 ---------------------------
 
