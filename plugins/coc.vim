@@ -22,8 +22,8 @@
 " https://github.com/iamcco/coc-tailwindcss
 
 
-"Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}  " https://github.com/neoclide/coc.nvim
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}  " latest
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}  " https://github.com/neoclide/coc.nvim
+"Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}  " latest
 
 
 " CONFIG
