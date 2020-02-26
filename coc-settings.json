@@ -1,23 +1,27 @@
 {
-    "coc.preferences.rootPatterns": [
-        ".vim",
-        ".git",
-        ".hg",
-        ".projections.json"
-    ],
-    "diagnostic.refreshAfterSave": true,
-    //"coc.preferences.formatOnSaveFiletypes": ["python", "css", "scss", "less", "Markdown", "javascript", "javascript.vue", "javascript.jsx"],
-    "suggest.triggerCompletionWait": 6000,
-    "suggest.timeout": 20000,
-    "python.envFile": "${workspaceFolder}/.env",
-    "python.jediEnabled": false,
-    "python.pythonPath": "python",
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "~/dev/python-tools3/bin/black",
-    "python.formatting.blackArgs": ["--fast"],
-    "html.format.enable": true,
-    "html.format.preserveNewLines": true,
-    "html.format.maxPreserveNewLines": 2,
-    "html.format.indentInnerHtml": false,
-    "html.format.wrapAttributes": "force"
+  "coc.preferences.rootPatterns": [".vim", ".git", ".hg", ".projections.json"],
+  "diagnostic.refreshAfterSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "css",
+    "scss",
+    "less",
+    "Markdown",
+    "javascript",
+    "javascript.vue",
+    "javascript.jsx"
+  ],
+  "suggest.triggerCompletionWait": 6000,
+  "suggest.timeout": 20000,
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.jediEnabled": false,
+  "python.pythonPath": "python",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/dev/python-tools3/bin/black",
+  "python.formatting.blackArgs": ["--fast"],
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+  "html.format.maxPreserveNewLines": 2,
+  "html.format.indentInnerHtml": false,
+  "html.format.wrapAttributes": "force"
 }
