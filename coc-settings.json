@@ -23,5 +23,7 @@
   "html.format.preserveNewLines": true,
   "html.format.maxPreserveNewLines": 2,
   "html.format.indentInnerHtml": false,
-  "html.format.wrapAttributes": "force"
+  "html.format.wrapAttributes": "force",
+  "html.suggest.html5": true,
+  "xml.format.splitAttributes": true
 }
