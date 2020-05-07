@@ -62,7 +62,7 @@ match ErrorMsg '\%>80v.+'
 
 "" SEARCH
 """""""""
-set gdefault
+set gdefault  " Automatically search all occurrences within a line. Do not use /g in - that will toggle that switch.
 set hlsearch  " highlight the terms
 set ignorecase  " make searches case-insensitive
 set smartcase  " unless they contain upper-case letters

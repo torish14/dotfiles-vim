@@ -20,6 +20,14 @@ Delete/Cut around tags::
     dat
 
 
+Temporarily deactivate auto commands when saving
+------------------------------------------------
+https://stackoverflow.com/a/41258575/1337474
+::
+    :noa w
+
+
+
 
 Check installation
 ------------------
@@ -32,6 +40,13 @@ Search for multiple words
 https://stackoverflow.com/questions/41007769/how-to-search-for-multiple-strings-in-a-vi-editor-on-solaris
 
 SEARCHTERM|SEARCHTERM2
+
+
+Search for all occurrences also within a line
+----------------------------------------------
+https://stackoverflow.com/questions/5581886/vim-global-replace-line
+
+set gdefault OR %s/SEARCH/REPLACE/g
 
 
 copy yanked text to command prompt
