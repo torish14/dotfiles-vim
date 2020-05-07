@@ -115,6 +115,10 @@ autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
 autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
 autocmd BufReadPost,BufNewFile *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
 
+autocmd BufWritePre *.pt execute ':%!zpretty'
+autocmd BufWritePre *.zcml execute ':%!zpretty --zcml'
+autocmd BufWritePre *.xml execute ':%!zpretty --xml'
+
 " jsonc comment highlighting
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
