@@ -11,7 +11,6 @@
     "javascript.vue",
     "javascript.jsx"
   ],
-  "suggest.triggerCompletionWait": 6000,
   "suggest.timeout": 20000,
   "python.envFile": "${workspaceFolder}/.env",
   "python.jediEnabled": false,
