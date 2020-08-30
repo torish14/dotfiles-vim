@@ -29,9 +29,10 @@ Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorco
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx', 'javascript.vue']}  " https://github.com/pangloss/vim-javascript
-Plug 'mxw/vim-jsx', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/mxw/vim-jsx
 Plug 'posva/vim-vue', {'for': ['javascript.vue']}  " https://github.com/posva/vim-vue
-Plug 'leafgarland/typescript-vim', {'for': 'typescript'}  " https://github.com/leafgarland/typescript-vim
+" Plug 'mxw/vim-jsx', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/mxw/vim-jsx
+Plug 'peitalin/vim-jsx-typescript', {'for': ['javascript.jsx', 'javascript.tsx']}  " https://github.com/peitalin/vim-jsx-typescript
+Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}  " https://github.com/leafgarland/typescript-vim
 
 Plug 'othree/html5.vim', {'for': ['html', 'tal']}  " https://github.com/othree/html5.vim
 Plug 'ap/vim-css-color', {'for': ['css', 'less', 'scss', 'sass']}  " https://github.com/ap/vim-css-color
