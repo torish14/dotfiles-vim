@@ -1,5 +1,6 @@
 {
   "coc.preferences.rootPatterns": [".vim", ".git", ".hg", ".projections.json"],
+  "diagnostic.refreshOnInsertMode": true,
   "diagnostic.refreshAfterSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "python",
@@ -23,6 +24,17 @@
   "html.format.maxPreserveNewLines": 2,
   "html.format.indentInnerHtml": false,
   "html.format.wrapAttributes": "force",
+  "html.format.wrapAttributesIndentSize": 4,
   "html.suggest.html5": true,
-  "xml.format.splitAttributes": true
+  "xml.format.splitAttributes": true,
+  // float config
+  "suggest.floatEnable": true,
+  "diagnostic.messageTarget": "float",
+  "signature.target": "float",
+  "coc.preferences.hoverTarget": "float"
+  // floating window disable
+  //"suggest.floatEnable": false,
+  //"diagnostic.messageTarget": "echo",
+  //"signature.target": "echo",
+  //"coc.preferences.hoverTarget": "echo"
 }
