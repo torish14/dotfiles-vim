@@ -50,11 +50,11 @@ vnoremap ; y:<C-r>"<C-b>
 
 " See: https://github.com/neovim/neovim/issues/583
 function! ClipboardYank()
-    call system('wl-copy', @@)
+    call system('wl-copy -n --type text/plain', @@)
     "call system('xclip -i -selection clipboard', @@)
 endfunction
 function! ClipboardPaste()
-    let @@ = system('wl-paste')
+    let @@ = system('wl-paste -n | tr -d "\r"')
     "let @@ = system('xclip -o -selection clipboard')
 endfunction
 
