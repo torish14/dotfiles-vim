@@ -13,6 +13,11 @@ Plug 'tpope/vim-sensible'  " https://github.com/tpope/vim-sensible
 Plug 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 
+" Eventually interesting:
+" system copy.
+" Plug 'christoomey/vim-system-copy'  " https://github.com/christoomey/vim-system-copy
+
+
 "" GIT, ETC
 """""""""""
 Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
