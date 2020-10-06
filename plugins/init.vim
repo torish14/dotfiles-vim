@@ -20,9 +20,9 @@ Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 
 "" GIT, ETC
 """""""""""
-Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
 Plug 'junegunn/gv.vim'  " https://github.com/junegunn/gv.vim
-Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
+Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
+" Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 
 
 "" SYNTAXN
