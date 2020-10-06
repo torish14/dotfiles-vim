@@ -1,3 +1,12 @@
+Open all last git - edited files in vim
+---------------------------------------
+https://logc.github.io/blog/2015/07/15/open-files-from-last-commit-in-vim/
+
+$ git log --pretty=format: --name-only -n 1
+$ vim $(git lastedited)
+
+
+
 Save as root
 ------------
 ::
