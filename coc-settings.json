@@ -4,6 +4,7 @@
   "diagnostic.refreshAfterSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "python",
+    "json",
     "css",
     "scss",
     "less",

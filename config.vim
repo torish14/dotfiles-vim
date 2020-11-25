@@ -118,8 +118,9 @@ set foldmethod=indent
 set foldlevelstart=20  " set foldlevel higher so opened buffers arent folded
 
 autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml,*.svg setlocal tabstop=2 shiftwidth=2 softtabstop=0
-autocmd BufRead,BufNewFile *.js,*.jsx,*.vue setlocal tabstop=2 shiftwidth=2 softtabstop=0 foldmethod=indent  " foldmethod=syntax
-autocmd BufRead,BufNewFile *.css setlocal tabstop=4 shiftwidth=4 softtabstop=0
+autocmd BufRead,BufNewFile *.json setlocal tabstop=2 shiftwidth=2 softtabstop=0 foldmethod=indent  " foldmethod=syntax
+autocmd BufRead,BufNewFile *.js,*.jsx,*.vue setlocal tabstop=4 shiftwidth=4 softtabstop=0 foldmethod=indent  " foldmethod=syntax
+autocmd BufRead,BufNewFile *.css setlocal tabstop=2 shiftwidth=2 softtabstop=0
 autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=0
 autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0  " only use semantic linebreaks in text files.
 autocmd BufRead,BufNewFile *.php setlocal tabstop=4 shiftwidth=4 softtabstop=0

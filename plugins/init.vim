@@ -39,7 +39,7 @@ Plug 'posva/vim-vue', {'for': ['javascript.vue']}  " https://github.com/posva/vi
 Plug 'peitalin/vim-jsx-typescript', {'for': ['javascript.jsx', 'javascript.tsx']}  " https://github.com/peitalin/vim-jsx-typescript
 Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}  " https://github.com/leafgarland/typescript-vim
 
-Plug 'othree/html5.vim', {'for': ['html', 'tal']}  " https://github.com/othree/html5.vim
+Plug 'othree/html5.vim', {'for': ['html', 'xhtml']}  " https://github.com/othree/html5.vim
 Plug 'ap/vim-css-color', {'for': ['css', 'less', 'scss', 'sass']}  " https://github.com/ap/vim-css-color
 Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'less', 'scss', 'sass']}  " https://github.com/hail2u/vim-css3-syntax
 Plug 'cakebaker/scss-syntax.vim', {'for': ['scss', 'sass']}  " https://github.com/cakebaker/scss-syntax.vim
@@ -56,7 +56,7 @@ Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
-source $HOME/.vim/plugins/buffergator.vim
+" source $HOME/.vim/plugins/buffergator.vim
 source $HOME/.vim/plugins/coc.vim
 source $HOME/.vim/plugins/filebeagle.vim
 source $HOME/.vim/plugins/fugitive.vim

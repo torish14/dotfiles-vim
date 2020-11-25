@@ -29,24 +29,24 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}  " latest
 " CONFIG
 """"""""
 
-let g:coc_global_extensions = [
-            \ 'coc-css',
-            \ 'coc-git',
-            \ 'coc-html',
-            \ 'coc-json',
-            \ 'coc-lists',
-            \ 'coc-python',
-            \ 'coc-snippets',
-            \ 'coc-tsserver',
-            \ 'coc-vetur',
-            \ 'coc-yaml',
-            \ 'coc-yank',
-            \ 'coc-sql',
-            \ 'coc-texlab',
-            \ 'coc-xml',
-            \ 'coc-svg',
-            \ 'coc-tailwindcss'
-            \ ]
+"let g:coc_global_extensions = [
+"            \ 'coc-css',
+"            \ 'coc-git',
+"            \ 'coc-html',
+"            "\ 'coc-json',
+"            \ 'coc-lists',
+"            \ 'coc-python',
+"            \ 'coc-snippets',
+"            "\ 'coc-tsserver',
+"            \ 'coc-vetur',
+"            \ 'coc-yaml',
+"            "\ 'coc-yank',
+"            "\ 'coc-sql',
+"            "\ 'coc-texlab',
+"            \ 'coc-xml',
+"            \ 'coc-svg',
+"            "\ 'coc-tailwindcss'
+"            \ ]
 
 
 " if hidden is not set, TextEdit might fail.
@@ -129,8 +129,8 @@ noremap <leader>f :Format<CR>
 
 augroup mygroup
   autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  "" Setup formatexpr specified filetype(s).
+  "autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
