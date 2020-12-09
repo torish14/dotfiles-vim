@@ -1,3 +1,14 @@
+"" COMMANDS
+"""""""""""
+
+" Multiple searches
+" See: https://stackoverflow.com/a/9076027/1337474
+" Use: ``:S2 searchterm``
+" Use: ``:S3 searchterm``
+command -nargs=1 S2 :2match search /<args>/
+command -nargs=1 S3 :3match search /<args>/
+
+
 "" KEY MAPPINGS
 """""""""""""""
 
