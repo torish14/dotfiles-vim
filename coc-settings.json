@@ -1,4 +1,5 @@
 {
+  "coc.preferences.extensionUpdateCheck": "daily",
   "coc.preferences.rootPatterns": [".vim", ".git", ".hg", ".projections.json"],
   "diagnostic.refreshOnInsertMode": true,
   "diagnostic.refreshAfterSave": true,
