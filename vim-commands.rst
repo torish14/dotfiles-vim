@@ -1,3 +1,17 @@
+Coc
+---
+
+:CocConfig
+:CocUpdate
+
+:CocInstall EXTENSION[@VERSION]
+:CocUninstall EXTENSION
+
+:CocList extensions
+
+
+
+
 Open all last git - edited files in vim
 ---------------------------------------
 https://logc.github.io/blog/2015/07/15/open-files-from-last-commit-in-vim/
