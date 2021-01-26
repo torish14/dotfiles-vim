@@ -5,4 +5,9 @@ Plug 'shumphrey/fugitive-gitlab.vim'  " https://github.com/shumphrey/fugitive-gi
 " CONFIG
 """"""""
 
-let g:fugitive_gitlab_domains = ['https://git.bluedynamics.eu/', 'https://git.iem.at/']
+let g:fugitive_gitlab_domains = [
+    \'https://git.bluedynamics.eu/',
+    \'https://git.iem.at/',
+    \'https://git.syslab.com/',
+    \'https://gitlab.com/',
+    \]
