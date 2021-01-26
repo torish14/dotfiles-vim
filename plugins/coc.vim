@@ -20,7 +20,7 @@
 " https://github.com/fannheyward/coc-xml
 " https://github.com/iamcco/coc-svg
 " https://github.com/iamcco/coc-tailwindcss
-
+" https://github.com/clangd/coc-clangd
 
 "Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}  " https://github.com/neoclide/coc.nvim
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}  " latest
