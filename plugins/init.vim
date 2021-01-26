@@ -49,6 +49,7 @@ Plug 'plasticboy/vim-markdown', {'for': 'markdown'}  " https://github.com/plasti
 Plug 'mfukar/robotframework-vim', {'for': 'robot'}  " https://github.com/mfukar/robotframework-vim
 Plug 'chr4/nginx.vim', {'for': 'nginx'}  " https://github.com/chr4/nginx.vim
 Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
+Plug 'sudar/vim-arduino-syntax'  " https://github.com/sudar/vim-arduino-syntax
 
 
 "" COLORSCHEME
