@@ -1,6 +1,14 @@
 "" COMMANDS
 """""""""""
 
+"" Unmap uppper/lowercase. Use ~ instead to toggle.
+"" Did too often unintendionally change the case.
+" https://vi.stackexchange.com/a/14906/6303
+" https://vi.stackexchange.com/a/14906/6303
+vmap u <Nop>
+vmap U <Nop>
+
+
 " Multiple searches
 " See: https://stackoverflow.com/a/9076027/1337474
 " Use: ``:S2 searchterm``
