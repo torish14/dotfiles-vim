@@ -13,10 +13,6 @@ Plug 'tpope/vim-sensible'  " https://github.com/tpope/vim-sensible
 Plug 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 
-" Eventually interesting:
-" system copy.
-" Plug 'christoomey/vim-system-copy'  " https://github.com/christoomey/vim-system-copy
-
 
 "" GIT, ETC
 """""""""""
@@ -50,6 +46,9 @@ Plug 'mfukar/robotframework-vim', {'for': 'robot'}  " https://github.com/mfukar/
 Plug 'chr4/nginx.vim', {'for': 'nginx'}  " https://github.com/chr4/nginx.vim
 Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
 Plug 'sudar/vim-arduino-syntax'  " https://github.com/sudar/vim-arduino-syntax
+
+"Plug 'powerman/vim-plugin-ansiesc'  " https://github.com/powerman/vim-plugin-ansiesc
+"Plug 'christoomey/vim-system-copy'  " https://github.com/christoomey/vim-system-copy
 
 
 "" COLORSCHEME
