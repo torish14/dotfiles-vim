@@ -67,6 +67,8 @@ nnoremap <Del> "_x
 nnoremap ; y:<C-r>"<C-b>
 vnoremap ; y:<C-r>"<C-b>
 
+"" clipboard copy/paste
+
 " See: https://github.com/neovim/neovim/issues/583
 function! ClipboardYank()
     if !empty($WAYLAND_DISPLAY)
@@ -83,7 +85,7 @@ function! ClipboardPaste()
     endif
 endfunction
 
-"" clipboard copy/paste
+
 if has('gui_running')
     " copy selection or line
     noremap 1 "+yy
@@ -91,12 +93,15 @@ if has('gui_running')
     noremap 2 "+p
     " paste after
     noremap @ "+P
+    " delete
+    noremap 3 "+d
 else
     noremap 1 yy:call ClipboardYank()<CR>
     noremap 2 :call ClipboardPaste()<CR>p
     noremap @ :call ClipboardPaste()<CR>P
     noremap 3 dd:call ClipboardYank()<CR>
 endif
+
 
 " copy filename to clipboard
 " http://vim.wikia.com/wiki/Copy_filename_to_clipboard

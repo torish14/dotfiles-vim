@@ -11,6 +11,13 @@ Coc
 
 
 
+vim registers
+-------------
+
+https://www.brianstorti.com/vim-registers/
+https://www.tutorialspoint.com/vim/vim_registers.htm
+
+
 
 Open all last git - edited files in vim
 ---------------------------------------
