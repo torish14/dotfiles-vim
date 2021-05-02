@@ -21,6 +21,7 @@
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/dev/python-tools3/bin/black",
   "python.formatting.blackArgs": ["--fast"],
+  // html
   "html.format.enable": true,
   "html.format.preserveNewLines": true,
   "html.format.maxPreserveNewLines": 2,
@@ -28,7 +29,10 @@
   "html.format.wrapAttributes": "force",
   "html.format.wrapAttributesIndentSize": 4,
   "html.suggest.html5": true,
-  "xml.format.splitAttributes": true,
+  // xml
+  "xml.format.splitAttributes": false,
+  //"xml.format.splitAttributes": true,
+  "xml.format.joinContentLines": true,
   // float config
   "suggest.floatEnable": true,
   "diagnostic.messageTarget": "float",
