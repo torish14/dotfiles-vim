@@ -10,13 +10,41 @@ Coc
 :CocList extensions
 
 
+vim make list of numbers
+------------------------
+https://vim.fandom.com/wiki/Making_a_list_of_numbers
+https://vim.fandom.com/wiki/Generating_a_column_of_increasing_numbers
+::
+    :put +range(3,11)
+
+
+vim column insert
+-----------------
+https://stackoverflow.com/questions/13701506/vim-quick-column-insert
+::
+    :vnoremap <C-Space> I<Space><Esc>gv
+    :vnoremap <C-S-Space> A<Space><Esc>gv
+
+
+vim toggle auto preview
+-----------------------
+::
+    set completeopt-=preview
+    set completeopt+=preview
+
+
+vim variables
+-------------
+https://stackoverflow.com/questions/9193066/how-do-i-inspect-vim-variables
+::
+    :echo g:SuperTabDefaultCompletionType
+
 
 vim registers
 -------------
 
 https://www.brianstorti.com/vim-registers/
 https://www.tutorialspoint.com/vim/vim_registers.htm
-
 
 
 Open all last git - edited files in vim
