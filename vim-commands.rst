@@ -10,6 +10,26 @@ Coc
 :CocList extensions
 
 
+Buffer close
+------------
+To unload the buffer::
+
+    :bd
+
+
+To really delete the buffer::
+
+    :bw
+
+
+Replace \n with newline
+-----------------------
+https://stackoverflow.com/a/71334/1337474
+::
+    %s/\\n/\r/
+
+
+
 vim make list of numbers
 ------------------------
 https://vim.fandom.com/wiki/Making_a_list_of_numbers
