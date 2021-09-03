@@ -10,7 +10,6 @@ let g:plug_url_format = 'git@github.com:%s.git'
 
 
 Plug 'tpope/vim-sensible'  " https://github.com/tpope/vim-sensible
-Plug 'chrisbra/vim-diff-enhanced'  " https://github.com/chrisbra/vim-diff-enhanced
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 
 

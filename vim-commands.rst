@@ -22,6 +22,13 @@ To really delete the buffer::
     :bw
 
 
+Diff all open windows
+---------------------
+::
+
+    :windo diffthis
+
+
 Replace \n with newline
 -----------------------
 https://stackoverflow.com/a/71334/1337474
