@@ -30,8 +30,8 @@
   "html.format.wrapAttributesIndentSize": 4,
   "html.suggest.html5": true,
   // xml
-  "xml.format.splitAttributes": false,
-  //"xml.format.splitAttributes": true,
+  //"xml.format.splitAttributes": false,
+  "xml.format.splitAttributes": true,
   "xml.format.joinContentLines": true,
   // float config
   "suggest.floatEnable": true,
