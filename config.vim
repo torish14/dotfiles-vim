@@ -46,6 +46,8 @@ set lazyredraw   " dont redraw while vim is busy
 set wildmode=list:longest
 set formatoptions=qrnl
 
+set diffopt+=iwhiteall,iblank  " ignore whitespace and blank lines by default when diff'ing.
+
 " autocomplete options:
 set completeopt-=menu
 set completeopt+=menuone   " Show the completions UI even with only 1 item
