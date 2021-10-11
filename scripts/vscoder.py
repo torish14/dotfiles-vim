@@ -25,6 +25,7 @@ CONF = {
         "**/local": True,
         "**/parts": True,
         "**/var": True,
+        "**/node_modules": True,
     },
     "python.analysis.disabled": ["unresolved-import"],
     "python.pythonPath": sys.executable,
