@@ -10,6 +10,22 @@ Coc
 :CocList extensions
 
 
+Word count
+----------
+https://vim.fandom.com/wiki/Word_count
+
+Select, then:
+::
+
+    g
+    <Ctrl>+g
+
+
+::
+
+    :!wc %
+
+
 Buffer close
 ------------
 To unload the buffer::
@@ -27,6 +43,15 @@ Diff all open windows
 ::
 
     :windo diffthis
+
+
+Paste and overwrite
+-------------------
+https://stackoverflow.com/a/25413808/1337474
+
+1) Copy
+2) <R> (Replace mode)
+3) <Ctrl-r>" (to paste in replace mode)
 
 
 Replace \n with newline
