@@ -1,4 +1,5 @@
 # coding=utf-8
+# From: https://github.com/ale-rt/quaive-project/blob/master/scripts/vscoder.py
 # Usage:
 #   ./bin/instance run ../vscoder.py > .vscode/settings.json
 #   mkdir -p .vscode; ./bin/zopepy ../vscoder.py > .vscode/settings.json
