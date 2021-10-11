@@ -25,6 +25,8 @@
 "Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}  " https://github.com/neoclide/coc.nvim
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}  " latest
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
+Plug 'iamcco/coc-diagnostic', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'master' }
+
 
 " CONFIG
 """"""""
