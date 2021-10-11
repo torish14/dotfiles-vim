@@ -2,7 +2,6 @@
   "coc.preferences.extensionUpdateCheck": "daily",
   "coc.preferences.rootPatterns": [".vim", ".git", ".hg", ".projections.json"],
   "diagnostic.refreshOnInsertMode": true,
-  "diagnostic.refreshAfterSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "python",
     "json",
@@ -14,20 +13,14 @@
     "javascript.vue",
     "javascript.jsx"
   ],
-  "suggest.timeout": 20000,
-  "python.envFile": "${workspaceFolder}/.env",
-  "python.jediEnabled": false,
-  "python.pythonPath": "python",
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/dev/python-tools3/bin/black",
-  "python.formatting.blackArgs": ["--fast"],
+  "suggest.timeout": 15000,
   // html
   "html.format.enable": true,
   "html.format.preserveNewLines": true,
   "html.format.maxPreserveNewLines": 2,
   "html.format.indentInnerHtml": false,
   "html.format.wrapAttributes": "force",
-  "html.format.wrapAttributesIndentSize": 4,
+  //"html.format.wrapAttributesIndentSize": 4,
   "html.suggest.html5": true,
   // xml
   //"xml.format.splitAttributes": false,
@@ -36,8 +29,8 @@
   // float config
   "suggest.floatEnable": true,
   "diagnostic.messageTarget": "float",
-  "signature.target": "float",
-  "coc.preferences.hoverTarget": "float"
+  "signature.target": "float"
+  //"coc.preferences.hoverTarget": "float"
   // floating window disable
   //"suggest.floatEnable": false,
   //"diagnostic.messageTarget": "echo",
