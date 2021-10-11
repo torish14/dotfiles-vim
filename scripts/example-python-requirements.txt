@@ -1,29 +1,34 @@
+# needed first
+wheel  # https://stackoverflow.com/a/44862371/1337474
+# install these
 autopep8
 bandit  # https://github.com/PyCQA/bandit
-black>=18.9b0
+#black==20.8b1
+black
 bobtemplates.plone>=3.6.0b1
+check-manifest
 docker-compose
 fabric
 frosted
+gaphor
+git-filter-repo
 httpie
-i18ndude
-ipdb
-isort
-jedi>=0.14.1,<0.15
-locustio
+#git+git://github.com/collective/i18ndude.git#master
+i18ndude 
+isort < 5
+locust
 markdown2ctags
-mccabe
 modernize
 mr.bob
+pdfkit
+pdbpp
 pep8
 pip
 pipdeptree
 pipenv
 plonecli
 pre-commit
-pycodestyle
 pydocstyle
-pyflakes
 Pygments
 py-spy
 pylint
@@ -31,7 +36,7 @@ pyls-black
 pyls-isort
 pynvim
 pypi-cli
-python-language-server
+pyroma
 requests
 restview
 rope
@@ -42,11 +47,31 @@ setuptools
 sixer
 Sphinx
 sphinx_rtd_theme
+sudocabulary  # learn english words
 tox
+transifex-client
 vim-vint
 yapf
 zest.releaser
-zptlint
+zpretty >= 2.1.0
+git+https://github.com/eea/zptlint.git
+# phpsh
 # rst2html5
-# z3c.checkversions
-# z3c.dependencychecker
+z3c.checkversions
+z3c.dependencychecker
+
+### FLAKE8
+flake8
+# flake8 3.9.2 dependencies
+pyflakes >= 2.3.0, < 2.4.0
+pycodestyle >= 2.7.0, < 2.8.0
+mccabe >= 0.6.0, < 0.7.0
+#pycodestyle
+#pyflakes
+#mccabe
+
+### PYTHON LANGUAGE SERVER
+jedi-language-server
+jedi
+
+toml>=0.10.1
