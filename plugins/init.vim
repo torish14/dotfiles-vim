@@ -67,6 +67,7 @@ source $HOME/.vim/plugins/incsearch.vim
 source $HOME/.vim/plugins/matchtagalways.vim
 source $HOME/.vim/plugins/open-browser.vim
 source $HOME/.vim/plugins/ranger.vim
+source $HOME/.vim/plugins/rfc-syntax.vim
 source $HOME/.vim/plugins/snippets.vim
 source $HOME/.vim/plugins/tagbar.vim
 source $HOME/.vim/plugins/undotree.vim
