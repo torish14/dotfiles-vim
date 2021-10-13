@@ -128,11 +128,23 @@ https://www.brianstorti.com/vim-registers/
 https://www.tutorialspoint.com/vim/vim_registers.htm
 
 
+Open all files matching searchstring
+------------------------------------
+::
+
+    vim $(rg SEARCHSTRING -l)
+
+or::
+
+    vim $(grep -R -l SEARCHSTRING *)
+
+
+
 Open all last git - edited files in vim
 ---------------------------------------
 https://logc.github.io/blog/2015/07/15/open-files-from-last-commit-in-vim/
 
-$ git log --pretty=format: --name-only -n 1
+$ git config --global alias.lastedited "log --pretty=format: --name-only -n 1"
 $ vim $(git lastedited)
 
 
