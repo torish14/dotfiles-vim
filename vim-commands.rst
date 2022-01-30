@@ -1,7 +1,15 @@
 Extensions
 ----------
 
+https://github.com/nvim-telescope/telescope.nvim/wiki/Showcase
+
 https://github.com/neoclide/coc.nvim
+
+https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file
+https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources
+https://github.com/neoclide/coc.nvim/wiki/Language-servers
+https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
+https://samroeca.com/coc-plugin.html#writing-an-extension
 
 https://github.com/pappasam/coc-jedi
 https://github.com/pappasam/jedi-language-server
@@ -19,11 +27,38 @@ https://github.com/neoclide/coc-vetur
 https://github.com/fannheyward/coc-xml
 https://github.com/eclipse/lemminx
 
+
+https://github.com/neoclide/coc-html
+https://code.visualstudio.com/docs/languages/html
+https://github.com/microsoft/vscode/tree/main/extensions/html
+based on
+https://github.com/beautify-web/js-beautify
+html.format.wrapAttributesIndentSize
+https://github.com/microsoft/vscode/issues/136767
+https://github.com/microsoft/vscode/issues/55743
+
 https://pypi.org/project/pylint/
 https://github.com/PyCQA/pylint/
 https://pypi.org/project/flake8/
 https://pypi.org/project/pyflakes/
 https://pypi.org/project/docformatter/
+
+
+
+Set/check filetype
+------------------
+::
+
+    set filetype?
+    set filetype=html
+    set ft=html
+
+
+check variable
+--------------
+::
+
+    set VARIABLENAME?
 
 
 Coc
@@ -370,6 +405,10 @@ refresh netrw listing::
 sort case insensitive::
 
     :sort i
+
+sort revers::
+
+    :sort !
 
 
 format json::
