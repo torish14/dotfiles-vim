@@ -74,8 +74,8 @@
   "html.format.preserveNewLines": true,
   "html.format.maxPreserveNewLines": 2,
   "html.format.indentInnerHtml": false,
-  "html.format.wrapAttributes": "force",
-  //"html.format.wrapAttributesIndentSize": 4,
+  "html.format.wrapAttributes": "aligned-multiple",
+  "html.format.wrapAttributesIndentSize": 4,
   "html.suggest.html5": true,
   // xml
   //"xml.format.splitAttributes": false,
